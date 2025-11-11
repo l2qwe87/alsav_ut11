@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Constant uuid="0daa33fc-4a58-4ac6-bc98-2da65d9b3588">
+		<InternalInfo>
+			<xr:GeneratedType name="ConstantManager.ИспользоватьДопустимоеОтклонениеОтгрузкиПриемкиМерныхТоваров" category="Manager">
+				<xr:TypeId>a908dfb8-a90b-44ff-a949-e6ab39c79937</xr:TypeId>
+				<xr:ValueId>37b77b90-12db-4bfc-aace-eee53a6c0b77</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ConstantValueManager.ИспользоватьДопустимоеОтклонениеОтгрузкиПриемкиМерныхТоваров" category="ValueManager">
+				<xr:TypeId>01da6c00-1e3f-4ae5-bd8b-8be037e23e45</xr:TypeId>
+				<xr:ValueId>100d5fe4-1d0c-4f64-977a-baf294075847</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ConstantValueKey.ИспользоватьДопустимоеОтклонениеОтгрузкиПриемкиМерныхТоваров" category="ValueKey">
+				<xr:TypeId>0d76f998-c73c-4ccb-b2c4-ce315eccb02c</xr:TypeId>
+				<xr:ValueId>c03159e3-146f-42b7-b937-8bcaf99acf79</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ИспользоватьДопустимоеОтклонениеОтгрузкиПриемкиМерныхТоваров</Name>
+			<Comment/>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Properties>
+	</Constant>
+</MetaDataObject>

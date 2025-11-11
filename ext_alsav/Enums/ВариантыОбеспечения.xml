@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Enum uuid="e5c8786a-8596-47d6-967c-f2c2d18de9e5">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ВариантыОбеспечения" category="Ref">
+				<xr:TypeId>d257934d-9132-49be-a79f-35854e59a52a</xr:TypeId>
+				<xr:ValueId>c89f6d4d-b695-43e8-acec-2ea75209a895</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ВариантыОбеспечения" category="Manager">
+				<xr:TypeId>ea897a49-0ee8-4b80-a752-b5bdf3b33408</xr:TypeId>
+				<xr:ValueId>c4c768fd-a887-4ede-a358-d254df6ef73a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ВариантыОбеспечения" category="List">
+				<xr:TypeId>96873390-e25f-4bd9-a100-35b0a7993b83</xr:TypeId>
+				<xr:ValueId>754361b6-3cf9-4f4d-8527-f0848632801a</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ВариантыОбеспечения</Name>
+			<Comment/>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="8a086e80-46c5-46f7-8ed8-038d506ffe17">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ИзЗаказов</Name>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="2f97a9d5-c4ed-4be6-9920-68bd1334f263">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Требуется</Name>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="e6cdc103-7f38-42a4-afa4-a0032dc59aec">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Отгрузить</Name>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="b5b0c9d3-3e57-4124-a4bc-7408173339a4">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>СоСклада</Name>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="de132a41-112b-4f8c-a05c-d384b2cdc0d1">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>НеТребуется</Name>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="22436a9b-ecd3-4615-bb2f-e6b076e35b48">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ОтгрузитьОбособленно</Name>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<Form>ИсполнениеЗаказа</Form>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

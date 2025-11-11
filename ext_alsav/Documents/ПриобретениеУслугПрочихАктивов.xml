@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Document uuid="39408fb2-68fa-4c44-b6cd-999c3754699f">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.ПриобретениеУслугПрочихАктивов" category="Object">
+				<xr:TypeId>923545cc-1990-4581-ac59-631631513274</xr:TypeId>
+				<xr:ValueId>fd790a2c-2758-4463-9c0d-4312c58c5cd3</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.ПриобретениеУслугПрочихАктивов" category="Ref">
+				<xr:TypeId>ed850ad1-2c20-4991-82db-c6d6e5870836</xr:TypeId>
+				<xr:ValueId>3579b8dd-0fbf-4f95-a167-724930eccbd7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.ПриобретениеУслугПрочихАктивов" category="Selection">
+				<xr:TypeId>a6ef4d20-3939-46a9-994b-e14a2419a229</xr:TypeId>
+				<xr:ValueId>0998434a-fefc-4209-9f91-7f6721296e9b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.ПриобретениеУслугПрочихАктивов" category="List">
+				<xr:TypeId>024e18fc-fa9c-424b-b541-1bfdcea172f6</xr:TypeId>
+				<xr:ValueId>c8a1f5fc-2faf-4a3f-8d72-3deaa70c2e86</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.ПриобретениеУслугПрочихАктивов" category="Manager">
+				<xr:TypeId>dcfd2bb4-cc1b-4b81-bf66-e38ff612d819</xr:TypeId>
+				<xr:ValueId>75ef2763-4bbe-4ac3-b7e6-c259344dcec3</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ПриобретениеУслугПрочихАктивов</Name>
+			<Comment/>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<TabularSection uuid="8af628f1-4450-478a-81dc-21648cced055">
+				<InternalInfo>
+					<xr:GeneratedType name="DocumentTabularSection.ПриобретениеУслугПрочихАктивов.Расходы" category="TabularSection">
+						<xr:TypeId>4ce08ef9-d958-49e5-af50-96c60c62167b</xr:TypeId>
+						<xr:ValueId>b4b4bf0a-3169-4ac8-9280-7d91b1243c6f</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DocumentTabularSectionRow.ПриобретениеУслугПрочихАктивов.Расходы" category="TabularSectionRow">
+						<xr:TypeId>bc7757a4-43b2-4793-8956-b8c393de5b8d</xr:TypeId>
+						<xr:ValueId>6d59dffa-eaf6-4454-ac8d-2705020def68</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Расходы</Name>
+					<Comment/>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="1f79d81b-e8ed-477e-83d1-241624ae2575">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>АналитикаРасходов</Name>
+							<Comment/>
+							<Type>
+								<v8:TypeSet>cfg:Characteristic.СтатьиРасходов</v8:TypeSet>
+							</Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+			<TabularSection uuid="99e19eaf-6cf1-417b-8eb0-5f79f324d792">
+				<InternalInfo>
+					<xr:GeneratedType name="DocumentTabularSection.ПриобретениеУслугПрочихАктивов.РасшифровкаПлатежа" category="TabularSection">
+						<xr:TypeId>fa19500b-6020-4b25-8e83-02c4adba0435</xr:TypeId>
+						<xr:ValueId>f5a2a3b7-0f5a-4a9f-9979-f338fa8e5af0</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DocumentTabularSectionRow.ПриобретениеУслугПрочихАктивов.РасшифровкаПлатежа" category="TabularSectionRow">
+						<xr:TypeId>fe046884-f0b9-4093-930a-7f943e77b73f</xr:TypeId>
+						<xr:ValueId>fdd410a3-c9ff-429b-b7f1-1365e19dee7d</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>РасшифровкаПлатежа</Name>
+					<Comment/>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="e0d0cc99-0cf1-4e2c-af71-d54d05d7a868">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>Заказ</Name>
+							<Comment/>
+							<Type>
+								<v8:TypeSet>cfg:DefinedType.ОбъектРасчетовСПоставщиками</v8:TypeSet>
+							</Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

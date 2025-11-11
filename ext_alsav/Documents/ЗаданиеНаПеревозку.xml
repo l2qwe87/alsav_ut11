@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Document uuid="e6069f45-e530-460d-9a95-cf0e1954c0c7">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.ЗаданиеНаПеревозку" category="Object">
+				<xr:TypeId>7270bd1f-7fa5-41b5-9319-75645ae1ce63</xr:TypeId>
+				<xr:ValueId>0fff84d6-8651-4ef8-bf91-833c7edfe16d</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.ЗаданиеНаПеревозку" category="Ref">
+				<xr:TypeId>8585ec1f-b310-40d6-b436-69506dfa3c94</xr:TypeId>
+				<xr:ValueId>a4074772-0aba-4df2-bd57-1acbb4be65fd</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.ЗаданиеНаПеревозку" category="Selection">
+				<xr:TypeId>34fb8cca-b8e2-4e26-957c-efd2f5d0ebc4</xr:TypeId>
+				<xr:ValueId>776cff81-b111-4e28-8fcc-73fd9888a498</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.ЗаданиеНаПеревозку" category="List">
+				<xr:TypeId>5b530c09-c642-4887-86bb-1a50b6539bcf</xr:TypeId>
+				<xr:ValueId>3eb87a68-b23f-4bf7-a410-5540f44fe0d1</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.ЗаданиеНаПеревозку" category="Manager">
+				<xr:TypeId>21c2689a-b642-43a6-af8d-c94d11bb2c7a</xr:TypeId>
+				<xr:ValueId>014074b0-6381-49e5-87a8-63ebf4393e94</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ЗаданиеНаПеревозку</Name>
+			<Comment/>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<TabularSection uuid="3bf438da-aa84-44fa-b7d2-70a7bc8a17ea">
+				<InternalInfo>
+					<xr:GeneratedType name="DocumentTabularSection.ЗаданиеНаПеревозку.Распоряжения" category="TabularSection">
+						<xr:TypeId>12710364-f251-47db-8f94-c9b116f29314</xr:TypeId>
+						<xr:ValueId>b9976e90-f147-4d0f-8fe8-8386f5cc7e2a</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DocumentTabularSectionRow.ЗаданиеНаПеревозку.Распоряжения" category="TabularSectionRow">
+						<xr:TypeId>eeaa3e4f-f86c-4cca-9bed-67e65ae229b6</xr:TypeId>
+						<xr:ValueId>e2ea9f57-d618-4089-83cc-8ceca2d502f3</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Распоряжения</Name>
+					<Comment/>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="7c032c95-54d6-46e2-971c-80b27df2a53e">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>Распоряжение</Name>
+							<Comment/>
+							<Type>
+								<v8:TypeSet>cfg:DefinedType.РаспоряжениеНаДоставку</v8:TypeSet>
+							</Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

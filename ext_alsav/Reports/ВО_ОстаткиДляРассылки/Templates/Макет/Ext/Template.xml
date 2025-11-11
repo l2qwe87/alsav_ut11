@@ -1,0 +1,465 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номенклатура</dataPath>
+			<field>Номенклатура</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Штрихкод</dataPath>
+			<field>Штрихкод</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Характеристика</dataPath>
+			<field>Характеристика</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДокументОтгрузки</dataPath>
+			<field>ДокументОтгрузки</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Склад</dataPath>
+			<field>Склад</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РасходОсновной</dataPath>
+			<field>РасходОсновной</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расход основной</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Серия</dataPath>
+			<field>Серия</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Артикул</dataPath>
+			<field>Артикул</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Артикул</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВНаличии</dataPath>
+			<field>ВНаличии</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>В наличии</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПриходОсновной</dataPath>
+			<field>ПриходОсновной</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приход основной</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВРезервеСоСкладаИПодЗаказ</dataPath>
+			<field>ВРезервеСоСкладаИПодЗаказ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>В резерве со склада и под заказ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВРезерве</dataPath>
+			<field>ВРезерве</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>В резерве</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Котгрузке</dataPath>
+			<field>Котгрузке</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Котгрузке</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КОбеспечению</dataPath>
+			<field>КОбеспечению</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>К обеспечению</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КОбеспечениюИзСборок</dataPath>
+			<field>КОбеспечениюИзСборок</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>К обеспечению из сборок</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЕдиницаИзмерения</dataPath>
+			<field>ЕдиницаИзмерения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Единица измерения</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОтпускнаяЦена</dataPath>
+			<field>ОтпускнаяЦена</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отпускная цена</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидЦены</dataPath>
+			<field>ВидЦены</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	Набор.Номенклатура.Артикул КАК Артикул,
+	Набор.Номенклатура КАК Номенклатура,
+	Набор.Характеристика КАК Характеристика,
+	Набор.Склад КАК Склад,
+	СУММА(Набор.ВНаличии) КАК ВНаличии,
+	СУММА(Набор.ПриходОсновной) КАК ПриходОсновной,
+	СУММА(Набор.РасходОсновной) КАК РасходОсновной,
+	СУММА(Набор.ВРезервеСоСкладаИПодЗаказ) КАК ВРезервеСоСкладаИПодЗаказ,
+	СУММА(Набор.ВРезервеСоСкладаИПодЗаказ) + СУММА(Набор.ВРезервеГрафика) КАК ВРезерве,
+	СУММА(Набор.КОтгрузке) КАК Котгрузке,
+	СУММА(Набор.КОбеспечению) КАК КОбеспечению,
+	СУММА(Набор.КОбеспечениюИзСборок) КАК КОбеспечениюИзСборок
+ПОМЕСТИТЬ ВТ_Набор
+ИЗ
+	(ВЫБРАТЬ
+		Таблица.Номенклатура КАК Номенклатура,
+		Таблица.Характеристика КАК Характеристика,
+		Таблица.Склад КАК Склад,
+		Таблица.ВНаличии КАК ВНаличии,
+		0 КАК ПриходОсновной,
+		Таблица.ВРезервеПодЗаказ + Таблица.ВРезервеСоСклада + Таблица.КОтгрузке КАК РасходОсновной,
+		Таблица.ВРезервеПодЗаказ + Таблица.ВРезервеСоСклада КАК ВРезервеСоСкладаИПодЗаказ,
+		0 КАК ВРезервеГрафика,
+		Таблица.КОтгрузке КАК КОтгрузке,
+		Таблица.КОбеспечению КАК КОбеспечению,
+		Таблица.КОбеспечениюИзСборок КАК КОбеспечениюИзСборок
+	ИЗ
+		(ВЫБРАТЬ
+			Набор.Номенклатура КАК Номенклатура,
+			Набор.Характеристика КАК Характеристика,
+			Набор.Склад КАК Склад,
+			СУММА(Набор.ВНаличии) КАК ВНаличии,
+			СУММА(Набор.ВРезервеСоСклада) КАК ВРезервеСоСклада,
+			СУММА(Набор.ВРезервеПодЗаказ) КАК ВРезервеПодЗаказ,
+			СУММА(Набор.КОтгрузке) КАК КОтгрузке,
+			СУММА(Набор.КОбеспечению) КАК КОбеспечению,
+			СУММА(Набор.КОбеспечениюИзСборок) КАК КОбеспечениюИзСборок
+		ИЗ
+			(ВЫБРАТЬ
+				Таблица.Номенклатура КАК Номенклатура,
+				Таблица.Характеристика КАК Характеристика,
+				Таблица.Склад КАК Склад,
+				Таблица.ВНаличииОстаток КАК ВНаличии,
+				Таблица.ВРезервеСоСкладаОстаток КАК ВРезервеСоСклада,
+				Таблица.ВРезервеПодЗаказОстаток КАК ВРезервеПодЗаказ,
+				0 КАК КОтгрузке,
+				0 КАК КОбеспечению,
+				0 КАК КОбеспечениюИзСборок
+			ИЗ
+				РегистрНакопления.СвободныеОстатки.Остатки(, ) КАК Таблица
+			
+			ОБЪЕДИНИТЬ ВСЕ
+			
+			ВЫБРАТЬ
+				Таблица.Номенклатура,
+				Таблица.Характеристика,
+				Таблица.Склад,
+				Таблица.КОтгрузкеОстаток,
+				0,
+				0,
+				Таблица.КОтгрузкеОстаток,
+				0,
+				0
+			ИЗ
+				РегистрНакопления.ТоварыКОтгрузке.Остатки(, ) КАК Таблица
+			
+			ОБЪЕДИНИТЬ ВСЕ
+			
+			ВЫБРАТЬ
+				Таблица.Номенклатура,
+				Таблица.Характеристика,
+				Таблица.Склад,
+				0,
+				0,
+				0,
+				0,
+				СУММА(Таблица.КоличествоНеобеспечено),
+				0
+			ИЗ
+				РегистрНакопления.ГрафикОтгрузкиТоваров КАК Таблица
+			
+			СГРУППИРОВАТЬ ПО
+				Таблица.Номенклатура,
+				Таблица.Характеристика,
+				Таблица.Склад
+			
+			ИМЕЮЩИЕ
+				СУММА(Таблица.КоличествоНеобеспечено) &gt; 0
+			
+			ОБЪЕДИНИТЬ ВСЕ
+			
+			ВЫБРАТЬ
+				ВТ_ВариантыКомплектацииНоменклатуры.Номенклатура,
+				ВТ_ВариантыКомплектацииНоменклатуры.Характеристика,
+				Таблица.Склад,
+				0,
+				0,
+				0,
+				0,
+				0,
+				СУММА(ВТ_ВариантыКомплектацииНоменклатуры.Количество * Таблица.КоличествоНеобеспечено)
+			ИЗ
+				(ВЫБРАТЬ
+					Таблица.Номенклатура КАК ГрафикОтгрузкиТоваровНоменклатура,
+					Таблица.Характеристика КАК ГрафикОтгрузкиТоваровХарактеристика,
+					Таблица.Склад КАК Склад,
+					СУММА(Таблица.КоличествоНеобеспечено) КАК КоличествоНеобеспечено
+				ИЗ
+					РегистрНакопления.ГрафикОтгрузкиТоваров КАК Таблица
+				
+				СГРУППИРОВАТЬ ПО
+					Таблица.Номенклатура,
+					Таблица.Характеристика,
+					Таблица.Склад
+				
+				ИМЕЮЩИЕ
+					СУММА(Таблица.КоличествоНеобеспечено) &gt; 0) КАК Таблица
+					ВНУТРЕННЕЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+						состав.ВариантКомплектацииНоменклатуры КАК Ссылка,
+						состав.ПродуктНоменклатура КАК НоменклатураОсновногоКомпонента,
+						состав.ПродуктХарактеристика КАК ХарактеристикаОсновногоКомпонента,
+						состав.ПутьВСборке КАК НоменклатураПутьСборки,
+						состав.Номенклатура КАК Номенклатура,
+						состав.Характеристика КАК Характеристика,
+						состав.Количество КАК Количество,
+						состав.ЭтоПолуфабрикат КАК ЭтоПолуфабрикат
+					ИЗ
+						РегистрСведений.алсав_СоставИзделий КАК состав
+					ГДЕ
+						состав.ЭтоПолуфабрикат = ЛОЖЬ
+						И состав.ЭтоМатериалы = ЛОЖЬ) КАК ВТ_ВариантыКомплектацииНоменклатуры
+					ПО (ВТ_ВариантыКомплектацииНоменклатуры.НоменклатураОсновногоКомпонента = Таблица.ГрафикОтгрузкиТоваровНоменклатура)
+						И (ВТ_ВариантыКомплектацииНоменклатуры.Характеристика ЕСТЬ NULL
+							ИЛИ ВТ_ВариантыКомплектацииНоменклатуры.ХарактеристикаОсновногоКомпонента = Таблица.ГрафикОтгрузкиТоваровХарактеристика)
+			
+			СГРУППИРОВАТЬ ПО
+				ВТ_ВариантыКомплектацииНоменклатуры.Номенклатура,
+				ВТ_ВариантыКомплектацииНоменклатуры.Характеристика,
+				Таблица.Склад) КАК Набор
+		
+		СГРУППИРОВАТЬ ПО
+			Набор.Номенклатура,
+			Набор.Характеристика,
+			Набор.Склад) КАК Таблица) КАК Набор
+
+СГРУППИРОВАТЬ ПО
+	Набор.Номенклатура.Артикул,
+	Набор.Номенклатура,
+	Набор.Характеристика,
+	Набор.Склад
+
+ИМЕЮЩИЕ
+	СУММА(Набор.ВНаличии) - (СУММА(Набор.ВРезервеСоСкладаИПодЗаказ) + СУММА(Набор.ВРезервеГрафика)) - СУММА(Набор.КОбеспечению) - СУММА(Набор.КОбеспечениюИзСборок) &gt; 0
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_Набор.Артикул КАК Артикул,
+	ВТ_Набор.Номенклатура КАК Номенклатура,
+	ВТ_Набор.Характеристика КАК Характеристика,
+	ВТ_Набор.Номенклатура.ЕдиницаИзмерения КАК ЕдиницаИзмерения,
+	ЦеныНоменклатуры.Цена КАК ОтпускнаяЦена,
+	ВТ_Набор.Склад КАК Склад,
+	ДС_Серия.Значение КАК Серия,
+	Т_Штрихкоды.Штрихкод КАК Штрихкод,
+	ВТ_Набор.ВНаличии КАК ВНаличии,
+	ВТ_Набор.ПриходОсновной КАК ПриходОсновной,
+	ВТ_Набор.РасходОсновной КАК РасходОсновной,
+	ВТ_Набор.ВРезервеСоСкладаИПодЗаказ КАК ВРезервеСоСкладаИПодЗаказ,
+	ВТ_Набор.ВРезерве КАК ВРезерве,
+	ВТ_Набор.Котгрузке КАК Котгрузке,
+	ВТ_Набор.КОбеспечению КАК КОбеспечению,
+	ВТ_Набор.КОбеспечениюИзСборок КАК КОбеспечениюИзСборок
+ИЗ
+	ВТ_Набор КАК ВТ_Набор
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЦеныНоменклатуры.СрезПоследних(, ВидЦены.Наименование = "Отпускная цена (с учетом НДС)") КАК ЦеныНоменклатуры
+		ПО ВТ_Набор.Номенклатура = ЦеныНоменклатуры.Номенклатура
+			И (ВТ_Набор.Характеристика ЕСТЬ NULL
+				ИЛИ ВТ_Набор.Характеристика = ЦеныНоменклатуры.Характеристика)
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Номенклатура.ДополнительныеРеквизиты КАК ДС_Серия
+		ПО (ДС_Серия.Ссылка = ВТ_Набор.Номенклатура)
+			И (ДС_Серия.Свойство.Заголовок = "Серия")
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ШтрихкодыНоменклатуры КАК Т_Штрихкоды
+		ПО ВТ_Набор.Номенклатура = Т_Штрихкоды.Номенклатура
+			И (ВТ_Набор.Характеристика ЕСТЬ NULL
+				ИЛИ ВТ_Набор.Характеристика = Т_Штрихкоды.Характеристика)
+{ГДЕ
+	ВТ_Набор.Номенклатура.*}</query>
+		<useQueryGroupIfPossible>false</useQueryGroupIfPossible>
+	</dataSet>
+	<calculatedField>
+		<dataPath>ДоступноСейчас</dataPath>
+		<expression>ВНаличии - ВРезерве - КОбеспечению - КОбеспечениюИзСборок
+ </expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Доступно сейчас</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<totalField>
+		<dataPath>ДоступноСейчас</dataPath>
+		<expression>Сумма(ДоступноСейчас)</expression>
+		<group>Номенклатура</group>
+		<group>Характеристика</group>
+	</totalField>
+	<totalField>
+		<dataPath>ДоступноСейчас</dataPath>
+		<expression>0</expression>
+	</totalField>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>ОстаткиДляРассылки</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Остатки для рассылки</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДоступноСейчас</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Зеленый</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>РасположениеРеквизитов</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionAttributesPlacement">Separately</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemTable">
+				<dcsset:row>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Серия</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item>
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Артикул</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Номенклатура</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Характеристика</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+					</dcsset:item>
+				</dcsset:row>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

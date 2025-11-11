@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Document uuid="0ae3c301-0683-4a3a-a26d-2befb4581b41">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.ПервичныйДокумент" category="Object">
+				<xr:TypeId>09f50621-c4b9-4fe6-8341-c276b76cce7b</xr:TypeId>
+				<xr:ValueId>a8c4ec13-5516-4e12-ab85-1f02ea787d5e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.ПервичныйДокумент" category="Ref">
+				<xr:TypeId>c66b9da6-46a6-4faf-a606-e46dc2847815</xr:TypeId>
+				<xr:ValueId>bbd6067f-19e7-4b7e-b131-b42bc0ee925c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.ПервичныйДокумент" category="Selection">
+				<xr:TypeId>69b64f5b-8c2d-468b-a2f5-dfbc487c3b9f</xr:TypeId>
+				<xr:ValueId>77867cb4-91fb-45cc-aa98-d476b27023a1</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.ПервичныйДокумент" category="List">
+				<xr:TypeId>ca6b44c9-670c-470d-b066-768a00873b76</xr:TypeId>
+				<xr:ValueId>2831642c-878c-4aff-96fd-3de884c37a4c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.ПервичныйДокумент" category="Manager">
+				<xr:TypeId>db8070e9-29d8-4323-b163-a1971349c9f3</xr:TypeId>
+				<xr:ValueId>26b91fc2-b328-4acc-98fb-b539e5056834</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ПервичныйДокумент</Name>
+			<Comment/>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects/>
+	</Document>
+</MetaDataObject>

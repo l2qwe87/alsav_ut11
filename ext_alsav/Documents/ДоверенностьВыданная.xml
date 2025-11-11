@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Document uuid="fbc7502e-ac4e-4514-a8b0-268470104a1a">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.ДоверенностьВыданная" category="Object">
+				<xr:TypeId>cb916734-7908-40e7-9663-19833c3d7dfe</xr:TypeId>
+				<xr:ValueId>4a8c1680-b0bc-4ed6-bdff-3ce29755ed80</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.ДоверенностьВыданная" category="Ref">
+				<xr:TypeId>0f7ad27b-b331-4780-b930-33bdafc89ba2</xr:TypeId>
+				<xr:ValueId>412ff904-a225-408b-b6d0-492f013b0420</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.ДоверенностьВыданная" category="Selection">
+				<xr:TypeId>171304e4-2abd-4b5d-b346-ccba7c594eec</xr:TypeId>
+				<xr:ValueId>443325b0-aa84-4ad5-b40e-c6049d3987c7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.ДоверенностьВыданная" category="List">
+				<xr:TypeId>edd5444c-bf21-4ea9-955f-026006cf0bc4</xr:TypeId>
+				<xr:ValueId>e60f750a-7376-4b8c-ac08-c4492a1369b7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.ДоверенностьВыданная" category="Manager">
+				<xr:TypeId>8d820137-3248-4252-ab27-545570e69cff</xr:TypeId>
+				<xr:ValueId>7204bdf3-33ae-4f10-9f05-abd292e613f6</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ДоверенностьВыданная</Name>
+			<Comment/>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="72db0b27-b5a4-4748-8914-15bc606fba55">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ДокументОснование</Name>
+					<Comment/>
+					<Type>
+						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Attribute>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

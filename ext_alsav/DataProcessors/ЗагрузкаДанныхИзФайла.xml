@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<DataProcessor uuid="1f91451b-5b89-4453-9d1f-7821e333a56c">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.ЗагрузкаДанныхИзФайла" category="Object">
+				<xr:TypeId>780676ea-f02b-4931-8aed-fd3fc03d105c</xr:TypeId>
+				<xr:ValueId>f3904ed1-7998-48ed-b128-46e11909492e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.ЗагрузкаДанныхИзФайла" category="Manager">
+				<xr:TypeId>1d513306-ef6f-4925-bf6a-131c2759adae</xr:TypeId>
+				<xr:ValueId>5e0a372f-0eb2-4664-8728-08645b21cfe6</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ЗагрузкаДанныхИзФайла</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>4f0bda80-2246-43be-95f8-ae8480682cd5</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<Form>ЗагрузкаДанныхИзФайла</Form>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

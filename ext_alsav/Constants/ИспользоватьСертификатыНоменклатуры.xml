@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Constant uuid="1169722a-587a-44a9-aceb-be6f61c8b7ab">
+		<InternalInfo>
+			<xr:GeneratedType name="ConstantManager.ИспользоватьСертификатыНоменклатуры" category="Manager">
+				<xr:TypeId>2b172084-bd93-4882-9cb7-7bc6ad93c842</xr:TypeId>
+				<xr:ValueId>4c289764-d12a-4bb1-8e17-b173256d547b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ConstantValueManager.ИспользоватьСертификатыНоменклатуры" category="ValueManager">
+				<xr:TypeId>95c751e7-8a28-457e-a899-fdfafa79db9b</xr:TypeId>
+				<xr:ValueId>06c02cdd-f4c5-465b-b2e1-cf7f0f9f1beb</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ConstantValueKey.ИспользоватьСертификатыНоменклатуры" category="ValueKey">
+				<xr:TypeId>707d6715-585c-4b68-89f4-7339f4182707</xr:TypeId>
+				<xr:ValueId>44843924-4180-422f-a4dc-37e585e06cab</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ИспользоватьСертификатыНоменклатуры</Name>
+			<Comment/>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Properties>
+	</Constant>
+</MetaDataObject>

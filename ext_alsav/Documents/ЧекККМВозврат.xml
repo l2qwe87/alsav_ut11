@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Document uuid="3ea4df1a-30ef-4142-8283-15ea3b36be01">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.ЧекККМВозврат" category="Object">
+				<xr:TypeId>26b0c56b-9a8a-46df-8490-fc6cf1a2c5f5</xr:TypeId>
+				<xr:ValueId>0abbd61e-33a9-43d5-b70b-4da9adbc6842</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.ЧекККМВозврат" category="Ref">
+				<xr:TypeId>3b662dc3-ad84-47fc-bc69-d5b758b47403</xr:TypeId>
+				<xr:ValueId>dca5ac7f-f9fd-4261-bce2-f76b4a08e426</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.ЧекККМВозврат" category="Selection">
+				<xr:TypeId>f1da0267-ccce-4c43-93df-bed631e7d6d4</xr:TypeId>
+				<xr:ValueId>b0168bd6-1f00-4cc7-81dc-f872b91c8848</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.ЧекККМВозврат" category="List">
+				<xr:TypeId>6df529b9-4140-4a22-98ba-1627ff6d0f27</xr:TypeId>
+				<xr:ValueId>1fac7841-4f03-46ee-86ba-853d2fd50c9a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.ЧекККМВозврат" category="Manager">
+				<xr:TypeId>944ee9e9-e4bc-496d-b871-605ebf1d8f1d</xr:TypeId>
+				<xr:ValueId>77d61354-3b83-4deb-bbd8-10e739a68942</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ЧекККМВозврат</Name>
+			<Comment/>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="51d7802d-4c06-4dbd-ae57-5f09cdcb62f3">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ЧекККМ</Name>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:DocumentRef.ЧекККМ</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="a3e59a26-c898-4f3b-be5e-b887240b4bd8">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>КассоваяСмена</Name>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:DocumentRef.КассоваяСмена</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

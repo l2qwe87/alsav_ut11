@@ -1,0 +1,599 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Характеристика</dataPath>
+			<field>Характеристика</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВариантКомлектации</dataPath>
+			<field>ВариантКомлектации</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номенклатура</dataPath>
+			<field>Номенклатура</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Упаковка</dataPath>
+			<field>Упаковка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоУпаковок</dataPath>
+			<field>КоличествоУпаковок</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭтоПолуфабрикат</dataPath>
+			<field>ЭтоПолуфабрикат</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидЦены</dataPath>
+			<field>ВидЦены</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Цена</dataPath>
+			<field>Цена</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЦенаКомплектации</dataPath>
+			<field>ЦенаКомплектации</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Цена комплектации</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Штрихкод</dataPath>
+			<field>Штрихкод</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ШтрихкодКомплектации</dataPath>
+			<field>ШтрихкодКомплектации</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Штрихкод комплектации</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НоменклатураУровень3</dataPath>
+			<field>НоменклатураУровень3</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенклатура уровень3</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВариантКомлектацииКомпоненты</dataPath>
+			<field>ВариантКомлектацииКомпоненты</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вариант комлектации компоненты</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоУпаковокОригинально</dataPath>
+			<field>КоличествоУпаковокОригинально</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество упаковок оригинально</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ХарактеристикаУровень1</dataPath>
+			<field>ХарактеристикаУровень1</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Характеристика уровень1</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НоменклатураУровень1</dataPath>
+			<field>НоменклатураУровень1</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенклатура уровень1</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ХарактеристикаУровень2</dataPath>
+			<field>ХарактеристикаУровень2</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Характеристика уровень2</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Позиция1</dataPath>
+			<field>Позиция1</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Позиция1</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НоменклатураУровень2</dataPath>
+			<field>НоменклатураУровень2</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенклатура уровень2</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ХарактеристикаУровень3</dataPath>
+			<field>ХарактеристикаУровень3</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Характеристика уровень3</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Позиция2</dataPath>
+			<field>Позиция2</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Позиция2</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Позиция3</dataPath>
+			<field>Позиция3</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Позиция3</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ * ПОМЕСТИТЬ ВТ_Чч
+ИЗ (ВЫБРАТЬ 1 КАК Чч 
+UNION ALL ВЫБРАТЬ 	2
+UNION ALL ВЫБРАТЬ 	3
+UNION ALL ВЫБРАТЬ 	4
+UNION ALL ВЫБРАТЬ 	5
+UNION ALL ВЫБРАТЬ 	6
+UNION ALL ВЫБРАТЬ 	7
+UNION ALL ВЫБРАТЬ 	8
+UNION ALL ВЫБРАТЬ 	9
+UNION ALL ВЫБРАТЬ 	10
+UNION ALL ВЫБРАТЬ 	11
+UNION ALL ВЫБРАТЬ 	12
+UNION ALL ВЫБРАТЬ 	13
+UNION ALL ВЫБРАТЬ 	14
+UNION ALL ВЫБРАТЬ 	15
+UNION ALL ВЫБРАТЬ 	16
+UNION ALL ВЫБРАТЬ 	17
+UNION ALL ВЫБРАТЬ 	18
+UNION ALL ВЫБРАТЬ 	19
+UNION ALL ВЫБРАТЬ 	20
+UNION ALL ВЫБРАТЬ 	21
+UNION ALL ВЫБРАТЬ 	22
+UNION ALL ВЫБРАТЬ 	23
+UNION ALL ВЫБРАТЬ 	24
+UNION ALL ВЫБРАТЬ 	25
+UNION ALL ВЫБРАТЬ 	26
+UNION ALL ВЫБРАТЬ 	27
+UNION ALL ВЫБРАТЬ 	28
+UNION ALL ВЫБРАТЬ 	29
+UNION ALL ВЫБРАТЬ 	30
+UNION ALL ВЫБРАТЬ 	31
+UNION ALL ВЫБРАТЬ 	32
+UNION ALL ВЫБРАТЬ 	33
+UNION ALL ВЫБРАТЬ 	34
+UNION ALL ВЫБРАТЬ 	35
+UNION ALL ВЫБРАТЬ 	36
+UNION ALL ВЫБРАТЬ 	37
+UNION ALL ВЫБРАТЬ 	38
+UNION ALL ВЫБРАТЬ 	39
+UNION ALL ВЫБРАТЬ 	40
+UNION ALL ВЫБРАТЬ 	41
+UNION ALL ВЫБРАТЬ 	42
+UNION ALL ВЫБРАТЬ 	43
+UNION ALL ВЫБРАТЬ 	44
+UNION ALL ВЫБРАТЬ 	45
+UNION ALL ВЫБРАТЬ 	46
+UNION ALL ВЫБРАТЬ 	47
+UNION ALL ВЫБРАТЬ 	48
+UNION ALL ВЫБРАТЬ 	49
+UNION ALL ВЫБРАТЬ 	50
+UNION ALL ВЫБРАТЬ 	51
+UNION ALL ВЫБРАТЬ 	52
+UNION ALL ВЫБРАТЬ 	53
+UNION ALL ВЫБРАТЬ 	54
+UNION ALL ВЫБРАТЬ 	55
+UNION ALL ВЫБРАТЬ 	56
+UNION ALL ВЫБРАТЬ 	57
+UNION ALL ВЫБРАТЬ 	58
+UNION ALL ВЫБРАТЬ 	59
+UNION ALL ВЫБРАТЬ 	60
+UNION ALL ВЫБРАТЬ 	61
+UNION ALL ВЫБРАТЬ 	62
+UNION ALL ВЫБРАТЬ 	63
+UNION ALL ВЫБРАТЬ 	64
+UNION ALL ВЫБРАТЬ 	65
+UNION ALL ВЫБРАТЬ 	66
+UNION ALL ВЫБРАТЬ 	67
+UNION ALL ВЫБРАТЬ 	68
+UNION ALL ВЫБРАТЬ 	69
+UNION ALL ВЫБРАТЬ 	70
+UNION ALL ВЫБРАТЬ 	71
+UNION ALL ВЫБРАТЬ 	72
+UNION ALL ВЫБРАТЬ 	73
+UNION ALL ВЫБРАТЬ 	74
+UNION ALL ВЫБРАТЬ 	75
+UNION ALL ВЫБРАТЬ 	76
+UNION ALL ВЫБРАТЬ 	77
+UNION ALL ВЫБРАТЬ 	78
+UNION ALL ВЫБРАТЬ 	79
+UNION ALL ВЫБРАТЬ 	80
+UNION ALL ВЫБРАТЬ 	81
+UNION ALL ВЫБРАТЬ 	82
+UNION ALL ВЫБРАТЬ 	83
+UNION ALL ВЫБРАТЬ 	84
+UNION ALL ВЫБРАТЬ 	85
+UNION ALL ВЫБРАТЬ 	86
+UNION ALL ВЫБРАТЬ 	87
+UNION ALL ВЫБРАТЬ 	88
+UNION ALL ВЫБРАТЬ 	89
+UNION ALL ВЫБРАТЬ 	90
+UNION ALL ВЫБРАТЬ 	91
+UNION ALL ВЫБРАТЬ 	92
+UNION ALL ВЫБРАТЬ 	93
+UNION ALL ВЫБРАТЬ 	94
+UNION ALL ВЫБРАТЬ 	95
+UNION ALL ВЫБРАТЬ 	96
+UNION ALL ВЫБРАТЬ 	97
+UNION ALL ВЫБРАТЬ 	98
+UNION ALL ВЫБРАТЬ 	99
+)Т                 
+;   
+ВЫБРАТЬ 
+	ВариантКомплектацииТовары.*,    
+	ВЫБОР КОГДА &amp;РазбитьПоПозициям = ИСТИНА Тогда 1 ИНАЧЕ ВариантКомплектацииТовары.КоличествоУпаковокОригинально КОНЕЦ КАК КоличествоУпаковок,
+	ЦеныВариантаКомплектации.Цена КАК ЦенаКомплектации,
+	ЦеныНоменклатуры.Цена КАК Цена,
+	ШтрихкодыВариантаКомплектации.Штрихкод КАК ШтрихкодКомплектации,
+	Штрихкоды.Штрихкод КАК Штрихкод
+
+ИЗ
+
+(ВЫБРАТЬ                               
+    ВариантКомплектацииОсновной.Ссылка КАК ВариантКомлектации,
+    ВариантКомплектацииОсновной.Ссылка.Владелец КАК Номенклатура,
+	ВариантКомплектацииОсновной.Ссылка.Характеристика КАК Характеристика,
+	null ВариантКомлектацииКомпоненты,
+	ВариантКомплектацииОсновной.Ссылка.Упаковка КАК Упаковка,
+	ВариантКомплектацииОсновной.Ссылка.КоличествоУпаковок КАК КоличествоУпаковокОригинально,
+	ЛОЖЬ ЭтоПолуфабрикат,
+	ВариантКомплектацииОсновной.Ссылка.Владелец КАК НоменклатураУровень1,
+	ВариантКомплектацииОсновной.Ссылка.Характеристика КАК ХарактеристикаУровень1,   
+	0 КАК Позиция1,
+	null НоменклатураУровень2,
+	null ХарактеристикаУровень2,
+	0 КАК Позиция2,
+	null НоменклатураУровень3,
+	null ХарактеристикаУровень3,
+	0 КАК Позиция3
+ИЗ
+	Справочник.ВариантыКомплектацииНоменклатуры КАК ВариантКомплектацииОсновной
+WHERE &amp;ДобавитьНоменклатуруОсновнойСборки = ИСТИНА
+UNION ALL
+      
+ВЫБРАТЬ
+	ВариантКомплектацииОсновнойТовары.Ссылка КАК ВариантКомлектации,
+	ВариантКомплектацииОсновнойТовары.Номенклатура КАК Номенклатура,
+	ВариантКомплектацииОсновнойТовары.Характеристика КАК Характеристика,
+	ВариантКомплектацииОсновнойТовары.ВариантКомлектации КАК ВариантКомлектацииКомпоненты,
+	ВариантКомплектацииОсновнойТовары.Упаковка КАК Упаковка,
+	ВариантКомплектацииОсновнойТовары.КоличествоУпаковок КАК КоличествоУпаковок,
+	ВариантКомплектацииОсновнойТовары.ЭтоПолуфабрикат КАК ЭтоПолуфабрикат,
+	null НоменклатураУровень1,
+	null ХарактеристикаУровень1,
+	0 КАК Позиция1,
+	ВариантКомплектацииОсновнойТовары.Номенклатура КАК НоменклатураУровень2,
+	ВариантКомплектацииОсновнойТовары.Характеристика КАК ХарактеристикаУровень2,
+	ВариантКомплектацииОсновнойТовары.НомерСтроки КАК Позиция2,
+	null НоменклатураУровень3,
+	null ХарактеристикаУровень3,
+	0 КАК Позиция3
+ИЗ
+	Справочник.ВариантыКомплектацииНоменклатуры.Товары КАК ВариантКомплектацииОсновнойТовары
+           
+           
+UNION ALL
+
+ВЫБРАТЬ
+	ВариантКомплектацииОсновнойТовары.Ссылка КАК ВариантКомлектации,
+	ВариантКомплектацииКомпонентыТовары.Номенклатура КАК Номенклатура,
+	ВариантКомплектацииКомпонентыТовары.Характеристика КАК Характеристика,
+	null КАК ВариантКомлектацииКомпоненты,
+	ВариантКомплектацииКомпонентыТовары.Упаковка КАК Упаковка,
+		ВариантКомплектацииКомпонентыТовары.КоличествоУпаковок 
+		* ВариантКомплектацииОсновнойТовары.КоличествоУпаковок 
+	КАК КоличествоУпаковок,
+	ВариантКомплектацииКомпонентыТовары.ЭтоПолуфабрикат КАК ЭтоПолуфабрикат,  
+	null НоменклатураУровень1,
+	null ХарактеристикаУровень1,
+	0 КАК Позиция1,
+	null НоменклатураУровень2,
+	null ХарактеристикаУровень2,
+	ВариантКомплектацииОсновнойТовары.НомерСтроки КАК Позиция2,
+	ВариантКомплектацииКомпонентыТовары.Номенклатура КАК НоменклатураУровень3,
+	ВариантКомплектацииКомпонентыТовары.Характеристика КАК ХарактеристикаУровень3,
+	ВариантКомплектацииКомпонентыТовары.НомерСтроки КАК Позиция3
+ИЗ
+	Справочник.ВариантыКомплектацииНоменклатуры.Товары КАК ВариантКомплектацииОсновнойТовары
+		INNER JOIN Справочник.ВариантыКомплектацииНоменклатуры.Товары КАК ВариантКомплектацииКомпонентыТовары
+			ПО ВариантКомплектацииКомпонентыТовары.Ссылка = ВариантКомплектацииОсновнойТовары.ВариантКомлектации 
+	WHERE &amp;РаскрыватьВторойУровень = ИСТИНА
+
+) КАК ВариантКомплектацииТовары
+         
+       	ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЦеныНоменклатуры.СрезПоследних(, ВидЦены = &amp;ВидЦены) КАК ЦеныНоменклатуры
+		ПО (ЦеныНоменклатуры.Номенклатура = ВариантКомплектацииТовары.Номенклатура)
+			И (ЦеныНоменклатуры.Характеристика = ВариантКомплектацииТовары.Характеристика)
+			
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЦеныНоменклатуры.СрезПоследних(, ВидЦены = &amp;ВидЦены) КАК ЦеныВариантаКомплектации
+		ПО (ЦеныВариантаКомплектации.Номенклатура = ВариантКомплектацииТовары.ВариантКомлектации.Владелец)
+			И (ЦеныВариантаКомплектации.Характеристика = ВариантКомплектацииТовары.ВариантКомлектации.Характеристика)
+			
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ШтрихкодыНоменклатуры КАК Штрихкоды
+		ПО (Штрихкоды.Номенклатура = ВариантКомплектацииТовары.Номенклатура)
+			И (Штрихкоды.Характеристика = ВариантКомплектацииТовары.Характеристика)
+			
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ШтрихкодыНоменклатуры КАК ШтрихкодыВариантаКомплектации
+		ПО (ШтрихкодыВариантаКомплектации.Номенклатура = ВариантКомплектацииТовары.ВариантКомлектации.Владелец)
+			И (ШтрихкодыВариантаКомплектации.Характеристика = ВариантКомплектацииТовары.ВариантКомлектации.Характеристика)
+			
+		LEFT JOIN ВТ_Чч КАК ВТ_Чч ПО ВариантКомплектацииТовары.КоличествоУпаковокОригинально &gt;= ВТ_Чч.Чч И &amp;РазбитьПоПозициям = ИСТИНА                                                                                                                                       </query>
+	</dataSet>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ВидЦены</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Вид цены</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.ВидыЦен</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+		<denyIncompleteValues>true</denyIncompleteValues>
+		<use>Always</use>
+	</parameter>
+	<parameter>
+		<name>РазбитьПоПозициям</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Разбить по позициям</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:boolean</v8:Type>
+		</valueType>
+		<value xsi:type="xs:boolean">false</value>
+		<useRestriction>false</useRestriction>
+		<use>Always</use>
+	</parameter>
+	<parameter>
+		<name>РаскрыватьВторойУровень</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Раскрывать второй уровень</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:boolean</v8:Type>
+		</valueType>
+		<value xsi:type="xs:boolean">false</value>
+		<useRestriction>false</useRestriction>
+		<use>Always</use>
+	</parameter>
+	<parameter>
+		<name>ДобавитьНоменклатуруОсновнойСборки</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Добавить номенклатуру основной сборки</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:boolean</v8:Type>
+		</valueType>
+		<value xsi:type="xs:boolean">false</value>
+		<useRestriction>false</useRestriction>
+		<use>Always</use>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>ВО_ВариантыКомплектации</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Варианты комплектации</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВариантКомлектации</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Номенклатура</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Характеристика</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КоличествоУпаковок</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Упаковка</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЭтоПолуфабрикат</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Цена</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Штрихкод</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Позиция1</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Позиция2</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Позиция3</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НоменклатураУровень1</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ХарактеристикаУровень1</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НоменклатураУровень2</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ХарактеристикаУровень2</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВариантКомлектацииКомпоненты</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НоменклатураУровень3</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ХарактеристикаУровень3</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ВидЦены</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>a27ac907-a416-4842-8d1d-aeb634b3d1f9</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>РазбитьПоПозициям</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					<dcsset:userSettingID>149e9683-03ce-420c-b4c4-a5472e91afb5</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>РаскрыватьВторойУровень</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					<dcsset:userSettingID>f999e05e-7e64-4f1a-b568-b93628770e85</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ДобавитьНоменклатуруОсновнойСборки</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					<dcsset:userSettingID>a047bb87-8fb8-4312-a113-2c12ecb13a07</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemTable">
+				<dcsset:row>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ВариантКомлектации</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ЦенаКомплектации</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ШтрихкодКомплектации</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+					</dcsset:item>
+				</dcsset:row>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

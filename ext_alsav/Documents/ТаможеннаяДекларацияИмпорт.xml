@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Document uuid="f241b290-caa5-4fc0-a25c-68932fe10215">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.ТаможеннаяДекларацияИмпорт" category="Object">
+				<xr:TypeId>318831ee-3032-43b5-93b7-aa35314682ea</xr:TypeId>
+				<xr:ValueId>3281e5d6-a2f6-4383-aa72-fcc8d89235f7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.ТаможеннаяДекларацияИмпорт" category="Ref">
+				<xr:TypeId>4451567b-bf1d-4ae8-8d86-3763ae20741e</xr:TypeId>
+				<xr:ValueId>9cf6fbb4-cc30-4e80-ad4d-036adb9b3b8a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.ТаможеннаяДекларацияИмпорт" category="Selection">
+				<xr:TypeId>4e81d909-948a-4db3-a5d2-edf51ec06b36</xr:TypeId>
+				<xr:ValueId>196906a3-09e9-43c5-a371-06469c099719</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.ТаможеннаяДекларацияИмпорт" category="List">
+				<xr:TypeId>68a9be08-ea22-4e36-ab66-ca4e7a8b17c2</xr:TypeId>
+				<xr:ValueId>5f3f3353-8979-4411-931a-78cc4f61fcd2</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.ТаможеннаяДекларацияИмпорт" category="Manager">
+				<xr:TypeId>78d5bd8e-71c2-460b-9116-f7a2b069cb6b</xr:TypeId>
+				<xr:ValueId>6264a1ce-3220-46b5-92f0-92847a2ba38d</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ТаможеннаяДекларацияИмпорт</Name>
+			<Comment/>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="7a4dd497-196f-46b1-ac98-95239ad7921c">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>АналитикаРасходовСбор</Name>
+					<Comment/>
+					<Type>
+						<v8:TypeSet>cfg:Characteristic.СтатьиРасходов</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="12d5e251-ef1f-4161-8de1-deefef2206f4">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>АналитикаРасходовШтраф</Name>
+					<Comment/>
+					<Type>
+						<v8:TypeSet>cfg:Characteristic.СтатьиРасходов</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Attribute>
+			<TabularSection uuid="1e1c123a-d405-4592-8321-9fb0d46f2f84">
+				<InternalInfo>
+					<xr:GeneratedType name="DocumentTabularSection.ТаможеннаяДекларацияИмпорт.Товары" category="TabularSection">
+						<xr:TypeId>073a0c5b-56be-4a8e-933c-12b391ca4621</xr:TypeId>
+						<xr:ValueId>5f404383-68bd-4391-bcb1-c32d089e4b7f</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DocumentTabularSectionRow.ТаможеннаяДекларацияИмпорт.Товары" category="TabularSectionRow">
+						<xr:TypeId>afdce542-d44b-49ec-b497-19ae7f524201</xr:TypeId>
+						<xr:ValueId>aabb417f-0def-449b-9525-517b64eae792</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Товары</Name>
+					<Comment/>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="856fd6e8-4b2f-4288-af51-7b0c0cefcd63">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>ДокументПоступления</Name>
+							<Comment/>
+							<Type>
+								<v8:Type>cfg:DocumentRef.ПриобретениеТоваровУслуг</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+			<TabularSection uuid="477a100e-bdb5-4733-9f7a-42dbd378883d">
+				<InternalInfo>
+					<xr:GeneratedType name="DocumentTabularSection.ТаможеннаяДекларацияИмпорт.РасшифровкаПлатежа" category="TabularSection">
+						<xr:TypeId>d87158a5-8be3-4db2-ab81-556b342fbd7e</xr:TypeId>
+						<xr:ValueId>92133c2f-ed36-4c0d-99d7-7f25770a7990</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DocumentTabularSectionRow.ТаможеннаяДекларацияИмпорт.РасшифровкаПлатежа" category="TabularSectionRow">
+						<xr:TypeId>396101a1-af9a-48cf-865b-d11af770fd42</xr:TypeId>
+						<xr:ValueId>13a0bb0f-3750-4616-8739-2d1be904ebcb</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>РасшифровкаПлатежа</Name>
+					<Comment/>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="6c2df128-d895-4b20-b3d3-ffb8efd26bfe">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>Заказ</Name>
+							<Comment/>
+							<Type>
+								<v8:TypeSet>cfg:DefinedType.ОбъектРасчетовСПоставщиками</v8:TypeSet>
+							</Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

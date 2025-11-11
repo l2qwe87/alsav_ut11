@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Document uuid="6c3316a2-3598-42dc-afe5-aed9cf9b5bff">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.СписаниеНДСНаРасходы" category="Object">
+				<xr:TypeId>9fa348be-9d63-40e6-a53d-287bccd89b29</xr:TypeId>
+				<xr:ValueId>bb5cb9a8-a75c-46d3-9026-6f4f618bd58d</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.СписаниеНДСНаРасходы" category="Ref">
+				<xr:TypeId>4c43052c-28ba-4771-a3f8-532f78af59d4</xr:TypeId>
+				<xr:ValueId>3a16c8ff-649d-49c8-95a8-92747dc7e1a2</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.СписаниеНДСНаРасходы" category="Selection">
+				<xr:TypeId>7c118d3c-fd21-4c93-be46-2a7f5f4abf14</xr:TypeId>
+				<xr:ValueId>6faf0193-1b8b-4569-ad7e-a67c27a38cab</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.СписаниеНДСНаРасходы" category="List">
+				<xr:TypeId>af4e4a77-ea18-4c1a-8809-1aaa9fd78154</xr:TypeId>
+				<xr:ValueId>ba030020-8cb7-482c-9efa-7ee20d840ad8</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.СписаниеНДСНаРасходы" category="Manager">
+				<xr:TypeId>b4f69520-18ab-4d8d-8d64-fdeec9fe4203</xr:TypeId>
+				<xr:ValueId>c7a14498-d103-44b3-9045-7bf39726071d</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>СписаниеНДСНаРасходы</Name>
+			<Comment/>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="2b3152b7-b617-4980-af7a-10190feb87ad">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>СчетФактура</Name>
+					<Comment/>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.СчетФактура</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Attribute>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

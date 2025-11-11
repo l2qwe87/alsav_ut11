@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Document uuid="20975bcb-635a-4529-bad4-1b7db6fa04fc">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.КорректировкаПоОрдеруНаТовары" category="Object">
+				<xr:TypeId>b76f972f-523d-44cf-ab22-fecb257fa0c4</xr:TypeId>
+				<xr:ValueId>35130ccb-9c99-4ace-be03-282eb71efcd6</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.КорректировкаПоОрдеруНаТовары" category="Ref">
+				<xr:TypeId>bc78236f-dfa7-4485-9537-253e7d4cb9c1</xr:TypeId>
+				<xr:ValueId>479bffdc-e49a-44ab-bac6-d2f70f5ecff7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.КорректировкаПоОрдеруНаТовары" category="Selection">
+				<xr:TypeId>3bb1bf24-3cf7-42d6-8c8b-e5bfa3264a31</xr:TypeId>
+				<xr:ValueId>43a642fd-4dfb-488f-b882-e33cc51aaa43</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.КорректировкаПоОрдеруНаТовары" category="List">
+				<xr:TypeId>19f2122f-0e49-43a6-875d-76567954e35f</xr:TypeId>
+				<xr:ValueId>5be003c6-ba8e-41ac-99b5-e02389280398</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.КорректировкаПоОрдеруНаТовары" category="Manager">
+				<xr:TypeId>3febda92-f0cc-4b83-aec9-ed8177163fb7</xr:TypeId>
+				<xr:ValueId>08439d68-7a7b-4a22-ab1c-69a079b3ee0f</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>КорректировкаПоОрдеруНаТовары</Name>
+			<Comment/>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="078aa617-4de1-42a8-aa23-7629ea4e953b">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Ордер</Name>
+					<Comment/>
+					<Type>
+						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="d82e5947-f5d3-4e4f-912f-60c773aaf0b8">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ОрдерПолучатель</Name>
+					<Comment/>
+					<Type>
+						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Attribute>
+			<TabularSection uuid="717ebe08-a043-4d66-a4b3-06c417a64e74">
+				<InternalInfo>
+					<xr:GeneratedType name="DocumentTabularSection.КорректировкаПоОрдеруНаТовары.Товары" category="TabularSection">
+						<xr:TypeId>e08db4b7-42b4-4084-9d2c-60d78e354e2d</xr:TypeId>
+						<xr:ValueId>855125a7-4f9e-466c-b4af-830ec653fc1b</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DocumentTabularSectionRow.КорректировкаПоОрдеруНаТовары.Товары" category="TabularSectionRow">
+						<xr:TypeId>890d8fac-c2cb-4bf8-82d2-aafc6ee70f43</xr:TypeId>
+						<xr:ValueId>015a4442-7aed-4ba2-8ed7-b4c402d6f6db</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Товары</Name>
+					<Comment/>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="ae993637-f6ce-427f-8c8e-0cae0dfc4cc3">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>Назначение</Name>
+							<Comment/>
+							<Type>
+								<v8:Type>cfg:CatalogRef.Назначения</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

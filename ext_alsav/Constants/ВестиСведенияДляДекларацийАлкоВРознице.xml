@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Constant uuid="5168913f-6512-4705-98e1-995a90aa4c8a">
+		<InternalInfo>
+			<xr:GeneratedType name="ConstantManager.ВестиСведенияДляДекларацийАлкоВРознице" category="Manager">
+				<xr:TypeId>4fa8b3d1-943d-40c2-affd-9e6ecf69c7e4</xr:TypeId>
+				<xr:ValueId>ff6e451f-0f4b-4bb5-93ee-40e4cfbd5f10</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ConstantValueManager.ВестиСведенияДляДекларацийАлкоВРознице" category="ValueManager">
+				<xr:TypeId>5415ea2f-f4de-4597-a8fe-f797cd541d3e</xr:TypeId>
+				<xr:ValueId>a9d55726-b608-4135-b385-eda2e14a8045</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ConstantValueKey.ВестиСведенияДляДекларацийАлкоВРознице" category="ValueKey">
+				<xr:TypeId>15ec9136-4e8a-4897-8a23-1a7dba63bd4b</xr:TypeId>
+				<xr:ValueId>be1f3aaf-4887-4e39-bec2-cca0bf32c951</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ВестиСведенияДляДекларацийАлкоВРознице</Name>
+			<Comment/>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Properties>
+	</Constant>
+</MetaDataObject>

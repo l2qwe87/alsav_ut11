@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<InformationRegister uuid="876b8322-7d2d-49c5-bed8-aacaf31113d3">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.УБ_МарштурныеЛистыРаспоряжения" category="Record">
+				<xr:TypeId>19fd6be7-99b2-4dd2-be20-ae79904b41aa</xr:TypeId>
+				<xr:ValueId>afb548be-4599-4119-8487-9955d88dd8ad</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.УБ_МарштурныеЛистыРаспоряжения" category="Manager">
+				<xr:TypeId>f9c23060-3b78-4a29-b0b8-90b492bda267</xr:TypeId>
+				<xr:ValueId>7f279f40-ad50-4927-9d7f-cff290005430</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.УБ_МарштурныеЛистыРаспоряжения" category="Selection">
+				<xr:TypeId>381ce1c0-46ea-42b4-bc96-77c39a7b1d5c</xr:TypeId>
+				<xr:ValueId>60f724a3-bf04-4033-b41d-61b517a2795f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.УБ_МарштурныеЛистыРаспоряжения" category="List">
+				<xr:TypeId>2adf2f47-afda-4585-83dc-5df3bdf3eb40</xr:TypeId>
+				<xr:ValueId>1acca94e-3b79-4590-8a32-2d9e0f18489b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.УБ_МарштурныеЛистыРаспоряжения" category="RecordSet">
+				<xr:TypeId>068b21f3-f005-48ac-a6b6-a91e3fb053d9</xr:TypeId>
+				<xr:ValueId>eac99f0f-9266-404d-9689-9cf3b81b3665</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.УБ_МарштурныеЛистыРаспоряжения" category="RecordKey">
+				<xr:TypeId>e82620af-8e7e-4451-8cee-96e2c0a7937c</xr:TypeId>
+				<xr:ValueId>e8859c2a-6867-4f4b-b918-5070bc7798ed</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.УБ_МарштурныеЛистыРаспоряжения" category="RecordManager">
+				<xr:TypeId>c82f5e20-9758-4334-a595-eb66fe6a8721</xr:TypeId>
+				<xr:ValueId>eab6e7df-fb67-41fa-a691-c56edc343e3b</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>УБ_МарштурныеЛистыРаспоряжения</Name>
+			<Comment/>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+		</Properties>
+		<ChildObjects>
+			<Dimension uuid="053d9eac-ce74-4fb6-acc4-89ba97d737d1">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>МаршрутныйЛист</Name>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:DocumentRef.УБ_МаршрутныйЛист</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="40a32dcd-0da3-4501-beae-45c755726119">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Распоряжение</Name>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:DocumentRef.УБ_РаспоряжениеНаОтгрузку</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+		</ChildObjects>
+	</InformationRegister>
+</MetaDataObject>

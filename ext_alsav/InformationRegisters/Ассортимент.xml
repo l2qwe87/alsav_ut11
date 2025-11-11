@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<InformationRegister uuid="8d6fcaff-9265-4034-b8ef-1dc8117d7c83">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.Ассортимент" category="Record">
+				<xr:TypeId>c623865e-81f0-4a38-8bd4-8aa2fd24da40</xr:TypeId>
+				<xr:ValueId>43030a15-8256-469b-9421-8924c3901014</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.Ассортимент" category="Manager">
+				<xr:TypeId>c95d9910-0211-479b-8f3f-99a91e87609d</xr:TypeId>
+				<xr:ValueId>a958df72-ce39-4e18-af44-0ad90ecbb94b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.Ассортимент" category="Selection">
+				<xr:TypeId>b319f268-e333-419e-bece-a4336f1d326c</xr:TypeId>
+				<xr:ValueId>b1b22450-bc39-4fb5-98ba-79c2b4f1c7a1</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.Ассортимент" category="List">
+				<xr:TypeId>326ae619-538d-4bfa-9b71-8f909ad7e73b</xr:TypeId>
+				<xr:ValueId>9864c105-895a-4adf-9845-4a965da67fe2</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.Ассортимент" category="RecordSet">
+				<xr:TypeId>93302f2a-e3a3-4d51-98a1-8ce98e2482c3</xr:TypeId>
+				<xr:ValueId>7a99181f-3ba9-44be-a20d-d47bd3e70122</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.Ассортимент" category="RecordKey">
+				<xr:TypeId>ad541cbf-5b8a-44da-8381-9fb7a29e1eb8</xr:TypeId>
+				<xr:ValueId>0e9dff37-6ac8-45b9-b567-372c7ea41b27</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.Ассортимент" category="RecordManager">
+				<xr:TypeId>c073ef34-1966-4d63-b108-53e6636b57d2</xr:TypeId>
+				<xr:ValueId>dab4b07e-2fc4-4f55-b5c1-1a3a66f75992</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>Ассортимент</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>0a31d50e-b19b-40a9-8ffd-9699c8120070</ExtendedConfigurationObject>
+			<InformationRegisterPeriodicity>Second</InformationRegisterPeriodicity>
+			<WriteMode>RecorderSubordinate</WriteMode>
+		</Properties>
+		<ChildObjects>
+			<Resource uuid="52c6c7c7-96e8-411c-91ba-f8fc3a1b07d8">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>РазрешеныЗакупки</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>2c1c49d4-0fdf-4dc2-a6fb-44640db9ff76</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Resource>
+			<Resource uuid="4795c5b9-0714-4e2c-9bb3-576bd9572019">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>РазрешеныПродажи</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>97f5df5b-1411-4bf9-a504-ce020e1e532a</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Resource>
+			<Resource uuid="9b332929-9c09-452f-9ef5-66a6c0695d8e">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>РольАссортимента</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>0d8e8fa9-4001-46aa-940d-14d1d2320de8</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:EnumRef.РолиАссортимента</v8:Type>
+					</Type>
+				</Properties>
+			</Resource>
+			<Resource uuid="bb648fdd-110a-4f8e-b688-cd74e26ca1d4">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ВидЦены</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>3f1cef6a-2f05-4e71-bf77-7ed57d2b26de</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ВидыЦен</v8:Type>
+					</Type>
+				</Properties>
+			</Resource>
+			<Resource uuid="5b68921e-14ea-4588-8bed-c4a1586ddac7">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>КоллекцияНоменклатуры</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>940ef8dd-ad07-4f6a-8dbf-91d7b36a078b</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.КоллекцииНоменклатуры</v8:Type>
+					</Type>
+				</Properties>
+			</Resource>
+			<Resource uuid="9020f0cd-243f-4b32-b82f-d50e610e1472">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>РейтингПродаж</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>250d3404-27bd-41c1-b988-c762d0d8d77b</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.РейтингиПродажНоменклатуры</v8:Type>
+					</Type>
+				</Properties>
+			</Resource>
+			<Dimension uuid="78928d02-0a27-4599-8a9e-764b8953cf3f">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Номенклатура</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>b87d309e-0f04-4549-ba1f-582854ffc4e0</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="56ff4f8f-8c11-4433-9faf-0c46ee32c0ef">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ОбъектПланирования</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>c08b1b99-a567-4abe-8172-87a6e0f879fe</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Dimension>
+		</ChildObjects>
+	</InformationRegister>
+</MetaDataObject>

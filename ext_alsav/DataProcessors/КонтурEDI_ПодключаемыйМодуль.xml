@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<DataProcessor uuid="0f8d3968-52c1-494a-a59f-46e2a624c53a">
+		<InternalInfo>
+			<xr:GeneratedType name="DataProcessorObject.КонтурEDI_ПодключаемыйМодуль" category="Object">
+				<xr:TypeId>eb8d47ea-e8e5-4758-8542-5ce7ba73c340</xr:TypeId>
+				<xr:ValueId>78457dc0-c9a6-4ecf-97b5-8e452b7f947f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DataProcessorManager.КонтурEDI_ПодключаемыйМодуль" category="Manager">
+				<xr:TypeId>69dd71e4-6c89-41fa-b1bc-499194383061</xr:TypeId>
+				<xr:ValueId>09e49177-522f-4165-988c-34e078871e8e</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>КонтурEDI_ПодключаемыйМодуль</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контур EDI подключаемый модуль</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm/>
+			<AuxiliaryForm/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<ExtendedPresentation/>
+			<Explanation/>
+		</Properties>
+		<ChildObjects>
+			<Form>ФормаСписка</Form>
+			<Form>Конструктор</Form>
+			<Form>ФормаРедактированияUltimatecustomer</Form>
+			<Template>V8Unpack</Template>
+			<Template>zlib1</Template>
+			<Template>_АдресацияОбъектовМетаданных</Template>
+			<Template>_ШаблоныЗапросов</Template>
+			<Template>_ТипыОбъектов</Template>
+			<Template>_НастройкиПараметры</Template>
+			<Template>ПаллетнаяВедомостьРЦПризма</Template>
+			<Template>КонвертацияBase64</Template>
+		</ChildObjects>
+	</DataProcessor>
+</MetaDataObject>

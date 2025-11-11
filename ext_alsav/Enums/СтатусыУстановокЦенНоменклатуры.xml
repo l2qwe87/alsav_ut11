@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Enum uuid="f0985331-e862-44e2-9292-bb1ac6a7595e">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.СтатусыУстановокЦенНоменклатуры" category="Ref">
+				<xr:TypeId>b33f713e-0f42-4218-b6f4-de8083dfd17b</xr:TypeId>
+				<xr:ValueId>4f9ef657-e26a-40e2-8958-f2e0e081e0e7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.СтатусыУстановокЦенНоменклатуры" category="Manager">
+				<xr:TypeId>ab02cb3b-d7f0-455d-b9d9-0a7cf57ac3ce</xr:TypeId>
+				<xr:ValueId>09ea52e5-036f-464d-b1eb-801878055522</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.СтатусыУстановокЦенНоменклатуры" category="List">
+				<xr:TypeId>5df45924-94d3-4868-b610-7e9362fd8fda</xr:TypeId>
+				<xr:ValueId>da0f5bcd-9b00-49d3-a915-fed30dd2c275</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>СтатусыУстановокЦенНоменклатуры</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>a19648ee-0a2f-476d-976e-5c3a68b23978</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="fd648d49-b2b7-4ccf-b7bb-9778f93f63bc">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Согласован</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>018626f4-2658-4167-b712-36dd4a6d01f1</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

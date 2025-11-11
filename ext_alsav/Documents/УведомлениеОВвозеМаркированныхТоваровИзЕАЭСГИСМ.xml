@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Document uuid="4b2eeaaa-7012-4e17-9353-00685c3bc475">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.УведомлениеОВвозеМаркированныхТоваровИзЕАЭСГИСМ" category="Object">
+				<xr:TypeId>87f996e8-83c6-4396-a0f9-689b6db81d6c</xr:TypeId>
+				<xr:ValueId>dc3a306f-6bb5-461c-9015-187b93b93a6c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.УведомлениеОВвозеМаркированныхТоваровИзЕАЭСГИСМ" category="Ref">
+				<xr:TypeId>8b4f58cc-04fd-4db0-b799-162088432d91</xr:TypeId>
+				<xr:ValueId>4ff736b9-d9e7-49d4-970c-a8e1b0258d30</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.УведомлениеОВвозеМаркированныхТоваровИзЕАЭСГИСМ" category="Selection">
+				<xr:TypeId>cf8aaa53-e8b1-4026-801d-162649b92827</xr:TypeId>
+				<xr:ValueId>7cc4087f-a79f-4e3a-bcc5-253eb32087ee</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.УведомлениеОВвозеМаркированныхТоваровИзЕАЭСГИСМ" category="List">
+				<xr:TypeId>f130344b-7d58-4c28-b429-e1bbb6e2b3c8</xr:TypeId>
+				<xr:ValueId>860d89b0-b278-4340-95d0-ec19df8ad41e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.УведомлениеОВвозеМаркированныхТоваровИзЕАЭСГИСМ" category="Manager">
+				<xr:TypeId>7073b33d-9def-4199-a847-5b2679c98d42</xr:TypeId>
+				<xr:ValueId>3871d586-ef26-48b2-abfb-b369911edf51</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>УведомлениеОВвозеМаркированныхТоваровИзЕАЭСГИСМ</Name>
+			<Comment/>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="544b533b-961b-4280-9136-d2f2ac2de250">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Основание</Name>
+					<Comment/>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.ОснованиеУведомленияОВвозеИзЕАЭСГИСМ</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Attribute>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

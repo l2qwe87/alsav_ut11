@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Enum uuid="d5b4c3e6-327d-477e-aba7-92da27ada2f7">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.УБ_ВидыРаспоряженийНаОтгрузку" category="Ref">
+				<xr:TypeId>6fef8d08-903a-448f-a925-b54bd380f736</xr:TypeId>
+				<xr:ValueId>49781975-2dd7-4d9f-9aed-cc05dcaa5dd4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.УБ_ВидыРаспоряженийНаОтгрузку" category="Manager">
+				<xr:TypeId>fe77968c-1b99-4686-8d6d-04ec7e267623</xr:TypeId>
+				<xr:ValueId>b5922257-21a5-4deb-bfcd-da58077ac08a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.УБ_ВидыРаспоряженийНаОтгрузку" category="List">
+				<xr:TypeId>7562162f-12b8-470e-a1e2-c7ca622518be</xr:TypeId>
+				<xr:ValueId>38245695-a159-4bf0-813e-db2e15f49b6b</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>УБ_ВидыРаспоряженийНаОтгрузку</Name>
+			<Comment/>
+		</Properties>
+		<ChildObjects/>
+	</Enum>
+</MetaDataObject>

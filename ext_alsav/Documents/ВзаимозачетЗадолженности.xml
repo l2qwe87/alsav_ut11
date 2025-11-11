@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Document uuid="b774c261-c46d-4cdb-afa0-b9ef264c1e96">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.ВзаимозачетЗадолженности" category="Object">
+				<xr:TypeId>326fa99d-adef-4faf-8264-1404cc170c1b</xr:TypeId>
+				<xr:ValueId>764b57f8-0424-4eab-8b40-325e3ec9cb31</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.ВзаимозачетЗадолженности" category="Ref">
+				<xr:TypeId>18bb0bc0-8f97-4b3d-812b-8aa02f54e88f</xr:TypeId>
+				<xr:ValueId>6d0f5837-80d2-4487-aed9-e044f775c693</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.ВзаимозачетЗадолженности" category="Selection">
+				<xr:TypeId>c142e4e5-ba51-43d8-9c30-69641b2545fb</xr:TypeId>
+				<xr:ValueId>79a59ad9-2ec9-4da2-973b-63bee7616fb1</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.ВзаимозачетЗадолженности" category="List">
+				<xr:TypeId>13267f01-184e-4fe5-adea-5ee0b10f4608</xr:TypeId>
+				<xr:ValueId>a2e405c3-bf5c-46a0-ad78-f64e1e7cfe62</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.ВзаимозачетЗадолженности" category="Manager">
+				<xr:TypeId>e84ba86c-6a5c-4b46-a3e0-9ee01eb51a71</xr:TypeId>
+				<xr:ValueId>4214fe38-e772-4557-85a0-28ebdf2b4124</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ВзаимозачетЗадолженности</Name>
+			<Comment/>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="5a93a726-e199-43b6-8284-1c8601aacb9c">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ДокументОснование</Name>
+					<Comment/>
+					<Type>
+						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Attribute>
+			<TabularSection uuid="45641bb4-5bb1-4070-8782-86cbed4f63d8">
+				<InternalInfo>
+					<xr:GeneratedType name="DocumentTabularSection.ВзаимозачетЗадолженности.ДебиторскаяЗадолженность" category="TabularSection">
+						<xr:TypeId>fb830a8d-23a5-42cb-ad7c-a0ae594ef654</xr:TypeId>
+						<xr:ValueId>1e9dc90f-3e92-4ba0-99f6-08b6ceb0bc34</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DocumentTabularSectionRow.ВзаимозачетЗадолженности.ДебиторскаяЗадолженность" category="TabularSectionRow">
+						<xr:TypeId>d941d3f3-6acf-4bcc-a23a-65f5351f2a46</xr:TypeId>
+						<xr:ValueId>c1d3d476-618f-4067-a459-8c9cd3f60a0f</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ДебиторскаяЗадолженность</Name>
+					<Comment/>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="3fd38b55-da3f-4179-b987-8ebe7f7800bb">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>Заказ</Name>
+							<Comment/>
+							<Type>
+								<v8:TypeSet>cfg:DefinedType.ОбъектРасчетов</v8:TypeSet>
+							</Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+			<TabularSection uuid="c8c2b76f-2264-410c-801d-fedd766a9354">
+				<InternalInfo>
+					<xr:GeneratedType name="DocumentTabularSection.ВзаимозачетЗадолженности.КредиторскаяЗадолженность" category="TabularSection">
+						<xr:TypeId>174560dc-f093-4b74-9cdd-b5093c816ba4</xr:TypeId>
+						<xr:ValueId>138ccec9-a748-453d-a9e9-3cb9b153620b</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DocumentTabularSectionRow.ВзаимозачетЗадолженности.КредиторскаяЗадолженность" category="TabularSectionRow">
+						<xr:TypeId>94b2b636-8757-4dd2-9990-d5351c97dd4b</xr:TypeId>
+						<xr:ValueId>894b0d42-cec6-4571-9b5d-b45f4522a91f</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>КредиторскаяЗадолженность</Name>
+					<Comment/>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="4fab177a-801b-497a-a337-51fc6a98783b">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>Заказ</Name>
+							<Comment/>
+							<Type>
+								<v8:TypeSet>cfg:DefinedType.ОбъектРасчетов</v8:TypeSet>
+							</Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

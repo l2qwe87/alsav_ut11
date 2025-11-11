@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Document uuid="c6454b75-8cfa-42b5-9e04-0a1700401f01">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.УБ_ОтчетПоНаличиюНаСкладе" category="Object">
+				<xr:TypeId>6833de12-2829-4cf5-85f2-3011ce8422a1</xr:TypeId>
+				<xr:ValueId>c9d3f25b-8d03-48f8-a2c3-9f883be8b3a8</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.УБ_ОтчетПоНаличиюНаСкладе" category="Ref">
+				<xr:TypeId>c45fe15e-3676-46f0-be46-b58621dfd2a7</xr:TypeId>
+				<xr:ValueId>2c5d80aa-a622-4ffe-9729-ebc90819e618</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.УБ_ОтчетПоНаличиюНаСкладе" category="Selection">
+				<xr:TypeId>7e72c48e-7485-4051-a0d4-63e4e7aba078</xr:TypeId>
+				<xr:ValueId>8705a2de-825d-4c07-962c-b4026c85b6b8</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.УБ_ОтчетПоНаличиюНаСкладе" category="List">
+				<xr:TypeId>fdfab450-b754-4bd3-abd3-315bf571c395</xr:TypeId>
+				<xr:ValueId>17c222e5-a20d-49e0-ab16-4471e4197712</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.УБ_ОтчетПоНаличиюНаСкладе" category="Manager">
+				<xr:TypeId>eef58d4f-ee66-4cef-9157-5c402ab59621</xr:TypeId>
+				<xr:ValueId>abb14f52-486a-4ddd-aabb-230804a2da2f</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>УБ_ОтчетПоНаличиюНаСкладе</Name>
+			<Comment/>
+			<NumberType>String</NumberType>
+			<NumberLength>9</NumberLength>
+			<NumberAllowedLength>Variable</NumberAllowedLength>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="0971a13b-e468-4563-ba6d-a68260004f03">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Комментарий</Name>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="4f057d04-4c98-4655-a726-0d0b72d22ddf">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>СпособДоставки</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>63bf3727-dd01-42ff-9a32-800f3e3206f0</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:EnumRef.СпособыДоставки</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="c1d5e2b4-2a58-49c1-ad5e-8f62e6858fc6">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ДатаСборки</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>31e18fa7-eeac-400a-aafb-463abbb7a68a</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="ec93ebaf-d4e1-4ada-b791-9f1b49ff1b41">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ДатаОтгрузки</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>298b07db-6cfb-431a-98fd-f5cb92a5d202</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="75cf4b92-6eb6-49d1-b893-4d946c927ee2">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Собрал</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>3a8bfadd-e304-40fd-8bca-55822213c556</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="ab197824-c561-45cb-8083-fcdb596a8359">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Отгрузил</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>33ad9f9e-45bd-4d3e-8257-871fd2f4d03d</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="890561e4-7217-4735-b618-e82ebf44d56d">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ПроверилСборку</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>610adc56-9a8e-4a25-b588-e3a715ae38b7</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="d6d43cc5-c1ce-4ae7-9bdc-494f7965f10c">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Партнер</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>f3b88742-0f03-44d5-bff7-701b629eda01</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Партнеры</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="ebac3584-7121-4471-99e9-985889a0dc90">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ЧастичнаяРанее</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>9981c989-22e1-42d8-9b2a-35b9e30a3889</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="773f5456-706f-4ead-9793-874b0785fad4">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ЧастичнаяСейчас</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>e9982c65-ac87-4644-bfe8-084ef63c1a05</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="bef48801-da55-4ffa-9d35-08c297238efd">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ДокументОснование</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>a49f4199-803a-447a-9ddd-e5b0b0a41153</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:DocumentRef.УБ_ОтчетПоНаличиюНаСкладе</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="7e19d0b7-ab36-443c-85d5-e8ba519e1587">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Ответственный</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>fbb7dcad-5644-4900-aebe-eaa25a81634f</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="135185d9-d517-4b52-b99c-9e8cb297af74">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Склад</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>bbd133cf-8ade-4932-bcfb-0c3576c4a5f4</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Склады</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Form>ФормаДокумента</Form>
+			<TabularSection uuid="e7808ed4-6582-4f4a-9cd5-7f8950507b6c">
+				<InternalInfo>
+					<xr:GeneratedType name="DocumentTabularSection.УБ_ОтчетПоНаличиюНаСкладе.Заказы" category="TabularSection">
+						<xr:TypeId>4ad29525-0083-490b-b66a-4a055397084a</xr:TypeId>
+						<xr:ValueId>4f481779-f0ac-422d-8bcf-71a59a7e2488</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DocumentTabularSectionRow.УБ_ОтчетПоНаличиюНаСкладе.Заказы" category="TabularSectionRow">
+						<xr:TypeId>660f340c-0d06-4e0a-828f-b606438db1a3</xr:TypeId>
+						<xr:ValueId>6554ce04-eb64-43f7-acc6-86298231e14f</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Заказы</Name>
+					<Comment/>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="52c20d12-ad63-41ad-9244-bbe920f84d59">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>Заказ</Name>
+							<Comment/>
+							<Type>
+								<v8:Type>cfg:DocumentRef.ЗаказКлиента</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="25722bc4-1cd5-4013-a284-8614442f71f2">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>ДатаДобавления</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>07bbff46-99e3-40ea-9a22-ebb5c14d7e92</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>xs:dateTime</v8:Type>
+								<v8:DateQualifiers>
+									<v8:DateFractions>DateTime</v8:DateFractions>
+								</v8:DateQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+			<TabularSection uuid="468adbe0-f167-40e0-8c00-656e2aae3b37">
+				<InternalInfo>
+					<xr:GeneratedType name="DocumentTabularSection.УБ_ОтчетПоНаличиюНаСкладе.Склады" category="TabularSection">
+						<xr:TypeId>64c78cf1-ea5a-4052-a066-ef12d7ebc1e6</xr:TypeId>
+						<xr:ValueId>f51d0c37-7425-4b27-b073-996465521dcc</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DocumentTabularSectionRow.УБ_ОтчетПоНаличиюНаСкладе.Склады" category="TabularSectionRow">
+						<xr:TypeId>e9a511c7-e1e9-4444-94b0-cff8f2b7e76f</xr:TypeId>
+						<xr:ValueId>fd0de02b-61fe-4cdf-a624-6c30aa567cfc</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Склады</Name>
+					<Comment/>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="fb4e7d00-e015-4301-908e-ba59ca5d686b">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>Склад</Name>
+							<Comment/>
+							<Type>
+								<v8:Type>cfg:CatalogRef.Склады</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

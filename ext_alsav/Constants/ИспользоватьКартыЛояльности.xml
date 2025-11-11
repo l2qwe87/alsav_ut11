@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Constant uuid="5d51a0d8-a4bc-4271-b93c-e5218d802d59">
+		<InternalInfo>
+			<xr:GeneratedType name="ConstantManager.ИспользоватьКартыЛояльности" category="Manager">
+				<xr:TypeId>850bce17-fe3e-49fd-9c66-e9b626549e80</xr:TypeId>
+				<xr:ValueId>cceef2bf-c20c-4823-8f7e-fed07771f1b2</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ConstantValueManager.ИспользоватьКартыЛояльности" category="ValueManager">
+				<xr:TypeId>0be723fb-cd83-44dc-b976-87fdf6b7f69c</xr:TypeId>
+				<xr:ValueId>493034db-9bf5-4f85-bd9f-c155ea592393</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ConstantValueKey.ИспользоватьКартыЛояльности" category="ValueKey">
+				<xr:TypeId>0ccabb1c-af16-53f4-9846-982e5634465e</xr:TypeId>
+				<xr:ValueId>32f32a3c-8bc3-52c8-99c9-545cafdb8048</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ИспользоватьКартыЛояльности</Name>
+			<Comment/>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Properties>
+	</Constant>
+</MetaDataObject>

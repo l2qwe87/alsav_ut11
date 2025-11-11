@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Enum uuid="37c7ac85-1e5d-43f5-bb91-b2cd557988f0">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.СтатусыСоглашенийСКлиентами" category="Ref">
+				<xr:TypeId>689999ac-d76b-4c62-a012-30bbc552cc65</xr:TypeId>
+				<xr:ValueId>20280b59-f10b-407d-8240-7d262219f3df</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.СтатусыСоглашенийСКлиентами" category="Manager">
+				<xr:TypeId>2dd1c4dd-2914-4428-9ce3-0434d2c6f213</xr:TypeId>
+				<xr:ValueId>df82768a-1e42-4ce2-b49b-dc1a3b17ccbb</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.СтатусыСоглашенийСКлиентами" category="List">
+				<xr:TypeId>474af889-17e0-4e4d-b558-e86107c94a5e</xr:TypeId>
+				<xr:ValueId>708dd8c5-6093-4218-9cec-53e9470d742a</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>СтатусыСоглашенийСКлиентами</Name>
+			<Comment/>
+		</Properties>
+		<ChildObjects/>
+	</Enum>
+</MetaDataObject>

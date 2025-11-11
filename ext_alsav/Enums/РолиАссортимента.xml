@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Enum uuid="cb2ed17a-a857-44d7-b672-f446cc5d4059">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.РолиАссортимента" category="Ref">
+				<xr:TypeId>382aaacf-4f83-4b7f-97f1-399f2a01b5f8</xr:TypeId>
+				<xr:ValueId>7a6770cb-6088-4d35-a0bc-1fa671d2dbed</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.РолиАссортимента" category="Manager">
+				<xr:TypeId>5f8b411b-95e6-461c-b4c7-7e2f3579007d</xr:TypeId>
+				<xr:ValueId>0fd0cbce-430d-4f22-839c-dc601222d964</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.РолиАссортимента" category="List">
+				<xr:TypeId>dbdbce42-ddf0-43be-a121-39acccab77d2</xr:TypeId>
+				<xr:ValueId>fb30eca1-09fb-4f22-971c-c431e4b1c029</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>РолиАссортимента</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>49bd7895-0477-4e6d-9237-25c4a2944fc1</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Enum>
+</MetaDataObject>

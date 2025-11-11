@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Catalog uuid="de70236e-6da5-4a3e-858e-eeb3020cbad3">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.ГрафикиОплаты" category="Object">
+				<xr:TypeId>f7f79d29-0957-46bc-abe2-7b192eb26342</xr:TypeId>
+				<xr:ValueId>f1d431d4-036c-4ec4-b4f8-52f6899aac3c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.ГрафикиОплаты" category="Ref">
+				<xr:TypeId>c67caf4d-176e-410c-bf57-c289a2b4af7d</xr:TypeId>
+				<xr:ValueId>676c7925-2a81-4b78-8ad7-6be3edb11c06</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.ГрафикиОплаты" category="Selection">
+				<xr:TypeId>2308aff2-76c0-4eca-8e08-f90feb911d6f</xr:TypeId>
+				<xr:ValueId>902ac685-cf3d-4009-9845-0a0e74d944ba</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.ГрафикиОплаты" category="List">
+				<xr:TypeId>0f9e12d5-8184-4154-b069-3420deeca306</xr:TypeId>
+				<xr:ValueId>20a38afa-a84b-4551-8767-73bee7d61a89</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.ГрафикиОплаты" category="Manager">
+				<xr:TypeId>e59d74a4-10ba-48a3-9452-4fec259a0a71</xr:TypeId>
+				<xr:ValueId>be4ea12b-ce54-466b-887d-415a5adc62f2</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ГрафикиОплаты</Name>
+			<Comment/>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

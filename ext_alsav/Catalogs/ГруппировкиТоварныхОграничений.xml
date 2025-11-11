@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Catalog uuid="ccd74ca6-0e42-4626-a1c4-c8ffa563c1f9">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.ГруппировкиТоварныхОграничений" category="Object">
+				<xr:TypeId>961a65c2-050d-4500-a395-9a99238015ca</xr:TypeId>
+				<xr:ValueId>45b11262-81b4-4c85-97f5-cdb2753149db</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.ГруппировкиТоварныхОграничений" category="Ref">
+				<xr:TypeId>dceddaa5-b23f-4336-a4ea-a8dff4cafc9e</xr:TypeId>
+				<xr:ValueId>b3b6cd65-ecd7-42a3-8680-1b3ef34ae1c1</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.ГруппировкиТоварныхОграничений" category="Selection">
+				<xr:TypeId>84dc7d3c-e703-4d64-ae41-7228f2774964</xr:TypeId>
+				<xr:ValueId>47acbd43-1c22-4675-9aff-48a143c675a4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.ГруппировкиТоварныхОграничений" category="List">
+				<xr:TypeId>2bd3ad1c-53ac-4790-a091-d871b5b86496</xr:TypeId>
+				<xr:ValueId>cbdb5351-188a-49a3-89bc-43d7e2829200</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.ГруппировкиТоварныхОграничений" category="Manager">
+				<xr:TypeId>16c1d230-6763-4387-9d39-6cd2785eecaf</xr:TypeId>
+				<xr:ValueId>9cccb0ba-309b-4303-9be8-f0f5d9ff35ee</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ГруппировкиТоварныхОграничений</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>778dfba1-5452-4a62-976f-9ff90d642163</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

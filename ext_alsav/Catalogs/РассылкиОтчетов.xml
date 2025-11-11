@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Catalog uuid="f3c315f8-3cd5-4f49-bfd9-08e0f685caf9">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.РассылкиОтчетов" category="Object">
+				<xr:TypeId>0b6d28ce-f6f2-42a2-a0fb-bb48522ac203</xr:TypeId>
+				<xr:ValueId>351b6b38-72bf-4ecc-af1c-d3e5665923f1</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.РассылкиОтчетов" category="Ref">
+				<xr:TypeId>10ffd107-88d9-42de-a494-15599836d48e</xr:TypeId>
+				<xr:ValueId>48fcfb80-6405-49e7-b2e8-1fb2ef2fe561</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.РассылкиОтчетов" category="Selection">
+				<xr:TypeId>c03695cd-599e-4087-9834-bd56436256a8</xr:TypeId>
+				<xr:ValueId>6d581649-98b8-4425-9526-b67e4bbca20f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.РассылкиОтчетов" category="List">
+				<xr:TypeId>51ad0de3-c2ae-474f-a3b4-72da12bde9a9</xr:TypeId>
+				<xr:ValueId>8c573650-8f8f-47ad-9e0c-bc8a75e55335</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.РассылкиОтчетов" category="Manager">
+				<xr:TypeId>3554bb1a-957a-4e1e-b4d0-ce971966b22a</xr:TypeId>
+				<xr:ValueId>c909598f-ac3c-4336-8439-68d5c8d9a6e9</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>РассылкиОтчетов</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>8ce6cc1a-8570-4704-b9a3-44e815b2e753</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<Form>ФормаСписка</Form>
+			<Command uuid="47af0cdb-dc8a-4fb1-9e01-96f7d464a71d">
+				<Properties>
+					<Name>алсав_РассылкиОтчетов</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Рассылки отчетов</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>NavigationPanelImportant</Group>
+					<CommandParameterType/>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
+				</Properties>
+			</Command>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>

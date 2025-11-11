@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Constant uuid="c1342f15-f033-4aaa-aff1-9ec07375faab">
+		<InternalInfo>
+			<xr:GeneratedType name="ConstantManager.ИспользоватьСоглашенияСКлиентами" category="Manager">
+				<xr:TypeId>87502cf1-c888-4498-8d03-dc26f61c0427</xr:TypeId>
+				<xr:ValueId>74a9226a-49a2-4042-8c6d-0cf58a4723fb</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ConstantValueManager.ИспользоватьСоглашенияСКлиентами" category="ValueManager">
+				<xr:TypeId>7cc6eb2d-21c1-4ec3-a1cc-fd7c5b226256</xr:TypeId>
+				<xr:ValueId>e7c54be8-2a81-4a16-86e4-36d8bfd2b31d</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ConstantValueKey.ИспользоватьСоглашенияСКлиентами" category="ValueKey">
+				<xr:TypeId>15f21240-2ec5-50b7-8e01-a7ab318b422a</xr:TypeId>
+				<xr:ValueId>6543d775-865d-5433-94be-6045bd11dc1c</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ИспользоватьСоглашенияСКлиентами</Name>
+			<Comment/>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Properties>
+	</Constant>
+</MetaDataObject>

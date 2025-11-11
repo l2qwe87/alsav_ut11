@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Document uuid="2117925c-fc18-4cac-8c76-3d05352cc2d5">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.УведомлениеОбИмпортеМаркированныхТоваровГИСМ" category="Object">
+				<xr:TypeId>27a4d0ed-e634-4875-9670-4ed3038de0f3</xr:TypeId>
+				<xr:ValueId>b8bb7d0d-78d3-4308-91e5-40d5923dafb3</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.УведомлениеОбИмпортеМаркированныхТоваровГИСМ" category="Ref">
+				<xr:TypeId>dd306299-c3fe-40be-9d4b-69fe6f661f7d</xr:TypeId>
+				<xr:ValueId>4f8aab9f-a524-4b2a-8a77-afe14c69e94b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.УведомлениеОбИмпортеМаркированныхТоваровГИСМ" category="Selection">
+				<xr:TypeId>5edbf6e8-6233-4859-8946-30a54ae3489d</xr:TypeId>
+				<xr:ValueId>2f145e23-f86b-4b47-8544-efa26465193e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.УведомлениеОбИмпортеМаркированныхТоваровГИСМ" category="List">
+				<xr:TypeId>bc6bd8f1-b3bf-4dcd-9a8b-48f9094b1b9b</xr:TypeId>
+				<xr:ValueId>6e127db5-cb2e-451f-80ec-43438f6e00d2</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.УведомлениеОбИмпортеМаркированныхТоваровГИСМ" category="Manager">
+				<xr:TypeId>33777b48-c81d-4670-a758-601c6d5baae0</xr:TypeId>
+				<xr:ValueId>d08af058-2e94-429b-be8d-60d91b6c554b</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>УведомлениеОбИмпортеМаркированныхТоваровГИСМ</Name>
+			<Comment/>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="86259043-b3b6-4fbe-9ca4-3de9cca6e268">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Основание</Name>
+					<Comment/>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.ОснованиеУведомленияОбИмпортеГИСМ</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Attribute>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

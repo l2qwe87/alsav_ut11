@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Document uuid="c532bf4b-7fb9-4f5c-89bc-85297a5d1b8d">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.АктОРасхожденияхПослеПеремещения" category="Object">
+				<xr:TypeId>f39492a5-8a24-4ab7-b69b-13c987c9f85a</xr:TypeId>
+				<xr:ValueId>238fb4bc-622f-43b1-9d8f-1b19d85328cc</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.АктОРасхожденияхПослеПеремещения" category="Ref">
+				<xr:TypeId>ec4cf941-54b4-4941-93f1-542aa6e363ea</xr:TypeId>
+				<xr:ValueId>74847049-a56d-4bfc-9d07-bf65ff241d6c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.АктОРасхожденияхПослеПеремещения" category="Selection">
+				<xr:TypeId>3770941e-ad61-4c6e-8bae-4d02acbebc06</xr:TypeId>
+				<xr:ValueId>2d2d2cfe-d014-41e3-af02-c809908ba2da</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.АктОРасхожденияхПослеПеремещения" category="List">
+				<xr:TypeId>0a91e553-58b2-4442-ae75-d353f2a56b93</xr:TypeId>
+				<xr:ValueId>86030b71-f4f2-4ef8-bcee-30c6c6ebee6c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.АктОРасхожденияхПослеПеремещения" category="Manager">
+				<xr:TypeId>25c9a42b-12dc-432f-a561-2193cf9f81a2</xr:TypeId>
+				<xr:ValueId>17cae22b-1280-4873-a176-0d05d5f69d18</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>АктОРасхожденияхПослеПеремещения</Name>
+			<Comment/>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<TabularSection uuid="791461dd-d7ea-4b12-b667-35b299e51f55">
+				<InternalInfo>
+					<xr:GeneratedType name="DocumentTabularSection.АктОРасхожденияхПослеПеремещения.Товары" category="TabularSection">
+						<xr:TypeId>198e86f9-840b-4bdc-ba94-c5974977fe63</xr:TypeId>
+						<xr:ValueId>8182382f-87f1-44fa-8bf9-bb587c8cb49f</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DocumentTabularSectionRow.АктОРасхожденияхПослеПеремещения.Товары" category="TabularSectionRow">
+						<xr:TypeId>fff6fea9-23a3-447b-a529-37b41a9deed8</xr:TypeId>
+						<xr:ValueId>1a7a82cf-bd3e-44cc-b46f-ca53bd5b1185</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Товары</Name>
+					<Comment/>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="fc272555-1cad-45e8-baeb-1c53a28951f1">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>Назначение</Name>
+							<Comment/>
+							<Type>
+								<v8:Type>cfg:CatalogRef.Назначения</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="bdda4a5f-4e3c-4ec6-a499-a0c938302ffe">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>ДокументОснование</Name>
+							<Comment/>
+							<Type>
+								<v8:Type>cfg:DocumentRef.ПеремещениеТоваров</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="63226236-e8cb-4ead-848f-563b40bc8a17">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>НазначениеОтправителя</Name>
+							<Comment/>
+							<Type>
+								<v8:Type>cfg:CatalogRef.Назначения</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

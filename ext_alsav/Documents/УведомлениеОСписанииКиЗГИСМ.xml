@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Document uuid="34f4f7b9-f064-47ad-9d7d-415ec141e81b">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.УведомлениеОСписанииКиЗГИСМ" category="Object">
+				<xr:TypeId>89824478-f79b-4f2d-ae54-643d8c38ef0d</xr:TypeId>
+				<xr:ValueId>585b5c27-639b-4a5b-8a82-83420f5aa581</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.УведомлениеОСписанииКиЗГИСМ" category="Ref">
+				<xr:TypeId>c5e0452d-b5e8-4b7f-b3e7-6d15b9fdf66b</xr:TypeId>
+				<xr:ValueId>9f09b043-234d-445c-a3e6-a21c7268c34c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.УведомлениеОСписанииКиЗГИСМ" category="Selection">
+				<xr:TypeId>38f64fb9-2c49-4c04-a989-c8d2b6ab67ca</xr:TypeId>
+				<xr:ValueId>326059bd-ee15-41e3-a1db-536967d87673</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.УведомлениеОСписанииКиЗГИСМ" category="List">
+				<xr:TypeId>797dd35b-c568-4640-bdbd-4ddc7c41c9f4</xr:TypeId>
+				<xr:ValueId>217ab4a5-d9ca-4590-86ef-d34045011486</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.УведомлениеОСписанииКиЗГИСМ" category="Manager">
+				<xr:TypeId>c7d10fa4-33bb-4cd4-983c-7ac9b7122753</xr:TypeId>
+				<xr:ValueId>7daa3d02-7d44-4f1c-a578-14dac83b6063</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>УведомлениеОСписанииКиЗГИСМ</Name>
+			<Comment/>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="f36e4456-04a8-4524-b9b7-4678922ba451">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Основание</Name>
+					<Comment/>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.ОснованиеУведомленияОСписанииКиЗГИСМ</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Attribute>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

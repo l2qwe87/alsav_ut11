@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Catalog uuid="1fc2f34c-4fa2-47e7-aed5-bcca066ffd3d">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.ТипыТранспортныхСредств" category="Object">
+				<xr:TypeId>3e3ca676-651d-45c2-8ac2-6ce89ea7a645</xr:TypeId>
+				<xr:ValueId>2c69bfbf-881a-42e4-854a-962089c06e41</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.ТипыТранспортныхСредств" category="Ref">
+				<xr:TypeId>f41c3047-cb16-4eb0-a982-3722cb91b46f</xr:TypeId>
+				<xr:ValueId>1362bb3c-6fcc-473f-85d3-2f4e35297f0e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.ТипыТранспортныхСредств" category="Selection">
+				<xr:TypeId>f71fd499-2c1e-43a5-ba7d-ca18949e7286</xr:TypeId>
+				<xr:ValueId>0c5a35f8-6a98-4a90-98a0-726b3149c268</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.ТипыТранспортныхСредств" category="List">
+				<xr:TypeId>2d77070a-689e-462b-9b66-94a22a5a1692</xr:TypeId>
+				<xr:ValueId>b678e638-89ed-4081-b10f-16507f048c37</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.ТипыТранспортныхСредств" category="Manager">
+				<xr:TypeId>a3688f5a-a6dc-47c6-b9f5-b66897b22e33</xr:TypeId>
+				<xr:ValueId>376417e8-e46f-4616-9879-082f44b016c7</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ТипыТранспортныхСредств</Name>
+			<Comment/>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

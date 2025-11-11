@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Document uuid="f9caee7e-0760-438a-82af-d0885ea89ceb">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.КорректировкаЗадолженностиПоФинансовымИнструментам" category="Object">
+				<xr:TypeId>08acb52a-f400-4234-a759-a96a0f6d6cb5</xr:TypeId>
+				<xr:ValueId>580869cc-3c5f-4267-9397-e0d55f14bdfb</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.КорректировкаЗадолженностиПоФинансовымИнструментам" category="Ref">
+				<xr:TypeId>8cf9ea62-7a72-478e-8999-8bab6c4fbd3d</xr:TypeId>
+				<xr:ValueId>d8650fa3-8fa9-4a71-8b54-cfc8f860d182</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.КорректировкаЗадолженностиПоФинансовымИнструментам" category="Selection">
+				<xr:TypeId>5fae0660-59b2-4f62-a27f-a17ad9b11be2</xr:TypeId>
+				<xr:ValueId>8a3c00fd-e29e-44dd-a091-6d2c212d18af</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.КорректировкаЗадолженностиПоФинансовымИнструментам" category="List">
+				<xr:TypeId>ba2ab6aa-19f1-4219-a979-9b97927f3799</xr:TypeId>
+				<xr:ValueId>e0904d1e-7214-4c0e-85a5-ea98d6592fef</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.КорректировкаЗадолженностиПоФинансовымИнструментам" category="Manager">
+				<xr:TypeId>bf21488d-4d52-4c5f-ad42-b28e644f72f6</xr:TypeId>
+				<xr:ValueId>643cf73b-fae1-489e-97fb-d779db4e3048</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>КорректировкаЗадолженностиПоФинансовымИнструментам</Name>
+			<Comment/>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="f636f41e-83f1-4add-9060-79f6746dfb35">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>АналитикаРасходов</Name>
+					<Comment/>
+					<Type>
+						<v8:TypeSet>cfg:Characteristic.СтатьиРасходов</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="69908f67-6fd1-40eb-8e82-4309e85e15d9">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>АналитикаДоходов</Name>
+					<Comment/>
+					<Type>
+						<v8:TypeSet>cfg:Characteristic.СтатьиДоходов</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Attribute>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

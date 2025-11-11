@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Catalog uuid="88702838-c39b-4151-a5d0-8dea3b3e86c5">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.СценарииТоварногоПланирования" category="Object">
+				<xr:TypeId>024c0334-f29b-4885-84f2-03548625dc77</xr:TypeId>
+				<xr:ValueId>82fc03fc-f1c5-4e02-80f7-4e1a4e444681</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.СценарииТоварногоПланирования" category="Ref">
+				<xr:TypeId>ef77e83e-5c21-4e64-ad5f-b5e34088c5e0</xr:TypeId>
+				<xr:ValueId>ba2e9fe0-9455-49df-86b5-83ea53e02022</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.СценарииТоварногоПланирования" category="Selection">
+				<xr:TypeId>4cf554d7-3d79-44da-87a4-8c528ef2a466</xr:TypeId>
+				<xr:ValueId>1a3014dc-6965-4451-a2f3-8f0900773a9b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.СценарииТоварногоПланирования" category="List">
+				<xr:TypeId>e0cc6f70-8b1e-46c5-bb7d-0e49b2d43354</xr:TypeId>
+				<xr:ValueId>5d4a423b-1538-4f90-8095-3096085f2c95</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.СценарииТоварногоПланирования" category="Manager">
+				<xr:TypeId>39c34a14-e2af-408e-a274-fd22f9df29c3</xr:TypeId>
+				<xr:ValueId>758056ad-8464-47cc-8427-828190ecafac</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>СценарииТоварногоПланирования</Name>
+			<Comment/>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

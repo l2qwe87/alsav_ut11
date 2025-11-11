@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Document uuid="ec11220b-28ca-4a5c-ac93-bee2e190e9fc">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.СписаниеЗадолженности" category="Object">
+				<xr:TypeId>18518abc-cb7d-4864-92e7-b1b28ee7ce26</xr:TypeId>
+				<xr:ValueId>a4dccf9b-fb1d-403e-8d51-8449707a9695</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.СписаниеЗадолженности" category="Ref">
+				<xr:TypeId>c6763800-9373-4357-a996-d44cd4641a95</xr:TypeId>
+				<xr:ValueId>35ff896d-6670-4423-b35d-56251027df50</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.СписаниеЗадолженности" category="Selection">
+				<xr:TypeId>c6d254d9-fb17-48b1-8d12-be705ea43cd0</xr:TypeId>
+				<xr:ValueId>7192376c-49fc-48c3-b63f-9fab9ecd6dba</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.СписаниеЗадолженности" category="List">
+				<xr:TypeId>00cc1f06-0c41-4366-82f5-a79f49c23749</xr:TypeId>
+				<xr:ValueId>56ef2df7-dce9-4b16-92e3-3700a08ac294</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.СписаниеЗадолженности" category="Manager">
+				<xr:TypeId>f54ba328-9d1e-430b-9a7a-a4b59e91e003</xr:TypeId>
+				<xr:ValueId>e709e7d3-c524-49ca-8750-ba3d53a8adb3</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>СписаниеЗадолженности</Name>
+			<Comment/>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="aae4a2b6-2bac-4182-8af4-7dfe895442b3">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>АктОРасхожденияхОснование</Name>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:DocumentRef.АктОРасхожденияхПослеПриемки</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="f5461406-6601-41b0-8857-aeda37f3f9f1">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>АналитикаРасходов</Name>
+					<Comment/>
+					<Type>
+						<v8:TypeSet>cfg:Characteristic.СтатьиРасходов</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="32229536-d0f1-4c55-80df-73f741545364">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>АналитикаДоходов</Name>
+					<Comment/>
+					<Type>
+						<v8:TypeSet>cfg:Characteristic.СтатьиДоходов</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Attribute>
+			<TabularSection uuid="0229a34c-509a-4a4e-bf61-3435d1fc09f4">
+				<InternalInfo>
+					<xr:GeneratedType name="DocumentTabularSection.СписаниеЗадолженности.Задолженность" category="TabularSection">
+						<xr:TypeId>ea156353-d4be-4552-b3bf-c2e51421d81f</xr:TypeId>
+						<xr:ValueId>827b07fc-84ca-469d-9d22-ebc5f5fd700d</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DocumentTabularSectionRow.СписаниеЗадолженности.Задолженность" category="TabularSectionRow">
+						<xr:TypeId>942f0d23-969a-4f05-9ce2-48903092d43d</xr:TypeId>
+						<xr:ValueId>e68d9f6d-6954-4391-9052-586fc1c28dd3</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Задолженность</Name>
+					<Comment/>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="194e5fdb-7e6b-46c1-bd1b-fada82790260">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>Заказ</Name>
+							<Comment/>
+							<Type>
+								<v8:TypeSet>cfg:DefinedType.ОбъектРасчетов</v8:TypeSet>
+							</Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Document uuid="68083988-4711-41f7-ae18-dbdcef4bd03d">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.ВозвратПодарочныхСертификатов" category="Object">
+				<xr:TypeId>ec86922d-84c9-4873-96f7-83b1d5e1f525</xr:TypeId>
+				<xr:ValueId>e555774e-3006-480a-ba76-9fb89f337fd1</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.ВозвратПодарочныхСертификатов" category="Ref">
+				<xr:TypeId>8b046936-c252-4fe5-a34e-a77fb384ce54</xr:TypeId>
+				<xr:ValueId>8ed9d5b9-79fb-4955-89d5-da65ff5ac60b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.ВозвратПодарочныхСертификатов" category="Selection">
+				<xr:TypeId>b4c17158-d169-4e34-b277-7695d7aab5a3</xr:TypeId>
+				<xr:ValueId>d4b98293-466b-4f4a-9555-324acbab23dd</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.ВозвратПодарочныхСертификатов" category="List">
+				<xr:TypeId>41403a2b-96c7-4ca8-b45e-4cb27c4a6ce3</xr:TypeId>
+				<xr:ValueId>b7f5dcbf-eb95-4381-a144-4735c0a92186</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.ВозвратПодарочныхСертификатов" category="Manager">
+				<xr:TypeId>61c61b8f-39df-47d8-a796-cd2fa236c695</xr:TypeId>
+				<xr:ValueId>58955cf0-7d62-44cc-abb6-f7ba9931b923</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ВозвратПодарочныхСертификатов</Name>
+			<Comment/>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="eb8cd685-29eb-428c-a664-df7fbcabd07e">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>КассоваяСмена</Name>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:DocumentRef.КассоваяСмена</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

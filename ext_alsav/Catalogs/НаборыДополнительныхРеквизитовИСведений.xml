@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Catalog uuid="66ec143b-5afa-43b3-a911-36a6a6d762c0">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.НаборыДополнительныхРеквизитовИСведений" category="Object">
+				<xr:TypeId>c79f3422-a0a6-42a1-a785-6be188f72609</xr:TypeId>
+				<xr:ValueId>f959df64-c822-49ea-aab4-d8a7d03f7307</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.НаборыДополнительныхРеквизитовИСведений" category="Ref">
+				<xr:TypeId>8d89b3ea-4f8a-4d91-84e0-ff383062590f</xr:TypeId>
+				<xr:ValueId>3270502d-8248-439d-a91d-f714b8eebec7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.НаборыДополнительныхРеквизитовИСведений" category="Selection">
+				<xr:TypeId>ac31e0aa-47ac-4297-8c39-0e1882cda4fa</xr:TypeId>
+				<xr:ValueId>d41ba031-9866-4046-8db9-0b4e5fbcdfb4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.НаборыДополнительныхРеквизитовИСведений" category="List">
+				<xr:TypeId>8df29e88-e42a-4ad2-98e3-f70dd59e7368</xr:TypeId>
+				<xr:ValueId>dda8b0c2-8ecd-44b7-af8b-e0aba0fda169</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.НаборыДополнительныхРеквизитовИСведений" category="Manager">
+				<xr:TypeId>e9634af8-0c2e-482f-9b7e-c7bf66ef81da</xr:TypeId>
+				<xr:ValueId>ea4680e9-3789-4f69-ae3a-5f6d5e08e9eb</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>НаборыДополнительныхРеквизитовИСведений</Name>
+			<Comment/>
+		</Properties>
+		<ChildObjects>
+			<TabularSection uuid="926004c2-3ce9-4398-91fd-5a6e2b35a380">
+				<InternalInfo>
+					<xr:GeneratedType name="CatalogTabularSection.НаборыДополнительныхРеквизитовИСведений.ДополнительныеРеквизиты" category="TabularSection">
+						<xr:TypeId>1f4b1b39-ab46-40cd-9fca-0ed757e91f59</xr:TypeId>
+						<xr:ValueId>64bd739b-6f8e-4d68-b951-91bade90c4d5</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="CatalogTabularSectionRow.НаборыДополнительныхРеквизитовИСведений.ДополнительныеРеквизиты" category="TabularSectionRow">
+						<xr:TypeId>da8ebcca-a2a8-4749-9bb1-5e0bac024896</xr:TypeId>
+						<xr:ValueId>48c941ef-5ffd-4cf0-baed-fb0ca612abe0</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ДополнительныеРеквизиты</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>b456d820-8034-4381-960d-66d9f86b0a4b</ExtendedConfigurationObject>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="87a7a9cc-667a-446d-bbfe-f2fcda3dc4d0">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>Свойство</Name>
+							<Comment/>
+							<ExtendedConfigurationObject>bd55fd03-cf67-4333-a554-98e03d18f780</ExtendedConfigurationObject>
+							<Type>
+								<v8:Type>cfg:ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>

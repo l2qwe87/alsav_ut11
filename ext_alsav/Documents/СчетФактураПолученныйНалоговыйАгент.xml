@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Document uuid="985e5c75-7aab-4593-8389-dc3297dc358b">
+		<InternalInfo>
+			<xr:GeneratedType name="DocumentObject.СчетФактураПолученныйНалоговыйАгент" category="Object">
+				<xr:TypeId>3e2984ae-b2fe-440d-8acf-6f2c56fa6277</xr:TypeId>
+				<xr:ValueId>a67132e9-89d3-4792-a57f-f5deec35cde8</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentRef.СчетФактураПолученныйНалоговыйАгент" category="Ref">
+				<xr:TypeId>e3eb8979-8dfc-4030-b867-d292548a7bad</xr:TypeId>
+				<xr:ValueId>f781c008-b54e-46a9-8047-b9e60ffba715</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentSelection.СчетФактураПолученныйНалоговыйАгент" category="Selection">
+				<xr:TypeId>d7579e1d-d4b6-413d-872f-3ebc8d9eb308</xr:TypeId>
+				<xr:ValueId>ace9ce70-ac3e-4135-b0c1-f251fa70f739</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentList.СчетФактураПолученныйНалоговыйАгент" category="List">
+				<xr:TypeId>3d54c340-58a2-43b0-bc40-73a209f04806</xr:TypeId>
+				<xr:ValueId>5b17a8ce-25bd-448f-812a-b87f970116b2</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="DocumentManager.СчетФактураПолученныйНалоговыйАгент" category="Manager">
+				<xr:TypeId>ea505214-cff3-4c47-8722-147514f894c3</xr:TypeId>
+				<xr:ValueId>670e7a4a-2f7c-473e-aac9-5a9d92f2e657</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>СчетФактураПолученныйНалоговыйАгент</Name>
+			<Comment/>
+			<RegisterRecords/>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="11e623d1-3e48-4550-b246-65eb2d41037c">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>СчетФактураОснование</Name>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:DocumentRef.СчетФактураПолученныйНалоговыйАгент</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<TabularSection uuid="33127685-e6f4-47e9-be47-4fad72ca0109">
+				<InternalInfo>
+					<xr:GeneratedType name="DocumentTabularSection.СчетФактураПолученныйНалоговыйАгент.ДокументыОснования" category="TabularSection">
+						<xr:TypeId>f34948b4-85e2-4572-b5e8-7bdb997186e3</xr:TypeId>
+						<xr:ValueId>057f58ae-09ce-437c-acbc-764500c97a33</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DocumentTabularSectionRow.СчетФактураПолученныйНалоговыйАгент.ДокументыОснования" category="TabularSectionRow">
+						<xr:TypeId>ab58052b-e5cc-4597-8193-3ad82e809f9b</xr:TypeId>
+						<xr:ValueId>adc0769e-d6f3-413e-a622-c7692a04d48c</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ДокументыОснования</Name>
+					<Comment/>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="4b907bd6-ee9c-4229-84c2-2b23ee8dbcd9">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>ДокументОснование</Name>
+							<Comment/>
+							<Type>
+								<v8:TypeSet>cfg:DefinedType.ОснованиеСчетФактураПолученный</v8:TypeSet>
+							</Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+		</ChildObjects>
+	</Document>
+</MetaDataObject>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Enum uuid="d8dd8eca-d2a8-430f-abbb-7fc0786b8cda">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.СтатусыЗаказовПоставщикам" category="Ref">
+				<xr:TypeId>a15ba06d-6684-4ea7-b88c-0503a212d3c5</xr:TypeId>
+				<xr:ValueId>0009494a-aa0b-4236-b210-d97bd7f9532a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.СтатусыЗаказовПоставщикам" category="Manager">
+				<xr:TypeId>f3f9026b-ae56-4e5f-aca9-8b949f27051d</xr:TypeId>
+				<xr:ValueId>af45f859-08b7-41e7-a644-55e48388c776</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.СтатусыЗаказовПоставщикам" category="List">
+				<xr:TypeId>47abb892-b320-453b-9eab-e4f8a6c553b7</xr:TypeId>
+				<xr:ValueId>597f821f-0dcf-461e-bc09-bdaa50b0e318</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>СтатусыЗаказовПоставщикам</Name>
+			<Comment/>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="f39757ff-0116-4fa7-a3e5-a5da0766de57">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Подтвержден</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>c22fc12c-7ec6-4da3-973a-5675ac6a17f6</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>
