@@ -2134,10 +2134,12 @@
 			<Metadata name="InformationRegister.алсав_ИсторияПроведенияДокументов.Dimension.ЗаказКлиента" id="b0bec915-a7f2-401f-9829-1a23bb221164"/>
 			<Metadata name="InformationRegister.алсав_ИсторияПроведенияДокументов.Dimension.Документ" id="e5006da9-1021-4a97-9b27-6211b29c0892"/>
 		</Metadata>
-		<Metadata name="InformationRegister.алсав_КлючиСекретов" id="1b6eebc7-cd59-4b8c-b586-f68669a2be23" configVersion="326b2e3b818e3991eb6878944c9084bf31825eee">
+		<Metadata name="InformationRegister.алсав_КлючиСекретов" id="1b6eebc7-cd59-4b8c-b586-f68669a2be23" configVersion="3d571d1ce1bc644b4f75940303e05b2b01797322">
 			<Metadata name="InformationRegister.алсав_КлючиСекретов.Dimension.Ключ" id="09c82db1-a2df-4fb1-9adc-f33b702bbb53"/>
 			<Metadata name="InformationRegister.алсав_КлючиСекретов.Resource.Используется" id="cba56ff5-e194-4e4e-a475-282a42dccc3f"/>
 		</Metadata>
+		<Metadata name="InformationRegister.алсав_КлючиСекретов.Form.ФормаЗаписи" id="c4a0b3d2-9942-46da-ab3a-36b102f617bd" configVersion="b7a9e3f53e1ab74ba26e0d1aaf1e4caff0824644"/>
+		<Metadata name="InformationRegister.алсав_КлючиСекретов.Form.ФормаЗаписи.Form" id="c4a0b3d2-9942-46da-ab3a-36b102f617bd.0" configVersion="5d0bcb527c4e38c16296223f0e91d22586044517"/>
 		<Metadata name="InformationRegister.алсав_ПроверкаВнешнихФайлов" id="18add412-3ae8-4098-ba43-c8c246a57480" configVersion="b438a738d73d6e40884e7afb89309dda6e9dca6e">
 			<Metadata name="InformationRegister.алсав_ПроверкаВнешнихФайлов.Dimension.Объект" id="0c915760-7a0a-489f-8689-77b4886ec960"/>
 			<Metadata name="InformationRegister.алсав_ПроверкаВнешнихФайлов.Dimension.ТипСправочника" id="1ebfd70d-f3c5-486e-89a4-3bd622b6f9a7"/>
