@@ -1,34 +1,263 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
-	<InformationRegisterForm uuid="f1a2b3c4-d5e6-4f7a-8b9c-0d1e2f3a4b5c">
-		<Properties>
-			<Name>ФормаУправленияСекретами</Name>
-			<Synonym>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Управление секретами</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаОбновитьСписок" id="10">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ОбновитьСписок</CommandName>
+				<ExtendedTooltip name="ФормаОбновитьСписокРасширеннаяПодсказка" id="11"/>
+			</Button>
+			<Button name="ФормаСохранитьСекрет" id="12">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.СохранитьСекрет</CommandName>
+				<ExtendedTooltip name="ФормаСохранитьСекретРасширеннаяПодсказка" id="13"/>
+			</Button>
+			<Button name="ФормаУдалитьСекрет" id="14">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.УдалитьСекрет</CommandName>
+				<ExtendedTooltip name="ФормаУдалитьСекретРасширеннаяПодсказка" id="15"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаСписокСекретов" id="1">
+			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Управление секретами</v8:content>
+					<v8:content>Список секретов</v8:content>
 				</v8:item>
-			</Synonym>
-			<Comment/>
-			<FormType>Managed</FormType>
-			<IncludeHelpInContents>false</IncludeHelpInContents>
-			<UsePurposes>
-				<v8:Value xsi:type="app:ApplicationUsePurpose">PersonalComputer</v8:Value>
-				<v8:Value xsi:type="app:ApplicationUsePurpose">MobileDevice</v8:Value>
-			</UsePurposes>
-			<ExtendedPresentation/>
-		</Properties>
-		<ChildObjects>
-			<Attribute uuid="a1b2c3d4-e5f6-4a7b-8c9d-0e1f2a3b4c5d">
-				<Properties>
-					<Name>ТекущийКлюч</Name>
-					<Synonym>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список секретов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаСписокСекретовРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<Table name="СписокСекретов" id="3">
+					<Representation>List</Representation>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>СписокСекретов</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="СписокСекретовКонтекстноеМеню" id="4"/>
+					<AutoCommandBar name="СписокСекретовКоманднаяПанель" id="5"/>
+					<ExtendedTooltip name="СписокСекретовРасширеннаяПодсказка" id="6"/>
+					<SearchStringAddition name="СписокСекретовСтрокаПоиска" id="7">
+						<AdditionSource>
+							<Item>СписокСекретов</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокСекретовСтрокаПоискаКонтекстноеМеню" id="8"/>
+						<ExtendedTooltip name="СписокСекретовСтрокаПоискаРасширеннаяПодсказка" id="9"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="СписокСекретовСостояниеПросмотра" id="16">
+						<AdditionSource>
+							<Item>СписокСекретов</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокСекретовСостояниеПросмотраКонтекстноеМеню" id="17"/>
+						<ExtendedTooltip name="СписокСекретовСостояниеПросмотраРасширеннаяПодсказка" id="18"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="СписокСекретовУправлениеПоиском" id="19">
+						<AdditionSource>
+							<Item>СписокСекретов</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокСекретовУправлениеПоискомКонтекстноеМеню" id="20"/>
+						<ExtendedTooltip name="СписокСекретовУправлениеПоискомРасширеннаяПодсказка" id="21"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="Selection">СписокСекретовВыбор</Event>
+						<Event name="OnActivateRow">СписокСекретовПриАктивизацииСтроки</Event>
+					</Events>
+					<ChildItems>
+						<InputField name="СписокСекретовКлюч" id="22">
+							<DataPath>СписокСекретов.Ключ</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="СписокСекретовКлючКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="СписокСекретовКлючРасширеннаяПодсказка" id="24"/>
+						</InputField>
+						<CheckBoxField name="СписокСекретовИспользуется" id="25">
+							<DataPath>СписокСекретов.Используется</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="СписокСекретовИспользуетсяКонтекстноеМеню" id="26"/>
+							<ExtendedTooltip name="СписокСекретовИспользуетсяРасширеннаяПодсказка" id="27"/>
+						</CheckBoxField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаРедактирование" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Редактирование секрета</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Редактирование секрета</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаРедактированиеРасширеннаяПодсказка" id="29"/>
+			<ChildItems>
+				<InputField name="ТекущийКлюч" id="30">
+					<DataPath>ТекущийКлюч</DataPath>
+					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Текущий ключ</v8:content>
+							<v8:content>Ключ секрета</v8:content>
 						</v8:item>
-					</Synonym>
-					<Comment/>
+					</Title>
+					<ContextMenu name="ТекущийКлючКонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="ТекущийКлючРасширеннаяПодсказка" id="32"/>
+				</InputField>
+				<CheckBoxField name="ПоказыватьСекрет" id="33">
+					<DataPath>ПоказыватьСекрет</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Показать значение секрета</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отметьте для отображения значения секрета в поле ниже</v8:content>
+						</v8:item>
+					</ToolTip>
+					<CheckBoxType>Auto</CheckBoxType>
+					<Events>
+						<Event name="OnChange">ПоказыватьСекретПриИзменении</Event>
+					</Events>
+					<ContextMenu name="ПоказыватьСекретКонтекстноеМеню" id="34"/>
+					<ExtendedTooltip name="ПоказыватьСекретРасширеннаяПодсказка" id="35"/>
+				</CheckBoxField>
+				<InputField name="ТекущееЗначение" id="36">
+					<DataPath>ТекущееЗначение</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Значение секрета</v8:content>
+						</v8:item>
+					</Title>
+					<MultiLine>true</MultiLine>
+					<ContextMenu name="ТекущееЗначениеКонтекстноеМеню" id="37"/>
+					<ExtendedTooltip name="ТекущееЗначениеРасширеннаяПодсказка" id="38"/>
+				</InputField>
+				<CheckBoxField name="Используется" id="39">
+					<DataPath>Используется</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Секрет используется</v8:content>
+						</v8:item>
+					</Title>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ИспользуетсяКонтекстноеМеню" id="40"/>
+					<ExtendedTooltip name="ИспользуетсяРасширеннаяПодсказка" id="41"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterManager.алсав_КлючиСекретов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ТекущийКлюч" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущий ключ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>100</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекущееЗначение" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущее значение</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<PasswordMode>true</PasswordMode>
+		</Attribute>
+		<Attribute name="Используется" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Используется</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПоказыватьСекрет" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показывать секрет</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокСекретов" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список секретов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Ключ" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ключ</v8:content>
+						</v8:item>
+					</Title>
 					<Type>
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>
@@ -36,274 +265,66 @@
 							<v8:AllowedLength>Variable</v8:AllowedLength>
 						</v8:StringQualifiers>
 					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip/>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:type="xs:string"/>
-					<FillChecking>DontCheck</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Indexing>DontIndex</Indexing>
-					<FullTextSearch>Use</FullTextSearch>
-					<DataHistory>Use</DataHistory>
-				</Properties>
-			</Attribute>
-			<Attribute uuid="b2c3d4e5-f6a7-4b8c-9d0e-1f2a3b4c5d6e">
-				<Properties>
-					<Name>ТекущееЗначение</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Текущее значение</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Type>
-						<v8:Type>xs:string</v8:Type>
-						<v8:StringQualifiers>
-							<v8:Length>0</v8:Length>
-							<v8:AllowedLength>Variable</v8:AllowedLength>
-						</v8:StringQualifiers>
-					</Type>
-					<PasswordMode>true</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip/>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>true</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:type="xs:string"/>
-					<FillChecking>DontCheck</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Indexing>DontIndex</Indexing>
-					<FullTextSearch>Use</FullTextSearch>
-					<DataHistory>Use</DataHistory>
-				</Properties>
-			</Attribute>
-			<Attribute uuid="c3d4e5f6-a7b8-4c9d-0e1f-2a3b4c5d6e7f">
-				<Properties>
-					<Name>Используется</Name>
-					<Synonym>
+				</Column>
+				<Column name="Используется" id="2">
+					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Используется</v8:content>
 						</v8:item>
-					</Synonym>
-					<Comment/>
+					</Title>
 					<Type>
 						<v8:Type>xs:boolean</v8:Type>
 					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip/>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:nil="true"/>
-					<FillChecking>DontCheck</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Indexing>DontIndex</Indexing>
-					<FullTextSearch>Use</FullTextSearch>
-					<DataHistory>Use</DataHistory>
-				</Properties>
-			</Attribute>
-			<Attribute uuid="d4e5f6a7-b8c9-4d0e-1f2a-3b4c5d6e7f8a">
-				<Properties>
-					<Name>ПоказыватьСекрет</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Показывать секрет</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Type>
-						<v8:Type>xs:boolean</v8:Type>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip/>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:type="xs:boolean">false</FillValue>
-					<FillChecking>DontCheck</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Indexing>DontIndex</Indexing>
-					<FullTextSearch>Use</FullTextSearch>
-					<DataHistory>Use</DataHistory>
-				</Properties>
-			</Attribute>
-			<TabularSection uuid="e5f6a7b8-c9d0-4e1f-2a3b-4c5d6e7f8a9b">
-				<Properties>
-					<Name>СписокСекретов</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Список секретов</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<ToolTip/>
-					<FillChecking>DontCheck</FillChecking>
-					<StandardAttributes>
-						<xr:StandardAttribute name="LineNumber">
-							<xr:LinkByType/>
-							<xr:FillChecking>DontCheck</xr:FillChecking>
-							<xr:MultiLine>false</xr:MultiLine>
-							<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
-							<xr:CreateOnInput>Auto</xr:CreateOnInput>
-							<xr:MaxValue xsi:nil="true"/>
-							<xr:ToolTip/>
-							<xr:ExtendedEdit>false</xr:ExtendedEdit>
-							<xr:Format/>
-							<xr:ChoiceForm/>
-							<xr:QuickChoice>Auto</xr:QuickChoice>
-							<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
-							<xr:EditFormat/>
-							<xr:DataHistory>Use</xr:DataHistory>
-							<xr:MarkNegatives>false</xr:MarkNegatives>
-							<xr:MinValue xsi:nil="true"/>
-							<xr:FullTextSearch>Use</xr:FullTextSearch>
-							<xr:ColorUse/>
-						</xr:StandardAttribute>
-					</StandardAttributes>
-					<Attributes>
-						<Attribute uuid="f6a7b8c9-d0e1-4f2a-3b4c-5d6e7f8a9b0c">
-							<Properties>
-								<Name>Ключ</Name>
-								<Synonym>
-									<v8:item>
-										<v8:lang>ru</v8:lang>
-										<v8:content>Ключ</v8:content>
-									</v8:item>
-								</Synonym>
-								<Comment/>
-								<Type>
-									<v8:Type>xs:string</v8:Type>
-									<v8:StringQualifiers>
-										<v8:Length>100</v8:Length>
-										<v8:AllowedLength>Variable</v8:AllowedLength>
-									</v8:StringQualifiers>
-								</Type>
-								<PasswordMode>false</PasswordMode>
-								<Format/>
-								<EditFormat/>
-								<ToolTip/>
-								<MarkNegatives>false</MarkNegatives>
-								<Mask/>
-								<MultiLine>false</MultiLine>
-								<ExtendedEdit>false</ExtendedEdit>
-								<MinValue xsi:nil="true"/>
-								<MaxValue xsi:nil="true"/>
-								<FillFromFillingValue>false</FillFromFillingValue>
-								<FillValue xsi:type="xs:string"/>
-								<FillChecking>DontCheck</FillChecking>
-								<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-								<ChoiceParameterLinks/>
-								<ChoiceParameters/>
-								<QuickChoice>Auto</QuickChoice>
-								<CreateOnInput>Auto</CreateOnInput>
-								<ChoiceForm/>
-								<LinkByType/>
-								<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-								<Indexing>DontIndex</Indexing>
-								<FullTextSearch>Use</FullTextSearch>
-								<DataHistory>Use</DataHistory>
-							</Properties>
-						</Attribute>
-						<Attribute uuid="a7b8c9d0-e1f2-4a3b-4c5d-6e7f8a9b0c1d">
-							<Properties>
-								<Name>Используется</Name>
-								<Synonym>
-									<v8:item>
-										<v8:lang>ru</v8:lang>
-										<v8:content>Используется</v8:content>
-									</v8:item>
-								</Synonym>
-								<Comment/>
-								<Type>
-									<v8:Type>xs:boolean</v8:Type>
-								</Type>
-								<PasswordMode>false</PasswordMode>
-								<Format/>
-								<EditFormat/>
-								<ToolTip/>
-								<MarkNegatives>false</MarkNegatives>
-								<Mask/>
-								<MultiLine>false</MultiLine>
-								<ExtendedEdit>false</ExtendedEdit>
-								<MinValue xsi:nil="true"/>
-								<MaxValue xsi:nil="true"/>
-								<FillFromFillingValue>false</FillFromFillingValue>
-								<FillValue xsi:nil="true"/>
-								<FillChecking>DontCheck</FillChecking>
-								<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-								<ChoiceParameterLinks/>
-								<ChoiceParameters/>
-								<QuickChoice>Auto</QuickChoice>
-								<CreateOnInput>Auto</CreateOnInput>
-								<ChoiceForm/>
-								<LinkByType/>
-								<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-								<Indexing>DontIndex</Indexing>
-								<FullTextSearch>Use</FullTextSearch>
-								<DataHistory>Use</DataHistory>
-							</Properties>
-						</Attribute>
-					</Attributes>
-				</Properties>
-			</TabularSection>
-			<Form>Форма</Form>
-		</ChildObjects>
-	</InformationRegisterForm>
-</MetaDataObject>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОбновитьСписок" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить список</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить список секретов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьСписок</Action>
+		</Command>
+		<Command name="СохранитьСекрет" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить секрет</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить или обновить секрет</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СохранитьСекрет</Action>
+		</Command>
+		<Command name="УдалитьСекрет" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить секрет</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить текущий секрет</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьСекрет</Action>
+		</Command>
+	</Commands>
+</Form>
