@@ -153,8 +153,8 @@
 					<ContextMenu name="ПоказыватьСекретКонтекстноеМеню" id="34"/>
 					<ExtendedTooltip name="ПоказыватьСекретРасширеннаяПодсказка" id="35"/>
 				</CheckBoxField>
-				<InputField name="ТекущееЗначение" id="36">
-					<DataPath>ТекущееЗначение</DataPath>
+				<InputField name="ЗначениеСекрета" id="36">
+					<DataPath>ЗначениеСекрета</DataPath>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -162,8 +162,8 @@
 						</v8:item>
 					</Title>
 					<MultiLine>true</MultiLine>
-					<ContextMenu name="ТекущееЗначениеКонтекстноеМеню" id="37"/>
-					<ExtendedTooltip name="ТекущееЗначениеРасширеннаяПодсказка" id="38"/>
+					<ContextMenu name="ЗначениеСекретаКонтекстноеМеню" id="37"/>
+					<ExtendedTooltip name="ЗначениеСекретаРасширеннаяПодсказка" id="38"/>
 				</InputField>
 				<CheckBoxField name="Используется" id="39">
 					<DataPath>Используется</DataPath>
@@ -202,22 +202,7 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="ТекущееЗначение" id="3">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Текущее значение</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
-			</Type>
-			<PasswordMode>true</PasswordMode>
-		</Attribute>
+
 		<Attribute name="Используется" id="4">
 			<Title>
 				<v8:item>
@@ -239,6 +224,22 @@
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
+		</Attribute>
+		<Attribute name="ЗначениеСекрета" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Значение секрета</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<PasswordMode>true</PasswordMode>
 		</Attribute>
 		<Attribute name="СписокСекретов" id="6">
 			<Title>
