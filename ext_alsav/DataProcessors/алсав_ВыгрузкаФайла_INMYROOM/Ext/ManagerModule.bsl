@@ -1,4 +1,4 @@
-﻿
+
 Функция ПодготовитьИОтправитьJSON()ЭКСПОРТ  
 	//данные = ПолучитьДанные();
 	данные = ПолучитьДанныеОтправки();
@@ -32,8 +32,8 @@
 	
 	ЗаголовокHTTP = новый Соответствие;
 	ЗаголовокHTTP.Вставить("content-type", "application/json"); 
-	ЗаголовокHTTP.Вставить("access-token", "secret_inmyroom_access_token");
-    ЗаголовокHTTP.Вставить("supplier-id", "secret_inmyroom_supplier_id");
+	ЗаголовокHTTP.Вставить("access-token", алсав_ВыгрузкаCsvJson.ПолучитьСекрет("secret_inmyroom_access_token"));
+    ЗаголовокHTTP.Вставить("supplier-id", алсав_ВыгрузкаCsvJson.ПолучитьСекрет("secret_inmyroom_supplier_id"));
 
 	
 	
@@ -78,7 +78,13 @@
 Функция ЗагрузитьНаFTP(json)
 	
 	имяФайла = "inmyroom_price";
-	ФТПСоединение = Новый FTPСоединение("secret_alsav_ftp",21,"secret_csv_alsav_login","secret_csv_alsav_password");
+	
+	// Получаем данные для FTP из безопасного хранилища
+	СерверFTP = алсав_ВыгрузкаCsvJson.ПолучитьСекрет("secret_alsav_ftp");
+	ЛогинFTP = алсав_ВыгрузкаCsvJson.ПолучитьСекрет("secret_csv_alsav_login");
+	ПарольFTP = алсав_ВыгрузкаCsvJson.ПолучитьСекрет("secret_csv_alsav_password");
+	
+	ФТПСоединение = Новый FTPСоединение(СерверFTP, 21, ЛогинFTP, ПарольFTP);
 	ВременныйФайл = ПолучитьИмяВременногоФайла( "txt");
 	
 	контент_json = json;
@@ -131,4 +137,7 @@
 	|";
 	
 	Возврат Запрос;
+КонецФункции
+
+
 КонецФункции
