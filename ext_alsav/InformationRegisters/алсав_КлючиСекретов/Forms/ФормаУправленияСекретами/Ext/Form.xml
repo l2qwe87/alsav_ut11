@@ -1,5 +1,161 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
-	<AutoCommandBar name="" id="-1"/>
-	<Attributes/>
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Управление секретами</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>Bottom</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ПоказатьЗначениеСекрета" id="10">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПоказатьЗначениеСекрета</CommandName>
+				<ExtendedTooltip name="ПоказатьЗначениеСекретаРасширеннаяПодсказка" id="11"/>
+			</Button>
+			<Button name="СохранитьСекрет" id="12">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.СохранитьСекрет</CommandName>
+				<ExtendedTooltip name="СохранитьСекретРасширеннаяПодсказка" id="13"/>
+			</Button>
+			<Button name="УдалитьСекрет" id="14">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.УдалитьСекрет</CommandName>
+				<ExtendedTooltip name="УдалитьСекретРасширеннаяПодсказка" id="15"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="ТекущийКлюч" id="20">
+			<DataPath>ТекущийКлюч</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ключ секрета</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ТекущийКлючКонтекстноеМеню" id="21"/>
+			<ExtendedTooltip name="ТекущийКлючРасширеннаяПодсказка" id="22"/>
+		</InputField>
+		<InputField name="ЗначениеСекрета" id="30">
+			<DataPath>ЗначениеСекрета</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Значение секрета</v8:content>
+				</v8:item>
+			</Title>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="ЗначениеСекретаКонтекстноеМеню" id="31"/>
+			<ExtendedTooltip name="ЗначениеСекретаРасширеннаяПодсказка" id="32"/>
+		</InputField>
+		<CheckBoxField name="Используется" id="40">
+			<DataPath>Используется</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Секрет используется</v8:content>
+				</v8:item>
+			</Title>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ИспользуетсяКонтекстноеМеню" id="41"/>
+			<ExtendedTooltip name="ИспользуетсяРасширеннаяПодсказка" id="42"/>
+		</CheckBoxField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ЗначениеСекрета" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Значение секрета</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<PasswordMode>true</PasswordMode>
+		</Attribute>
+		<Attribute name="ТекущийКлюч" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущий ключ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>100</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Используется" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Используется</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПоказатьЗначениеСекрета" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать/Скрыть значение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать или скрыть значение секрета</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказатьЗначениеСекрета</Action>
+		</Command>
+		<Command name="СохранитьСекрет" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить секрет</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить или обновить секрет</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СохранитьСекрет</Action>
+		</Command>
+		<Command name="УдалитьСекрет" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить секрет</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить текущий секрет</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьСекрет</Action>
+		</Command>
+	</Commands>
 </Form>
