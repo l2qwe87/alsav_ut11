@@ -151,6 +151,7 @@
 				</Properties>
 			</Dimension>
 			<Form>ФормаЗаписи</Form>
+			<Form>ФормаУправленияСекретами</Form>
 		</ChildObjects>
 	</InformationRegister>
 </MetaDataObject>
