@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.20">
+	<ConfigVersions>
+		<Metadata name="Catalog.Партнеры" id="aff1350a-22ff-42a2-9829-608182651438" configVersion="b4a1280f3eab6465a0cfca0b8189bca1527af641"/>
+		<Metadata name="CommonModule.алсавб24_Http" id="d236c3e9-95c2-4252-85ae-8031668c4bcc" configVersion="927ccbd9b17964b909545932535b1ab27dcce146"/>
+		<Metadata name="CommonModule.алсавб24_Http.Module" id="d236c3e9-95c2-4252-85ae-8031668c4bcc.0" configVersion="613f11405bcaeecb295af778b05b54c7f693658c"/>
+		<Metadata name="CommonModule.алсавб24_Json" id="0b808a79-b2ab-4148-aba6-d05552c350d4" configVersion="9d9954dd499f570dfe6ad43426b9bb22ccf9a1e7"/>
+		<Metadata name="CommonModule.алсавб24_Json.Module" id="0b808a79-b2ab-4148-aba6-d05552c350d4.0" configVersion="6073a8be13a3662e18262cfa822313f601196075"/>
+		<Metadata name="Configuration.АЛСАВ_Б24" id="b48dfd38-d2c9-4189-b547-f03d88b31577" configVersion="a61547fe54d01d223a95a2d7235109607fd9d8e9"/>
+		<Metadata name="InformationRegister.алсавб24_СопоставлениеКлиентов" id="0d095903-7a6a-474e-87dc-530d06bfef5b" configVersion="a136077f5dc5c60444436861accdcc36f2e355fb">
+			<Metadata name="InformationRegister.алсавб24_СопоставлениеКлиентов.Dimension.ID" id="000fa835-7087-440a-b42f-ed012e6afc0c"/>
+			<Metadata name="InformationRegister.алсавб24_СопоставлениеКлиентов.Resource.Партнер" id="5679f331-c14f-4df8-a550-5ad0beeb9b8b"/>
+			<Metadata name="InformationRegister.алсавб24_СопоставлениеКлиентов.Attribute.TITLE" id="7eebbd79-9ce0-401e-b759-e5f5a426e291"/>
+			<Metadata name="InformationRegister.алсавб24_СопоставлениеКлиентов.Attribute.ПохожийПартнер1" id="8851c6a0-ce56-413a-82dc-f91a27b5eb5a"/>
+			<Metadata name="InformationRegister.алсавб24_СопоставлениеКлиентов.Attribute.ПохожийПартнер2" id="88dd5bcb-0048-4e33-b289-42df3c124301"/>
+			<Metadata name="InformationRegister.алсавб24_СопоставлениеКлиентов.Attribute.ПохожийПартнер3" id="d7e91c7d-96b5-47d3-ab0d-d5997319dfc2"/>
+		</Metadata>
+		<Metadata name="Language.Русский" id="a8ef2985-1e03-4434-b46d-c3af07bea025" configVersion="a829bde53f28f645a9d386c8ed8fe88485eaeb6d"/>
+		<Metadata name="Role.алсавб24_ОсновнаяРоль" id="bb4bd61b-674b-4be4-8d24-c1ffb7f48120" configVersion="5b76ec57f57b7e8acf5d39cfbd263c7b2d1234d1"/>
+	</ConfigVersions>
+</ConfigDumpInfo>
