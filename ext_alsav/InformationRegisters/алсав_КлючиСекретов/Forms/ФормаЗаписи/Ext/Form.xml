@@ -4,7 +4,6 @@
 	<Events>
 		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="BeforeWrite">ПередЗаписью</Event>
-		<Event name="OnWrite">ПослеЗаписи</Event>
 	</Events>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
