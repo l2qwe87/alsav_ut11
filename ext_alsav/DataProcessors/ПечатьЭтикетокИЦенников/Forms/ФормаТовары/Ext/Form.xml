@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
 	<SaveDataInSettings>UseList</SaveDataInSettings>
 	<CommandBarLocation>Top</CommandBarLocation>
@@ -10,7 +10,7 @@
 				<Type>CommandBarButton</Type>
 				<Representation>PictureAndText</Representation>
 				<SkipOnInput>false</SkipOnInput>
-				<CommandName>7:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
+				<CommandName>Form.Command.ПоказатьСкрытьОтбор</CommandName>
 				<Title>
 					<v8:item>
 						<v8:lang>ru</v8:lang>
@@ -23,7 +23,7 @@
 				<Type>CommandBarButton</Type>
 				<Representation>PictureAndText</Representation>
 				<SkipOnInput>false</SkipOnInput>
-				<CommandName>15:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
+				<CommandName>Form.Command.ПоказатьСкрытьРежимЗаполнения</CommandName>
 				<Title>
 					<v8:item>
 						<v8:lang>ru</v8:lang>
@@ -44,19 +44,19 @@
 					<Button name="УстановитьРежимПечатьЦенников" id="86">
 						<Type>CommandBarButton</Type>
 						<SkipOnInput>false</SkipOnInput>
-						<CommandName>12:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
+						<CommandName>Form.Command.УстановитьРежимПечатьЦенников</CommandName>
 						<ExtendedTooltip name="УстановитьРежимПечатьЦенниковExtendedTooltip" id="151"/>
 					</Button>
 					<Button name="УстановитьРежимПечатьЦенниковИЭтикеток" id="87">
 						<Type>CommandBarButton</Type>
 						<SkipOnInput>false</SkipOnInput>
-						<CommandName>14:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
+						<CommandName>Form.Command.УстановитьРежимПечатьЭтикетокИЦенников</CommandName>
 						<ExtendedTooltip name="УстановитьРежимПечатьЦенниковИЭтикетокExtendedTooltip" id="152"/>
 					</Button>
 					<Button name="УстановитьРежимПечатьЭтикеток" id="88">
 						<Type>CommandBarButton</Type>
 						<SkipOnInput>false</SkipOnInput>
-						<CommandName>13:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
+						<CommandName>Form.Command.УстановитьРежимПечатьЭтикеток</CommandName>
 						<ExtendedTooltip name="УстановитьРежимПечатьЭтикетокExtendedTooltip" id="153"/>
 					</Button>
 				</ChildItems>
@@ -84,7 +84,7 @@
 					</Button>
 					<Button name="ФормаВосстановитьНастройкиОтбораПоУмолчанию" id="113">
 						<Type>CommandBarButton</Type>
-						<CommandName>18:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
+						<CommandName>Form.Command.ВосстановитьНастройкиОтбораПоУмолчанию</CommandName>
 						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 						<ExtendedTooltip name="ФормаВосстановитьНастройкиОтбораПоУмолчаниюExtendedTooltip" id="157"/>
 					</Button>
@@ -944,7 +944,7 @@
 			<Action callType="After">алсав_ПечатьHOFFПосле</Action>
 		</Command>
 	</Commands>
-	<BaseForm version="2.17">
+	<BaseForm version="2.20">
 		<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
 		<SaveDataInSettings>UseList</SaveDataInSettings>
 		<CommandBarLocation>Top</CommandBarLocation>
@@ -955,7 +955,7 @@
 					<Type>CommandBarButton</Type>
 					<Representation>PictureAndText</Representation>
 					<SkipOnInput>false</SkipOnInput>
-					<CommandName>7:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
+					<CommandName>Form.Command.ПоказатьСкрытьОтбор</CommandName>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -968,7 +968,7 @@
 					<Type>CommandBarButton</Type>
 					<Representation>PictureAndText</Representation>
 					<SkipOnInput>false</SkipOnInput>
-					<CommandName>15:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
+					<CommandName>Form.Command.ПоказатьСкрытьРежимЗаполнения</CommandName>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -989,19 +989,19 @@
 						<Button name="УстановитьРежимПечатьЦенников" id="86">
 							<Type>CommandBarButton</Type>
 							<SkipOnInput>false</SkipOnInput>
-							<CommandName>12:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
+							<CommandName>Form.Command.УстановитьРежимПечатьЦенников</CommandName>
 							<ExtendedTooltip name="УстановитьРежимПечатьЦенниковExtendedTooltip" id="151"/>
 						</Button>
 						<Button name="УстановитьРежимПечатьЦенниковИЭтикеток" id="87">
 							<Type>CommandBarButton</Type>
 							<SkipOnInput>false</SkipOnInput>
-							<CommandName>14:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
+							<CommandName>Form.Command.УстановитьРежимПечатьЭтикетокИЦенников</CommandName>
 							<ExtendedTooltip name="УстановитьРежимПечатьЦенниковИЭтикетокExtendedTooltip" id="152"/>
 						</Button>
 						<Button name="УстановитьРежимПечатьЭтикеток" id="88">
 							<Type>CommandBarButton</Type>
 							<SkipOnInput>false</SkipOnInput>
-							<CommandName>13:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
+							<CommandName>Form.Command.УстановитьРежимПечатьЭтикеток</CommandName>
 							<ExtendedTooltip name="УстановитьРежимПечатьЭтикетокExtendedTooltip" id="153"/>
 						</Button>
 					</ChildItems>
@@ -1029,7 +1029,7 @@
 						</Button>
 						<Button name="ФормаВосстановитьНастройкиОтбораПоУмолчанию" id="113">
 							<Type>CommandBarButton</Type>
-							<CommandName>18:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
+							<CommandName>Form.Command.ВосстановитьНастройкиОтбораПоУмолчанию</CommandName>
 							<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 							<ExtendedTooltip name="ФормаВосстановитьНастройкиОтбораПоУмолчаниюExtendedTooltip" id="157"/>
 						</Button>

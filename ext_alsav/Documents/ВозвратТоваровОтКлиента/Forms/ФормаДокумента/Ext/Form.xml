@@ -1,5 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<Autofill>false</Autofill>
 		<ChildItems>
@@ -7,19 +10,19 @@
 				<Type>CommandBarButton</Type>
 				<Representation>Text</Representation>
 				<DefaultButton>true</DefaultButton>
-				<CommandName>21:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
+				<CommandName>Form.Command.ПровестиИЗакрыть</CommandName>
 				<ExtendedTooltip name="ФормаПровестиИЗакрытьРасширеннаяПодсказка" id="587"/>
 			</Button>
 			<Button name="ФормаЗаписать" id="594">
 				<Type>CommandBarButton</Type>
 				<Representation>Picture</Representation>
-				<CommandName>26:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
+				<CommandName>Form.Command.ЗаписатьДокумент</CommandName>
 				<ExtendedTooltip name="ФормаЗаписатьРасширеннаяПодсказка" id="595"/>
 			</Button>
 			<Button name="ФормаПровести" id="596">
 				<Type>CommandBarButton</Type>
 				<Representation>Picture</Representation>
-				<CommandName>27:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
+				<CommandName>Form.Command.ПровестиДокумент</CommandName>
 				<ExtendedTooltip name="ФормаПровестиРасширеннаяПодсказка" id="597"/>
 			</Button>
 			<Popup name="ПодменюСоздатьНаОсновании" id="598">
@@ -209,7 +212,7 @@
 			</Popup>
 			<Button name="ФормаОткрытьВидыЗапасов" id="608">
 				<Type>CommandBarButton</Type>
-				<CommandName>1:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
+				<CommandName>Form.Command.ОткрытьВидыЗапасов</CommandName>
 				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 				<ExtendedTooltip name="ФормаОткрытьВидыЗапасовРасширеннаяПодсказка" id="609"/>
 			</Button>
@@ -220,7 +223,7 @@
 			</Button>
 			<Button name="ФормаПроверитьКонтрагентов" id="646">
 				<Type>CommandBarButton</Type>
-				<CommandName>24:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
+				<CommandName>Form.Command.ПроверитьКонтрагентов</CommandName>
 				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 				<ExtendedTooltip name="ФормаПроверитьКонтрагентовРасширеннаяПодсказка" id="647"/>
 			</Button>
@@ -2418,7 +2421,10 @@
 		</UsualGroup>
 	</ChildItems>
 	<Attributes/>
-	<BaseForm version="2.17">
+	<BaseForm version="2.20">
+		<AutoTime>CurrentOrLast</AutoTime>
+		<UsePostingMode>Auto</UsePostingMode>
+		<RepostOnWrite>true</RepostOnWrite>
 		<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 			<Autofill>false</Autofill>
 			<ChildItems>
@@ -2426,19 +2432,19 @@
 					<Type>CommandBarButton</Type>
 					<Representation>Text</Representation>
 					<DefaultButton>true</DefaultButton>
-					<CommandName>21:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
+					<CommandName>Form.Command.ПровестиИЗакрыть</CommandName>
 					<ExtendedTooltip name="ФормаПровестиИЗакрытьРасширеннаяПодсказка" id="587"/>
 				</Button>
 				<Button name="ФормаЗаписать" id="594">
 					<Type>CommandBarButton</Type>
 					<Representation>Picture</Representation>
-					<CommandName>26:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
+					<CommandName>Form.Command.ЗаписатьДокумент</CommandName>
 					<ExtendedTooltip name="ФормаЗаписатьРасширеннаяПодсказка" id="595"/>
 				</Button>
 				<Button name="ФормаПровести" id="596">
 					<Type>CommandBarButton</Type>
 					<Representation>Picture</Representation>
-					<CommandName>27:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
+					<CommandName>Form.Command.ПровестиДокумент</CommandName>
 					<ExtendedTooltip name="ФормаПровестиРасширеннаяПодсказка" id="597"/>
 				</Button>
 				<Popup name="ПодменюСоздатьНаОсновании" id="598">
@@ -2628,7 +2634,7 @@
 				</Popup>
 				<Button name="ФормаОткрытьВидыЗапасов" id="608">
 					<Type>CommandBarButton</Type>
-					<CommandName>1:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
+					<CommandName>Form.Command.ОткрытьВидыЗапасов</CommandName>
 					<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 					<ExtendedTooltip name="ФормаОткрытьВидыЗапасовРасширеннаяПодсказка" id="609"/>
 				</Button>
@@ -2639,7 +2645,7 @@
 				</Button>
 				<Button name="ФормаПроверитьКонтрагентов" id="646">
 					<Type>CommandBarButton</Type>
-					<CommandName>24:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
+					<CommandName>Form.Command.ПроверитьКонтрагентов</CommandName>
 					<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 					<ExtendedTooltip name="ФормаПроверитьКонтрагентовРасширеннаяПодсказка" id="647"/>
 				</Button>
