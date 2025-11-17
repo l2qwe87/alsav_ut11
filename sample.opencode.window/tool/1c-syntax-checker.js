@@ -1,10 +1,10 @@
-import { tool } from "@opencode-ai/plugin"
 import { execSync } from "child_process"
+import { z } from "zod"
 
-export default tool({
+export default {
   description: "Проверить синтаксис 1С файла с помощью платформы 1С",
   args: {
-    filePath: tool.schema.string().describe("Путь к файлу 1С для проверки синтаксиса"),
+    filePath: z.string().describe("Путь к файлу 1С для проверки синтаксиса"),
   },
   async execute(args) {
     const { filePath } = args;
@@ -40,5 +40,5 @@ export default tool({
         stderr: error.stderr ? error.stderr.toString() : ""
       };
     }
-  },
-});
+  }
+}
