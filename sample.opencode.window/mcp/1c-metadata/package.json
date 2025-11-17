@@ -1,0 +1,16 @@
+{
+  "name": "1c-metadata-mcp",
+  "version": "1.0.0",
+  "description": "MCP сервер для поиска по метаданным 1С",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.4.0"
+  },
+  "keywords": ["1c", "metadata", "mcp"],
+  "author": "",
+  "license": "MIT"
+}

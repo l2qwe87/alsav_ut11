@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<CommandSet>
 		<ExcludedCommand>Post</ExcludedCommand>
 		<ExcludedCommand>PostAndClose</ExcludedCommand>
@@ -15,19 +15,19 @@
 				<Type>CommandBarButton</Type>
 				<Representation>Text</Representation>
 				<DefaultButton>true</DefaultButton>
-				<CommandName>4:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
+				<CommandName>Form.Command.ПровестиИЗакрыть</CommandName>
 				<ExtendedTooltip name="ФормаПровестиИЗакрытьРасширеннаяПодсказка" id="494"/>
 			</Button>
 			<Button name="ФормаЗаписать" id="504">
 				<Type>CommandBarButton</Type>
 				<Representation>Picture</Representation>
-				<CommandName>22:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
+				<CommandName>Form.Command.ЗаписатьДокумент</CommandName>
 				<ExtendedTooltip name="ФормаЗаписатьРасширеннаяПодсказка" id="505"/>
 			</Button>
 			<Button name="ФормаПровести" id="506">
 				<Type>CommandBarButton</Type>
 				<Representation>Picture</Representation>
-				<CommandName>23:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
+				<CommandName>Form.Command.ПровестиДокумент</CommandName>
 				<ExtendedTooltip name="ФормаПровестиРасширеннаяПодсказка" id="507"/>
 			</Button>
 			<Popup name="ПодменюСоздатьНаОсновании" id="508">
@@ -193,7 +193,7 @@
 			</Popup>
 			<Button name="ФормаОткрытьВидыЗапасов" id="518">
 				<Type>CommandBarButton</Type>
-				<CommandName>1:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
+				<CommandName>Form.Command.ОткрытьВидыЗапасов</CommandName>
 				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 				<ExtendedTooltip name="ФормаОткрытьВидыЗапасовРасширеннаяПодсказка" id="519"/>
 			</Button>
@@ -2083,7 +2083,7 @@
 			<Action callType="After">алсав_алсав_СкопироватьМинМаксОстатокПосле</Action>
 		</Command>
 	</Commands>
-	<BaseForm version="2.17">
+	<BaseForm version="2.20">
 		<CommandSet>
 			<ExcludedCommand>Post</ExcludedCommand>
 			<ExcludedCommand>PostAndClose</ExcludedCommand>

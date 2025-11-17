@@ -1,0 +1,15 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "1c-metadata": {
+      "type": "local",
+      "command": ["node", "./.opencode/mcp/1c-metadata/index.js"],
+      "enabled": true
+    },
+    "1c-help": {
+      "type": "local",
+      "command": ["node", "./.opencode/mcp/1c-help/index.js"],
+      "enabled": true
+    }
+  }
+}

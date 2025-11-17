@@ -77,7 +77,10 @@
 			<CommonModule>алсавб24_Json</CommonModule>
 			<CommonModule>алсавб24_Http</CommonModule>
 			<Catalog>Партнеры</Catalog>
+			<DataProcessor>алсавб24_ВыгрузкаПартнеров</DataProcessor>
+			<DataProcessor>алсавб24_api_CRM_Компании</DataProcessor>
 			<InformationRegister>алсавб24_СопоставлениеКлиентов</InformationRegister>
+			<InformationRegister>алсавб24_СопоставлениеСвойств</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
