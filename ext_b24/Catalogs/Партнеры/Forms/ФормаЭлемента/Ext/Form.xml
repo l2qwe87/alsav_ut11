@@ -147,6 +147,11 @@
 				<CommandName>Catalog.Партнеры.Command.алсавб24_ВыгрузитьВБ24</CommandName>
 				<ExtendedTooltip name="ФормаСправочникПартнерыалсавб24_ВыгрузитьВБ24РасширеннаяПодсказка" id="284"/>
 			</Button>
+			<Button name="ФормаКоманда1" id="285">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Команда1</CommandName>
+				<ExtendedTooltip name="ФормаКоманда1РасширеннаяПодсказка" id="286"/>
+			</Button>
 		</ChildItems>
 	</AutoCommandBar>
 	<ChildItems>
@@ -737,6 +742,11 @@
 		</InputField>
 	</ChildItems>
 	<Attributes/>
+	<Commands>
+		<Command name="Команда1" id="1000000">
+			<Action callType="After">алсавб24_Команда1После</Action>
+		</Command>
+	</Commands>
 	<BaseForm version="2.20">
 		<CommandSet>
 			<ExcludedCommand>Copy</ExcludedCommand>

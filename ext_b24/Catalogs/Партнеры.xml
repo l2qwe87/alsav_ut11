@@ -42,7 +42,9 @@
 					</Synonym>
 					<Comment/>
 					<Group>FormCommandBarImportant</Group>
-					<CommandParameterType/>
+					<CommandParameterType>
+						<v8:Type>cfg:CatalogRef.Партнеры</v8:Type>
+					</CommandParameterType>
 					<ParameterUseMode>Single</ParameterUseMode>
 					<ModifiesData>false</ModifiesData>
 					<Representation>Auto</Representation>
