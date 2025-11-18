@@ -1,16 +1,19 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.20">
 	<ConfigVersions>
-		<Metadata name="Catalog.Партнеры" id="aff1350a-22ff-42a2-9829-608182651438" configVersion="68c7bb4991dd4cfed178d8fc3f8c04789d1845f9"/>
+		<Metadata name="Catalog.Партнеры" id="aff1350a-22ff-42a2-9829-608182651438" configVersion="07a53788d30ddcec53fd9b24bd428ffd396ada64">
+			<Metadata name="Catalog.Партнеры.Command.алсавб24_ВыгрузитьВБ24" id="33c1a93a-f45a-4db7-82ea-dd05611cc6aa"/>
+		</Metadata>
+		<Metadata name="Catalog.Партнеры.Command.алсавб24_ВыгрузитьВБ24.CommandModule" id="33c1a93a-f45a-4db7-82ea-dd05611cc6aa.2" configVersion="9b47345699dcd494d50f487ce47b461981c3e709"/>
 		<Metadata name="CommonModule.алсавб24_Http" id="d236c3e9-95c2-4252-85ae-8031668c4bcc" configVersion="927ccbd9b17964b909545932535b1ab27dcce146"/>
-		<Metadata name="CommonModule.алсавб24_Http.Module" id="d236c3e9-95c2-4252-85ae-8031668c4bcc.0" configVersion="94b2d2d909b8aa84152790e571b8c49e6b31b159"/>
+		<Metadata name="CommonModule.алсавб24_Http.Module" id="d236c3e9-95c2-4252-85ae-8031668c4bcc.0" configVersion="7b1c1b693864ed85c28f496c46964502fcb3f15c"/>
 		<Metadata name="CommonModule.алсавб24_Json" id="0b808a79-b2ab-4148-aba6-d05552c350d4" configVersion="9d9954dd499f570dfe6ad43426b9bb22ccf9a1e7"/>
-		<Metadata name="CommonModule.алсавб24_Json.Module" id="0b808a79-b2ab-4148-aba6-d05552c350d4.0" configVersion="fce0870f3bd871f031c0a21e7f2dba4228e64d0e"/>
+		<Metadata name="CommonModule.алсавб24_Json.Module" id="0b808a79-b2ab-4148-aba6-d05552c350d4.0" configVersion="6e57340ab4dc9292c32fa2f0bf9d0cea32db2da2"/>
 		<Metadata name="Configuration.АЛСАВ_Б24" id="b48dfd38-d2c9-4189-b547-f03d88b31577" configVersion="79c495df211e0c4abe7a6017a8a509b670ada732"/>
 		<Metadata name="DataProcessor.алсавб24_api_CRM_Компании" id="4669c216-eb20-4a28-a951-5063ad70a7a7" configVersion="25aa3d2daa3360a06474932bb93679dad7627e26"/>
-		<Metadata name="DataProcessor.алсавб24_api_CRM_Компании.ManagerModule" id="4669c216-eb20-4a28-a951-5063ad70a7a7.2" configVersion="4e4cb6c1b0a904628e9124368886c7adc5909fcf"/>
+		<Metadata name="DataProcessor.алсавб24_api_CRM_Компании.ManagerModule" id="4669c216-eb20-4a28-a951-5063ad70a7a7.2" configVersion="56aceda27876a4df1b20fc7d1a1864cc15ec4ed4"/>
 		<Metadata name="DataProcessor.алсавб24_ВыгрузкаПартнеров" id="c26f79f5-b768-426f-929e-58abc11e2a78" configVersion="45e85961de19b9d09a5900b2aa4dca4e8a0cb29b"/>
-		<Metadata name="DataProcessor.алсавб24_ВыгрузкаПартнеров.ManagerModule" id="c26f79f5-b768-426f-929e-58abc11e2a78.2" configVersion="8e54dca485f6be793837902ad45966abbfb439bd"/>
+		<Metadata name="DataProcessor.алсавб24_ВыгрузкаПартнеров.ManagerModule" id="c26f79f5-b768-426f-929e-58abc11e2a78.2" configVersion="a64468fbd3b18e8b4fdea15e0d98b3814ed7f8dd"/>
 		<Metadata name="InformationRegister.алсавб24_СопоставлениеКлиентов" id="0d095903-7a6a-474e-87dc-530d06bfef5b" configVersion="03e7a34f22f231a8f783bf9c145a0760984664e2">
 			<Metadata name="InformationRegister.алсавб24_СопоставлениеКлиентов.Dimension.ID" id="000fa835-7087-440a-b42f-ed012e6afc0c"/>
 			<Metadata name="InformationRegister.алсавб24_СопоставлениеКлиентов.Resource.Партнер" id="5679f331-c14f-4df8-a550-5ad0beeb9b8b"/>
