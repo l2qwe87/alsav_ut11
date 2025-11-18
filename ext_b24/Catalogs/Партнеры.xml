@@ -30,6 +30,7 @@
 			<ExtendedConfigurationObject>bf75bcc5-82ee-4bd0-89e1-420b42c99454</ExtendedConfigurationObject>
 		</Properties>
 		<ChildObjects>
+			<Form>ФормаЭлемента</Form>
 			<Command uuid="33c1a93a-f45a-4db7-82ea-dd05611cc6aa">
 				<Properties>
 					<Name>алсавб24_ВыгрузитьВБ24</Name>
@@ -40,7 +41,7 @@
 						</v8:item>
 					</Synonym>
 					<Comment/>
-					<Group>FormNavigationPanelImportant</Group>
+					<Group>FormCommandBarImportant</Group>
 					<CommandParameterType/>
 					<ParameterUseMode>Single</ParameterUseMode>
 					<ModifiesData>false</ModifiesData>

@@ -73,6 +73,9 @@
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
+			<CommonPicture>Отчеты</CommonPicture>
+			<CommonPicture>ЗаполнитьПоШаблону</CommonPicture>
+			<CommonPicture>ЗаполнитьФорму</CommonPicture>
 			<Role>алсавб24_ОсновнаяРоль</Role>
 			<CommonModule>алсавб24_Json</CommonModule>
 			<CommonModule>алсавб24_Http</CommonModule>
