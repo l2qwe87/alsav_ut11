@@ -10,7 +10,7 @@
 		<Metadata name="CommonModule.алсавб24_Http" id="d236c3e9-95c2-4252-85ae-8031668c4bcc" configVersion="927ccbd9b17964b909545932535b1ab27dcce146"/>
 		<Metadata name="CommonModule.алсавб24_Http.Module" id="d236c3e9-95c2-4252-85ae-8031668c4bcc.0" configVersion="b9f461efe6de6a224736acd830660a8ee29f3b17"/>
 		<Metadata name="CommonModule.алсавб24_Json" id="0b808a79-b2ab-4148-aba6-d05552c350d4" configVersion="9d9954dd499f570dfe6ad43426b9bb22ccf9a1e7"/>
-		<Metadata name="CommonModule.алсавб24_Json.Module" id="0b808a79-b2ab-4148-aba6-d05552c350d4.0" configVersion="6a3e7df298a08bf4c322eddbb6572e224509f1d2"/>
+		<Metadata name="CommonModule.алсавб24_Json.Module" id="0b808a79-b2ab-4148-aba6-d05552c350d4.0" configVersion="3faed6396989247a727de053b39f44cfe2d8edaa"/>
 		<Metadata name="CommonPicture.ЗаполнитьПоШаблону" id="f2d5c043-0348-4a10-af16-ce8a39b0374e" configVersion="d141a4d0c7fc10b91fc0746bb58cb2c8b1c399c9"/>
 		<Metadata name="CommonPicture.ЗаполнитьФорму" id="3fac426c-b5d1-4fb9-a872-06d1c10349ac" configVersion="5bd9ecd73e79f04827a22f8e9a7238a36eb62411"/>
 		<Metadata name="CommonPicture.Отчеты" id="0b84008a-8f6f-495d-9b96-2e7418890bd3" configVersion="31a73d8392da8822b4eec82caf856dcd2392b6e3"/>
