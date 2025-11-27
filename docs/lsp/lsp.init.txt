@@ -1,0 +1,15 @@
+{
+  "jsonrpc": "2.0",
+  "id": 1,
+  "method": "initialize",
+  "params": {
+    "rootUri": "file:///workspaces/alsav_ut11/ext_b24/CommonModules/алсавб24_Http/Ext",
+    "rootPath": "/workspaces/alsav_ut11/ext_b24/CommonModules/алсавб24_Http/Ext",
+    "workspaceFolders": [
+      {
+        "uri": "file:///workspaces/alsav_ut11/ext_b24/CommonModules/алсавб24_Http/Ext",
+        "name": "alsav_ut11"
+      }
+    ]
+  }
+}
