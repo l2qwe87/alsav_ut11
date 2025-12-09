@@ -10,6 +10,11 @@
       "type": "local",
       "command": ["node", "./.opencode/mcp/1c-help/index.js"],
       "enabled": true
+    },
+    "1c-syntax-checker": {
+      "type": "local",
+      "command": ["node", "./.opencode/mcp/1c-syntax-checker/index.js"],
+      "enabled": true
     }
   }
 }
