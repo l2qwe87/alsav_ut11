@@ -1,0 +1,1 @@
+docker run --rm -d --name mcp-bsl-server-checker -p 9080:9080 -v 'Z:\src\.conf_1c:/workspaces/.conf_1c:ro' -v 'Z:\src\alsav\alsav_ut11:/workspaces/alsav_ut11:ro' mcp-bsl-server:latest

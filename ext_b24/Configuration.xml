@@ -80,9 +80,14 @@
 			<CommonModule>алсавб24_Json</CommonModule>
 			<CommonModule>алсавб24_Http</CommonModule>
 			<Catalog>Партнеры</Catalog>
-			<DataProcessor>алсавб24_ВыгрузкаПартнеров</DataProcessor>
+			<Catalog>Контрагенты</Catalog>
+			<Catalog>ВидыКонтактнойИнформации</Catalog>
+			<Enum>ЮридическоеФизическоеЛицо</Enum>
+			<Enum>ТипыКонтактнойИнформации</Enum>
 			<DataProcessor>алсавб24_api_CRM_Компании</DataProcessor>
-			<InformationRegister>алсавб24_СопоставлениеКлиентов</InformationRegister>
+			<DataProcessor>алсавб24_ВыгрузкаКонтрагентов</DataProcessor>
+			<DataProcessor>алсавб24_ВыгрузкаПартнеров</DataProcessor>
+			<InformationRegister>алсавб24_СопоставлениеОбъектовБ24</InformationRegister>
 			<InformationRegister>алсавб24_СопоставлениеСвойств</InformationRegister>
 		</ChildObjects>
 	</Configuration>
