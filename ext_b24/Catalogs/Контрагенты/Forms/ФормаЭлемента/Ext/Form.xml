@@ -171,11 +171,6 @@
 				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 				<ExtendedTooltip name="ФормаПроверитьКонтрагентаРасширеннаяПодсказка" id="196"/>
 			</Button>
-			<Button name="Формаалсавб24_ВыгрузитьВБ24" id="361">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.алсавб24_ВыгрузитьВБ24</CommandName>
-				<ExtendedTooltip name="Формаалсавб24_ВыгрузитьВБ24РасширеннаяПодсказка" id="362"/>
-			</Button>
 		</ChildItems>
 	</AutoCommandBar>
 	<ChildItems>
@@ -1158,23 +1153,6 @@
 			<SavedData>true</SavedData>
 		</Attribute>
 	</Attributes>
-	<Commands>
-		<Command name="алсавб24_ВыгрузитьВБ24" id="1000000">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Алсавб24 выгрузить в б24</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Алсавб24 выгрузить в б24</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action callType="After">алсавб24_алсавб24_ВыгрузитьВБ24После</Action>
-		</Command>
-	</Commands>
 	<BaseForm version="2.20">
 		<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 		<AutoTitle>false</AutoTitle>
@@ -2329,23 +2307,6 @@
 				<SavedData>true</SavedData>
 			</Attribute>
 		</Attributes>
-		<Commands>
-			<Command name="алсавб24_ВыгрузитьВБ24" id="1000001">
-				<Title>
-					<v8:item>
-						<v8:lang>ru</v8:lang>
-						<v8:content>Выгрузить в Б24</v8:content>
-					</v8:item>
-				</Title>
-				<ToolTip>
-					<v8:item>
-						<v8:lang>ru</v8:lang>
-						<v8:content>Выгрузить контрагента в Битрикс24</v8:content>
-					</v8:item>
-				</ToolTip>
-				<Representation>TextPicture</Representation>
-			</Command>
-		</Commands>
 		<Parameters>
 			<Parameter name="алсавб24_ВыгрузитьВБ24">
 				<Type>

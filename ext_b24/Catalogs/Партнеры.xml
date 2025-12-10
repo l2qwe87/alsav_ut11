@@ -46,8 +46,8 @@
 						<v8:Type>cfg:CatalogRef.Партнеры</v8:Type>
 					</CommandParameterType>
 					<ParameterUseMode>Single</ParameterUseMode>
-					<ModifiesData>false</ModifiesData>
-					<Representation>Auto</Representation>
+					<ModifiesData>true</ModifiesData>
+					<Representation>PictureAndText</Representation>
 					<ToolTip/>
 					<Picture/>
 					<Shortcut/>

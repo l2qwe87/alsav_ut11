@@ -4,7 +4,7 @@
 	<setForAttributesByDefault>true</setForAttributesByDefault>
 	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
 	<object>
-		<name>Catalog.Контрагенты.Command.алсавб24_ВыгрузитьВБ24</name>
+		<name>Catalog.Партнеры.Command.алсавб24_ВыгрузитьВБ24</name>
 		<right>
 			<name>View</name>
 			<value>true</value>

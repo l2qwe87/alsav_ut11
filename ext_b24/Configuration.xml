@@ -73,9 +73,13 @@
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
+			<StyleItem>ПоясняющийТекст</StyleItem>
 			<CommonPicture>Отчеты</CommonPicture>
 			<CommonPicture>ЗаполнитьПоШаблону</CommonPicture>
 			<CommonPicture>ЗаполнитьФорму</CommonPicture>
+			<CommonPicture>КоллекцияНастройкиОтправкиЭДО</CommonPicture>
+			<CommonPicture>СостояниеПроверкиКонтрагента</CommonPicture>
+			<CommonPicture>КрасныйЖелтыйСерыйТреугольник</CommonPicture>
 			<Role>алсавб24_ОсновнаяРоль</Role>
 			<Role>БазовыеПраваУТ</Role>
 			<CommonModule>алсавб24_Json</CommonModule>
