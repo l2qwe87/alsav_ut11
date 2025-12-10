@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<AutoTitle>false</AutoTitle>
@@ -170,6 +170,12 @@
 				<CommandName>0</CommandName>
 				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 				<ExtendedTooltip name="ФормаПроверитьКонтрагентаРасширеннаяПодсказка" id="196"/>
+			</Button>
+			<Button name="ФормаВыгрузитьКонтрагентаВБ24" id="197">
+				<Type>CommandBarButton</Type>
+				<CommandName>Catalog.Контрагенты.Command.алсавб24_ВыгрузитьВБ24</CommandName>
+				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="ФормаВыгрузитьКонтрагентаВБ24РасширеннаяПодсказка" id="198"/>
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
@@ -1301,6 +1307,12 @@
 					<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 					<ExtendedTooltip name="ФормаПроверитьКонтрагентаРасширеннаяПодсказка" id="196"/>
 				</Button>
+				<Button name="ФормаВыгрузитьКонтрагентаВБ24" id="197">
+					<Type>CommandBarButton</Type>
+					<CommandName>Catalog.Контрагенты.Command.алсавб24_ВыгрузитьВБ24</CommandName>
+					<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+					<ExtendedTooltip name="ФормаВыгрузитьКонтрагентаВБ24РасширеннаяПодсказка" id="198"/>
+				</Button>
 			</ChildItems>
 		</AutoCommandBar>
 		<ChildItems>
@@ -2259,5 +2271,31 @@
 			</Pages>
 		</ChildItems>
 		<Attributes/>
+		<Commands>
+			<Command name="алсавб24_ВыгрузитьВБ24" id="1">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Выгрузить в Б24</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Выгрузить контрагента в Битрикс24</v8:content>
+					</v8:item>
+				</ToolTip>
+				<Action>алсавб24_ВыгрузитьВБ24</Action>
+				<Representation>TextPicture</Representation>
+			</Command>
+		</Commands>
+		<Parameters>
+			<Parameter name="алсавб24_ВыгрузитьВБ24" id="2">
+				<Type>
+					<v8:Type>String</v8:Type>
+				</Type>
+				<KeyParameter>true</KeyParameter>
+			</Parameter>
+		</Parameters>
 	</BaseForm>
 </Form>
