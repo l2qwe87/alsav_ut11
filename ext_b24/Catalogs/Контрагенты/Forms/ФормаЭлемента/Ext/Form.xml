@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<AutoTitle>false</AutoTitle>
@@ -171,11 +171,10 @@
 				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 				<ExtendedTooltip name="ФормаПроверитьКонтрагентаРасширеннаяПодсказка" id="196"/>
 			</Button>
-			<Button name="ФормаВыгрузитьКонтрагентаВБ24" id="197">
+			<Button name="Формаалсавб24_ВыгрузитьВБ24" id="361">
 				<Type>CommandBarButton</Type>
-				<CommandName>Catalog.Контрагенты.Command.алсавб24_ВыгрузитьВБ24</CommandName>
-				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
-				<ExtendedTooltip name="ФормаВыгрузитьКонтрагентаВБ24РасширеннаяПодсказка" id="198"/>
+				<CommandName>Form.Command.алсавб24_ВыгрузитьВБ24</CommandName>
+				<ExtendedTooltip name="Формаалсавб24_ВыгрузитьВБ24РасширеннаяПодсказка" id="362"/>
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
@@ -294,6 +293,7 @@
 									<ExtendedTooltip name="ВидКонтрагентаРасширеннаяПодсказка" id="43"/>
 								</InputField>
 								<CheckBoxField name="НДСПоСтавкам4и2" id="61">
+									<DataPath>Объект.НДСПоСтавкам4и2</DataPath>
 									<TitleLocation>Right</TitleLocation>
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="НДСПоСтавкам4и2КонтекстноеМеню" id="62"/>
@@ -372,6 +372,7 @@
 															</ExtendedTooltip>
 															<ChildItems>
 																<InputField name="ИНН" id="281">
+																	<DataPath>Объект.ИНН</DataPath>
 																	<TitleLocation>Left</TitleLocation>
 																	<EditMode>EnterOnInput</EditMode>
 																	<Width>14</Width>
@@ -403,6 +404,7 @@
 																	<ExtendedTooltip name="ГруппаКППРасширеннаяПодсказка" id="327"/>
 																	<ChildItems>
 																		<InputField name="КПП" id="286">
+																			<DataPath>Объект.КПП</DataPath>
 																			<TitleLocation>Left</TitleLocation>
 																			<EditMode>EnterOnInput</EditMode>
 																			<Width>14</Width>
@@ -447,6 +449,7 @@
 															</ExtendedTooltip>
 															<ChildItems>
 																<InputField name="ИННФизЛицо" id="291">
+																	<DataPath>Объект.ИНН</DataPath>
 																	<TitleLocation>None</TitleLocation>
 																	<Width>14</Width>
 																	<HorizontalStretch>false</HorizontalStretch>
@@ -473,6 +476,7 @@
 													</ChildItems>
 												</Pages>
 												<InputField name="КодПоОКПО" id="296">
+													<DataPath>Объект.КодПоОКПО</DataPath>
 													<TitleLocation>Left</TitleLocation>
 													<EditMode>EnterOnInput</EditMode>
 													<Width>13</Width>
@@ -649,6 +653,7 @@
 											<ExtendedTooltip name="ГруппаСтранаРегистрацииНалоговыйНомерРасширеннаяПодсказка" id="258"/>
 											<ChildItems>
 												<InputField name="СтранаРегистрации" id="259">
+													<DataPath>Объект.СтранаРегистрации</DataPath>
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
@@ -669,6 +674,7 @@
 													<ExtendedTooltip name="СтранаРегистрацииРасширеннаяПодсказка" id="261"/>
 												</InputField>
 												<InputField name="НалоговыйНомер" id="262">
+													<DataPath>Объект.НалоговыйНомер</DataPath>
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
@@ -709,6 +715,7 @@
 											<ExtendedTooltip name="ГруппаРегистрационныйНомерИННКППРасширеннаяПодсказка" id="266"/>
 											<ChildItems>
 												<InputField name="РегистрационныйНомер" id="267">
+													<DataPath>Объект.РегистрационныйНомер</DataPath>
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
@@ -747,12 +754,14 @@
 													<ExtendedTooltip name="ГруппаИННКППРасширеннаяПодсказка" id="349"/>
 													<ChildItems>
 														<InputField name="ИННИностранногоКонтрагента" id="270">
+															<DataPath>Объект.ИНН</DataPath>
 															<Width>14</Width>
 															<HorizontalStretch>false</HorizontalStretch>
 															<ContextMenu name="ИННИностранногоКонтрагентаКонтекстноеМеню" id="271"/>
 															<ExtendedTooltip name="ИННИностранногоКонтрагентаРасширеннаяПодсказка" id="272"/>
 														</InputField>
 														<InputField name="КППИностранногоКонтрагента" id="353">
+															<DataPath>Объект.КПП</DataPath>
 															<AutoMaxWidth>false</AutoMaxWidth>
 															<MaxWidth>12</MaxWidth>
 															<HorizontalStretch>false</HorizontalStretch>
@@ -824,6 +833,7 @@
 													<ExtendedTooltip name="ГруппаНаименованиеЛевоРасширеннаяПодсказка" id="190"/>
 													<ChildItems>
 														<InputField name="НаименованиеСокращенное" id="18">
+															<DataPath>Объект.НаименованиеПолное</DataPath>
 															<Title>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
@@ -860,6 +870,7 @@
 													</ChildItems>
 												</UsualGroup>
 												<InputField name="Наименование" id="1">
+													<DataPath>Объект.Description</DataPath>
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
@@ -875,6 +886,7 @@
 													<ExtendedTooltip name="НаименованиеExtendedTooltip" id="42"/>
 												</InputField>
 												<InputField name="НаименованиеМеждународное" id="345">
+													<DataPath>Объект.НаименованиеМеждународное</DataPath>
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
@@ -913,6 +925,7 @@
 											</ExtendedTooltip>
 											<ChildItems>
 												<InputField name="Партнер" id="13">
+													<DataPath>Объект.Партнер</DataPath>
 													<TitleLocation>Left</TitleLocation>
 													<EditMode>EnterOnInput</EditMode>
 													<Width>28</Width>
@@ -984,6 +997,7 @@
 											<ExtendedTooltip name="ГруппаГоловнойКонтрагентРасширеннаяПодсказка" id="67"/>
 											<ChildItems>
 												<InputField name="ГоловнойКонтрагент" id="68">
+													<DataPath>Объект.ГоловнойКонтрагент</DataPath>
 													<TitleLocation>Left</TitleLocation>
 													<Width>45</Width>
 													<HorizontalStretch>false</HorizontalStretch>
@@ -1093,6 +1107,7 @@
 							</ChildItems>
 						</UsualGroup>
 						<InputField name="ДополнительнаяИнформация" id="22">
+							<DataPath>Объект.ДополнительнаяИнформация</DataPath>
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -1134,7 +1149,32 @@
 			</ChildItems>
 		</Pages>
 	</ChildItems>
-	<Attributes/>
+	<Attributes>
+		<Attribute name="Объект" id="1000001">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Контрагенты</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="алсавб24_ВыгрузитьВБ24" id="1000000">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Алсавб24 выгрузить в б24</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Алсавб24 выгрузить в б24</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action callType="After">алсавб24_алсавб24_ВыгрузитьВБ24После</Action>
+		</Command>
+	</Commands>
 	<BaseForm version="2.20">
 		<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 		<AutoTitle>false</AutoTitle>
@@ -1307,12 +1347,6 @@
 					<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 					<ExtendedTooltip name="ФормаПроверитьКонтрагентаРасширеннаяПодсказка" id="196"/>
 				</Button>
-				<Button name="ФормаВыгрузитьКонтрагентаВБ24" id="197">
-					<Type>CommandBarButton</Type>
-					<CommandName>Catalog.Контрагенты.Command.алсавб24_ВыгрузитьВБ24</CommandName>
-					<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
-					<ExtendedTooltip name="ФормаВыгрузитьКонтрагентаВБ24РасширеннаяПодсказка" id="198"/>
-				</Button>
 			</ChildItems>
 		</AutoCommandBar>
 		<ChildItems>
@@ -1430,6 +1464,7 @@
 										<ExtendedTooltip name="ВидКонтрагентаРасширеннаяПодсказка" id="43"/>
 									</InputField>
 									<CheckBoxField name="НДСПоСтавкам4и2" id="61">
+										<DataPath>Объект.НДСПоСтавкам4и2</DataPath>
 										<TitleLocation>Right</TitleLocation>
 										<CheckBoxType>Auto</CheckBoxType>
 										<ContextMenu name="НДСПоСтавкам4и2КонтекстноеМеню" id="62"/>
@@ -1508,6 +1543,7 @@
 																</ExtendedTooltip>
 																<ChildItems>
 																	<InputField name="ИНН" id="281">
+																		<DataPath>Объект.ИНН</DataPath>
 																		<TitleLocation>Left</TitleLocation>
 																		<EditMode>EnterOnInput</EditMode>
 																		<Width>14</Width>
@@ -1539,6 +1575,7 @@
 																		<ExtendedTooltip name="ГруппаКППРасширеннаяПодсказка" id="327"/>
 																		<ChildItems>
 																			<InputField name="КПП" id="286">
+																				<DataPath>Объект.КПП</DataPath>
 																				<TitleLocation>Left</TitleLocation>
 																				<EditMode>EnterOnInput</EditMode>
 																				<Width>14</Width>
@@ -1583,6 +1620,7 @@
 																</ExtendedTooltip>
 																<ChildItems>
 																	<InputField name="ИННФизЛицо" id="291">
+																		<DataPath>Объект.ИНН</DataPath>
 																		<TitleLocation>None</TitleLocation>
 																		<Width>14</Width>
 																		<HorizontalStretch>false</HorizontalStretch>
@@ -1609,6 +1647,7 @@
 														</ChildItems>
 													</Pages>
 													<InputField name="КодПоОКПО" id="296">
+														<DataPath>Объект.КодПоОКПО</DataPath>
 														<TitleLocation>Left</TitleLocation>
 														<EditMode>EnterOnInput</EditMode>
 														<Width>13</Width>
@@ -1785,6 +1824,7 @@
 												<ExtendedTooltip name="ГруппаСтранаРегистрацииНалоговыйНомерРасширеннаяПодсказка" id="258"/>
 												<ChildItems>
 													<InputField name="СтранаРегистрации" id="259">
+														<DataPath>Объект.СтранаРегистрации</DataPath>
 														<Title>
 															<v8:item>
 																<v8:lang>ru</v8:lang>
@@ -1805,6 +1845,7 @@
 														<ExtendedTooltip name="СтранаРегистрацииРасширеннаяПодсказка" id="261"/>
 													</InputField>
 													<InputField name="НалоговыйНомер" id="262">
+														<DataPath>Объект.НалоговыйНомер</DataPath>
 														<Title>
 															<v8:item>
 																<v8:lang>ru</v8:lang>
@@ -1845,6 +1886,7 @@
 												<ExtendedTooltip name="ГруппаРегистрационныйНомерИННКППРасширеннаяПодсказка" id="266"/>
 												<ChildItems>
 													<InputField name="РегистрационныйНомер" id="267">
+														<DataPath>Объект.РегистрационныйНомер</DataPath>
 														<Title>
 															<v8:item>
 																<v8:lang>ru</v8:lang>
@@ -1883,12 +1925,14 @@
 														<ExtendedTooltip name="ГруппаИННКППРасширеннаяПодсказка" id="349"/>
 														<ChildItems>
 															<InputField name="ИННИностранногоКонтрагента" id="270">
+																<DataPath>Объект.ИНН</DataPath>
 																<Width>14</Width>
 																<HorizontalStretch>false</HorizontalStretch>
 																<ContextMenu name="ИННИностранногоКонтрагентаКонтекстноеМеню" id="271"/>
 																<ExtendedTooltip name="ИННИностранногоКонтрагентаРасширеннаяПодсказка" id="272"/>
 															</InputField>
 															<InputField name="КППИностранногоКонтрагента" id="353">
+																<DataPath>Объект.КПП</DataPath>
 																<AutoMaxWidth>false</AutoMaxWidth>
 																<MaxWidth>12</MaxWidth>
 																<HorizontalStretch>false</HorizontalStretch>
@@ -1960,6 +2004,7 @@
 														<ExtendedTooltip name="ГруппаНаименованиеЛевоРасширеннаяПодсказка" id="190"/>
 														<ChildItems>
 															<InputField name="НаименованиеСокращенное" id="18">
+																<DataPath>Объект.НаименованиеПолное</DataPath>
 																<Title>
 																	<v8:item>
 																		<v8:lang>ru</v8:lang>
@@ -1996,6 +2041,7 @@
 														</ChildItems>
 													</UsualGroup>
 													<InputField name="Наименование" id="1">
+														<DataPath>Объект.Description</DataPath>
 														<Title>
 															<v8:item>
 																<v8:lang>ru</v8:lang>
@@ -2011,6 +2057,7 @@
 														<ExtendedTooltip name="НаименованиеExtendedTooltip" id="42"/>
 													</InputField>
 													<InputField name="НаименованиеМеждународное" id="345">
+														<DataPath>Объект.НаименованиеМеждународное</DataPath>
 														<Title>
 															<v8:item>
 																<v8:lang>ru</v8:lang>
@@ -2049,6 +2096,7 @@
 												</ExtendedTooltip>
 												<ChildItems>
 													<InputField name="Партнер" id="13">
+														<DataPath>Объект.Партнер</DataPath>
 														<TitleLocation>Left</TitleLocation>
 														<EditMode>EnterOnInput</EditMode>
 														<Width>28</Width>
@@ -2120,6 +2168,7 @@
 												<ExtendedTooltip name="ГруппаГоловнойКонтрагентРасширеннаяПодсказка" id="67"/>
 												<ChildItems>
 													<InputField name="ГоловнойКонтрагент" id="68">
+														<DataPath>Объект.ГоловнойКонтрагент</DataPath>
 														<TitleLocation>Left</TitleLocation>
 														<Width>45</Width>
 														<HorizontalStretch>false</HorizontalStretch>
@@ -2229,6 +2278,7 @@
 								</ChildItems>
 							</UsualGroup>
 							<InputField name="ДополнительнаяИнформация" id="22">
+								<DataPath>Объект.ДополнительнаяИнформация</DataPath>
 								<Title>
 									<v8:item>
 										<v8:lang>ru</v8:lang>
@@ -2270,9 +2320,17 @@
 				</ChildItems>
 			</Pages>
 		</ChildItems>
-		<Attributes/>
+		<Attributes>
+			<Attribute name="Объект" id="1000001">
+				<Type>
+					<v8:Type>cfg:CatalogObject.Контрагенты</v8:Type>
+				</Type>
+				<MainAttribute>true</MainAttribute>
+				<SavedData>true</SavedData>
+			</Attribute>
+		</Attributes>
 		<Commands>
-			<Command name="алсавб24_ВыгрузитьВБ24" id="1">
+			<Command name="алсавб24_ВыгрузитьВБ24" id="1000001">
 				<Title>
 					<v8:item>
 						<v8:lang>ru</v8:lang>
@@ -2285,14 +2343,17 @@
 						<v8:content>Выгрузить контрагента в Битрикс24</v8:content>
 					</v8:item>
 				</ToolTip>
-				<Action>алсавб24_ВыгрузитьВБ24</Action>
 				<Representation>TextPicture</Representation>
 			</Command>
 		</Commands>
 		<Parameters>
-			<Parameter name="алсавб24_ВыгрузитьВБ24" id="2">
+			<Parameter name="алсавб24_ВыгрузитьВБ24">
 				<Type>
-					<v8:Type>String</v8:Type>
+					<v8:Type>xs:string</v8:Type>
+					<v8:StringQualifiers>
+						<v8:Length>0</v8:Length>
+						<v8:AllowedLength>Variable</v8:AllowedLength>
+					</v8:StringQualifiers>
 				</Type>
 				<KeyParameter>true</KeyParameter>
 			</Parameter>
