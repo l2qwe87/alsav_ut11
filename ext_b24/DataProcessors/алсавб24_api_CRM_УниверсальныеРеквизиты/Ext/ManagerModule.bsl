@@ -52,7 +52,7 @@
 /// Возвращаемое значение:
 ///  Структура - результат API вызова
 ///
-Функция crm_requisite_list(ENTITY_ID, ENTITY_TYPE_ID = 4) Экспорт
+Функция crm_requisite_list_by_company(ENTITY_ID, ENTITY_TYPE_ID = 4) Экспорт
 	
 	Фильтр = Новый Структура;
 	Фильтр.Вставить("ENTITY_ID", ENTITY_ID);
