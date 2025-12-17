@@ -1,4 +1,4 @@
-﻿/// ************
+/// ************
 // Работа с API https://apidocs.bitrix24.ru/api-reference/crm/requisites/addresses/index.html
 //
 /// ************
@@ -33,10 +33,9 @@
 Функция crm_address_update(ID, Поля) Экспорт
 
 	Параметры = Новый Структура;
-	Параметры.Вставить("id", ID);
 	Параметры.Вставить("fields", Поля);
 
-	Возврат ВызватьAPIМетод("crm.address.update", Параметры);
+	Возврат ВызватьAPIМетод("crm.address.add", Параметры);
 
 КонецФункции
 
