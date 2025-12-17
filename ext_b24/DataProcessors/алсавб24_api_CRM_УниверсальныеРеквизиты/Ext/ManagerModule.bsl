@@ -1,4 +1,4 @@
-// Модуль для работы с универсальными реквизитами CRM Битрикс24
+﻿// Модуль для работы с универсальными реквизитами CRM Битрикс24
 // https://apidocs.bitrix24.ru/api-reference/crm/requisites/universal/index.html
 
 //

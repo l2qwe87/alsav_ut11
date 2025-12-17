@@ -91,6 +91,7 @@
 			<Enum>ЮридическоеФизическоеЛицо</Enum>
 			<Enum>ТипыКонтактнойИнформации</Enum>
 			<DataProcessor>алсавб24_api_CRM_Common</DataProcessor>
+			<DataProcessor>алсавб24_api_CRM_Адреса</DataProcessor>
 			<DataProcessor>алсавб24_api_CRM_Компании</DataProcessor>
 			<DataProcessor>алсавб24_api_CRM_УниверсальныеРеквизиты</DataProcessor>
 			<DataProcessor>алсавб24_ВыгрузкаКонтрагентов</DataProcessor>
