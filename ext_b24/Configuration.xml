@@ -73,18 +73,27 @@
 		</Properties>
 		<ChildObjects>
 			<Language>Русский</Language>
+			<StyleItem>ПоясняющийТекст</StyleItem>
 			<CommonPicture>Отчеты</CommonPicture>
 			<CommonPicture>ЗаполнитьПоШаблону</CommonPicture>
 			<CommonPicture>ЗаполнитьФорму</CommonPicture>
+			<CommonPicture>КоллекцияНастройкиОтправкиЭДО</CommonPicture>
+			<CommonPicture>СостояниеПроверкиКонтрагента</CommonPicture>
+			<CommonPicture>КрасныйЖелтыйСерыйТреугольник</CommonPicture>
 			<Role>алсавб24_ОсновнаяРоль</Role>
+			<Role>БазовыеПраваУТ</Role>
 			<CommonModule>алсавб24_Json</CommonModule>
 			<CommonModule>алсавб24_Http</CommonModule>
 			<Catalog>Партнеры</Catalog>
 			<Catalog>Контрагенты</Catalog>
 			<Catalog>ВидыКонтактнойИнформации</Catalog>
+			<Catalog>СтраныМира</Catalog>
 			<Enum>ЮридическоеФизическоеЛицо</Enum>
 			<Enum>ТипыКонтактнойИнформации</Enum>
+			<DataProcessor>алсавб24_api_CRM_Common</DataProcessor>
+			<DataProcessor>алсавб24_api_CRM_Адреса</DataProcessor>
 			<DataProcessor>алсавб24_api_CRM_Компании</DataProcessor>
+			<DataProcessor>алсавб24_api_CRM_УниверсальныеРеквизиты</DataProcessor>
 			<DataProcessor>алсавб24_ВыгрузкаКонтрагентов</DataProcessor>
 			<DataProcessor>алсавб24_ВыгрузкаПартнеров</DataProcessor>
 			<InformationRegister>алсавб24_СопоставлениеОбъектовБ24</InformationRegister>
