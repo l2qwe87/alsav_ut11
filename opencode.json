@@ -15,6 +15,11 @@
       "type": "local",
       "command": ["node", "./.opencode/mcp/1c-syntax-checker/index.js"],
       "enabled": true
+    },
+    "bitrix24-api-checker": {
+      "type": "local",
+      "command": ["node", "./.opencode/mcp/bitrix24-api-checker/simple-server.js"],
+      "enabled": true
     }
   }
 }
