@@ -62,7 +62,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.алсавб24_ОсновнаяРоль</xr:Item>
 			</DefaultRoles>
 			<Vendor/>
-			<Version>0.0.1</Version>
+			<Version>0.0.2</Version>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<BriefInformation/>
 			<DetailedInformation/>
@@ -84,12 +84,17 @@
 			<Role>БазовыеПраваУТ</Role>
 			<CommonModule>алсавб24_Json</CommonModule>
 			<CommonModule>алсавб24_Http</CommonModule>
-			<Catalog>Партнеры</Catalog>
-			<Catalog>Контрагенты</Catalog>
+			<CommonModule>алсавб24_ОбменДаннымиБ24</CommonModule>
+			<ExchangePlan>алсавб24_ПланОбменаБ24CRM</ExchangePlan>
+			<Catalog>БанковскиеСчетаКонтрагентов</Catalog>
 			<Catalog>ВидыКонтактнойИнформации</Catalog>
+			<Catalog>Контрагенты</Catalog>
+			<Catalog>Партнеры</Catalog>
+			<Catalog>СоглашенияСКлиентами</Catalog>
 			<Catalog>СтраныМира</Catalog>
 			<Enum>ЮридическоеФизическоеЛицо</Enum>
 			<Enum>ТипыКонтактнойИнформации</Enum>
+			<Enum>СтатусыСоглашенийСКлиентами</Enum>
 			<DataProcessor>алсавб24_api_CRM_Common</DataProcessor>
 			<DataProcessor>алсавб24_api_CRM_Адреса</DataProcessor>
 			<DataProcessor>алсавб24_api_CRM_БанковскиеРеквизиты</DataProcessor>
@@ -101,7 +106,6 @@
 			<DataProcessor>алсавб24_ВыгрузкаКонтрагентов_РеквизитыКомпании</DataProcessor>
 			<DataProcessor>алсавб24_ВыгрузкаПартнеров</DataProcessor>
 			<InformationRegister>алсавб24_СопоставлениеОбъектовБ24</InformationRegister>
-			<InformationRegister>алсавб24_СопоставлениеСвойств</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>

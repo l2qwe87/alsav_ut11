@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<ExchangePlan uuid="f19fa30c-ec6a-4c60-abd9-d2fcb2c95250">
+		<InternalInfo>
+			<xr:ThisNode>c9fbd6a3-3ea7-4630-a85f-0ac8cb4f56c1</xr:ThisNode>
+			<xr:GeneratedType name="ExchangePlanObject.алсавб24_ПланОбменаБ24CRM" category="Object">
+				<xr:TypeId>e495398a-2805-4ba2-a3db-4a65747a85a7</xr:TypeId>
+				<xr:ValueId>ea5eebd2-d134-457b-a09c-81403faa502a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ExchangePlanRef.алсавб24_ПланОбменаБ24CRM" category="Ref">
+				<xr:TypeId>f67b6828-7990-4c37-b0bd-e45dcb72fd29</xr:TypeId>
+				<xr:ValueId>752460e8-14cb-4d57-8ae2-9c6608e46ffe</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ExchangePlanSelection.алсавб24_ПланОбменаБ24CRM" category="Selection">
+				<xr:TypeId>97d0ee09-99a6-4c5d-89e8-747db5b328fc</xr:TypeId>
+				<xr:ValueId>19b14968-bcac-4811-bdf5-a78b978f7332</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ExchangePlanList.алсавб24_ПланОбменаБ24CRM" category="List">
+				<xr:TypeId>1cde851a-b570-4e68-bcc3-f49839e7c0e1</xr:TypeId>
+				<xr:ValueId>437ac4d6-5a5d-4a67-8725-f91a9e00aaf5</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ExchangePlanManager.алсавб24_ПланОбменаБ24CRM" category="Manager">
+				<xr:TypeId>0347ea11-6f7e-42ba-93cb-9a2a0e6f5bb5</xr:TypeId>
+				<xr:ValueId>2b32f512-1b6f-402a-9e86-fcebb4a5120d</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>алсавб24_ПланОбменаБ24CRM</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>662d2c97-c597-4eed-b5ce-ea8bcac77700</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</ExchangePlan>
+</MetaDataObject>
