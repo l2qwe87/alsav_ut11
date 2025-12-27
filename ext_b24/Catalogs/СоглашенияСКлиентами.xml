@@ -54,6 +54,30 @@
 					</Type>
 				</Properties>
 			</Attribute>
+			<Attribute uuid="1f11df22-7794-49b4-8e88-30b8fcd3ce01">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Партнер</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>9bd348c8-d0a6-496c-a962-363c1cd4769d</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Партнеры</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="51273f18-d2c1-4601-8e26-650a84283152">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Типовое</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>fa901d6b-4829-42c4-98e4-38efb07896f9</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>
