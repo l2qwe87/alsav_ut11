@@ -40,10 +40,10 @@
 		<Metadata name="Catalog.Партнеры" id="aff1350a-22ff-42a2-9829-608182651438" configVersion="79450072eb437a10acfecac872e58c1908e834ae">
 			<Metadata name="Catalog.Партнеры.Command.алсавб24_ВыгрузитьВБ24" id="33c1a93a-f45a-4db7-82ea-dd05611cc6aa"/>
 		</Metadata>
-		<Metadata name="Catalog.Партнеры.Command.алсавб24_ВыгрузитьВБ24.CommandModule" id="33c1a93a-f45a-4db7-82ea-dd05611cc6aa.2" configVersion="98a472d35a339104f31d954f98acb58ab7626cbd"/>
+		<Metadata name="Catalog.Партнеры.Command.алсавб24_ВыгрузитьВБ24.CommandModule" id="33c1a93a-f45a-4db7-82ea-dd05611cc6aa.2" configVersion="e8fe61a97930a330842aee2a9dd894146df39757"/>
 		<Metadata name="Catalog.Партнеры.Form.ФормаЭлемента" id="f51609c4-42d3-4677-8978-3a14d1530e6c" configVersion="5f53e6368429c1cf63d303cc408baa2d819b06de"/>
 		<Metadata name="Catalog.Партнеры.Form.ФормаЭлемента.Form" id="f51609c4-42d3-4677-8978-3a14d1530e6c.0" configVersion="f1cc01a3a50225cd3e65d3d8db8c986d605cd6db"/>
-		<Metadata name="Catalog.СоглашенияСКлиентами" id="4aca5ed8-3216-4cfa-a0aa-551bdccab76a" configVersion="d0d19694b8f1b8d67c55679ab903bfcd5b458dda">
+		<Metadata name="Catalog.СоглашенияСКлиентами" id="4aca5ed8-3216-4cfa-a0aa-551bdccab76a" configVersion="d88c30603852d18b930f5f9f22f7c5875060d807">
 			<Metadata name="Catalog.СоглашенияСКлиентами.Attribute.Партнер" id="1f11df22-7794-49b4-8e88-30b8fcd3ce01"/>
 			<Metadata name="Catalog.СоглашенияСКлиентами.Attribute.Типовое" id="51273f18-d2c1-4601-8e26-650a84283152"/>
 			<Metadata name="Catalog.СоглашенияСКлиентами.Attribute.Статус" id="ac3e37c5-0c63-4526-aff5-da624a056977"/>
@@ -51,38 +51,40 @@
 		</Metadata>
 		<Metadata name="Catalog.СтраныМира" id="f2ce558c-1e67-4346-9830-99a92de3927b" configVersion="e9e8c0d95c09641bf802a412857eabd674321874"/>
 		<Metadata name="CommonModule.алсавб24_Http" id="d236c3e9-95c2-4252-85ae-8031668c4bcc" configVersion="927ccbd9b17964b909545932535b1ab27dcce146"/>
-		<Metadata name="CommonModule.алсавб24_Http.Module" id="d236c3e9-95c2-4252-85ae-8031668c4bcc.0" configVersion="7f24a0af55ee9fe98ad10c11ebfdd87c48d22fd1"/>
+		<Metadata name="CommonModule.алсавб24_Http.Module" id="d236c3e9-95c2-4252-85ae-8031668c4bcc.0" configVersion="277256a091f4a1b3d31e95f2c66d8a3da8ab9c92"/>
 		<Metadata name="CommonModule.алсавб24_Json" id="0b808a79-b2ab-4148-aba6-d05552c350d4" configVersion="9d9954dd499f570dfe6ad43426b9bb22ccf9a1e7"/>
-		<Metadata name="CommonModule.алсавб24_Json.Module" id="0b808a79-b2ab-4148-aba6-d05552c350d4.0" configVersion="da406ec7f617210cc3d4064f878b0d3695f1aba7"/>
+		<Metadata name="CommonModule.алсавб24_Json.Module" id="0b808a79-b2ab-4148-aba6-d05552c350d4.0" configVersion="e76c0ecf1be7bf2b9e6219a6bec3b7f909cf97cb"/>
 		<Metadata name="CommonModule.алсавб24_ОбменДаннымиБ24" id="deb509e7-339c-474c-bdc0-a311c08df748" configVersion="938951ed628edbe563716891933e922b0b90cca0"/>
-		<Metadata name="CommonModule.алсавб24_ОбменДаннымиБ24.Module" id="deb509e7-339c-474c-bdc0-a311c08df748.0" configVersion="7d0a5df6da37a341fa38e1e05c9998a72e387f5c"/>
+		<Metadata name="CommonModule.алсавб24_ОбменДаннымиБ24.Module" id="deb509e7-339c-474c-bdc0-a311c08df748.0" configVersion="2c894a7a2e7c6766ce97aae8d4f698d95766307f"/>
 		<Metadata name="CommonPicture.ЗаполнитьПоШаблону" id="f2d5c043-0348-4a10-af16-ce8a39b0374e" configVersion="d141a4d0c7fc10b91fc0746bb58cb2c8b1c399c9"/>
 		<Metadata name="CommonPicture.ЗаполнитьФорму" id="3fac426c-b5d1-4fb9-a872-06d1c10349ac" configVersion="5bd9ecd73e79f04827a22f8e9a7238a36eb62411"/>
 		<Metadata name="CommonPicture.КоллекцияНастройкиОтправкиЭДО" id="ed6e7af9-15ed-4c8d-8d35-8ccf53c7d9c7" configVersion="54629ba162cc0565814d3aff37591de93ea2102b"/>
 		<Metadata name="CommonPicture.КрасныйЖелтыйСерыйТреугольник" id="99d913b4-590a-4313-8844-b82ef2ae6aac" configVersion="1dc4e6474fa9bbaa4a2e40576966d5d7b94cf62c"/>
 		<Metadata name="CommonPicture.Отчеты" id="0b84008a-8f6f-495d-9b96-2e7418890bd3" configVersion="31a73d8392da8822b4eec82caf856dcd2392b6e3"/>
 		<Metadata name="CommonPicture.СостояниеПроверкиКонтрагента" id="e07e4a60-4e9e-4931-8425-ef5d67a7011b" configVersion="b4d1fae5fcf8826cdad731e669ccb59c9b11e505"/>
-		<Metadata name="Configuration.АЛСАВ_Б24" id="b48dfd38-d2c9-4189-b547-f03d88b31577" configVersion="b17afe7ecca5c011ea232c787c8db4d52be38dd8"/>
+		<Metadata name="Configuration.АЛСАВ_Б24" id="b48dfd38-d2c9-4189-b547-f03d88b31577" configVersion="42f7d3950123c072f3493b1e33a520e34d82c80c"/>
 		<Metadata name="DataProcessor.алсавб24_api_CRM_Common" id="9cd3f6cf-b729-4d5e-901c-62e7e6827419" configVersion="a2b74746636066cac6aeda130af0672fc1eebfa4"/>
-		<Metadata name="DataProcessor.алсавб24_api_CRM_Common.ManagerModule" id="9cd3f6cf-b729-4d5e-901c-62e7e6827419.2" configVersion="860587f8b45884b75d18b4130b4c3b47dfc7a2aa"/>
+		<Metadata name="DataProcessor.алсавб24_api_CRM_Common.ManagerModule" id="9cd3f6cf-b729-4d5e-901c-62e7e6827419.2" configVersion="755d48f611d67233dcd49ee7b8c2993a5c884168"/>
 		<Metadata name="DataProcessor.алсавб24_api_CRM_Адреса" id="2dcc027e-b4e9-44d2-a98b-35de61d12a7e" configVersion="dfbed4a0675e516f937d7f31269a5ec525075063"/>
-		<Metadata name="DataProcessor.алсавб24_api_CRM_Адреса.ManagerModule" id="2dcc027e-b4e9-44d2-a98b-35de61d12a7e.2" configVersion="964bb8e2b8e7336a0346e52cf3e55a28265bfbf9"/>
+		<Metadata name="DataProcessor.алсавб24_api_CRM_Адреса.ManagerModule" id="2dcc027e-b4e9-44d2-a98b-35de61d12a7e.2" configVersion="725f38721c639cf98435ccb5a8acb7444346bed8"/>
 		<Metadata name="DataProcessor.алсавб24_api_CRM_БанковскиеРеквизиты" id="06741dc2-06cc-46ab-b7a7-dce35472ee5b" configVersion="2fbc266086a10a05a35a2334f40357a5f7583b36"/>
-		<Metadata name="DataProcessor.алсавб24_api_CRM_БанковскиеРеквизиты.ManagerModule" id="06741dc2-06cc-46ab-b7a7-dce35472ee5b.2" configVersion="3922dde61e766b894e5878a1d2210ac656c042bb"/>
+		<Metadata name="DataProcessor.алсавб24_api_CRM_БанковскиеРеквизиты.ManagerModule" id="06741dc2-06cc-46ab-b7a7-dce35472ee5b.2" configVersion="c48c94a43ed81ff76f81e071c719f235cb85b9bd"/>
 		<Metadata name="DataProcessor.алсавб24_api_CRM_Компании" id="4669c216-eb20-4a28-a951-5063ad70a7a7" configVersion="25aa3d2daa3360a06474932bb93679dad7627e26"/>
-		<Metadata name="DataProcessor.алсавб24_api_CRM_Компании.ManagerModule" id="4669c216-eb20-4a28-a951-5063ad70a7a7.2" configVersion="cc66507906962d8f73f4243ec5dc78beaf22c467"/>
+		<Metadata name="DataProcessor.алсавб24_api_CRM_Компании.ManagerModule" id="4669c216-eb20-4a28-a951-5063ad70a7a7.2" configVersion="9148bfb6c16501aae80b3da22b7fae050eb67e6c"/>
+		<Metadata name="DataProcessor.алсавб24_api_CRM_СмартПроцесс_Партнеры" id="5b1fe787-f9ea-43a1-85dd-a7000ad515ec" configVersion="9548bb027e6bd51ace9a8721bb86e43ef20c1ac2"/>
+		<Metadata name="DataProcessor.алсавб24_api_CRM_СмартПроцесс_Партнеры.ManagerModule" id="5b1fe787-f9ea-43a1-85dd-a7000ad515ec.2" configVersion="906569a9dba23403bc379967a7bba7db1f0ce24c"/>
 		<Metadata name="DataProcessor.алсавб24_api_CRM_УниверсальныеРеквизиты" id="058e40a7-e3cf-4931-8f61-14dc00da3703" configVersion="216fc38d4e7800754fa603fb5c2c62589f04e261"/>
-		<Metadata name="DataProcessor.алсавб24_api_CRM_УниверсальныеРеквизиты.ManagerModule" id="058e40a7-e3cf-4931-8f61-14dc00da3703.2" configVersion="5e2ea8741ad11e148750fdbbe7791ba2782fd01c"/>
+		<Metadata name="DataProcessor.алсавб24_api_CRM_УниверсальныеРеквизиты.ManagerModule" id="058e40a7-e3cf-4931-8f61-14dc00da3703.2" configVersion="7612087ba660dd8c6d2e1721ff6b1a50ca7eb67e"/>
 		<Metadata name="DataProcessor.алсавб24_ВыгрузкаКонтрагентов" id="205fa7a4-a3ff-4eb6-9a58-b39a0034b51e" configVersion="038d909999d86329078173ef32e3048460852928"/>
-		<Metadata name="DataProcessor.алсавб24_ВыгрузкаКонтрагентов.ManagerModule" id="205fa7a4-a3ff-4eb6-9a58-b39a0034b51e.2" configVersion="2f931a07ead4ffe9663691c9678fe657ba2887d2"/>
+		<Metadata name="DataProcessor.алсавб24_ВыгрузкаКонтрагентов.ManagerModule" id="205fa7a4-a3ff-4eb6-9a58-b39a0034b51e.2" configVersion="96f8fc2c2079019028f525bb854d38a874302d4f"/>
 		<Metadata name="DataProcessor.алсавб24_ВыгрузкаКонтрагентов_Адреса" id="0315d2c5-cef9-430e-bf9a-de5bbe444923" configVersion="5b1fe50d6301f45439fc1d96bf6ee67b88700390"/>
-		<Metadata name="DataProcessor.алсавб24_ВыгрузкаКонтрагентов_Адреса.ManagerModule" id="0315d2c5-cef9-430e-bf9a-de5bbe444923.2" configVersion="d8bb61803367e056f321e288df18ad2542e6f6f3"/>
+		<Metadata name="DataProcessor.алсавб24_ВыгрузкаКонтрагентов_Адреса.ManagerModule" id="0315d2c5-cef9-430e-bf9a-de5bbe444923.2" configVersion="08a5fd82609704232d7644e0bb76edce8a9c89ec"/>
 		<Metadata name="DataProcessor.алсавб24_ВыгрузкаКонтрагентов_БанковскиеСчета" id="e3bb664f-0892-406d-b274-2ebfe3c92721" configVersion="a062c9cb54859ee5c0ea05256aaa69b9fc99e1c6"/>
-		<Metadata name="DataProcessor.алсавб24_ВыгрузкаКонтрагентов_БанковскиеСчета.ManagerModule" id="e3bb664f-0892-406d-b274-2ebfe3c92721.2" configVersion="27aa7723f50509996fa4443c4a34d8b1132c7a23"/>
+		<Metadata name="DataProcessor.алсавб24_ВыгрузкаКонтрагентов_БанковскиеСчета.ManagerModule" id="e3bb664f-0892-406d-b274-2ebfe3c92721.2" configVersion="b46aaa6e88fa5c2c147cf124e1441f7d6a03d277"/>
 		<Metadata name="DataProcessor.алсавб24_ВыгрузкаКонтрагентов_РеквизитыКомпании" id="2f0915d8-3007-4d6d-9b4c-ee5e2a378d3c" configVersion="e6364afa902f14a9d35fd907c24a58df7bf0571c"/>
-		<Metadata name="DataProcessor.алсавб24_ВыгрузкаКонтрагентов_РеквизитыКомпании.ManagerModule" id="2f0915d8-3007-4d6d-9b4c-ee5e2a378d3c.2" configVersion="002f0860cdacc1f52fd7ad1f5be00f1c7fa9bc63"/>
+		<Metadata name="DataProcessor.алсавб24_ВыгрузкаКонтрагентов_РеквизитыКомпании.ManagerModule" id="2f0915d8-3007-4d6d-9b4c-ee5e2a378d3c.2" configVersion="b30720d28f4f733f914966b9e8fc5dc3b7d76f85"/>
 		<Metadata name="DataProcessor.алсавб24_ВыгрузкаПартнеров" id="c26f79f5-b768-426f-929e-58abc11e2a78" configVersion="45e85961de19b9d09a5900b2aa4dca4e8a0cb29b"/>
-		<Metadata name="DataProcessor.алсавб24_ВыгрузкаПартнеров.ManagerModule" id="c26f79f5-b768-426f-929e-58abc11e2a78.2" configVersion="a19bb822cce24bd9a85d76598afd107697fe940a"/>
+		<Metadata name="DataProcessor.алсавб24_ВыгрузкаПартнеров.ManagerModule" id="c26f79f5-b768-426f-929e-58abc11e2a78.2" configVersion="e12ce99c806e343055d2f4ea37ee91bf6acaca8e"/>
 		<Metadata name="Enum.СтатусыСоглашенийСКлиентами" id="ee3e9419-0ae6-4d80-b1e9-faf68651fdfa" configVersion="0a0cbf132ed72a6cdeb770165e9470952b308faf"/>
 		<Metadata name="Enum.ТипыКонтактнойИнформации" id="70ba8dff-4364-43e5-80f0-36952bf69f46" configVersion="5d18db82e0913784a61943e41f6717feda55cb36"/>
 		<Metadata name="Enum.ЮридическоеФизическоеЛицо" id="703122aa-b383-4e1c-8544-222a31fcb851" configVersion="5df967e110611f5aeb623a2ef0e2dc4c4e477a45"/>

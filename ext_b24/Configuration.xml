@@ -99,6 +99,7 @@
 			<DataProcessor>алсавб24_api_CRM_Адреса</DataProcessor>
 			<DataProcessor>алсавб24_api_CRM_БанковскиеРеквизиты</DataProcessor>
 			<DataProcessor>алсавб24_api_CRM_Компании</DataProcessor>
+			<DataProcessor>алсавб24_api_CRM_СмартПроцесс_Партнеры</DataProcessor>
 			<DataProcessor>алсавб24_api_CRM_УниверсальныеРеквизиты</DataProcessor>
 			<DataProcessor>алсавб24_ВыгрузкаКонтрагентов</DataProcessor>
 			<DataProcessor>алсавб24_ВыгрузкаКонтрагентов_Адреса</DataProcessor>
