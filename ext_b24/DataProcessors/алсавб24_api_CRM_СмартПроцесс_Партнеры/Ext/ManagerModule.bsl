@@ -2,7 +2,7 @@
 // Работа с API 
 // https://apidocs.bitrix24.ru/api-reference/crm/universal/crm-item-add.html
 // https://apidocs.bitrix24.ru/api-reference/crm/universal/crm-item-update.html
-// "entityTypeId": 7,"title": "Партнеры", 
+// "entityTypeId": 1050,"title": "Партнеры", 
 //
 //curl --location 'https://alsav.bitrix24.ru/rest/175/111j1gle9m8oignr/crm.type.get' \
 //--header 'Content-Type: application/json' \
