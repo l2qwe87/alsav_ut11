@@ -1,4 +1,4 @@
-///************
+﻿///************
 // Работа с API 
 // https://apidocs.bitrix24.ru/api-reference/crm/universal/crm-item-add.html
 // https://apidocs.bitrix24.ru/api-reference/crm/universal/crm-item-update.html
@@ -66,7 +66,7 @@
 
 	// Возвращаем структуру с ID для совместимости с кодом выгрузки
 	РезультатСтруктура = Новый Структура;
-	РезультатСтруктура.Вставить("ID", Результат.result.id);
+	РезультатСтруктура.Вставить("ID", Результат.result.Получить("item").Получить("id"));
 	Возврат РезультатСтруктура;
 	
 КонецФункции
