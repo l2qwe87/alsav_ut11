@@ -292,7 +292,6 @@
 					<AutoInsertNewRow>true</AutoInsertNewRow>
 					<FileDragMode>AsFile</FileDragMode>
 					<DataPath>СписокДокументов</DataPath>
-					<RowPictureDataPath>1000003/1000003</RowPictureDataPath>
 					<ContextMenu name="СписокДокументовКонтекстноеМеню" id="94">
 						<Autofill>false</Autofill>
 					</ContextMenu>
@@ -507,7 +506,7 @@
 						<ChoiceParameterLinks>
 							<xr:Link>
 								<xr:Name>ФизическоеЛицо</xr:Name>
-								<xr:DataPath xsi:type="xs:string">1/0:00f9d30d-af03-4840-b8d5-441798881287</xr:DataPath>
+								<xr:DataPath xsi:type="xs:string">1</xr:DataPath>
 								<xr:ValueChange>Clear</xr:ValueChange>
 							</xr:Link>
 						</ChoiceParameterLinks>
@@ -717,7 +716,6 @@
 						<AutoInsertNewRow>true</AutoInsertNewRow>
 						<FileDragMode>AsFile</FileDragMode>
 						<DataPath>СписокДокументов</DataPath>
-						<RowPictureDataPath>1000003/1000003</RowPictureDataPath>
 						<ContextMenu name="СписокДокументовКонтекстноеМеню" id="94">
 							<Autofill>false</Autofill>
 						</ContextMenu>

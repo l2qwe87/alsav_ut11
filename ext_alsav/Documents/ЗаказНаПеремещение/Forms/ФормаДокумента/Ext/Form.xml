@@ -193,7 +193,6 @@
 			<ExtendedTooltip name="ГруппаОснованиеExtendedTooltip" id="215"/>
 			<ChildItems>
 				<LabelField name="ДокументОснование" id="216">
-					<DataPath>1/0:aa98b4a9-9940-4039-af98-a269bf91561e</DataPath>
 					<AutoMaxWidth>false</AutoMaxWidth>
 					<Hiperlink>true</Hiperlink>
 					<ContextMenu name="ДокументОснованиеКонтекстноеМеню" id="217"/>
@@ -239,7 +238,6 @@
 							<ExtendedTooltip name="ДатаНомерExtendedTooltip" id="148"/>
 							<ChildItems>
 								<InputField name="Номер" id="1">
-									<DataPath>1/-2</DataPath>
 									<AutoMaxWidth>false</AutoMaxWidth>
 									<MaxWidth>9</MaxWidth>
 									<HorizontalStretch>false</HorizontalStretch>
@@ -248,7 +246,6 @@
 									<ExtendedTooltip name="НомерExtendedTooltip" id="149"/>
 								</InputField>
 								<InputField name="Дата" id="3">
-									<DataPath>1/-3</DataPath>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -413,14 +410,12 @@
 							<v8:content>Товары</v8:content>
 						</v8:item>
 					</Title>
-					<TitleDataPath>1/0:c0665c86-43ed-4742-be51-bb50fc55dfd0/100000000</TitleDataPath>
 					<ExtendedTooltip name="ГруппаТоварыExtendedTooltip" id="160"/>
 					<ChildItems>
 						<Table name="Товары" id="15">
 							<SkipOnInput>false</SkipOnInput>
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<FileDragMode>AsFile</FileDragMode>
-							<DataPath>1/0:c0665c86-43ed-4742-be51-bb50fc55dfd0</DataPath>
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -647,7 +642,6 @@
 							</SearchControlAddition>
 							<ChildItems>
 								<LabelField name="ТоварыНомерСтроки" id="88">
-									<DataPath>1/0:c0665c86-43ed-4742-be51-bb50fc55dfd0/-2</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<Width>3</Width>
 									<HorizontalStretch>false</HorizontalStretch>
@@ -666,7 +660,6 @@
 									<ExtendedTooltip name="ТоварыКодСтрокиExtendedTooltip" id="183"/>
 								</InputField>
 								<LabelField name="ТоварыНоменклатураТипНоменклатуры" id="140">
-									<DataPath>1/0:c0665c86-43ed-4742-be51-bb50fc55dfd0/3:5bdad865-f2c5-434b-8041-ba4aad3b6687</DataPath>
 									<UserVisible>
 										<xr:Common>false</xr:Common>
 									</UserVisible>
@@ -691,7 +684,6 @@
 									<ExtendedTooltip name="ТоварыНоменклатураКодExtendedTooltip" id="185"/>
 								</LabelField>
 								<LabelField name="ТоварыНоменклатураАртикул" id="113">
-									<DataPath>1/0:c0665c86-43ed-4742-be51-bb50fc55dfd0/2:5bdad865-f2c5-434b-8041-ba4aad3b6687</DataPath>
 									<UserVisible>
 										<xr:Common>false</xr:Common>
 									</UserVisible>
@@ -739,7 +731,6 @@
 									<ExtendedTooltip name="ТоварыОкончаниеПоступленияExtendedTooltip" id="199"/>
 								</InputField>
 								<InputField name="ТоварыНазначение" id="132">
-									<DataPath>1/0:c0665c86-43ed-4742-be51-bb50fc55dfd0/0:08d4c386-8025-4afe-8a01-9b58a348da20</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<DropListButton>false</DropListButton>
 									<ChoiceButton>true</ChoiceButton>
@@ -1913,7 +1904,6 @@
 				<ExtendedTooltip name="ГруппаОснованиеExtendedTooltip" id="215"/>
 				<ChildItems>
 					<LabelField name="ДокументОснование" id="216">
-						<DataPath>1/0:aa98b4a9-9940-4039-af98-a269bf91561e</DataPath>
 						<AutoMaxWidth>false</AutoMaxWidth>
 						<Hiperlink>true</Hiperlink>
 						<ContextMenu name="ДокументОснованиеКонтекстноеМеню" id="217"/>
@@ -1959,7 +1949,6 @@
 								<ExtendedTooltip name="ДатаНомерExtendedTooltip" id="148"/>
 								<ChildItems>
 									<InputField name="Номер" id="1">
-										<DataPath>1/-2</DataPath>
 										<AutoMaxWidth>false</AutoMaxWidth>
 										<MaxWidth>9</MaxWidth>
 										<HorizontalStretch>false</HorizontalStretch>
@@ -1968,7 +1957,6 @@
 										<ExtendedTooltip name="НомерExtendedTooltip" id="149"/>
 									</InputField>
 									<InputField name="Дата" id="3">
-										<DataPath>1/-3</DataPath>
 										<Title>
 											<v8:item>
 												<v8:lang>ru</v8:lang>
@@ -2133,14 +2121,12 @@
 								<v8:content>Товары</v8:content>
 							</v8:item>
 						</Title>
-						<TitleDataPath>1/0:c0665c86-43ed-4742-be51-bb50fc55dfd0/100000000</TitleDataPath>
 						<ExtendedTooltip name="ГруппаТоварыExtendedTooltip" id="160"/>
 						<ChildItems>
 							<Table name="Товары" id="15">
 								<SkipOnInput>false</SkipOnInput>
 								<AutoInsertNewRow>true</AutoInsertNewRow>
 								<FileDragMode>AsFile</FileDragMode>
-								<DataPath>1/0:c0665c86-43ed-4742-be51-bb50fc55dfd0</DataPath>
 								<Title>
 									<v8:item>
 										<v8:lang>ru</v8:lang>
@@ -2367,7 +2353,6 @@
 								</SearchControlAddition>
 								<ChildItems>
 									<LabelField name="ТоварыНомерСтроки" id="88">
-										<DataPath>1/0:c0665c86-43ed-4742-be51-bb50fc55dfd0/-2</DataPath>
 										<EditMode>EnterOnInput</EditMode>
 										<Width>3</Width>
 										<HorizontalStretch>false</HorizontalStretch>
@@ -2386,7 +2371,6 @@
 										<ExtendedTooltip name="ТоварыКодСтрокиExtendedTooltip" id="183"/>
 									</InputField>
 									<LabelField name="ТоварыНоменклатураТипНоменклатуры" id="140">
-										<DataPath>1/0:c0665c86-43ed-4742-be51-bb50fc55dfd0/3:5bdad865-f2c5-434b-8041-ba4aad3b6687</DataPath>
 										<UserVisible>
 											<xr:Common>false</xr:Common>
 										</UserVisible>
@@ -2411,7 +2395,6 @@
 										<ExtendedTooltip name="ТоварыНоменклатураКодExtendedTooltip" id="185"/>
 									</LabelField>
 									<LabelField name="ТоварыНоменклатураАртикул" id="113">
-										<DataPath>1/0:c0665c86-43ed-4742-be51-bb50fc55dfd0/2:5bdad865-f2c5-434b-8041-ba4aad3b6687</DataPath>
 										<UserVisible>
 											<xr:Common>false</xr:Common>
 										</UserVisible>
@@ -2459,7 +2442,6 @@
 										<ExtendedTooltip name="ТоварыОкончаниеПоступленияExtendedTooltip" id="199"/>
 									</InputField>
 									<InputField name="ТоварыНазначение" id="132">
-										<DataPath>1/0:c0665c86-43ed-4742-be51-bb50fc55dfd0/0:08d4c386-8025-4afe-8a01-9b58a348da20</DataPath>
 										<EditMode>EnterOnInput</EditMode>
 										<DropListButton>false</DropListButton>
 										<ChoiceButton>true</ChoiceButton>

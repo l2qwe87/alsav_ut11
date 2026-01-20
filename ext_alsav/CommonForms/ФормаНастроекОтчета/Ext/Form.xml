@@ -124,7 +124,6 @@
 							<EnableDrag>true</EnableDrag>
 							<FileDragMode>AsFile</FileDragMode>
 							<DataPath>СоставГруппировки</DataPath>
-							<RowPictureDataPath>1000020/1000021</RowPictureDataPath>
 							<RowsPicture>
 								<xr:Ref>CommonPicture.ПиктограммыНастроекОтчета</xr:Ref>
 								<xr:LoadTransparent>true</xr:LoadTransparent>
@@ -358,7 +357,6 @@
 									<InitialTreeView>ExpandAllLevels</InitialTreeView>
 									<FileDragMode>AsFile</FileDragMode>
 									<DataPath>Отборы</DataPath>
-									<RowPictureDataPath>1000013/1000021</RowPictureDataPath>
 									<RowsPicture>
 										<xr:Ref>CommonPicture.ПиктограммыНастроекОтчета</xr:Ref>
 										<xr:LoadTransparent>true</xr:LoadTransparent>
@@ -884,7 +882,6 @@
 									<EnableDrag>true</EnableDrag>
 									<FileDragMode>AsFile</FileDragMode>
 									<DataPath>ВыбранныеПоля</DataPath>
-									<RowPictureDataPath>1000012/1000021</RowPictureDataPath>
 									<RowsPicture>
 										<xr:Ref>CommonPicture.ПиктограммыНастроекОтчета</xr:Ref>
 										<xr:LoadTransparent>true</xr:LoadTransparent>
@@ -1240,7 +1237,6 @@
 											<EnableDrag>true</EnableDrag>
 											<FileDragMode>AsFile</FileDragMode>
 											<DataPath>Сортировка</DataPath>
-											<RowPictureDataPath>1000010/1000021</RowPictureDataPath>
 											<RowsPicture>
 												<xr:Ref>CommonPicture.ПиктограммыНастроекОтчета</xr:Ref>
 												<xr:LoadTransparent>true</xr:LoadTransparent>
@@ -1639,7 +1635,6 @@
 									<EnableDrag>true</EnableDrag>
 									<FileDragMode>AsFile</FileDragMode>
 									<DataPath>Оформление</DataPath>
-									<RowPictureDataPath>1000026/1000021</RowPictureDataPath>
 									<RowsPicture>
 										<xr:Ref>CommonPicture.ПиктограммыНастроекОтчета</xr:Ref>
 										<xr:LoadTransparent>true</xr:LoadTransparent>
@@ -1889,7 +1884,6 @@
 							<EnableDrag>true</EnableDrag>
 							<FileDragMode>AsFile</FileDragMode>
 							<DataPath>СтруктураВарианта</DataPath>
-							<RowPictureDataPath>1000014/1000021</RowPictureDataPath>
 							<RowsPicture>
 								<xr:Ref>CommonPicture.ПиктограммыНастроекОтчета</xr:Ref>
 								<xr:LoadTransparent>true</xr:LoadTransparent>
@@ -4966,7 +4960,6 @@
 								<EnableDrag>true</EnableDrag>
 								<FileDragMode>AsFile</FileDragMode>
 								<DataPath>СоставГруппировки</DataPath>
-								<RowPictureDataPath>1000020/1000021</RowPictureDataPath>
 								<RowsPicture>
 									<xr:Ref>CommonPicture.ПиктограммыНастроекОтчета</xr:Ref>
 									<xr:LoadTransparent>true</xr:LoadTransparent>
@@ -5200,7 +5193,6 @@
 										<InitialTreeView>ExpandAllLevels</InitialTreeView>
 										<FileDragMode>AsFile</FileDragMode>
 										<DataPath>Отборы</DataPath>
-										<RowPictureDataPath>1000013/1000021</RowPictureDataPath>
 										<RowsPicture>
 											<xr:Ref>CommonPicture.ПиктограммыНастроекОтчета</xr:Ref>
 											<xr:LoadTransparent>true</xr:LoadTransparent>
@@ -5726,7 +5718,6 @@
 										<EnableDrag>true</EnableDrag>
 										<FileDragMode>AsFile</FileDragMode>
 										<DataPath>ВыбранныеПоля</DataPath>
-										<RowPictureDataPath>1000012/1000021</RowPictureDataPath>
 										<RowsPicture>
 											<xr:Ref>CommonPicture.ПиктограммыНастроекОтчета</xr:Ref>
 											<xr:LoadTransparent>true</xr:LoadTransparent>
@@ -6082,7 +6073,6 @@
 												<EnableDrag>true</EnableDrag>
 												<FileDragMode>AsFile</FileDragMode>
 												<DataPath>Сортировка</DataPath>
-												<RowPictureDataPath>1000010/1000021</RowPictureDataPath>
 												<RowsPicture>
 													<xr:Ref>CommonPicture.ПиктограммыНастроекОтчета</xr:Ref>
 													<xr:LoadTransparent>true</xr:LoadTransparent>
@@ -6481,7 +6471,6 @@
 										<EnableDrag>true</EnableDrag>
 										<FileDragMode>AsFile</FileDragMode>
 										<DataPath>Оформление</DataPath>
-										<RowPictureDataPath>1000026/1000021</RowPictureDataPath>
 										<RowsPicture>
 											<xr:Ref>CommonPicture.ПиктограммыНастроекОтчета</xr:Ref>
 											<xr:LoadTransparent>true</xr:LoadTransparent>
@@ -6731,7 +6720,6 @@
 								<EnableDrag>true</EnableDrag>
 								<FileDragMode>AsFile</FileDragMode>
 								<DataPath>СтруктураВарианта</DataPath>
-								<RowPictureDataPath>1000014/1000021</RowPictureDataPath>
 								<RowsPicture>
 									<xr:Ref>CommonPicture.ПиктограммыНастроекОтчета</xr:Ref>
 									<xr:LoadTransparent>true</xr:LoadTransparent>

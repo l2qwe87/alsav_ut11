@@ -1233,7 +1233,6 @@
 											<AutoInsertNewRow>true</AutoInsertNewRow>
 											<FileDragMode>AsFile</FileDragMode>
 											<DataPath>СписокКачества</DataPath>
-											<RowPictureDataPath>1000019/1000006</RowPictureDataPath>
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -3709,7 +3708,6 @@
 												<AutoInsertNewRow>true</AutoInsertNewRow>
 												<FileDragMode>AsFile</FileDragMode>
 												<DataPath>СписокКачества</DataPath>
-												<RowPictureDataPath>1000019/1000006</RowPictureDataPath>
 												<Title>
 													<v8:item>
 														<v8:lang>ru</v8:lang>
