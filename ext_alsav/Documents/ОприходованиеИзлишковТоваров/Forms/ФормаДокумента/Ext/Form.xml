@@ -735,7 +735,6 @@
 									<ExtendedTooltip name="ТоварыГруппаКоличествоПоРНПТРасширеннаяПодсказка" id="251"/>
 									<ChildItems>
 										<InputField name="ТоварыКоличествоПоРНПТ" id="252">
-											<DataPath>1000001/0:cc2b1617-092f-4038-a475-cdd21bccd120/0:0d831966-f194-445d-b983-f0e44aa6a0dc</DataPath>
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -1658,7 +1657,6 @@
 										<ExtendedTooltip name="ТоварыГруппаКоличествоПоРНПТРасширеннаяПодсказка" id="251"/>
 										<ChildItems>
 											<InputField name="ТоварыКоличествоПоРНПТ" id="252">
-												<DataPath>1000001/0:cc2b1617-092f-4038-a475-cdd21bccd120/0:0d831966-f194-445d-b983-f0e44aa6a0dc</DataPath>
 												<Title>
 													<v8:item>
 														<v8:lang>ru</v8:lang>

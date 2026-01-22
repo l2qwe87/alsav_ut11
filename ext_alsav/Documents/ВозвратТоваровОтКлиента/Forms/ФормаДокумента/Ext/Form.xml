@@ -294,7 +294,6 @@
 							<ExtendedTooltip name="ГруппаЗаявкаРасширеннаяПодсказка" id="660"/>
 							<ChildItems>
 								<LabelField name="ЗаявкаНаВозвратТоваровОтКлиента" id="191">
-									<DataPath>1/0:53dccaba-ea7a-431c-883d-eb9e6cdc3d30</DataPath>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -369,7 +368,6 @@
 											<ExtendedTooltip name="СтраницаРеализацияExtendedTooltip" id="359"/>
 											<ChildItems>
 												<LabelField name="ДокументРеализации" id="177">
-													<DataPath>1/0:2ce641e7-fcc8-4cad-a628-19d1297dfb15</DataPath>
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
@@ -479,7 +477,6 @@
 											<ExtendedTooltip name="ГруппаНомерДатаExtendedTooltip" id="366"/>
 											<ChildItems>
 												<InputField name="Номер" id="1">
-													<DataPath>1/-2</DataPath>
 													<TitleLocation>Left</TitleLocation>
 													<AutoMaxWidth>false</AutoMaxWidth>
 													<MaxWidth>10</MaxWidth>
@@ -489,7 +486,6 @@
 													<ExtendedTooltip name="НомерExtendedTooltip" id="367"/>
 												</InputField>
 												<InputField name="Дата" id="3">
-													<DataPath>1/-3</DataPath>
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
@@ -506,7 +502,6 @@
 											</ChildItems>
 										</UsualGroup>
 										<InputField name="ЧекККМ" id="189">
-											<DataPath>1/0:b5301969-1083-4fec-9452-7f762b7d0060</DataPath>
 											<TitleLocation>Left</TitleLocation>
 											<AutoMaxWidth>false</AutoMaxWidth>
 											<MaxWidth>28</MaxWidth>
@@ -832,7 +827,6 @@
 							<v8:content>Товары</v8:content>
 						</v8:item>
 					</Title>
-					<TitleDataPath>1/0:787da7ad-3291-48c0-afc7-ee50b5b05007/100000000</TitleDataPath>
 					<ExtendedTooltip name="ГруппаТоварыExtendedTooltip" id="379"/>
 					<ChildItems>
 						<Table name="Товары" id="29">
@@ -841,7 +835,6 @@
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<AutoAddIncomplete>false</AutoAddIncomplete>
 							<FileDragMode>AsFile</FileDragMode>
-							<DataPath>1/0:787da7ad-3291-48c0-afc7-ee50b5b05007</DataPath>
 							<RowFilter xsi:nil="true"/>
 							<ContextMenu name="ТоварыКонтекстноеМеню" id="30">
 								<ChildItems>
@@ -1059,7 +1052,6 @@
 							</Events>
 							<ChildItems>
 								<InputField name="ТоварыНомерСтроки" id="32">
-									<DataPath>1/0:787da7ad-3291-48c0-afc7-ee50b5b05007/-2</DataPath>
 									<Width>3</Width>
 									<HorizontalStretch>false</HorizontalStretch>
 									<Wrap>false</Wrap>
@@ -1132,7 +1124,6 @@
 											<ExtendedTooltip name="ТоварыНоменклатураКодExtendedTooltip" id="406"/>
 										</LabelField>
 										<PictureField name="ТоварыИндексНабора" id="494">
-											<DataPath>1/0:787da7ad-3291-48c0-afc7-ee50b5b05007/10:5bdad865-f2c5-434b-8041-ba4aad3b6687</DataPath>
 											<TitleLocation>None</TitleLocation>
 											<ToolTip>
 												<v8:item>
@@ -1202,7 +1193,6 @@
 											<ExtendedTooltip name="ТоварыНоменклатураЕГАИСРасширеннаяПодсказка" id="638"/>
 										</InputField>
 										<LabelField name="ТоварыНоменклатураАртикул" id="286">
-											<DataPath>1/0:787da7ad-3291-48c0-afc7-ee50b5b05007/8:5bdad865-f2c5-434b-8041-ba4aad3b6687</DataPath>
 											<UserVisible>
 												<xr:Common>false</xr:Common>
 											</UserVisible>
@@ -1313,7 +1303,6 @@
 											<ExtendedTooltip name="ТоварыНоменклатураОприходованиеКодExtendedTooltip" id="415"/>
 										</LabelField>
 										<LabelField name="ТоварыНоменклатураОприходованиеАртикул" id="290">
-											<DataPath>1/0:787da7ad-3291-48c0-afc7-ee50b5b05007/9:5bdad865-f2c5-434b-8041-ba4aad3b6687</DataPath>
 											<UserVisible>
 												<xr:Common>false</xr:Common>
 											</UserVisible>
@@ -1465,7 +1454,6 @@
 									<ExtendedTooltip name="ТоварыСуммаСНДСExtendedTooltip" id="429"/>
 								</InputField>
 								<LabelField name="ТоварыСпособОпределенияСебестоимостиСтрокой" id="641">
-									<DataPath>1/0:787da7ad-3291-48c0-afc7-ee50b5b05007/16:5bdad865-f2c5-434b-8041-ba4aad3b6687</DataPath>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -1478,7 +1466,6 @@
 									<ExtendedTooltip name="ТоварыСпособОпределенияСебестоимостиСтрокойРасширеннаяПодсказка" id="643"/>
 								</LabelField>
 								<InputField name="ТоварыДокументРеализации" id="312">
-									<DataPath>1/0:787da7ad-3291-48c0-afc7-ee50b5b05007/0:3b7e00f4-ebe3-4fdf-9cee-0376920ae112</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<DropListButton>false</DropListButton>
 									<ChoiceButton>true</ChoiceButton>
@@ -1520,7 +1507,6 @@
 									<ExtendedTooltip name="ТоварыНомерГТДРасширеннаяПодсказка" id="707"/>
 								</InputField>
 								<InputField name="ТоварыНомерГТДСтранаПроисхождения" id="708">
-									<DataPath>1/0:787da7ad-3291-48c0-afc7-ee50b5b05007/20:5bdad865-f2c5-434b-8041-ba4aad3b6687</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ТоварыНомерГТДСтранаПроисхожденияКонтекстноеМеню" id="709"/>
 									<ExtendedTooltip name="ТоварыНомерГТДСтранаПроисхожденияРасширеннаяПодсказка" id="710"/>
@@ -2701,7 +2687,6 @@
 								<ExtendedTooltip name="ГруппаЗаявкаРасширеннаяПодсказка" id="660"/>
 								<ChildItems>
 									<LabelField name="ЗаявкаНаВозвратТоваровОтКлиента" id="191">
-										<DataPath>1/0:53dccaba-ea7a-431c-883d-eb9e6cdc3d30</DataPath>
 										<Title>
 											<v8:item>
 												<v8:lang>ru</v8:lang>
@@ -2776,7 +2761,6 @@
 												<ExtendedTooltip name="СтраницаРеализацияExtendedTooltip" id="359"/>
 												<ChildItems>
 													<LabelField name="ДокументРеализации" id="177">
-														<DataPath>1/0:2ce641e7-fcc8-4cad-a628-19d1297dfb15</DataPath>
 														<Title>
 															<v8:item>
 																<v8:lang>ru</v8:lang>
@@ -2886,7 +2870,6 @@
 												<ExtendedTooltip name="ГруппаНомерДатаExtendedTooltip" id="366"/>
 												<ChildItems>
 													<InputField name="Номер" id="1">
-														<DataPath>1/-2</DataPath>
 														<TitleLocation>Left</TitleLocation>
 														<AutoMaxWidth>false</AutoMaxWidth>
 														<MaxWidth>10</MaxWidth>
@@ -2896,7 +2879,6 @@
 														<ExtendedTooltip name="НомерExtendedTooltip" id="367"/>
 													</InputField>
 													<InputField name="Дата" id="3">
-														<DataPath>1/-3</DataPath>
 														<Title>
 															<v8:item>
 																<v8:lang>ru</v8:lang>
@@ -2913,7 +2895,6 @@
 												</ChildItems>
 											</UsualGroup>
 											<InputField name="ЧекККМ" id="189">
-												<DataPath>1/0:b5301969-1083-4fec-9452-7f762b7d0060</DataPath>
 												<TitleLocation>Left</TitleLocation>
 												<AutoMaxWidth>false</AutoMaxWidth>
 												<MaxWidth>28</MaxWidth>
@@ -3239,7 +3220,6 @@
 								<v8:content>Товары</v8:content>
 							</v8:item>
 						</Title>
-						<TitleDataPath>1/0:787da7ad-3291-48c0-afc7-ee50b5b05007/100000000</TitleDataPath>
 						<ExtendedTooltip name="ГруппаТоварыExtendedTooltip" id="379"/>
 						<ChildItems>
 							<Table name="Товары" id="29">
@@ -3248,7 +3228,6 @@
 								<AutoInsertNewRow>true</AutoInsertNewRow>
 								<AutoAddIncomplete>false</AutoAddIncomplete>
 								<FileDragMode>AsFile</FileDragMode>
-								<DataPath>1/0:787da7ad-3291-48c0-afc7-ee50b5b05007</DataPath>
 								<RowFilter xsi:nil="true"/>
 								<ContextMenu name="ТоварыКонтекстноеМеню" id="30">
 									<ChildItems>
@@ -3463,7 +3442,6 @@
 								</SearchControlAddition>
 								<ChildItems>
 									<InputField name="ТоварыНомерСтроки" id="32">
-										<DataPath>1/0:787da7ad-3291-48c0-afc7-ee50b5b05007/-2</DataPath>
 										<Width>3</Width>
 										<HorizontalStretch>false</HorizontalStretch>
 										<Wrap>false</Wrap>
@@ -3536,7 +3514,6 @@
 												<ExtendedTooltip name="ТоварыНоменклатураКодExtendedTooltip" id="406"/>
 											</LabelField>
 											<PictureField name="ТоварыИндексНабора" id="494">
-												<DataPath>1/0:787da7ad-3291-48c0-afc7-ee50b5b05007/10:5bdad865-f2c5-434b-8041-ba4aad3b6687</DataPath>
 												<TitleLocation>None</TitleLocation>
 												<ToolTip>
 													<v8:item>
@@ -3606,7 +3583,6 @@
 												<ExtendedTooltip name="ТоварыНоменклатураЕГАИСРасширеннаяПодсказка" id="638"/>
 											</InputField>
 											<LabelField name="ТоварыНоменклатураАртикул" id="286">
-												<DataPath>1/0:787da7ad-3291-48c0-afc7-ee50b5b05007/8:5bdad865-f2c5-434b-8041-ba4aad3b6687</DataPath>
 												<UserVisible>
 													<xr:Common>false</xr:Common>
 												</UserVisible>
@@ -3717,7 +3693,6 @@
 												<ExtendedTooltip name="ТоварыНоменклатураОприходованиеКодExtendedTooltip" id="415"/>
 											</LabelField>
 											<LabelField name="ТоварыНоменклатураОприходованиеАртикул" id="290">
-												<DataPath>1/0:787da7ad-3291-48c0-afc7-ee50b5b05007/9:5bdad865-f2c5-434b-8041-ba4aad3b6687</DataPath>
 												<UserVisible>
 													<xr:Common>false</xr:Common>
 												</UserVisible>
@@ -3869,7 +3844,6 @@
 										<ExtendedTooltip name="ТоварыСуммаСНДСExtendedTooltip" id="429"/>
 									</InputField>
 									<LabelField name="ТоварыСпособОпределенияСебестоимостиСтрокой" id="641">
-										<DataPath>1/0:787da7ad-3291-48c0-afc7-ee50b5b05007/16:5bdad865-f2c5-434b-8041-ba4aad3b6687</DataPath>
 										<Title>
 											<v8:item>
 												<v8:lang>ru</v8:lang>
@@ -3882,7 +3856,6 @@
 										<ExtendedTooltip name="ТоварыСпособОпределенияСебестоимостиСтрокойРасширеннаяПодсказка" id="643"/>
 									</LabelField>
 									<InputField name="ТоварыДокументРеализации" id="312">
-										<DataPath>1/0:787da7ad-3291-48c0-afc7-ee50b5b05007/0:3b7e00f4-ebe3-4fdf-9cee-0376920ae112</DataPath>
 										<EditMode>EnterOnInput</EditMode>
 										<DropListButton>false</DropListButton>
 										<ChoiceButton>true</ChoiceButton>
@@ -3924,7 +3897,6 @@
 										<ExtendedTooltip name="ТоварыНомерГТДРасширеннаяПодсказка" id="707"/>
 									</InputField>
 									<InputField name="ТоварыНомерГТДСтранаПроисхождения" id="708">
-										<DataPath>1/0:787da7ad-3291-48c0-afc7-ee50b5b05007/20:5bdad865-f2c5-434b-8041-ba4aad3b6687</DataPath>
 										<EditMode>EnterOnInput</EditMode>
 										<ContextMenu name="ТоварыНомерГТДСтранаПроисхожденияКонтекстноеМеню" id="709"/>
 										<ExtendedTooltip name="ТоварыНомерГТДСтранаПроисхожденияРасширеннаяПодсказка" id="710"/>

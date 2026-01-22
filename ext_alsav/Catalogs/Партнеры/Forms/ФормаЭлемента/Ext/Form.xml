@@ -488,7 +488,6 @@
 											<ExtendedTooltip name="ГруппаДоступаExtendedTooltip" id="219"/>
 										</InputField>
 										<CheckBoxField name="УБ_ОтгружатьНеоплаченное" id="275">
-											<DataPath>1000001/0:a93a96b3-7e03-421d-97f3-d7b0781bf631</DataPath>
 											<CheckBoxType>Auto</CheckBoxType>
 											<ContextMenu name="УБ_ОтгружатьНеоплаченноеКонтекстноеМеню" id="276"/>
 											<ExtendedTooltip name="УБ_ОтгружатьНеоплаченноеРасширеннаяПодсказка" id="277"/>
@@ -714,13 +713,11 @@
 							<ExtendedTooltip name="УБ_ДопРеквРасширеннаяПодсказка" id="279"/>
 							<ChildItems>
 								<CheckBoxField name="УБ_флКонтролироватьСуммуДолга" id="280">
-									<DataPath>1000001/0:41744560-ccf7-4ba1-84f2-e743abfea74e</DataPath>
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="УБ_флКонтролироватьСуммуДолгаКонтекстноеМеню" id="281"/>
 									<ExtendedTooltip name="УБ_флКонтролироватьСуммуДолгаРасширеннаяПодсказка" id="282"/>
 								</CheckBoxField>
 								<InputField name="УБ_ПределЗадолженности" id="283">
-									<DataPath>1000001/0:a1a1229a-2ef7-4b77-babf-cc0f20424150</DataPath>
 									<ContextMenu name="УБ_ПределЗадолженностиКонтекстноеМеню" id="284"/>
 									<ExtendedTooltip name="УБ_ПределЗадолженностиРасширеннаяПодсказка" id="285"/>
 								</InputField>

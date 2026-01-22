@@ -1542,6 +1542,9 @@
 													<Wrap>false</Wrap>
 													<ContextMenu name="ТоварыНоменклатураКонтекстноеМеню" id="471"/>
 													<ExtendedTooltip name="ТоварыНоменклатураExtendedTooltip" id="1195"/>
+													<Events>
+														<Event name="OnChange" callType="Override">алсав_ТоварыНоменклатураПриИзмененииВместо</Event>
+													</Events>
 												</InputField>
 												<InputField name="ТоварыХарактеристика" id="472">
 													<DataPath>Объект.Товары.Характеристика</DataPath>

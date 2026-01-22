@@ -217,6 +217,9 @@
 			<CommonModule>МенеджерОбменаЧерезУниверсальныйФормат</CommonModule>
 			<CommonModule>ОбменДаннымиУТ</CommonModule>
 			<CommonModule>алсав_Ozon_РаботаСОстаткамиУТ</CommonModule>
+			<CommonModule>УчетНДСУП</CommonModule>
+			<CommonModule>ОбработкаТабличнойЧастиСервер</CommonModule>
+			<CommonModule>ФормированиеПечатныхФорм</CommonModule>
 			<FunctionalOption>ИспользоватьНаборы</FunctionalOption>
 			<FunctionalOption>ИспользоватьПострочнуюОтгрузкуВЗаказеКлиента</FunctionalOption>
 			<FunctionalOption>ИспользоватьРасширенныеВозможностиЗаказаКлиента</FunctionalOption>

@@ -359,7 +359,6 @@
 											<ExtendedTooltip name="СтраницаРеализацияExtendedTooltip" id="1005"/>
 											<ChildItems>
 												<LabelField name="ДокументРеализации" id="389">
-													<DataPath>1/0:cc48f882-21ab-40b1-b130-c5800426f646</DataPath>
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
@@ -458,7 +457,6 @@
 													<ExtendedTooltip name="НомерДатаExtendedTooltip" id="1013"/>
 													<ChildItems>
 														<InputField name="Номер" id="1">
-															<DataPath>1/-2</DataPath>
 															<TitleLocation>Left</TitleLocation>
 															<Width>10</Width>
 															<HorizontalStretch>false</HorizontalStretch>
@@ -467,7 +465,6 @@
 															<ExtendedTooltip name="НомерExtendedTooltip" id="1014"/>
 														</InputField>
 														<InputField name="Дата" id="3">
-															<DataPath>1/-3</DataPath>
 															<Title>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
@@ -484,7 +481,6 @@
 													</ChildItems>
 												</UsualGroup>
 												<InputField name="ЧекККМ" id="592">
-													<DataPath>1/0:fd72707b-213e-4d52-be8a-5b23c50edcb0</DataPath>
 													<TitleLocation>Left</TitleLocation>
 													<AutoMaxWidth>false</AutoMaxWidth>
 													<MaxWidth>28</MaxWidth>
@@ -781,7 +777,6 @@
 								<Button name="ЗачетОплатыФорма" id="1565">
 									<Type>UsualButton</Type>
 									<CommandName>0:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
-									<DataPath>1/-5</DataPath>
 									<ExtendedTooltip name="ЗачетОплатыФормаРасширеннаяПодсказка" id="1566"/>
 								</Button>
 							</ChildItems>
@@ -810,7 +805,6 @@
 							<v8:content>Товары</v8:content>
 						</v8:item>
 					</ToolTip>
-					<TitleDataPath>1/0:d2ae4202-d311-4580-83ff-4ce9da856649/100000000</TitleDataPath>
 					<ExtendedTooltip name="ГруппаВозвращаемыеТоварыExtendedTooltip" id="1047"/>
 					<ChildItems>
 						<Table name="ВозвращаемыеТовары" id="31">
@@ -819,7 +813,6 @@
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<AutoAddIncomplete>false</AutoAddIncomplete>
 							<FileDragMode>AsFile</FileDragMode>
-							<DataPath>1/0:d2ae4202-d311-4580-83ff-4ce9da856649</DataPath>
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -1087,7 +1080,6 @@
 							</Events>
 							<ChildItems>
 								<InputField name="ВозвращаемыеТоварыНомерСтроки" id="34">
-									<DataPath>1/0:d2ae4202-d311-4580-83ff-4ce9da856649/-2</DataPath>
 									<Width>3</Width>
 									<HorizontalStretch>false</HorizontalStretch>
 									<Wrap>false</Wrap>
@@ -1148,7 +1140,6 @@
 											<ExtendedTooltip name="ВозвращаемыеТоварыНоменклатураКодExtendedTooltip" id="1081"/>
 										</LabelField>
 										<LabelField name="ВозвращаемыеТоварыНоменклатураАртикул" id="788">
-											<DataPath>1/0:d2ae4202-d311-4580-83ff-4ce9da856649/9:5bdad865-f2c5-434b-8041-ba4aad3b6687</DataPath>
 											<UserVisible>
 												<xr:Common>false</xr:Common>
 											</UserVisible>
@@ -1158,7 +1149,6 @@
 											<ExtendedTooltip name="ВозвращаемыеТоварыНоменклатураАртикулExtendedTooltip" id="1082"/>
 										</LabelField>
 										<PictureField name="ВозвращаемыеТоварыИндексНабора" id="1363">
-											<DataPath>1/0:d2ae4202-d311-4580-83ff-4ce9da856649/14:5bdad865-f2c5-434b-8041-ba4aad3b6687</DataPath>
 											<TitleLocation>None</TitleLocation>
 											<EditMode>EnterOnInput</EditMode>
 											<HeaderPicture>
@@ -1290,7 +1280,6 @@
 											<ExtendedTooltip name="ВозвращаемыеТоварыНоменклатураОприходованиеКодExtendedTooltip" id="1090"/>
 										</LabelField>
 										<LabelField name="ВозвращаемыеТоварыНоменклатураОприходованиеАртикул" id="792">
-											<DataPath>1/0:d2ae4202-d311-4580-83ff-4ce9da856649/10:5bdad865-f2c5-434b-8041-ba4aad3b6687</DataPath>
 											<UserVisible>
 												<xr:Common>false</xr:Common>
 											</UserVisible>
@@ -1499,7 +1488,6 @@
 									<ExtendedTooltip name="ВозвращаемыеТоварыОтмененоExtendedTooltip" id="1108"/>
 								</CheckBoxField>
 								<InputField name="ВозвращаемыеТоварыДокументРеализации" id="825">
-									<DataPath>1/0:d2ae4202-d311-4580-83ff-4ce9da856649/0:5834863f-81ce-4520-9c27-a1475203a64e</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<DropListButton>false</DropListButton>
 									<ChoiceButton>true</ChoiceButton>
@@ -4064,7 +4052,6 @@
 												<ExtendedTooltip name="СтраницаРеализацияExtendedTooltip" id="1005"/>
 												<ChildItems>
 													<LabelField name="ДокументРеализации" id="389">
-														<DataPath>1/0:cc48f882-21ab-40b1-b130-c5800426f646</DataPath>
 														<Title>
 															<v8:item>
 																<v8:lang>ru</v8:lang>
@@ -4163,7 +4150,6 @@
 														<ExtendedTooltip name="НомерДатаExtendedTooltip" id="1013"/>
 														<ChildItems>
 															<InputField name="Номер" id="1">
-																<DataPath>1/-2</DataPath>
 																<TitleLocation>Left</TitleLocation>
 																<Width>10</Width>
 																<HorizontalStretch>false</HorizontalStretch>
@@ -4172,7 +4158,6 @@
 																<ExtendedTooltip name="НомерExtendedTooltip" id="1014"/>
 															</InputField>
 															<InputField name="Дата" id="3">
-																<DataPath>1/-3</DataPath>
 																<Title>
 																	<v8:item>
 																		<v8:lang>ru</v8:lang>
@@ -4189,7 +4174,6 @@
 														</ChildItems>
 													</UsualGroup>
 													<InputField name="ЧекККМ" id="592">
-														<DataPath>1/0:fd72707b-213e-4d52-be8a-5b23c50edcb0</DataPath>
 														<TitleLocation>Left</TitleLocation>
 														<AutoMaxWidth>false</AutoMaxWidth>
 														<MaxWidth>28</MaxWidth>
@@ -4486,7 +4470,6 @@
 									<Button name="ЗачетОплатыФорма" id="1565">
 										<Type>UsualButton</Type>
 										<CommandName>0:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
-										<DataPath>1/-5</DataPath>
 										<ExtendedTooltip name="ЗачетОплатыФормаРасширеннаяПодсказка" id="1566"/>
 									</Button>
 								</ChildItems>
@@ -4515,7 +4498,6 @@
 								<v8:content>Товары</v8:content>
 							</v8:item>
 						</ToolTip>
-						<TitleDataPath>1/0:d2ae4202-d311-4580-83ff-4ce9da856649/100000000</TitleDataPath>
 						<ExtendedTooltip name="ГруппаВозвращаемыеТоварыExtendedTooltip" id="1047"/>
 						<ChildItems>
 							<Table name="ВозвращаемыеТовары" id="31">
@@ -4524,7 +4506,6 @@
 								<AutoInsertNewRow>true</AutoInsertNewRow>
 								<AutoAddIncomplete>false</AutoAddIncomplete>
 								<FileDragMode>AsFile</FileDragMode>
-								<DataPath>1/0:d2ae4202-d311-4580-83ff-4ce9da856649</DataPath>
 								<Title>
 									<v8:item>
 										<v8:lang>ru</v8:lang>
@@ -4789,7 +4770,6 @@
 								</SearchControlAddition>
 								<ChildItems>
 									<InputField name="ВозвращаемыеТоварыНомерСтроки" id="34">
-										<DataPath>1/0:d2ae4202-d311-4580-83ff-4ce9da856649/-2</DataPath>
 										<Width>3</Width>
 										<HorizontalStretch>false</HorizontalStretch>
 										<Wrap>false</Wrap>
@@ -4850,7 +4830,6 @@
 												<ExtendedTooltip name="ВозвращаемыеТоварыНоменклатураКодExtendedTooltip" id="1081"/>
 											</LabelField>
 											<LabelField name="ВозвращаемыеТоварыНоменклатураАртикул" id="788">
-												<DataPath>1/0:d2ae4202-d311-4580-83ff-4ce9da856649/9:5bdad865-f2c5-434b-8041-ba4aad3b6687</DataPath>
 												<UserVisible>
 													<xr:Common>false</xr:Common>
 												</UserVisible>
@@ -4860,7 +4839,6 @@
 												<ExtendedTooltip name="ВозвращаемыеТоварыНоменклатураАртикулExtendedTooltip" id="1082"/>
 											</LabelField>
 											<PictureField name="ВозвращаемыеТоварыИндексНабора" id="1363">
-												<DataPath>1/0:d2ae4202-d311-4580-83ff-4ce9da856649/14:5bdad865-f2c5-434b-8041-ba4aad3b6687</DataPath>
 												<TitleLocation>None</TitleLocation>
 												<EditMode>EnterOnInput</EditMode>
 												<HeaderPicture>
@@ -4992,7 +4970,6 @@
 												<ExtendedTooltip name="ВозвращаемыеТоварыНоменклатураОприходованиеКодExtendedTooltip" id="1090"/>
 											</LabelField>
 											<LabelField name="ВозвращаемыеТоварыНоменклатураОприходованиеАртикул" id="792">
-												<DataPath>1/0:d2ae4202-d311-4580-83ff-4ce9da856649/10:5bdad865-f2c5-434b-8041-ba4aad3b6687</DataPath>
 												<UserVisible>
 													<xr:Common>false</xr:Common>
 												</UserVisible>
@@ -5201,7 +5178,6 @@
 										<ExtendedTooltip name="ВозвращаемыеТоварыОтмененоExtendedTooltip" id="1108"/>
 									</CheckBoxField>
 									<InputField name="ВозвращаемыеТоварыДокументРеализации" id="825">
-										<DataPath>1/0:d2ae4202-d311-4580-83ff-4ce9da856649/0:5834863f-81ce-4520-9c27-a1475203a64e</DataPath>
 										<EditMode>EnterOnInput</EditMode>
 										<DropListButton>false</DropListButton>
 										<ChoiceButton>true</ChoiceButton>

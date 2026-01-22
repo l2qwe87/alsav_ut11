@@ -2302,7 +2302,6 @@
 							<EnableDrag>true</EnableDrag>
 							<FileDragMode>AsFile</FileDragMode>
 							<DataPath>СкидкиНаценки</DataPath>
-							<RowPictureDataPath>1000008/1000001</RowPictureDataPath>
 							<RowsPicture>
 								<xr:Ref>CommonPicture.СостояниеСкидкиНаценки</xr:Ref>
 								<xr:LoadTransparent>false</xr:LoadTransparent>
@@ -2454,7 +2453,11 @@
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:TypeId>dfd11c94-7817-45f6-bea6-314eb66e29b3</v8:TypeId>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
 		<Attribute name="ВалютаДокумента" id="1000003">
@@ -3393,7 +3396,7 @@
 												<ChoiceParameterLinks>
 													<xr:Link>
 														<xr:Name>Отбор.Партнер</xr:Name>
-														<xr:DataPath xsi:type="xs:string">1/0:aeca6783-538b-46b2-af5f-4b3d0ba61d71</xr:DataPath>
+														<xr:DataPath xsi:type="xs:string">1</xr:DataPath>
 														<xr:ValueChange>Clear</xr:ValueChange>
 													</xr:Link>
 												</ChoiceParameterLinks>
@@ -3408,7 +3411,7 @@
 												<ChoiceParameterLinks>
 													<xr:Link>
 														<xr:Name>Отбор.Владелец</xr:Name>
-														<xr:DataPath xsi:type="xs:string">1/0:aeca6783-538b-46b2-af5f-4b3d0ba61d71</xr:DataPath>
+														<xr:DataPath xsi:type="xs:string">1</xr:DataPath>
 														<xr:ValueChange>Clear</xr:ValueChange>
 													</xr:Link>
 												</ChoiceParameterLinks>
@@ -5220,7 +5223,7 @@
 										<ChoiceParameterLinks>
 											<xr:Link>
 												<xr:Name>Отбор.ЦенаВключаетНДС</xr:Name>
-												<xr:DataPath xsi:type="xs:string">1/0:9db615cb-e0fd-42dc-8a4e-c57a6f7e9494</xr:DataPath>
+												<xr:DataPath xsi:type="xs:string">1</xr:DataPath>
 												<xr:ValueChange>Clear</xr:ValueChange>
 											</xr:Link>
 										</ChoiceParameterLinks>
@@ -5385,7 +5388,6 @@
 								<EnableDrag>true</EnableDrag>
 								<FileDragMode>AsFile</FileDragMode>
 								<DataPath>СкидкиНаценки</DataPath>
-								<RowPictureDataPath>1000008/1000001</RowPictureDataPath>
 								<RowsPicture>
 									<xr:Ref>CommonPicture.СостояниеСкидкиНаценки</xr:Ref>
 									<xr:LoadTransparent>false</xr:LoadTransparent>
@@ -5537,7 +5539,11 @@
 					</v8:item>
 				</Title>
 				<Type>
-					<v8:TypeId>dfd11c94-7817-45f6-bea6-314eb66e29b3</v8:TypeId>
+					<v8:Type>xs:string</v8:Type>
+					<v8:StringQualifiers>
+						<v8:Length>0</v8:Length>
+						<v8:AllowedLength>Variable</v8:AllowedLength>
+					</v8:StringQualifiers>
 				</Type>
 			</Attribute>
 			<Attribute name="ВалютаДокумента" id="1000003">

@@ -423,4 +423,5 @@ FodyWeavers.xsd
 base/
 
 # OpenCode configuration and tools
-.opencode/
+**/.opencode/
+**/opencode.json

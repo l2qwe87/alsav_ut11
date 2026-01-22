@@ -57,6 +57,15 @@
 					<ExtendedConfigurationObject>adaf0338-9471-4b21-adb2-ab131d90d20f</ExtendedConfigurationObject>
 				</Properties>
 			</EnumValue>
+			<EnumValue uuid="1ef0802d-7d79-4d51-a601-0fd67827cfa4">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>НДС22</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>f518a96a-8510-4be6-b638-b27795460bf7</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
 		</ChildObjects>
 	</Enum>
 </MetaDataObject>
