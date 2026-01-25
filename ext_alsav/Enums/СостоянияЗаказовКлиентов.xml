@@ -37,6 +37,15 @@
 					<Comment/>
 				</Properties>
 			</EnumValue>
+			<EnumValue uuid="c434598e-58db-4bba-b9ab-f42694ea6826">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Закрыт</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>99d7c9c4-55a0-41ff-9ae0-bc17f9225371</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
 		</ChildObjects>
 	</Enum>
 </MetaDataObject>

@@ -11,6 +11,7 @@
 			<ObjectBelonging>Adopted</ObjectBelonging>
 			<Name>ОбъектРасчетов</Name>
 			<Comment/>
+			<Type/>
 		</Properties>
 	</DefinedType>
 </MetaDataObject>

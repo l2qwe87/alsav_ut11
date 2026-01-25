@@ -50,6 +50,21 @@
 					</Type>
 				</Properties>
 			</Resource>
+			<Resource uuid="58a5e651-3733-4da2-99ca-0a0be14dc43e">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ДатаСобытия</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>63aa379a-2fd5-4859-b950-0743407a2f0c</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Properties>
+			</Resource>
 			<Attribute uuid="4348d3b4-4a18-4696-9548-b9528f81f1e7">
 				<InternalInfo/>
 				<Properties>
@@ -101,6 +116,47 @@
 							<v8:FractionDigits>0</v8:FractionDigits>
 							<v8:AllowedSign>Any</v8:AllowedSign>
 						</v8:NumberQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="b1a0b2b4-dc43-4e2a-a847-8c49a5426aba">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>СуммаДолга</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>06fc4d96-5fd4-4645-a624-fde2fbcb96c4</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.ДенежнаяСуммаЛюбогоЗнака</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="23733880-ecca-45dd-bb4d-f65db460a8e1">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ПроцентДолга</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>6f24a5f0-5952-4d29-9631-f790ff3b91af</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>3</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="2e54d799-4e0e-412c-bb87-7edc5e9cdaab">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ЕстьРасхожденияОрдерНакладная</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>e93dc839-5709-4632-af99-0c84fa77f9a6</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
 					</Type>
 				</Properties>
 			</Attribute>

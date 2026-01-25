@@ -164,32 +164,35 @@
 			<CommonPicture>ВУпаковочныйЛист</CommonPicture>
 			<CommonPicture>СтатусыПроблем16</CommonPicture>
 			<CommonPicture>ВыполненоУспешно</CommonPicture>
-			<Role>АЛСАВ_ПравоРедактироватьЗапретОтгрузки</Role>
-			<Role>АЛСАВ_ПравоРедактироватьЭтапыОплаты</Role>
-			<Role>АЛСАВ_ПравоРедактироватьЭтапыОплаты_БанковскийСчет</Role>
-			<Role>АЛСАВ_ПравоРедактироватьЗапретАвтоматическойПометкиУдаления</Role>
-			<Role>АЛСАВ_ПравоАвтоматическоеСозданиеСборок</Role>
-			<Role>ПолныеПрава</Role>
-			<Role>БазовыеПраваУТ</Role>
-			<Role>АЛСАВ_ПравоОтчетАнализПоступлений</Role>
-			<Role>АЛСАВ_ПравоОтчетУпаковочныйЛистИЛистКомплектацииЗоныСборки</Role>
-			<Role>АЛСАВ_ПравоОтчетКонтрольСборок</Role>
-			<Role>АЛСАВ_ПравоОтчетРезерПоНеОплаченнымЗаказам</Role>
-			<Role>АЛСАВ_ПравоОтчетРеализацияСКомплектующимиИПолуфабрикатами</Role>
-			<Role>АЛСАВ_ПравоРедактироватьПроведенных_ПриобретениеТоваровУслуг</Role>
-			<Role>АЛСАВ_ПравоВыгрузкаОстатковCSV</Role>
-			<Role>АЛСАВ_НеВыполнятьДвиженияПоСкладу</Role>
-			<Role>АЛСАВ_ЗапретРедактированияПартнёровКромеКонтактнойИнформации</Role>
-			<Role>АЛСАВ_ПравоОтчетТоварыКОбеспечению</Role>
-			<Role>АЛСАВ_ОбъединитьОдинаковыеПозицииЗаказаПоставщика</Role>
+			<CommonPicture>СостояниеПроверкиКонтрагента</CommonPicture>
+			<CommonPicture>СостоянияДокумента</CommonPicture>
 			<Role>АЛСАВ_ЖурналЗаказыПоставщикуДополнительныеКнопки</Role>
-			<Role>АЛСАВ_ПравоОтчетУБ_Продажи</Role>
+			<Role>АЛСАВ_ЗапретРедактированияДокументРодитель</Role>
 			<Role>АЛСАВ_ЗапретРедактированияЗаказМинуса</Role>
 			<Role>АЛСАВ_ЗапретРедактированияЗаказОбеспечить</Role>
 			<Role>АЛСАВ_ЗапретРедактированияЗапуск</Role>
-			<Role>АЛСАВ_ЗапретРедактированияДокументРодитель</Role>
+			<Role>АЛСАВ_ЗапретРедактированияПартнёровКромеКонтактнойИнформации</Role>
+			<Role>АЛСАВ_НеВыполнятьДвиженияПоСкладу</Role>
+			<Role>АЛСАВ_ОбъединитьОдинаковыеПозицииЗаказаПоставщика</Role>
+			<Role>АЛСАВ_ПравоАвтоматическоеСозданиеСборок</Role>
+			<Role>АЛСАВ_ПравоВыгрузкаОстатковCSV</Role>
+			<Role>АЛСАВ_ПравоОтчетАнализПоступлений</Role>
 			<Role>АЛСАВ_ПравоОтчетВариантыКомплектации</Role>
+			<Role>АЛСАВ_ПравоОтчетКонтрольСборок</Role>
 			<Role>АЛСАВ_ПравоОтчетРасчетДоступностиСложныхТоваровИУпаковок</Role>
+			<Role>АЛСАВ_ПравоОтчетРеализацияСКомплектующимиИПолуфабрикатами</Role>
+			<Role>АЛСАВ_ПравоОтчетРезерПоНеОплаченнымЗаказам</Role>
+			<Role>АЛСАВ_ПравоОтчетТоварыКОбеспечению</Role>
+			<Role>АЛСАВ_ПравоОтчетУБ_Продажи</Role>
+			<Role>АЛСАВ_ПравоОтчетУпаковочныйЛистИЛистКомплектацииЗоныСборки</Role>
+			<Role>АЛСАВ_ПравоРедактироватьЗапретАвтоматическойПометкиУдаления</Role>
+			<Role>АЛСАВ_ПравоРедактироватьЗапретОтгрузки</Role>
+			<Role>АЛСАВ_ПравоРедактироватьПроведенных_ПриобретениеТоваровУслуг</Role>
+			<Role>АЛСАВ_ПравоРедактироватьЭтапыОплаты</Role>
+			<Role>АЛСАВ_ПравоРедактироватьЭтапыОплаты_БанковскийСчет</Role>
+			<Role>АЛСАВ_ФактическиОтгружен</Role>
+			<Role>БазовыеПраваУТ</Role>
+			<Role>ПолныеПрава</Role>
 			<CommonModule>алсав_ВыгрузкаCsvJson</CommonModule>
 			<CommonModule>алсав_ДопРеквизиты</CommonModule>
 			<CommonModule>алсав_ПечатьСчет</CommonModule>
@@ -295,6 +298,9 @@
 			<DefinedType>СчетФактура</DefinedType>
 			<DefinedType>ФизическоеЛицо</DefinedType>
 			<DefinedType>ВладелецФайлов</DefinedType>
+			<DefinedType>ХарактеристикаНоменклатуры</DefinedType>
+			<DefinedType>ОснованияЭлектронныхДокументов</DefinedType>
+			<DefinedType>Номенклатура</DefinedType>
 			<CommonCommand>ЗадачиПоПредмету</CommonCommand>
 			<CommonCommand>ИсторияИзменений</CommonCommand>
 			<CommonCommand>МоиЗаметкиПоПредмету</CommonCommand>
@@ -306,47 +312,48 @@
 			<CommonCommand>Напомнить</CommonCommand>
 			<CommonCommand>алсав_УстановитьЗакупочнуюЦену</CommonCommand>
 			<CommandGroup>Органайзер</CommandGroup>
-			<Constant>ИспользоватьСоглашенияСКлиентами</Constant>
-			<Constant>ИспользоватьРасширенныеВозможностиЗаказаКлиента</Constant>
-			<Constant>ИспользоватьПострочнуюОтгрузкуВЗаказеКлиента</Constant>
-			<Constant>ИспользоватьРучныеСкидкиВПродажах</Constant>
-			<Constant>ИспользоватьПодключаемоеОборудование</Constant>
-			<Constant>ИспользоватьКартыЛояльности</Constant>
+			<Constant>алсав_УПДРаскрыватьСостав</Constant>
+			<Constant>ВестиСведенияДляДекларацийАлкоВРознице</Constant>
+			<Constant>ВестиУчетМаркировкиПродукцииВГИСМ</Constant>
 			<Constant>ИспользоватьАвтоматическиеСкидкиВПродажах</Constant>
-			<Constant>ИспользоватьМногооборотнуюТару</Constant>
-			<Constant>ИспользоватьСкладыВТабличнойЧастиДокументовПродажи</Constant>
-			<Constant>ИспользоватьНаборы</Constant>
-			<Constant>ИспользоватьЗапретОтгрузки</Constant>
-			<Constant>ИспользоватьРеализациюПоНесколькимЗаказам</Constant>
-			<Constant>ИспользоватьСерииНоменклатуры</Constant>
-			<Constant>ИспользоватьПоступлениеПоНесколькимЗаказам</Constant>
+			<Constant>ИспользоватьДоговорыСКлиентами</Constant>
+			<Constant>ИспользоватьДопустимоеОтклонениеОтгрузкиПриемкиМерныхТоваров</Constant>
 			<Constant>ИспользоватьЗаказыКлиентов</Constant>
+			<Constant>ИспользоватьЗапретОтгрузки</Constant>
 			<Constant>ИспользоватьЗаявкиНаВозвратТоваровОтКлиентов</Constant>
+			<Constant>ИспользоватьКартыЛояльности</Constant>
+			<Constant>ИспользоватьКачествоТоваров</Constant>
+			<Constant>ИспользоватьМногооборотнуюТару</Constant>
+			<Constant>ИспользоватьНаборы</Constant>
 			<Constant>ИспользоватьНесколькоВалют</Constant>
+			<Constant>ИспользоватьНесколькоКасс</Constant>
+			<Constant>ИспользоватьНесколькоРасчетныхСчетов</Constant>
+			<Constant>ИспользоватьНоменклатуруПартнеров</Constant>
+			<Constant>ИспользоватьПодключаемоеОборудование</Constant>
+			<Constant>ИспользоватьПодразделения</Constant>
+			<Constant>ИспользоватьПострочнуюОтгрузкуВЗаказеКлиента</Constant>
+			<Constant>ИспользоватьПоступлениеПоНесколькимЗаказам</Constant>
+			<Constant>ИспользоватьРасширенныеВозможностиЗаказаКлиента</Constant>
+			<Constant>ИспользоватьРеализациюПоНесколькимЗаказам</Constant>
+			<Constant>ИспользоватьРучныеСкидкиВЗакупках</Constant>
+			<Constant>ИспользоватьРучныеСкидкиВПродажах</Constant>
+			<Constant>ИспользоватьСборкуРазборку</Constant>
+			<Constant>ИспользоватьСегментыНоменклатуры</Constant>
+			<Constant>ИспользоватьСерииНоменклатуры</Constant>
+			<Constant>ИспользоватьСертификатыНоменклатуры</Constant>
+			<Constant>ИспользоватьСкладыВТабличнойЧастиДокументовЗакупки</Constant>
+			<Constant>ИспользоватьСкладыВТабличнойЧастиДокументовПродажи</Constant>
+			<Constant>ИспользоватьСоглашенияСКлиентами</Constant>
+			<Constant>ИспользоватьСоглашенияСПоставщиками</Constant>
+			<Constant>ИспользоватьУпаковкиНоменклатуры</Constant>
 			<Constant>ИспользоватьУправленческуюОрганизацию</Constant>
 			<Constant>ИспользоватьУчетНДС</Constant>
 			<Constant>ИспользоватьХарактеристикиНоменклатуры</Constant>
-			<Constant>ВестиСведенияДляДекларацийАлкоВРознице</Constant>
-			<Constant>ИспользоватьУпаковкиНоменклатуры</Constant>
-			<Constant>ИспользоватьСертификатыНоменклатуры</Constant>
-			<Constant>ИспользоватьКачествоТоваров</Constant>
-			<Constant>ИспользоватьСборкуРазборку</Constant>
-			<Constant>ИспользоватьСегментыНоменклатуры</Constant>
-			<Constant>ИспользоватьНесколькоКасс</Constant>
-			<Constant>ИспользоватьНесколькоРасчетныхСчетов</Constant>
-			<Constant>ИспользоватьДопустимоеОтклонениеОтгрузкиПриемкиМерныхТоваров</Constant>
-			<Constant>ИспользоватьДоговорыСКлиентами</Constant>
-			<Constant>ИспользоватьРучныеСкидкиВЗакупках</Constant>
-			<Constant>ВестиУчетМаркировкиПродукцииВГИСМ</Constant>
-			<Constant>ИспользоватьСоглашенияСПоставщиками</Constant>
-			<Constant>ИспользоватьПодразделения</Constant>
-			<Constant>ИспользоватьСкладыВТабличнойЧастиДокументовЗакупки</Constant>
-			<Constant>ИспользоватьНоменклатуруПартнеров</Constant>
-			<Constant>алсав_УПДРаскрыватьСостав</Constant>
 			<CommonForm>ФормаНастроекОтчета</CommonForm>
 			<CommonForm>ФормаОтчета</CommonForm>
 			<CommonForm>ЭтапыОплатыКлиентом</CommonForm>
 			<CommonForm>РеквизитыПечатиРеализации</CommonForm>
+			<Catalog>БанковскиеСчетаКонтрагентов</Catalog>
 			<Catalog>БанковскиеСчетаОрганизаций</Catalog>
 			<Catalog>БизнесРегионы</Catalog>
 			<Catalog>Валюты</Catalog>
@@ -370,14 +377,17 @@
 			<Catalog>ДоговорыКонтрагентов</Catalog>
 			<Catalog>ЗначенияСвойствОбъектов</Catalog>
 			<Catalog>ЗоныДоставки</Catalog>
+			<Catalog>ИдентификаторыОбъектовМетаданных</Catalog>
 			<Catalog>КартыЛояльности</Catalog>
 			<Catalog>Кассы</Catalog>
 			<Catalog>КлассификаторВидовЭкономическойДеятельности</Catalog>
 			<Catalog>КлассификаторОКВЭД2</Catalog>
 			<Catalog>КлассификаторОКПД2</Catalog>
 			<Catalog>КлассификаторТНВЭД</Catalog>
+			<Catalog>КлючиАналитикиУчетаНаборов</Catalog>
 			<Catalog>КлючиАналитикиУчетаНоменклатуры</Catalog>
 			<Catalog>КлючиАналитикиУчетаПартий</Catalog>
+			<Catalog>КлючиРеестраДокументов</Catalog>
 			<Catalog>КоллекцииНоменклатуры</Catalog>
 			<Catalog>КонтактныеЛицаПартнеров</Catalog>
 			<Catalog>Контрагенты</Catalog>
@@ -409,6 +419,7 @@
 			<Catalog>СерииНоменклатуры</Catalog>
 			<Catalog>СкидкиНаценки</Catalog>
 			<Catalog>СкладскиеГруппыНоменклатуры</Catalog>
+			<Catalog>СкладскиеЯчейки</Catalog>
 			<Catalog>Склады</Catalog>
 			<Catalog>СоглашенияСКлиентами</Catalog>
 			<Catalog>СоглашенияСПоставщиками</Catalog>
@@ -427,7 +438,7 @@
 			<Catalog>ХарактеристикиНоменклатуры</Catalog>
 			<Catalog>ЦеновыеГруппы</Catalog>
 			<Catalog>ШаблоныЭтикетокИЦенников</Catalog>
-			<Catalog>СкладскиеЯчейки</Catalog>
+			<Catalog>ШтрихкодыУпаковокТоваров</Catalog>
 			<Document>АвансовыйОтчет</Document>
 			<Document>АктВыполненныхРабот</Document>
 			<Document>АктОРасхожденияхПослеОтгрузки</Document>
@@ -601,6 +612,9 @@
 			<Enum>СтатусыРасходныхОрдеров</Enum>
 			<Enum>ДействияСоСтрокамиОрдеровНаОтгрузку</Enum>
 			<Enum>ОбеспечениеЗаказовПриПоддержанииЗапаса</Enum>
+			<Enum>ВариантыУчетаЧастичногоВыбытияИСМП</Enum>
+			<Enum>СостоянияЗаполненияМногооборотнойТары</Enum>
+			<Enum>СостоянияВерсийЭД</Enum>
 			<Report>УБ_ОтчетПереработчика</Report>
 			<Report>УБ_Продажи</Report>
 			<Report>СостояниеВыполненияЗаказовКлиентов</Report>
@@ -627,6 +641,7 @@
 			<DataProcessor>алсав_ВыгрузкаФайла_ПрайсОсновной</DataProcessor>
 			<DataProcessor>ВО_ШтрихкодыСозданиеВторого</DataProcessor>
 			<DataProcessor>ВыгрузкаОстатковCSV</DataProcessor>
+			<DataProcessor>ЖурналДокументовПродажи</DataProcessor>
 			<DataProcessor>ЗагрузкаДанныхИзВнешнихФайлов</DataProcessor>
 			<DataProcessor>ЗагрузкаДанныхИзФайла</DataProcessor>
 			<DataProcessor>ЗагрузкаСвойствХарактеристик</DataProcessor>
@@ -639,32 +654,35 @@
 			<DataProcessor>ПроверкаКоличестваТоваровВДокументе</DataProcessor>
 			<DataProcessor>СайтРаботаСОстатками</DataProcessor>
 			<DataProcessor>УБ_ПечатьТранспортнойНакладной</DataProcessor>
-			<InformationRegister>ФИОФизическихЛиц</InformationRegister>
-			<InformationRegister>НоменклатураСегмента</InformationRegister>
-			<InformationRegister>СостоянияЗаказовКлиентов</InformationRegister>
-			<InformationRegister>ТоварныеОграничения</InformationRegister>
-			<InformationRegister>ЦеныНоменклатуры</InformationRegister>
-			<InformationRegister>УБ_МарштурныеЛистыРаспоряжения</InformationRegister>
-			<InformationRegister>ДополнительныеСведения</InformationRegister>
-			<InformationRegister>ВерсииОбъектов</InformationRegister>
-			<InformationRegister>ШтрихкодыНоменклатуры</InformationRegister>
-			<InformationRegister>алсав_СоставИзделий</InformationRegister>
-			<InformationRegister>алсав_СоответствиеДополнительныхРеквизитовХарактеристики</InformationRegister>
-			<InformationRegister>ДоступныеОстаткиПланируемыхПоступлений</InformationRegister>
-			<InformationRegister>алсав_ПроверкаВнешнихФайлов</InformationRegister>
-			<InformationRegister>Ассортимент</InformationRegister>
 			<InformationRegister>алсав_ИсторияПроведенияДокументов</InformationRegister>
 			<InformationRegister>алсав_КлючиСекретов</InformationRegister>
-			<AccumulationRegister>ТоварыКОтгрузке</AccumulationRegister>
+			<InformationRegister>алсав_ПроверкаВнешнихФайлов</InformationRegister>
+			<InformationRegister>алсав_СоответствиеДополнительныхРеквизитовХарактеристики</InformationRegister>
+			<InformationRegister>алсав_СоставИзделий</InformationRegister>
+			<InformationRegister>Ассортимент</InformationRegister>
+			<InformationRegister>ВерсииОбъектов</InformationRegister>
+			<InformationRegister>ДокументыСОшибкамиПроверкиКонтрагентов</InformationRegister>
+			<InformationRegister>ДополнительныеСведения</InformationRegister>
+			<InformationRegister>ДоступныеОстаткиПланируемыхПоступлений</InformationRegister>
+			<InformationRegister>НоменклатураСегмента</InformationRegister>
+			<InformationRegister>РеестрДокументов</InformationRegister>
+			<InformationRegister>СостоянияЗаказовКлиентов</InformationRegister>
+			<InformationRegister>СостоянияЭД</InformationRegister>
+			<InformationRegister>ТоварныеОграничения</InformationRegister>
+			<InformationRegister>УБ_МарштурныеЛистыРаспоряжения</InformationRegister>
+			<InformationRegister>ФИОФизическихЛиц</InformationRegister>
+			<InformationRegister>ЦеныНоменклатуры</InformationRegister>
+			<InformationRegister>ШтрихкодыНоменклатуры</InformationRegister>
+			<AccumulationRegister>ВыручкаИСебестоимостьПродаж</AccumulationRegister>
 			<AccumulationRegister>ГрафикОтгрузкиТоваров</AccumulationRegister>
 			<AccumulationRegister>ГрафикПоступленияТоваров</AccumulationRegister>
-			<AccumulationRegister>СвободныеОстатки</AccumulationRegister>
 			<AccumulationRegister>ЗаказыПоставщикам</AccumulationRegister>
-			<AccumulationRegister>ТоварыКПоступлению</AccumulationRegister>
-			<AccumulationRegister>ТоварыОрганизаций</AccumulationRegister>
-			<AccumulationRegister>ТоварыНаСкладах</AccumulationRegister>
+			<AccumulationRegister>СвободныеОстатки</AccumulationRegister>
 			<AccumulationRegister>ТоварыВЯчейках</AccumulationRegister>
-			<AccumulationRegister>ВыручкаИСебестоимостьПродаж</AccumulationRegister>
+			<AccumulationRegister>ТоварыКОтгрузке</AccumulationRegister>
+			<AccumulationRegister>ТоварыКПоступлению</AccumulationRegister>
+			<AccumulationRegister>ТоварыНаСкладах</AccumulationRegister>
+			<AccumulationRegister>ТоварыОрганизаций</AccumulationRegister>
 			<ChartOfCharacteristicTypes>ДополнительныеРеквизитыИСведения</ChartOfCharacteristicTypes>
 			<ChartOfCharacteristicTypes>КаналыРекламныхВоздействий</ChartOfCharacteristicTypes>
 			<ChartOfCharacteristicTypes>СтатьиРасходов</ChartOfCharacteristicTypes>
