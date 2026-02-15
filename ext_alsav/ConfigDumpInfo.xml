@@ -523,7 +523,7 @@
 		<Metadata name="CommonModule.алсав_НоменклатураОстатки" id="3722e63a-e49b-435c-b0d1-5b814461d486" configVersion="87141532fa0557e858b0dfb093b3c5d0596b9fdf"/>
 		<Metadata name="CommonModule.алсав_НоменклатураОстатки.Module" id="3722e63a-e49b-435c-b0d1-5b814461d486.0" configVersion="227ddd5072ba65f9013a12f813db867aa7e83024"/>
 		<Metadata name="CommonModule.алсав_ПечатьСчет" id="8bec6954-d2c0-4ba6-8b2e-bda13bf64835" configVersion="78f0b26b3f25599a58a87f6c3488f6c7d7eb4685"/>
-		<Metadata name="CommonModule.алсав_ПечатьСчет.Module" id="8bec6954-d2c0-4ba6-8b2e-bda13bf64835.0" configVersion="6d732fbd58bba85e51ab6b05cb663c1aa33ad552"/>
+		<Metadata name="CommonModule.алсав_ПечатьСчет.Module" id="8bec6954-d2c0-4ba6-8b2e-bda13bf64835.0" configVersion="266d5c1e80377d1f7229d95693aa1aaf3297f8b9"/>
 		<Metadata name="CommonPicture.БыстрыйДоступ" id="5172529f-9da1-4cba-8361-9581db164fb3" configVersion="cda24f10e506ea568d13dbe652ff3a5e6ca280b8"/>
 		<Metadata name="CommonPicture.БыстрыйДоступСФлажком" id="f4e87091-f12f-446e-93fb-8ad092d473ee" configVersion="0c069ec431bba3f76b4e9201c481499c647e4505"/>
 		<Metadata name="CommonPicture.ВУпаковочныйЛист" id="4043d734-f4c4-44d3-aa25-dcb1c55ab2a7" configVersion="2f249aae4184b6ab854d89397e7b0a77efb4e475"/>
@@ -609,7 +609,7 @@
 		<Metadata name="CommonPicture.ЭлектронноеПисьмо" id="7720ba17-e7a4-4421-9e23-43d4bb21c153" configVersion="436f5fc1b57b87687a4f3f4e503985c8eb55fbac"/>
 		<Metadata name="CommonPicture.алсав_Базис" id="f51d5d56-d284-4777-96ee-8c7f9976a4a6" configVersion="74843c02531547da683ad27643adccdc9fc21657"/>
 		<Metadata name="CommonPicture.алсав_Базис.Picture" id="f51d5d56-d284-4777-96ee-8c7f9976a4a6.0" configVersion="6ec99600650bae467b134a73bc0f8715faa8a1e2"/>
-		<Metadata name="Configuration.АЛСАВ" id="fc79f8e4-86c3-46a4-b34f-be957ab1f444" configVersion="d9578eae1fa78a495ef2e43eb4766805dee02872"/>
+		<Metadata name="Configuration.АЛСАВ" id="fc79f8e4-86c3-46a4-b34f-be957ab1f444" configVersion="5a61ec2562119f751f2cd5d2ca2d02c29052d8df"/>
 		<Metadata name="Constant.ВестиСведенияДляДекларацийАлкоВРознице" id="5168913f-6512-4705-98e1-995a90aa4c8a" configVersion="cb98e043722bfc35ad44c27b9e753898648157b5"/>
 		<Metadata name="Constant.ВестиУчетМаркировкиПродукцииВГИСМ" id="2bde9d4a-37f8-497d-91c1-eeb9a0b6b7f3" configVersion="e6ec8de96bfe0e867b7fa4754ee9f385e3ac88ca"/>
 		<Metadata name="Constant.ИспользоватьАвтоматическиеСкидкиВПродажах" id="11a680d3-3af6-460c-8285-a20c94ff5afb" configVersion="8e8414fa43cd60c4db14874502c116711fed7d71"/>
@@ -718,7 +718,7 @@
 		<Metadata name="DataProcessor.ПечатьОбщихФорм.Template.ПФ_MXL_УниверсальныйПередаточныйДокумент534_ru.Template" id="216927b0-fc8e-49a6-9300-7acceb24a572.0" configVersion="4884fdb732b9c76ac3bbc0a2b322d0de657ecd77"/>
 		<Metadata name="DataProcessor.ПечатьЭтикетокИЦенников" id="f2b64d8c-9ae4-45a0-af94-cac3cf363b21" configVersion="d08a54b32e916cb0a99c2971fbd82b3ab735d942"/>
 		<Metadata name="DataProcessor.ПечатьЭтикетокИЦенников.Form.ФормаТовары" id="a86b990e-54e2-4de0-9ba6-f3705abf65ee" configVersion="a74991e36f4bacc64ded2b0869d52caca834a000"/>
-		<Metadata name="DataProcessor.ПечатьЭтикетокИЦенников.Form.ФормаТовары.Form" id="a86b990e-54e2-4de0-9ba6-f3705abf65ee.0" configVersion="62848a414372a87a944fc22e90939e449e95066f"/>
+		<Metadata name="DataProcessor.ПечатьЭтикетокИЦенников.Form.ФормаТовары.Form" id="a86b990e-54e2-4de0-9ba6-f3705abf65ee.0" configVersion="86ed78c1c17beae67ec97b475996a1a873bc29bd"/>
 		<Metadata name="DataProcessor.ПечатьЭтикетокИЦенников.ManagerModule" id="f2b64d8c-9ae4-45a0-af94-cac3cf363b21.2" configVersion="fc05d779c431910e43c9a1321f007910bf04c88a"/>
 		<Metadata name="DataProcessor.ПомошникСозданияСборок" id="df9a62bf-cb4d-4cd0-a6dc-76785b17a5b8" configVersion="78c13783dc75403bfb571d6c968c4ffea523e77e"/>
 		<Metadata name="DataProcessor.ПомошникСозданияСборок.Form.алсав_ФормаСозданияЗаказовНаСбороку" id="bc88f189-9cd5-4714-8d03-e4cc4fa5d682" configVersion="ac054ca213154c4d72cf508504b84134bca70af9"/>
@@ -2326,6 +2326,15 @@
 			<Metadata name="InformationRegister.алсав_КлючиСекретов.Resource.Используется" id="cba56ff5-e194-4e4e-a475-282a42dccc3f"/>
 			<Metadata name="InformationRegister.алсав_КлючиСекретов.Resource.Значение" id="d8a9b2c1-5f4e-4a8b-9c2e-7d3f4a8b9e2d"/>
 		</Metadata>
+		<Metadata name="InformationRegister.алсав_НумерацияДляHOFF" id="cfb77ff6-b0c6-4267-836e-b4af929d5b27" configVersion="b5aaf60deb73bc8ec2e80aed73fc1dd7d5f48712">
+			<Metadata name="InformationRegister.алсав_НумерацияДляHOFF.Dimension.Характеристика" id="6a17d6ef-d2ab-41bd-b49b-ea993a1a0acf"/>
+			<Metadata name="InformationRegister.алсав_НумерацияДляHOFF.Attribute.КоличествоПозиция" id="72d875a5-56ff-4120-a1a5-8a7ec1b79e56"/>
+			<Metadata name="InformationRegister.алсав_НумерацияДляHOFF.Dimension.ПродуктХарактеристика" id="b1b0811c-b5fb-467f-a08d-1771b2c0f642"/>
+			<Metadata name="InformationRegister.алсав_НумерацияДляHOFF.Dimension.ПродуктНоменклатура" id="c140c45b-20bb-42f6-8ea3-2e8b0e7f9c2b"/>
+			<Metadata name="InformationRegister.алсав_НумерацияДляHOFF.Attribute.КоличествоВсего" id="d0a266ce-d006-46f9-ba52-da521975ed1d"/>
+			<Metadata name="InformationRegister.алсав_НумерацияДляHOFF.Resource.Позиция_HOFF" id="e7805410-57ab-481a-b0d5-b696c8704cc3"/>
+			<Metadata name="InformationRegister.алсав_НумерацияДляHOFF.Dimension.Номенклатура" id="f0911ce2-01dc-4470-8315-062fba00d946"/>
+		</Metadata>
 		<Metadata name="InformationRegister.алсав_ПроверкаВнешнихФайлов" id="18add412-3ae8-4098-ba43-c8c246a57480" configVersion="a5eeca8103bfea0cae3518111637ba0e61e589e6">
 			<Metadata name="InformationRegister.алсав_ПроверкаВнешнихФайлов.Dimension.Объект" id="0c915760-7a0a-489f-8689-77b4886ec960"/>
 			<Metadata name="InformationRegister.алсав_ПроверкаВнешнихФайлов.Dimension.ТипСправочника" id="1ebfd70d-f3c5-486e-89a4-3bd622b6f9a7"/>
@@ -2480,7 +2489,7 @@
 		<Metadata name="Role.АЛСАВ_ФактическиОтгружен" id="3cc9d926-1eba-4e72-8cff-ece084d472cd" configVersion="653c62f5d0bc73042040b590cf5db4d4a4d85995"/>
 		<Metadata name="Role.АЛСАВ_ФактическиОтгружен.Rights" id="3cc9d926-1eba-4e72-8cff-ece084d472cd.0" configVersion="7a750bfac7e2981c3c0c62f2458a6ab00340cd4b"/>
 		<Metadata name="Role.БазовыеПраваУТ" id="f970a76d-c7c3-4d33-8169-5b6cc0247fa2" configVersion="268b1185b09569629b42db486e9ee3be35ebaff4"/>
-		<Metadata name="Role.БазовыеПраваУТ.Rights" id="f970a76d-c7c3-4d33-8169-5b6cc0247fa2.0" configVersion="4d0dfa2e2e487b08b7981b0818726676cbd0dbb5"/>
+		<Metadata name="Role.БазовыеПраваУТ.Rights" id="f970a76d-c7c3-4d33-8169-5b6cc0247fa2.0" configVersion="16ba593b38caa1917490b1dbd5700a7337d113c4"/>
 		<Metadata name="Role.ПолныеПрава" id="c9bbd701-06b9-4c7a-9bb7-0f7e7cb1ec27" configVersion="746950eabb41aad4cb6fe8ccd053973c112e54e4"/>
 		<Metadata name="Role.ПолныеПрава.Rights" id="c9bbd701-06b9-4c7a-9bb7-0f7e7cb1ec27.0" configVersion="4dad3f7eb83f7ff28c03f9c1847b6cc8fa0b59e2"/>
 		<Metadata name="StyleItem.ГиперссылкаЦвет" id="28d39823-ba7c-45e9-a1bd-942e82550783" configVersion="3b39838e75aca01f3ff174934add0c82d59247a8"/>

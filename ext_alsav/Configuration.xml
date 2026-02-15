@@ -674,6 +674,7 @@
 			<InformationRegister>ФИОФизическихЛиц</InformationRegister>
 			<InformationRegister>ЦеныНоменклатуры</InformationRegister>
 			<InformationRegister>ШтрихкодыНоменклатуры</InformationRegister>
+			<InformationRegister>алсав_НумерацияДляHOFF</InformationRegister>
 			<AccumulationRegister>ВыручкаИСебестоимостьПродаж</AccumulationRegister>
 			<AccumulationRegister>ГрафикОтгрузкиТоваров</AccumulationRegister>
 			<AccumulationRegister>ГрафикПоступленияТоваров</AccumulationRegister>
