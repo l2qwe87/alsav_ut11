@@ -28,6 +28,19 @@
 			<Name>Контрагенты</Name>
 			<Comment/>
 		</Properties>
-		<ChildObjects/>
+		<ChildObjects>
+			<Attribute uuid="ff186fe4-64a9-4ac5-8df5-dd4b916ab38f">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ЮрФизЛицо</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>56ba8e3c-152e-472e-978c-1c8a27110815</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:EnumRef.ЮрФизЛицо</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+		</ChildObjects>
 	</Catalog>
 </MetaDataObject>

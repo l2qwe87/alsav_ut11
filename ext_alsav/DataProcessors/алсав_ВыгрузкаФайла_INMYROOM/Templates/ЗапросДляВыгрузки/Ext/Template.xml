@@ -81,6 +81,10 @@
 				</v8:item>
 			</title>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Цена</dataPath>
+			<field>Цена</field>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
 	Цены.Номенклатура КАК Номенклатура,
@@ -89,9 +93,18 @@
 	Цены.Цена КАК price,
 	Цены.Цена * 1.2 КАК old_price,
 	0 КАК stock,
-	ЛОЖЬ available
+	ЛОЖЬ КАК available
 ИЗ
-	РегистрСведений.ЦеныНоменклатуры.СрезПоследних(, ВидЦены = &amp;ВидЦены) КАК Цены
+	(ВЫБРАТЬ
+		Т.Номенклатура КАК Номенклатура,
+		Т.Характеристика КАК Характеристика,
+		МАКСИМУМ(Т.Цена) КАК Цена
+	ИЗ
+		РегистрСведений.ЦеныНоменклатуры.СрезПоследних(, ВидЦены В (&amp;ВидыЦен)) КАК Т
+	
+	СГРУППИРОВАТЬ ПО
+		Т.Номенклатура,
+		Т.Характеристика) КАК Цены
 		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
 			ШтрихкодыНоменклатуры.Номенклатура КАК Номенклатура,
 			ШтрихкодыНоменклатуры.Характеристика КАК Характеристика,
@@ -124,18 +137,19 @@
 		<useRestriction>false</useRestriction>
 	</parameter>
 	<parameter>
-		<name>ВидЦены</name>
+		<name>ВидыЦен</name>
 		<title xsi:type="v8:LocalStringType">
 			<v8:item>
 				<v8:lang>ru</v8:lang>
-				<v8:content>Вид цены</v8:content>
+				<v8:content>Виды цен</v8:content>
 			</v8:item>
 		</title>
 		<valueType>
-			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.ВидыЦен</v8:Type>
+			<v8:TypeId>5eeef668-b52a-4624-a9c2-8ac6327dbc51</v8:TypeId>
 		</valueType>
 		<value xsi:nil="true"/>
 		<useRestriction>true</useRestriction>
+		<valueListAllowed>true</valueListAllowed>
 	</parameter>
 	<settingsVariant>
 		<dcsset:name>Основной</dcsset:name>
