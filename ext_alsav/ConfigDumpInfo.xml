@@ -521,7 +521,7 @@
 		<Metadata name="CommonModule.алсав_КонтурДиадокЯдро" id="28430724-f20b-4ffb-8620-e5720a60608f" configVersion="293f44b41cdfe4f730054a6924072cd022b121ad"/>
 		<Metadata name="CommonModule.алсав_КонтурДиадокЯдро.Module" id="28430724-f20b-4ffb-8620-e5720a60608f.0" configVersion="ec2ebed2a0d8790f17cfdd6e4fcba7078bb0ad70"/>
 		<Metadata name="CommonModule.алсав_НоменклатураОстатки" id="3722e63a-e49b-435c-b0d1-5b814461d486" configVersion="87141532fa0557e858b0dfb093b3c5d0596b9fdf"/>
-		<Metadata name="CommonModule.алсав_НоменклатураОстатки.Module" id="3722e63a-e49b-435c-b0d1-5b814461d486.0" configVersion="227ddd5072ba65f9013a12f813db867aa7e83024"/>
+		<Metadata name="CommonModule.алсав_НоменклатураОстатки.Module" id="3722e63a-e49b-435c-b0d1-5b814461d486.0" configVersion="0cf1432ca0959ced9604aec57c8c4653bfaafe95"/>
 		<Metadata name="CommonModule.алсав_ПечатьСчет" id="8bec6954-d2c0-4ba6-8b2e-bda13bf64835" configVersion="78f0b26b3f25599a58a87f6c3488f6c7d7eb4685"/>
 		<Metadata name="CommonModule.алсав_ПечатьСчет.Module" id="8bec6954-d2c0-4ba6-8b2e-bda13bf64835.0" configVersion="266d5c1e80377d1f7229d95693aa1aaf3297f8b9"/>
 		<Metadata name="CommonPicture.БыстрыйДоступ" id="5172529f-9da1-4cba-8361-9581db164fb3" configVersion="cda24f10e506ea568d13dbe652ff3a5e6ca280b8"/>
@@ -703,22 +703,22 @@
 		<Metadata name="DataProcessor.ПечатьЗаказовНаТоварыУслуги.Template.ПФ_MXL_ЗаказПоставщикуСклад_0" id="a74b797f-5a8a-46a6-a03b-2cfab5dfe572" configVersion="d2fdb1790779d528aeb863cf3d1d734475ee775a"/>
 		<Metadata name="DataProcessor.ПечатьЗаказовНаТоварыУслуги.Template.ПФ_MXL_ЗаказПоставщикуСклад_0.Template" id="a74b797f-5a8a-46a6-a03b-2cfab5dfe572.0" configVersion="be5f91a81edf4cbe8a91e42ba0b5fbd190f1dcb4"/>
 		<Metadata name="DataProcessor.ПечатьОбщихФорм" id="b311c9d3-f5fc-47a6-ba03-ee109213d77a" configVersion="b322f17adc825b3e11404196b2b01e1b4e1a9be1"/>
-		<Metadata name="DataProcessor.ПечатьОбщихФорм.ManagerModule" id="b311c9d3-f5fc-47a6-ba03-ee109213d77a.2" configVersion="6c7f11cf01bd2accff41f3e23d9b1ef068bf84c9"/>
+		<Metadata name="DataProcessor.ПечатьОбщихФорм.ManagerModule" id="b311c9d3-f5fc-47a6-ba03-ee109213d77a.2" configVersion="8f9059252b21de196057130ca4e51e2c8d746aa8"/>
 		<Metadata name="DataProcessor.ПечатьОбщихФорм.Template.ПФ_MXL_СчетФактура1096_ru" id="0d23529f-0d2d-4420-a537-e466134b4206" configVersion="26512af810b92471cffcea5478e0e94aafd0f012"/>
 		<Metadata name="DataProcessor.ПечатьОбщихФорм.Template.ПФ_MXL_СчетФактура1096_ru.Template" id="0d23529f-0d2d-4420-a537-e466134b4206.0" configVersion="af3c0069d15c2f72e93fb10c081cd31d2a8a9ad4"/>
 		<Metadata name="DataProcessor.ПечатьОбщихФорм.Template.ПФ_MXL_СчетФактураКорректировочный1096_ru" id="c6e2628b-9c07-490b-9543-81b214621667" configVersion="24ca12fe821d71ffc4b70b09d67c6d1579237040"/>
 		<Metadata name="DataProcessor.ПечатьОбщихФорм.Template.ПФ_MXL_СчетФактураКорректировочный1096_ru.Template" id="c6e2628b-9c07-490b-9543-81b214621667.0" configVersion="2d669e8c1e04447b49f3e36817a534e9bcb88c76"/>
 		<Metadata name="DataProcessor.ПечатьОбщихФорм.Template.ПФ_MXL_УниверсальныйКорректировочныйДокумент1096_ru" id="753c8cb7-fe25-46cd-a684-17c6631c2889" configVersion="8797a4199516f500b5798cc97dad8fd1ebbb641b"/>
 		<Metadata name="DataProcessor.ПечатьОбщихФорм.Template.ПФ_MXL_УниверсальныйКорректировочныйДокумент1096_ru.Template" id="753c8cb7-fe25-46cd-a684-17c6631c2889.0" configVersion="ff183ee835f79804f55f242094bc121af9ca58dc"/>
-		<Metadata name="DataProcessor.ПечатьОбщихФорм.Template.ПФ_MXL_УниверсальныйПередаточныйДокумент1096_ru" id="5cc7c327-4c02-4307-8fcb-df63d6e2ba2f" configVersion="9e77f2081de97ba8c0ecfdb5736796ca04511975"/>
-		<Metadata name="DataProcessor.ПечатьОбщихФорм.Template.ПФ_MXL_УниверсальныйПередаточныйДокумент1096_ru.Template" id="5cc7c327-4c02-4307-8fcb-df63d6e2ba2f.0" configVersion="4ff3dcd340c4d95ba1cb7f324b50d4a506c50ff7"/>
-		<Metadata name="DataProcessor.ПечатьОбщихФорм.Template.ПФ_MXL_УниверсальныйПередаточныйДокумент1096_ru1" id="8bda4a08-a83c-4e40-8744-29afd25efab6" configVersion="3da2749941b2aabfa17c934d3417596badae891c"/>
-		<Metadata name="DataProcessor.ПечатьОбщихФорм.Template.ПФ_MXL_УниверсальныйПередаточныйДокумент1096_ru1.Template" id="8bda4a08-a83c-4e40-8744-29afd25efab6.0" configVersion="238fe00c5f1e07e026906a5f6384f866887a59cc"/>
+		<Metadata name="DataProcessor.ПечатьОбщихФорм.Template.ПФ_MXL_УниверсальныйПередаточныйДокумент1096_ru" id="8bda4a08-a83c-4e40-8744-29afd25efab6" configVersion="f9abb394e77db976dc249bb8164913c9fbcc26b2"/>
+		<Metadata name="DataProcessor.ПечатьОбщихФорм.Template.ПФ_MXL_УниверсальныйПередаточныйДокумент1096_ru.Template" id="8bda4a08-a83c-4e40-8744-29afd25efab6.0" configVersion="0567048cbe63e6abb700bcf6ec82d475b0832d2d"/>
+		<Metadata name="DataProcessor.ПечатьОбщихФорм.Template.ПФ_MXL_УниверсальныйПередаточныйДокумент1096_ru_000" id="5cc7c327-4c02-4307-8fcb-df63d6e2ba2f" configVersion="9812731d46a4e1d89cbe49bc6b247182177f17ee"/>
+		<Metadata name="DataProcessor.ПечатьОбщихФорм.Template.ПФ_MXL_УниверсальныйПередаточныйДокумент1096_ru_000.Template" id="5cc7c327-4c02-4307-8fcb-df63d6e2ba2f.0" configVersion="4ff3dcd340c4d95ba1cb7f324b50d4a506c50ff7"/>
 		<Metadata name="DataProcessor.ПечатьОбщихФорм.Template.ПФ_MXL_УниверсальныйПередаточныйДокумент534_ru" id="216927b0-fc8e-49a6-9300-7acceb24a572" configVersion="06ded05f3f14fa3a1f797c28da1e2d9cde309618"/>
 		<Metadata name="DataProcessor.ПечатьОбщихФорм.Template.ПФ_MXL_УниверсальныйПередаточныйДокумент534_ru.Template" id="216927b0-fc8e-49a6-9300-7acceb24a572.0" configVersion="4884fdb732b9c76ac3bbc0a2b322d0de657ecd77"/>
 		<Metadata name="DataProcessor.ПечатьЭтикетокИЦенников" id="f2b64d8c-9ae4-45a0-af94-cac3cf363b21" configVersion="d08a54b32e916cb0a99c2971fbd82b3ab735d942"/>
 		<Metadata name="DataProcessor.ПечатьЭтикетокИЦенников.Form.ФормаТовары" id="a86b990e-54e2-4de0-9ba6-f3705abf65ee" configVersion="a74991e36f4bacc64ded2b0869d52caca834a000"/>
-		<Metadata name="DataProcessor.ПечатьЭтикетокИЦенников.Form.ФормаТовары.Form" id="a86b990e-54e2-4de0-9ba6-f3705abf65ee.0" configVersion="86ed78c1c17beae67ec97b475996a1a873bc29bd"/>
+		<Metadata name="DataProcessor.ПечатьЭтикетокИЦенников.Form.ФормаТовары.Form" id="a86b990e-54e2-4de0-9ba6-f3705abf65ee.0" configVersion="6830d6aee744f9403cccdb61825ff40cc10f7c9e"/>
 		<Metadata name="DataProcessor.ПечатьЭтикетокИЦенников.ManagerModule" id="f2b64d8c-9ae4-45a0-af94-cac3cf363b21.2" configVersion="fc05d779c431910e43c9a1321f007910bf04c88a"/>
 		<Metadata name="DataProcessor.ПомошникСозданияСборок" id="df9a62bf-cb4d-4cd0-a6dc-76785b17a5b8" configVersion="78c13783dc75403bfb571d6c968c4ffea523e77e"/>
 		<Metadata name="DataProcessor.ПомошникСозданияСборок.Form.алсав_ФормаСозданияЗаказовНаСбороку" id="bc88f189-9cd5-4714-8d03-e4cc4fa5d682" configVersion="ac054ca213154c4d72cf508504b84134bca70af9"/>
@@ -2326,15 +2326,18 @@
 			<Metadata name="InformationRegister.алсав_КлючиСекретов.Resource.Используется" id="cba56ff5-e194-4e4e-a475-282a42dccc3f"/>
 			<Metadata name="InformationRegister.алсав_КлючиСекретов.Resource.Значение" id="d8a9b2c1-5f4e-4a8b-9c2e-7d3f4a8b9e2d"/>
 		</Metadata>
-		<Metadata name="InformationRegister.алсав_НумерацияДляHOFF" id="cfb77ff6-b0c6-4267-836e-b4af929d5b27" configVersion="b5aaf60deb73bc8ec2e80aed73fc1dd7d5f48712">
+		<Metadata name="InformationRegister.алсав_НумерацияДляHOFF" id="cfb77ff6-b0c6-4267-836e-b4af929d5b27" configVersion="ab73c86da12096e1544c4af024f3f5ee0543e4cf">
+			<Metadata name="InformationRegister.алсав_НумерацияДляHOFF.Dimension.ПутьВСборке" id="30e6d2da-9679-41c8-84fa-1631699ad506"/>
 			<Metadata name="InformationRegister.алсав_НумерацияДляHOFF.Dimension.Характеристика" id="6a17d6ef-d2ab-41bd-b49b-ea993a1a0acf"/>
 			<Metadata name="InformationRegister.алсав_НумерацияДляHOFF.Attribute.КоличествоПозиция" id="72d875a5-56ff-4120-a1a5-8a7ec1b79e56"/>
+			<Metadata name="InformationRegister.алсав_НумерацияДляHOFF.Resource.Позиция_HOFF" id="96f86765-3380-4d3e-8a9a-5076d7c44885"/>
 			<Metadata name="InformationRegister.алсав_НумерацияДляHOFF.Dimension.ПродуктХарактеристика" id="b1b0811c-b5fb-467f-a08d-1771b2c0f642"/>
 			<Metadata name="InformationRegister.алсав_НумерацияДляHOFF.Dimension.ПродуктНоменклатура" id="c140c45b-20bb-42f6-8ea3-2e8b0e7f9c2b"/>
+			<Metadata name="InformationRegister.алсав_НумерацияДляHOFF.Dimension.Позиция_АЛСАВ" id="c8e4d150-5bc4-4413-b881-f09dbfb89461"/>
 			<Metadata name="InformationRegister.алсав_НумерацияДляHOFF.Attribute.КоличествоВсего" id="d0a266ce-d006-46f9-ba52-da521975ed1d"/>
-			<Metadata name="InformationRegister.алсав_НумерацияДляHOFF.Resource.Позиция_HOFF" id="e7805410-57ab-481a-b0d5-b696c8704cc3"/>
 			<Metadata name="InformationRegister.алсав_НумерацияДляHOFF.Dimension.Номенклатура" id="f0911ce2-01dc-4470-8315-062fba00d946"/>
 		</Metadata>
+		<Metadata name="InformationRegister.алсав_НумерацияДляHOFF.ManagerModule" id="cfb77ff6-b0c6-4267-836e-b4af929d5b27.2" configVersion="370ef2752f8272414c698e6974d1824a9bad150b"/>
 		<Metadata name="InformationRegister.алсав_ПроверкаВнешнихФайлов" id="18add412-3ae8-4098-ba43-c8c246a57480" configVersion="a5eeca8103bfea0cae3518111637ba0e61e589e6">
 			<Metadata name="InformationRegister.алсав_ПроверкаВнешнихФайлов.Dimension.Объект" id="0c915760-7a0a-489f-8689-77b4886ec960"/>
 			<Metadata name="InformationRegister.алсав_ПроверкаВнешнихФайлов.Dimension.ТипСправочника" id="1ebfd70d-f3c5-486e-89a4-3bd622b6f9a7"/>
@@ -2352,7 +2355,7 @@
 		</Metadata>
 		<Metadata name="InformationRegister.алсав_СоответствиеДополнительныхРеквизитовХарактеристики.Form.ФормаЗаписи" id="505641bf-589f-4164-82d6-57b89e482d34" configVersion="4c38c10615a6e6232cfbb9a87c73858a9c5e267e"/>
 		<Metadata name="InformationRegister.алсав_СоответствиеДополнительныхРеквизитовХарактеристики.Form.ФормаЗаписи.Form" id="505641bf-589f-4164-82d6-57b89e482d34.0" configVersion="7ad0361a6cc3a8ab9cc56d8ca8fd1e17cfe48706"/>
-		<Metadata name="InformationRegister.алсав_СоставИзделий" id="61a616c7-f719-4915-b269-2cd3349fad0e" configVersion="e520d79a768be1c130f7fdec637caa0b9eb0e69c">
+		<Metadata name="InformationRegister.алсав_СоставИзделий" id="61a616c7-f719-4915-b269-2cd3349fad0e" configVersion="a41a13706b265dc50bb9f18af83fa9609ae9add7">
 			<Metadata name="InformationRegister.алсав_СоставИзделий.Dimension.ЭтоУзел" id="1e784c00-7bd8-4d7f-b96a-1162dea718d3"/>
 			<Metadata name="InformationRegister.алсав_СоставИзделий.Attribute.ЭтоПолуфабрикат" id="238a6d9e-fe0a-41f5-b36a-f662cd486542"/>
 			<Metadata name="InformationRegister.алсав_СоставИзделий.Dimension.УзелНоменклатура" id="2eb3f760-113c-4f5e-b4f3-0f0ed805e7b1"/>

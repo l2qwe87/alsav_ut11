@@ -25,8 +25,8 @@
 			<Template>ПФ_MXL_СчетФактура1096_ru</Template>
 			<Template>ПФ_MXL_СчетФактураКорректировочный1096_ru</Template>
 			<Template>ПФ_MXL_УниверсальныйКорректировочныйДокумент1096_ru</Template>
+			<Template>ПФ_MXL_УниверсальныйПередаточныйДокумент1096_ru_000</Template>
 			<Template>ПФ_MXL_УниверсальныйПередаточныйДокумент1096_ru</Template>
-			<Template>ПФ_MXL_УниверсальныйПередаточныйДокумент1096_ru1</Template>
 		</ChildObjects>
 	</DataProcessor>
 </MetaDataObject>
