@@ -55,7 +55,7 @@
 			<ConfigurationExtensionCompatibilityMode>Version8_3_16</ConfigurationExtensionCompatibilityMode>
 			<ScriptVariant>Russian</ScriptVariant>
 			<Vendor/>
-			<Version>1.0.114</Version>
+			<Version>1.0.115</Version>
 			<BriefInformation/>
 			<DetailedInformation/>
 			<Copyright/>
@@ -223,6 +223,7 @@
 			<CommonModule>УчетНДСУП</CommonModule>
 			<CommonModule>ОбработкаТабличнойЧастиСервер</CommonModule>
 			<CommonModule>ФормированиеПечатныхФорм</CommonModule>
+			<CommonModule>ОбщегоНазначенияКлиентЛокализация</CommonModule>
 			<FunctionalOption>ИспользоватьНаборы</FunctionalOption>
 			<FunctionalOption>ИспользоватьПострочнуюОтгрузкуВЗаказеКлиента</FunctionalOption>
 			<FunctionalOption>ИспользоватьРасширенныеВозможностиЗаказаКлиента</FunctionalOption>
@@ -616,6 +617,7 @@
 			<Enum>СостоянияЗаполненияМногооборотнойТары</Enum>
 			<Enum>СостоянияВерсийЭД</Enum>
 			<Enum>ЮрФизЛицо</Enum>
+			<Enum>ВариантыОтраженияКорректировокРеализаций</Enum>
 			<Report>УБ_ОтчетПереработчика</Report>
 			<Report>УБ_Продажи</Report>
 			<Report>СостояниеВыполненияЗаказовКлиентов</Report>
@@ -675,6 +677,7 @@
 			<InformationRegister>ЦеныНоменклатуры</InformationRegister>
 			<InformationRegister>ШтрихкодыНоменклатуры</InformationRegister>
 			<InformationRegister>алсав_НумерацияДляHOFF</InformationRegister>
+			<InformationRegister>алсав_НумерацияДляHOFFРасчет</InformationRegister>
 			<AccumulationRegister>ВыручкаИСебестоимостьПродаж</AccumulationRegister>
 			<AccumulationRegister>ГрафикОтгрузкиТоваров</AccumulationRegister>
 			<AccumulationRegister>ГрафикПоступленияТоваров</AccumulationRegister>

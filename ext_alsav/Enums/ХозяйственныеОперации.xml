@@ -365,6 +365,42 @@
 					<ExtendedConfigurationObject>f225cb28-e5ab-48fc-80a6-180753692cee</ExtendedConfigurationObject>
 				</Properties>
 			</EnumValue>
+			<EnumValue uuid="6f36124e-28d6-4fc2-b6f9-ad91719e81c1">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ИсправлениеОшибок</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>d1308d15-47bd-43fc-b617-d50bd38aa876</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="1bb53788-7e45-496f-b737-49a7ef89ba92">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>КорректировкаПоСогласованиюСторон</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>15c46c2c-15a1-40a5-a28f-782fb1b1f833</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="98b8b069-9053-4820-a478-c4273dca7645">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>РеализацияПерепоставленногоТовара</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>26c7e30c-f570-4794-8abe-2b7a605616bb</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="f78fea33-00a7-4138-9068-71a7c0ef9aea">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ВозвратНедопоставленногоТовара</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>015aae23-805e-4b1b-93d9-5fdcfb68af56</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
 		</ChildObjects>
 	</Enum>
 </MetaDataObject>

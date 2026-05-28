@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ConfigDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.20">
+	<ConfigVersions>
+		<Metadata name="CommonCommand.ОбменСWildberries" id="dc87b881-8ae3-472a-bb78-57ae2fa76375" configVersion="a8b79f5eef96908aba1910ab7f0b9fe1c2439c43"/>
+		<Metadata name="CommonModule.ЦенообразованиеВызовСервера" id="edc497f4-e851-40a2-bea1-cb9070ebe361" configVersion="e5c10f4314c7c7938fdc3bc59fa0233622cb3884"/>
+		<Metadata name="CommonModule.ЦенообразованиеВызовСервера.Module" id="edc497f4-e851-40a2-bea1-cb9070ebe361.0" configVersion="b90efd9fe4d6ca95b7473077814ede5a5a888592"/>
+		<Metadata name="Configuration.АЛСАВ_WB" id="0f2189c7-7dfe-430b-9455-b47438abf384" configVersion="e326c33d81a76c47bbba841ef493dacfbfd612f2"/>
+		<Metadata name="Language.Русский" id="492c05e4-0cd8-4065-8284-ea6886a60e5a" configVersion="529888d8b0c4f78cd11b363887426a618665ba4a"/>
+		<Metadata name="Role.АЛСАВ_WB_ОсновнаяРоль" id="0c5ce871-6a60-400b-a8b2-31270a3de328" configVersion="c979bf7821b1de61270633fa27e07000b7d00cf1"/>
+		<Metadata name="Role.БазовыеПраваУТ" id="6c2e5084-c18a-4be3-9ea1-5e7bd7d0baad" configVersion="2a56ac553f7119b8afb847300df216533cf51c91"/>
+		<Metadata name="Subsystem.Продажи" id="031313f9-7cdc-47a6-80db-6514266321a6" configVersion="294d8d92b00655c91083d4c48e6fff9650553b02"/>
+	</ConfigVersions>
+</ConfigDumpInfo>

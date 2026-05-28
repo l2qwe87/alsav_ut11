@@ -20,6 +20,34 @@
 			<Name>ФормыОплаты</Name>
 			<Comment/>
 		</Properties>
-		<ChildObjects/>
+		<ChildObjects>
+			<EnumValue uuid="005ac02f-93c7-43f2-9603-2964fbc8605e">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Наличная</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>d450cea1-6bc0-427b-b3f6-68344c8dba57</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="fb34b28e-f3ae-45b7-a7bf-3f7198c700b1">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ПлатежнаяКарта</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>4cebd4c2-9bdf-4aab-a86b-564c5df1185e</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="c7b4c627-dc64-43e1-9ff8-e5449d85185d">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Безналичная</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>d1e84b1a-e266-4a41-b553-0d030e40bc26</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
 	</Enum>
 </MetaDataObject>
