@@ -946,6 +946,7 @@
 							<Item>Товары</Item>
 							<Type>ViewStatusRepresentation</Type>
 						</AdditionSource>
+						<HorizontalLocation>Left</HorizontalLocation>
 						<ContextMenu name="ТоварыСостояниеПросмотраКонтекстноеМеню" id="445"/>
 						<ExtendedTooltip name="ТоварыСостояниеПросмотраРасширеннаяПодсказка" id="446"/>
 					</ViewStatusAddition>
@@ -1321,13 +1322,30 @@
 		</UsualGroup>
 	</ChildItems>
 	<Attributes/>
+	<Commands>
+		<Command name="РедактированиеТоваров" id="1000000">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Редактирование товаров</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Редактирование товаров</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action callType="After">алсав_РедактированиеТоваровПосле</Action>
+		</Command>
+	</Commands>
 	<BaseForm version="2.20">
 		<CommandSet>
 			<ExcludedCommand>Post</ExcludedCommand>
 			<ExcludedCommand>PostAndClose</ExcludedCommand>
 			<ExcludedCommand>Write</ExcludedCommand>
 		</CommandSet>
-		<AutoTime>DontUse</AutoTime>
+		<AutoTime>CurrentOrLast</AutoTime>
 		<UsePostingMode>Auto</UsePostingMode>
 		<RepostOnWrite>true</RepostOnWrite>
 		<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
@@ -2265,6 +2283,7 @@
 								<Item>Товары</Item>
 								<Type>ViewStatusRepresentation</Type>
 							</AdditionSource>
+							<HorizontalLocation>Left</HorizontalLocation>
 							<ContextMenu name="ТоварыСостояниеПросмотраКонтекстноеМеню" id="445"/>
 							<ExtendedTooltip name="ТоварыСостояниеПросмотраРасширеннаяПодсказка" id="446"/>
 						</ViewStatusAddition>

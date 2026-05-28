@@ -99,7 +99,7 @@
 		</Metadata>
 		<Metadata name="Language.Русский" id="a8ef2985-1e03-4434-b46d-c3af07bea025" configVersion="a829bde53f28f645a9d386c8ed8fe88485eaeb6d"/>
 		<Metadata name="Role.БазовыеПраваУТ" id="3c9efa5e-a2cb-415b-971f-5b047fee2cbd" configVersion="839144df2ee361e3a50d9bcd82676e3bd58fe1a3"/>
-		<Metadata name="Role.БазовыеПраваУТ.Rights" id="3c9efa5e-a2cb-415b-971f-5b047fee2cbd.0" configVersion="ce0360c0fd5f139ab0f6a1edf9590a03173e3a38"/>
+		<Metadata name="Role.БазовыеПраваУТ.Rights" id="3c9efa5e-a2cb-415b-971f-5b047fee2cbd.0" configVersion="fa47117049a7623358975a7a0b597be78fbc2b42"/>
 		<Metadata name="Role.алсавб24_ОсновнаяРоль" id="bb4bd61b-674b-4be4-8d24-c1ffb7f48120" configVersion="2f931ee540b4ebbdb015941a5c252c32e5e13bef"/>
 		<Metadata name="Role.алсавб24_ОсновнаяРоль.Rights" id="bb4bd61b-674b-4be4-8d24-c1ffb7f48120.0" configVersion="5823a1acc0b0ccfa2e6180f600c0817cca989047"/>
 		<Metadata name="StyleItem.ПоясняющийТекст" id="540fb338-4eb1-4c50-88d3-9ac41923afd5" configVersion="45f2652e2882951276e81025fefbebe37a672727"/>

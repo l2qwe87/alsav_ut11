@@ -662,6 +662,9 @@
 															<BackColor>style:ЦветФонаВыделения</BackColor>
 															<ContextMenu name="ХозяйственнаяОперацияКонтекстноеМеню" id="795"/>
 															<ExtendedTooltip name="ХозяйственнаяОперацияExtendedTooltip" id="1271"/>
+															<Events>
+																<Event name="OnChange" callType="After">алсав_ХозяйственнаяОперацияПриИзмененииПосле</Event>
+															</Events>
 														</InputField>
 														<UsualGroup name="ГруппаНадписьОрганизация" id="1540">
 															<Title>
@@ -1584,6 +1587,9 @@
 													<Wrap>false</Wrap>
 													<ContextMenu name="ТоварыДатаОтгрузкиКонтекстноеМеню" id="582"/>
 													<ExtendedTooltip name="ТоварыДатаОтгрузкиExtendedTooltip" id="1217"/>
+													<Events>
+														<Event name="OnChange" callType="Override">алсав_ТоварыДатаОтгрузкиПриИзмененииВместо</Event>
+													</Events>
 												</InputField>
 												<InputField name="ТоварыСерия" id="1098">
 													<DataPath>Объект.Товары.Серия</DataPath>
