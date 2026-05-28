@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Enum uuid="7df40a3b-815f-42e8-b41f-966ffb4a10a1">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ВариантыУчетаЧастичногоВыбытияИСМП" category="Ref">
+				<xr:TypeId>62b7f756-e743-41cb-8227-7df95cbb159d</xr:TypeId>
+				<xr:ValueId>2363a001-729d-4254-9ee7-e9ed0acf7c86</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ВариантыУчетаЧастичногоВыбытияИСМП" category="Manager">
+				<xr:TypeId>82e0bedc-345b-43d5-b6db-dd45fe29e5ce</xr:TypeId>
+				<xr:ValueId>dc82d12e-8ecc-4cad-9bb1-8a32cea33077</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ВариантыУчетаЧастичногоВыбытияИСМП" category="List">
+				<xr:TypeId>7d6757e3-f2a9-44ac-a78a-7914f03fd41a</xr:TypeId>
+				<xr:ValueId>d362e555-686d-4725-adc1-c17e431bbf9f</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>ВариантыУчетаЧастичногоВыбытияИСМП</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>d7ad7773-65c5-40f1-ac38-842fae66b916</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects/>
+	</Enum>
+</MetaDataObject>

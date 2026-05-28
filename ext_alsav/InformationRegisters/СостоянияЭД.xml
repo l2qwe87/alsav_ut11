@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<InformationRegister uuid="6de2cb7f-732a-4fdd-aca6-219b5efe936c">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.СостоянияЭД" category="Record">
+				<xr:TypeId>b1a90896-f859-43e0-9624-81449943d350</xr:TypeId>
+				<xr:ValueId>0553c410-7b84-4291-84ef-062419db8bd5</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.СостоянияЭД" category="Manager">
+				<xr:TypeId>5f8104cc-ac27-4b71-a804-b39f92062136</xr:TypeId>
+				<xr:ValueId>bca28a5a-5d5f-4b91-bb1a-20c13db12161</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.СостоянияЭД" category="Selection">
+				<xr:TypeId>310059c5-c1b5-4cde-81e6-4b3d95d0214d</xr:TypeId>
+				<xr:ValueId>ccb92ad5-94c6-45e1-9eb7-b8e8f9cb7e0d</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.СостоянияЭД" category="List">
+				<xr:TypeId>09e18490-aa60-4838-9ec0-8b0ba115da64</xr:TypeId>
+				<xr:ValueId>451a7ec3-4df9-4b87-aef8-781dd196eff0</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.СостоянияЭД" category="RecordSet">
+				<xr:TypeId>f4244a42-5b79-4cbf-bd11-2ab69958c5e9</xr:TypeId>
+				<xr:ValueId>12e5805b-0bdc-4839-bf3d-1c6a0e7aa974</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.СостоянияЭД" category="RecordKey">
+				<xr:TypeId>706dac38-21c8-4b18-8627-46f21aaa928f</xr:TypeId>
+				<xr:ValueId>43fbfa1f-c40e-4d43-99df-1955b1e30269</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.СостоянияЭД" category="RecordManager">
+				<xr:TypeId>ebb1705a-5e07-4f76-825a-d27859316882</xr:TypeId>
+				<xr:ValueId>e2ce947a-1f50-4bb4-9ed0-a49e787bbc21</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Name>СостоянияЭД</Name>
+			<Comment/>
+			<ExtendedConfigurationObject>94cb8fd8-e78e-4367-870e-e56a7e5e245d</ExtendedConfigurationObject>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+		</Properties>
+		<ChildObjects>
+			<Resource uuid="73e97c1a-f297-4b51-9acd-24865a411cde">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>СостояниеВерсииЭД</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>9eb44008-3db8-4c27-940d-149dfe89ffe0</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:EnumRef.СостоянияВерсийЭД</v8:Type>
+					</Type>
+				</Properties>
+			</Resource>
+			<Attribute uuid="114e7521-d6ae-4929-a06d-c76ad2d4aef2">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ПредставлениеСостояния</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>cb90bdf4-c492-45ef-b596-12109e8f7847</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>50</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Dimension uuid="a2e17ae5-6b14-4284-b0d5-3810934e9cce">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>СсылкаНаОбъект</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>bb074754-23ca-4d93-98f1-533aec10d349</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.ОснованияЭлектронныхДокументов</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Dimension>
+		</ChildObjects>
+	</InformationRegister>
+</MetaDataObject>

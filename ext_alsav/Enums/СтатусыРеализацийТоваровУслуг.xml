@@ -20,6 +20,34 @@
 			<Name>СтатусыРеализацийТоваровУслуг</Name>
 			<Comment/>
 		</Properties>
-		<ChildObjects/>
+		<ChildObjects>
+			<EnumValue uuid="0224c21d-ae9c-4612-9f54-4cd85ace6439">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ВПути</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>9eecbfe8-9526-4cb2-b701-86383ea87cad</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="5f34133b-1900-4e84-a367-6ad605117bc9">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>КПредоплате</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>56f07675-a2f8-4ddb-9844-2f6199f18f86</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="d79ca9c0-46b3-4c33-9b45-1abfcf6cc5f5">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>Отгружено</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>1fbefaf2-f396-4451-a44d-9654122b6c5a</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
 	</Enum>
 </MetaDataObject>

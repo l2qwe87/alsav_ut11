@@ -577,7 +577,80 @@
 					</Type>
 				</Properties>
 			</Attribute>
+			<Attribute uuid="17e1458b-1c93-406f-892d-62be0cf800d4">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ГрафикОплаты</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>e925be7d-2573-499a-98d3-d4083edd7cb4</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ГрафикиОплаты</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="09e7b777-c6e8-470a-812c-23c25fdc9726">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>СуммаДокумента</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>09d5679e-99d4-4bae-a2be-ab43f7ffaaae</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.ДенежнаяСуммаЛюбогоЗнака</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="2d34a3c4-fed7-4cd6-80a0-c8a0d932fbcc">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>СуммаВозвратнойТары</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>435746b1-202f-40da-adae-b8569d4b81e8</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.ДенежнаяСуммаЛюбогоЗнака</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="eebe3d79-9fc8-431e-882a-f56460ca33e3">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>СуммаАвансаДоОбеспечения</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>4ff8b2cf-1c36-4154-b5e4-fbc8a3ba5ea5</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.ДенежнаяСуммаЛюбогоЗнака</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="2164f08e-4eab-47a8-aaa0-faac244e7391">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>СуммаПредоплатыДоОтгрузки</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>1a14d675-c2a2-4a16-978c-9044aa42660a</ExtendedConfigurationObject>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.ДенежнаяСуммаЛюбогоЗнака</v8:TypeSet>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="f77a6d9c-a57f-4f78-92c7-2148e9ec33af">
+				<InternalInfo/>
+				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Name>ПорядокРасчетов</Name>
+					<Comment/>
+					<ExtendedConfigurationObject>1f0d78ee-ace3-43ba-b9b8-212d9310259d</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:EnumRef.ПорядокРасчетов</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
 			<Form>ФормаДокумента</Form>
+			<Form>ФормаСпискаДокументов</Form>
 			<TabularSection uuid="5cf543a6-3c3e-419e-81c7-30dd424ffce6">
 				<InternalInfo>
 					<xr:GeneratedType name="DocumentTabularSection.ЗаказКлиента.Товары" category="TabularSection">
