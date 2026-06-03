@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<ExchangePlan uuid="b1000021-0021-4000-8000-000000000021">
+		<InternalInfo>
+			<xr:ThisNode>b1000021-0021-4000-8000-0000000000f1</xr:ThisNode>
+			<xr:GeneratedType name="ExchangePlanObject.АЛСАВ_WB_ПланОбмена" category="Object">
+				<xr:TypeId>a1000021-0021-4000-8000-000000000001</xr:TypeId>
+				<xr:ValueId>a1000021-0021-4000-8000-000000000011</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ExchangePlanRef.АЛСАВ_WB_ПланОбмена" category="Ref">
+				<xr:TypeId>a1000021-0021-4000-8000-000000000002</xr:TypeId>
+				<xr:ValueId>a1000021-0021-4000-8000-000000000012</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ExchangePlanSelection.АЛСАВ_WB_ПланОбмена" category="Selection">
+				<xr:TypeId>a1000021-0021-4000-8000-000000000003</xr:TypeId>
+				<xr:ValueId>a1000021-0021-4000-8000-000000000013</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ExchangePlanList.АЛСАВ_WB_ПланОбмена" category="List">
+				<xr:TypeId>a1000021-0021-4000-8000-000000000004</xr:TypeId>
+				<xr:ValueId>a1000021-0021-4000-8000-000000000014</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ExchangePlanManager.АЛСАВ_WB_ПланОбмена" category="Manager">
+				<xr:TypeId>a1000021-0021-4000-8000-000000000005</xr:TypeId>
+				<xr:ValueId>a1000021-0021-4000-8000-000000000015</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>АЛСАВ_WB_ПланОбмена</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>План обмена Wildberries</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<DefaultForm/>
+			<AuxiliaryForm/>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<Distribution>ToSubordinateNodes</Distribution>
+			<ExchangePlanSettings>
+				<xr:Property xsi:type="xr:MDObjectRef">Catalog.Номенклатура</xr:Property>
+				<xr:Property xsi:type="xr:MDObjectRef">Catalog.АЛСАВ_WB_СкладыWB</xr:Property>
+				<xr:Property xsi:type="xr:MDObjectRef">InformationRegister.АЛСАВ_WB_СопоставлениеНоменклатуры</xr:Property>
+			</ExchangePlanSettings>
+			<Autoregistration>
+				<xr:AutoregistrationRule xsi:type="xr:MDObjectRef">Catalog.Номенклатура</xr:AutoregistrationRule>
+			</Autoregistration>
+			<DataLockControlMode>Managed</DataLockControlMode>
+			<FullTextSearch>DontUse</FullTextSearch>
+			<RecordPresentation/>
+			<ExtendedRecordPresentation/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<DataHistory>DontUse</DataHistory>
+		</Properties>
+		<ChildObjects/>
+	</ExchangePlan>
+</MetaDataObject>
