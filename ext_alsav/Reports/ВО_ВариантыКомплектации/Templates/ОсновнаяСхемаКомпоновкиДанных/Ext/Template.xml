@@ -9,6 +9,9 @@
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Характеристика</dataPath>
 			<field>Характеристика</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>ВариантКомлектации</dataPath>
@@ -17,10 +20,9 @@
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Номенклатура</dataPath>
 			<field>Номенклатура</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Упаковка</dataPath>
-			<field>Упаковка</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>КоличествоУпаковок</dataPath>
@@ -69,16 +71,6 @@
 			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>НоменклатураУровень3</dataPath>
-			<field>НоменклатураУровень3</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Номенклатура уровень3</v8:content>
-				</v8:item>
-			</title>
-		</field>
-		<field xsi:type="DataSetFieldField">
 			<dataPath>ВариантКомлектацииКомпоненты</dataPath>
 			<field>ВариантКомлектацииКомпоненты</field>
 			<title xsi:type="v8:LocalStringType">
@@ -87,6 +79,9 @@
 					<v8:content>Вариант комлектации компоненты</v8:content>
 				</v8:item>
 			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>КоличествоУпаковокОригинально</dataPath>
@@ -95,86 +90,6 @@
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Количество упаковок оригинально</v8:content>
-				</v8:item>
-			</title>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>ХарактеристикаУровень1</dataPath>
-			<field>ХарактеристикаУровень1</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Характеристика уровень1</v8:content>
-				</v8:item>
-			</title>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>НоменклатураУровень1</dataPath>
-			<field>НоменклатураУровень1</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Номенклатура уровень1</v8:content>
-				</v8:item>
-			</title>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>ХарактеристикаУровень2</dataPath>
-			<field>ХарактеристикаУровень2</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Характеристика уровень2</v8:content>
-				</v8:item>
-			</title>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Позиция1</dataPath>
-			<field>Позиция1</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Позиция1</v8:content>
-				</v8:item>
-			</title>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>НоменклатураУровень2</dataPath>
-			<field>НоменклатураУровень2</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Номенклатура уровень2</v8:content>
-				</v8:item>
-			</title>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>ХарактеристикаУровень3</dataPath>
-			<field>ХарактеристикаУровень3</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Характеристика уровень3</v8:content>
-				</v8:item>
-			</title>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Позиция2</dataPath>
-			<field>Позиция2</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Позиция2</v8:content>
-				</v8:item>
-			</title>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>Позиция3</dataPath>
-			<field>Позиция3</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Позиция3</v8:content>
 				</v8:item>
 			</title>
 		</field>
@@ -188,6 +103,13 @@
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Позиция_HOFF</dataPath>
 			<field>Позиция_HOFF</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПутьВСборке</dataPath>
+			<field>ПутьВСборке</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
 		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ * ПОМЕСТИТЬ ВТ_Чч
@@ -303,78 +225,38 @@ UNION ALL ВЫБРАТЬ 	99
     алсав_НумерацияДляHOFF.Позиция_HOFF
 ИЗ
 
-(ВЫБРАТЬ                               
+(
+ВЫБРАТЬ                               
     ВариантКомплектацииОсновной.Ссылка КАК ВариантКомлектации,
     ВариантКомплектацииОсновной.Ссылка.Владелец КАК Номенклатура,
 	ВариантКомплектацииОсновной.Ссылка.Характеристика КАК Характеристика,
 	null ВариантКомлектацииКомпоненты,
-	ВариантКомплектацииОсновной.Ссылка.Упаковка КАК Упаковка,
 	ВариантКомплектацииОсновной.Ссылка.КоличествоУпаковок КАК КоличествоУпаковокОригинально,
 	ЛОЖЬ ЭтоПолуфабрикат,
-	ВариантКомплектацииОсновной.Ссылка.Владелец КАК НоменклатураУровень1,
-	ВариантКомплектацииОсновной.Ссылка.Характеристика КАК ХарактеристикаУровень1,   
-	0 КАК Позиция1,
-	null НоменклатураУровень2,
-	null ХарактеристикаУровень2,
-	0 КАК Позиция2,
-	null НоменклатураУровень3,
-	null ХарактеристикаУровень3,
-	0 КАК Позиция3
+	"" ПутьВСборке
 ИЗ
 	Справочник.ВариантыКомплектацииНоменклатуры КАК ВариантКомплектацииОсновной
 WHERE &amp;ДобавитьНоменклатуруОсновнойСборки = ИСТИНА
-UNION ALL
-      
-ВЫБРАТЬ
-	ВариантКомплектацииОсновнойТовары.Ссылка КАК ВариантКомлектации,
-	ВариантКомплектацииОсновнойТовары.Номенклатура КАК Номенклатура,
-	ВариантКомплектацииОсновнойТовары.Характеристика КАК Характеристика,
-	ВариантКомплектацииОсновнойТовары.ВариантКомлектации КАК ВариантКомлектацииКомпоненты,
-	ВариантКомплектацииОсновнойТовары.Упаковка КАК Упаковка,
-	ВариантКомплектацииОсновнойТовары.КоличествоУпаковок КАК КоличествоУпаковок,
-	ВариантКомплектацииОсновнойТовары.ЭтоПолуфабрикат КАК ЭтоПолуфабрикат,
-	null НоменклатураУровень1,
-	null ХарактеристикаУровень1,
-	0 КАК Позиция1,
-	ВариантКомплектацииОсновнойТовары.Номенклатура КАК НоменклатураУровень2,
-	ВариантКомплектацииОсновнойТовары.Характеристика КАК ХарактеристикаУровень2,
-	ВариантКомплектацииОсновнойТовары.НомерСтроки КАК Позиция2,
-	null НоменклатураУровень3,
-	null ХарактеристикаУровень3,
-	0 КАК Позиция3
-ИЗ
-	Справочник.ВариантыКомплектацииНоменклатуры.Товары КАК ВариантКомплектацииОсновнойТовары
-           
-           
-UNION ALL
+	И ВариантКомплектацииОсновной.ПометкаУдаления = ЛОЖЬ 
+UNION ALL   
 
 ВЫБРАТЬ
-	ВариантКомплектацииОсновнойТовары.Ссылка КАК ВариантКомлектации,
-	ВариантКомплектацииКомпонентыТовары.Номенклатура КАК Номенклатура,
-	ВариантКомплектацииКомпонентыТовары.Характеристика КАК Характеристика,
-	null КАК ВариантКомлектацииКомпоненты,
-	ВариантКомплектацииКомпонентыТовары.Упаковка КАК Упаковка,
-		ВариантКомплектацииКомпонентыТовары.КоличествоУпаковок 
-		* ВариантКомплектацииОсновнойТовары.КоличествоУпаковок 
-	КАК КоличествоУпаковок,
-	ВариантКомплектацииКомпонентыТовары.ЭтоПолуфабрикат КАК ЭтоПолуфабрикат,  
-	null НоменклатураУровень1,
-	null ХарактеристикаУровень1,
-	0 КАК Позиция1,
-	null НоменклатураУровень2,
-	null ХарактеристикаУровень2,
-	ВариантКомплектацииОсновнойТовары.НомерСтроки КАК Позиция2,
-	ВариантКомплектацииКомпонентыТовары.Номенклатура КАК НоменклатураУровень3,
-	ВариантКомплектацииКомпонентыТовары.Характеристика КАК ХарактеристикаУровень3,
-	ВариантКомплектацииКомпонентыТовары.НомерСтроки КАК Позиция3
-ИЗ
-	Справочник.ВариантыКомплектацииНоменклатуры.Товары КАК ВариантКомплектацииОсновнойТовары
-		INNER JOIN Справочник.ВариантыКомплектацииНоменклатуры.Товары КАК ВариантКомплектацииКомпонентыТовары
-			ПО ВариантКомплектацииКомпонентыТовары.Ссылка = ВариантКомплектацииОсновнойТовары.ВариантКомлектации 
-	WHERE &amp;РаскрыватьВторойУровень = ИСТИНА
+	ВариантКомплектацииОсновной.Ссылка КАК ВариантКомлектации,
+	Состав.Номенклатура КАК Номенклатура,
+	Состав.Характеристика КАК Характеристика,
+	Состав.ВариантКомплектацииНоменклатуры КАК ВариантКомлектацииКомпоненты,
+	Состав.Количество КАК КоличествоУпаковок,
+	Состав.ЭтоПолуфабрикат КАК ЭтоПолуфабрикат,
+	Состав.ПутьВСборке
+ИЗ    
+	Справочник.ВариантыКомплектацииНоменклатуры КАК ВариантКомплектацииОсновной
+	INNER JOIN РегистрСведений.алсав_СоставИзделий Состав
+		ПО Состав.ПродуктНоменклатура = ВариантКомплектацииОсновной.Владелец
+		И Состав.ПродуктХарактеристика = ВариантКомплектацииОсновной.Характеристика
+ 
+	
+) КАК ВариантКомплектацииТовары 
 
-) КАК ВариантКомплектацииТовары
-         
        	ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЦеныНоменклатуры.СрезПоследних(, ВидЦены = &amp;ВидЦены) КАК ЦеныНоменклатуры
 		ПО (ЦеныНоменклатуры.Номенклатура = ВариантКомплектацииТовары.Номенклатура)
 			И (ЦеныНоменклатуры.Характеристика = ВариантКомплектацииТовары.Характеристика)
@@ -383,10 +265,12 @@ UNION ALL
 		ПО (ЦеныВариантаКомплектации.Номенклатура = ВариантКомплектацииТовары.ВариантКомлектации.Владелец)
 			И (ЦеныВариантаКомплектации.Характеристика = ВариантКомплектацииТовары.ВариантКомлектации.Характеристика)
 			
+		//ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ Номенклатура,Характеристика,MAX(Штрихкод) КАК Штрихкод ИЗ РегистрСведений.ШтрихкодыНоменклатуры GROUP BY Номенклатура,Характеристика) КАК Штрихкоды
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ШтрихкодыНоменклатуры КАК Штрихкоды
 		ПО (Штрихкоды.Номенклатура = ВариантКомплектацииТовары.Номенклатура)
 			И (Штрихкоды.Характеристика = ВариантКомплектацииТовары.Характеристика)
 			
+		//ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ Номенклатура,Характеристика,MAX(Штрихкод) КАК Штрихкод ИЗ РегистрСведений.ШтрихкодыНоменклатуры GROUP BY Номенклатура,Характеристика) КАК ШтрихкодыВариантаКомплектации
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ШтрихкодыНоменклатуры КАК ШтрихкодыВариантаКомплектации
 		ПО (ШтрихкодыВариантаКомплектации.Номенклатура = ВариантКомплектацииТовары.ВариантКомлектации.Владелец)
 			И (ШтрихкодыВариантаКомплектации.Характеристика = ВариантКомплектацииТовары.ВариантКомлектации.Характеристика)
@@ -396,7 +280,8 @@ UNION ALL
 			И (алсав_НумерацияДляHOFFРасчет.ПродуктНоменклатура = ВариантКомплектацииТовары.ВариантКомлектации.Владелец)
 			И (алсав_НумерацияДляHOFFРасчет.ПродуктХарактеристика = ВариантКомплектацииТовары.ВариантКомлектации.Характеристика)
 			И (алсав_НумерацияДляHOFFРасчет.Номенклатура = ВариантКомплектацииТовары.Номенклатура)
-			И (алсав_НумерацияДляHOFFРасчет.Характеристика = ВариантКомплектацииТовары.Характеристика)
+			И (алсав_НумерацияДляHOFFРасчет.Характеристика = ВариантКомплектацииТовары.Характеристика) 
+			И (алсав_НумерацияДляHOFFРасчет.ПутьВСборке = ВариантКомплектацииТовары.ПутьВСборке)
 			
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.алсав_НумерацияДляHOFF КАК алсав_НумерацияДляHOFF
 		ПО &amp;РазбитьПоПозициям = ИСТИНА 
@@ -404,7 +289,10 @@ UNION ALL
 			И (алсав_НумерацияДляHOFF.ПродуктХарактеристика = ВариантКомплектацииТовары.ВариантКомлектации.Характеристика)
 			И (алсав_НумерацияДляHOFF.Номенклатура = ВариантКомплектацииТовары.Номенклатура)
 			И (алсав_НумерацияДляHOFF.Характеристика = ВариантКомплектацииТовары.Характеристика)
-			И (алсав_НумерацияДляHOFF.Позиция_АЛСАВ = алсав_НумерацияДляHOFFРасчет.Позиция_АЛСАВ)                                                                                                                                       </query>
+			И (алсав_НумерацияДляHOFF.Позиция_АЛСАВ = алсав_НумерацияДляHOFFРасчет.Позиция_АЛСАВ) 
+			И (алсав_НумерацияДляHOFF.ПутьВСборке = ВариантКомплектацииТовары.ПутьВСборке) 
+
+</query>
 	</dataSet>
 	<parameter>
 		<name>Период</name>
@@ -455,21 +343,6 @@ UNION ALL
 		<use>Always</use>
 	</parameter>
 	<parameter>
-		<name>РаскрыватьВторойУровень</name>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Раскрывать второй уровень</v8:content>
-			</v8:item>
-		</title>
-		<valueType>
-			<v8:Type>xs:boolean</v8:Type>
-		</valueType>
-		<value xsi:type="xs:boolean">false</value>
-		<useRestriction>false</useRestriction>
-		<use>Always</use>
-	</parameter>
-	<parameter>
 		<name>ДобавитьНоменклатуруОсновнойСборки</name>
 		<title xsi:type="v8:LocalStringType">
 			<v8:item>
@@ -507,9 +380,6 @@ UNION ALL
 					<dcsset:field>КоличествоУпаковок</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>Упаковка</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>ЭтоПолуфабрикат</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
@@ -519,34 +389,7 @@ UNION ALL
 					<dcsset:field>Штрихкод</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>Позиция1</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>Позиция2</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>Позиция3</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>НоменклатураУровень1</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>ХарактеристикаУровень1</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>НоменклатураУровень2</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>ХарактеристикаУровень2</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>ВариантКомлектацииКомпоненты</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>НоменклатураУровень3</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>ХарактеристикаУровень3</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>Позиция_АЛСАВ</dcsset:field>
@@ -567,12 +410,6 @@ UNION ALL
 					<dcscor:parameter>РазбитьПоПозициям</dcscor:parameter>
 					<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
 					<dcsset:userSettingID>149e9683-03ce-420c-b4c4-a5472e91afb5</dcsset:userSettingID>
-				</dcscor:item>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:use>false</dcscor:use>
-					<dcscor:parameter>РаскрыватьВторойУровень</dcscor:parameter>
-					<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
-					<dcsset:userSettingID>f999e05e-7e64-4f1a-b568-b93628770e85</dcsset:userSettingID>
 				</dcscor:item>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:use>false</dcscor:use>

@@ -55,7 +55,7 @@
 			<ConfigurationExtensionCompatibilityMode>Version8_3_16</ConfigurationExtensionCompatibilityMode>
 			<ScriptVariant>Russian</ScriptVariant>
 			<Vendor/>
-			<Version>1.0.115</Version>
+			<Version>1.0.117</Version>
 			<BriefInformation/>
 			<DetailedInformation/>
 			<Copyright/>
@@ -193,6 +193,7 @@
 			<Role>АЛСАВ_ФактическиОтгружен</Role>
 			<Role>БазовыеПраваУТ</Role>
 			<Role>ПолныеПрава</Role>
+			<Role>АЛСАВ_НумерацияДляHOFFРасчет</Role>
 			<CommonModule>алсав_ВыгрузкаCsvJson</CommonModule>
 			<CommonModule>алсав_ДопРеквизиты</CommonModule>
 			<CommonModule>алсав_ПечатьСчет</CommonModule>
@@ -224,6 +225,8 @@
 			<CommonModule>ОбработкаТабличнойЧастиСервер</CommonModule>
 			<CommonModule>ФормированиеПечатныхФорм</CommonModule>
 			<CommonModule>ОбщегоНазначенияКлиентЛокализация</CommonModule>
+			<CommonModule>ОбщегоНазначенияУТ</CommonModule>
+			<XDTOPackage>ДД</XDTOPackage>
 			<FunctionalOption>ИспользоватьНаборы</FunctionalOption>
 			<FunctionalOption>ИспользоватьПострочнуюОтгрузкуВЗаказеКлиента</FunctionalOption>
 			<FunctionalOption>ИспользоватьРасширенныеВозможностиЗаказаКлиента</FunctionalOption>
@@ -644,6 +647,7 @@
 			<DataProcessor>алсав_ВыгрузкаФайла_ПрайсОсновной</DataProcessor>
 			<DataProcessor>ВО_ШтрихкодыСозданиеВторого</DataProcessor>
 			<DataProcessor>ВыгрузкаОстатковCSV</DataProcessor>
+			<DataProcessor>ДД_подключаемыйМодуль</DataProcessor>
 			<DataProcessor>ЖурналДокументовПродажи</DataProcessor>
 			<DataProcessor>ЗагрузкаДанныхИзВнешнихФайлов</DataProcessor>
 			<DataProcessor>ЗагрузкаДанныхИзФайла</DataProcessor>

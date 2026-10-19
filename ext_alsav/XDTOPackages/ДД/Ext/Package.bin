@@ -1,0 +1,7 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://diadoc.kontur.ru/dll_types">
+	<objectType name="PaymentDocumentInfo">
+		<property name="Date" type="xs:date"/>
+		<property name="Number" type="xs:anySimpleType"/>
+		<property name="Total"/>
+	</objectType>
+</package>

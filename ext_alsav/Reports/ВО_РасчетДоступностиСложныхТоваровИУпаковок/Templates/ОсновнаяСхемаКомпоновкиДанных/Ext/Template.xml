@@ -294,6 +294,18 @@
 				</v8:item>
 			</title>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Назначение</dataPath>
+			<field>Назначение</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Получатель</dataPath>
+			<field>Получатель</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Серия</dataPath>
+			<field>Серия</field>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
 	ТОсновнаяВыборка.Доступно КАК Доступно,
@@ -589,12 +601,20 @@
 			И (ТСпецификация.Характеристика IS NULL OR ТСпецификация.Характеристика = Т_Штрихкоды.Характеристика)
 
 					                                                                                                                                               
-		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЦеныНоменклатуры.СрезПоследних(, ВидЦены = &amp;ВидЦены) КАК ЦеныНоменклатурыПродукт
+		//ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЦеныНоменклатуры.СрезПоследних(, ВидЦены = &amp;ВидЦены) КАК ЦеныНоменклатурыПродукт
+		//ПО ТСпецификация.ПродуктНоменклатура = ЦеныНоменклатурыПродукт.Номенклатура
+		//	И (ТСпецификация.ПродуктХарактеристика IS NULL OR ТСпецификация.ПродуктХарактеристика = ЦеныНоменклатурыПродукт.Характеристика)
+		////++++++++	
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.СоглашенияСКлиентами.Товары СоглашенияСКлиентамиТовары
+			ON СоглашенияСКлиентамиТовары.Ссылка= &amp;Соглашение 
+			AND СоглашенияСКлиентамиТовары.Номенклатура = ТСпецификация.ПродуктНоменклатура 
+			AND СоглашенияСКлиентамиТовары.Характеристика = ТСпецификация.ПродуктХарактеристика
+		           
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЦеныНоменклатуры.СрезПоследних(, ) КАК ЦеныНоменклатурыПродукт
 		ПО ТСпецификация.ПродуктНоменклатура = ЦеныНоменклатурыПродукт.Номенклатура
 			И (ТСпецификация.ПродуктХарактеристика IS NULL OR ТСпецификация.ПродуктХарактеристика = ЦеныНоменклатурыПродукт.Характеристика)
-			
-			
-			
+	        AND ЦеныНоменклатурыПродукт.ВидЦены = ISNULL(СоглашенияСКлиентамиТовары.ВидЦены, &amp;ВидЦены)	
+		////--------	
 		ЛЕВОЕ СОЕДИНЕНИЕ (SELECT Номенклатура,Характеристика,MIN(Штрихкод) Штрихкод FROM РегистрСведений.ШтрихкодыНоменклатуры GROUP BY Номенклатура,Характеристика)КАК Т_ШтрихкодыПродукт
 		ПО ТСпецификация.ПродуктНоменклатура = Т_ШтрихкодыПродукт.Номенклатура
 			И (ТСпецификация.ПродуктХарактеристика IS NULL OR ТСпецификация.ПродуктХарактеристика = Т_ШтрихкодыПродукт.Характеристика)
@@ -685,6 +705,21 @@
 		<denyIncompleteValues>true</denyIncompleteValues>
 		<use>Always</use>
 	</parameter>
+	<parameter>
+		<name>Соглашение</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Соглашение</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.СоглашенияСКлиентами</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+		<use>Always</use>
+	</parameter>
 	<settingsVariant>
 		<dcsset:name>ВО_РасчетДоступностиСложныхИзделий</dcsset:name>
 		<dcsset:presentation xsi:type="v8:LocalStringType">
@@ -752,6 +787,12 @@
 					<dcscor:parameter>ВидЦены</dcscor:parameter>
 					<dcscor:value xsi:nil="true"/>
 					<dcsset:userSettingID>94ab899c-3eff-4882-98af-c21a754e159f</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Соглашение</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>e54336fa-fcbb-4f4d-ba7a-777d7456868f</dcsset:userSettingID>
 				</dcscor:item>
 			</dcsset:dataParameters>
 			<dcsset:outputParameters>
