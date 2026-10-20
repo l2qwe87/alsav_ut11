@@ -66,10 +66,32 @@
 		<ChildObjects>
 			<Language>Русский</Language>
 			<Subsystem>Продажи</Subsystem>
+			<Subsystem>Wildberries</Subsystem>
 			<Role>АЛСАВ_WB_ОсновнаяРоль</Role>
 			<Role>БазовыеПраваУТ</Role>
 			<CommonModule>ЦенообразованиеВызовСервера</CommonModule>
+			<CommonModule>АЛСАВ_WB_HTTP</CommonModule>
+			<CommonModule>АЛСАВ_WB_JSON</CommonModule>
+			<CommonModule>АЛСАВ_WB_ОбменДанными</CommonModule>
 			<CommonCommand>ОбменСWildberries</CommonCommand>
+			<Enum>АЛСАВ_WB_ТипыОстатков</Enum>
+			<Catalog>АЛСАВ_WB_СкладыWB</Catalog>
+			<InformationRegister>АЛСАВ_WB_СопоставлениеНоменклатуры</InformationRegister>
+			<InformationRegister>АЛСАВ_WB_НастройкиОбмена</InformationRegister>
+			<InformationRegister>АЛСАВ_WB_СтатусыЗаказовWB</InformationRegister>
+			<InformationRegister>АЛСАВ_WB_Остатки_СведенияWB</InformationRegister>
+			<AccumulationRegister>АЛСАВ_WB_ОстаткиДляВыгрузки</AccumulationRegister>
+			<ExchangePlan>АЛСАВ_WB_ПланОбмена</ExchangePlan>
+			<DataProcessor>АЛСАВ_WB_api_Common</DataProcessor>
+			<DataProcessor>АЛСАВ_WB_api_Товары</DataProcessor>
+			<DataProcessor>АЛСАВ_WB_api_Остатки</DataProcessor>
+			<DataProcessor>АЛСАВ_WB_api_Цены</DataProcessor>
+			<DataProcessor>АЛСАВ_WB_api_Заказы</DataProcessor>
+			<DataProcessor>АЛСАВ_WB_api_Поставки</DataProcessor>
+			<DataProcessor>АЛСАВ_WB_api_Склады</DataProcessor>
+			<DataProcessor>АЛСАВ_WB_ВыгрузкаОстатков</DataProcessor>
+			<DataProcessor>АЛСАВ_WB_ЗагрузкаЗаказов</DataProcessor>
+			<DataProcessor>АЛСАВ_WB_ОбменСWildberries</DataProcessor>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
