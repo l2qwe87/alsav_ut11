@@ -15,6 +15,16 @@
       "type": "local",
       "command": ["node", "./.opencode/mcp/1c-syntax-checker/index.js"],
       "enabled": true
+    },
+    "bsl-language-server": {
+      "type": "local",
+      "command": ["node", "./.opencode/mcp/bsl-language-server/index.js"],
+      "enabled": true,
+      "environment": {
+        "BSL_MCP_URL": "http://127.0.0.1:4389/mcp",
+        "BSL_HOST_ROOT": "Z:\\src\\alsav\\alsav_ut11",
+        "BSL_CONTAINER_ROOT": "/project"
+      }
     }
   }
 }

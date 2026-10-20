@@ -1,0 +1,23 @@
+services:
+  bsl-language-server:
+    build:
+      context: .
+      dockerfile: Dockerfile.bsl-ls
+    image: bsl-language-server-utf8:latest
+    container_name: bsl-language-server
+    volumes:
+      # Монтируем проект в /project (НЕ в /workspace — там приложение)
+      - .:/project
+      - bsl_cache:/root/.bsl-language-server
+    ports:
+      # MCP Streamable HTTP: http://127.0.0.1:4389/mcp
+      - "4389:8025"
+    environment:
+      - LANG=C.UTF-8
+      - LC_ALL=C.UTF-8
+    # Режим MCP (нативная поддержка Model Context Protocol)
+    command: ["mcp", "--protocol", "streamable"]
+    restart: unless-stopped
+
+volumes:
+  bsl_cache:
