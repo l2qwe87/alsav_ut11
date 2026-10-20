@@ -236,6 +236,11 @@
 				<CommandName>Form.Command.алсав_ЗагрузитьXML_ZK</CommandName>
 				<ExtendedTooltip name="Формаалсав_ЗагрузитьXML_ZKРасширеннаяПодсказка" id="2397"/>
 			</Button>
+			<Button name="Формаалсав_ЗагрузитьПоАртикуламКОМУС" id="2416">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.алсав_ЗагрузитьПоАртикуламКОМУС</CommandName>
+				<ExtendedTooltip name="Формаалсав_ЗагрузитьПоАртикуламКОМУСРасширеннаяПодсказка" id="2417"/>
+			</Button>
 			<Button name="Формаалсав_ОткрытьВнешнийОтчетВО_АнализДоступностиРаскрытиеСборок" id="1826">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.алсав_ОткрытьВнешнийОтчетВО_АнализДоступностиРаскрытиеСборок</CommandName>
@@ -250,6 +255,7 @@
 		<Event name="OnOpen" callType="After">алсав_ПриОткрытииПосле</Event>
 		<Event name="BeforeWrite" callType="After">алсав_ПередЗаписьюПосле</Event>
 		<Event name="OnCreateAtServer" callType="After">алсав_ПриСозданииНаСервереПосле</Event>
+		<Event name="ChoiceProcessing" callType="After">алсав_ОбработкаВыбораПосле</Event>
 	</Events>
 	<ChildItems>
 		<UsualGroup name="ГруппаПанельСостоянияEDI" id="2361">
@@ -5881,6 +5887,21 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action callType="After">алсав_ОбъединитьОдинаковыеПозицииПосле</Action>
+		</Command>
+		<Command name="алсав_ЗагрузитьПоАртикуламКОМУС" id="1000090">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить по артикулам КОМУС</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить товары из таблицы по артикулам КОМУС</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action callType="After">алсав_алсав_ЗагрузитьПоАртикуламКОМУСПосле</Action>
 		</Command>
 	</Commands>
 	<BaseForm version="2.20">
