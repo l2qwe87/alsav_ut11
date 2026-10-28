@@ -1,0 +1,20 @@
+# BSL Language Server с корректной поддержкой UTF-8 (кириллица в путях).
+# Официальный образ 1csyntax/bsl-language-server построен на Paketo BellSoft Liberica,
+# где sun.jnu.encoding=ANSI_X3.4-1968 — пути с кириллицей ломаются (? в именах файлов).
+# Eclipse Temurin определяет jnu=UTF-8 и работает корректно.
+FROM eclipse-temurin:21-jre
+
+ARG BSL_VERSION=1.1.0-rc.7
+
+ENV LANG=C.UTF-8 \
+    LC_ALL=C.UTF-8 \
+    JAVA_TOOL_OPTIONS="-Dfile.encoding=UTF-8"
+
+ADD https://github.com/1c-syntax/bsl-language-server/releases/download/v${BSL_VERSION}/bsl-language-server-${BSL_VERSION}-exec.jar /app/bsl-language-server.jar
+
+WORKDIR /project
+
+EXPOSE 8025
+
+ENTRYPOINT ["java", "-jar", "/app/bsl-language-server.jar"]
+CMD ["mcp", "--protocol", "streamable"]

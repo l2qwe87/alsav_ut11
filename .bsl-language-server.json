@@ -1,0 +1,10 @@
+{
+  "language": "ru",
+  "diagnostics": {
+    "computeDiagnostics": true
+  },
+  "configurationRoot": "./base",
+  "extensionsRoots": [
+    "./ext_alsav"
+  ]
+}

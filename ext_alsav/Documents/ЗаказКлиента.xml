@@ -690,6 +690,7 @@
 			</Attribute>
 			<Form>ФормаДокумента</Form>
 			<Form>ФормаСпискаДокументов</Form>
+			<Form>алсав_ЗагрузкаТоваровПоАртикуламКОМУС</Form>
 			<TabularSection uuid="5cf543a6-3c3e-419e-81c7-30dd424ffce6">
 				<InternalInfo>
 					<xr:GeneratedType name="DocumentTabularSection.ЗаказКлиента.Товары" category="TabularSection">
