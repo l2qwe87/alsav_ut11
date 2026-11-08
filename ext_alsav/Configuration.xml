@@ -227,6 +227,7 @@
 			<CommonModule>ОбщегоНазначенияКлиентЛокализация</CommonModule>
 			<CommonModule>ОбщегоНазначенияУТ</CommonModule>
 			<XDTOPackage>ДД</XDTOPackage>
+			<HTTPService>алсав_ВнешниеОстатки</HTTPService>
 			<FunctionalOption>ИспользоватьНаборы</FunctionalOption>
 			<FunctionalOption>ИспользоватьПострочнуюОтгрузкуВЗаказеКлиента</FunctionalOption>
 			<FunctionalOption>ИспользоватьРасширенныеВозможностиЗаказаКлиента</FunctionalOption>

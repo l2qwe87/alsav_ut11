@@ -2297,6 +2297,11 @@
 		<Metadata name="FunctionalOption.ИспользоватьУправленческуюОрганизацию" id="93365fc7-76e5-4698-8445-57e3fde61500" configVersion="5882814c900d55469e655ddd74f825fa9e0d63c8"/>
 		<Metadata name="FunctionalOption.ИспользоватьУчетНДС" id="2776e74f-9982-46b4-a897-76c38658743f" configVersion="a7f4d71859c94217cc373e0f326a376f809979ea"/>
 		<Metadata name="FunctionalOption.ИспользоватьХарактеристикиНоменклатуры" id="e836da3a-0107-4a59-b218-4b5b44102bc2" configVersion="16156124e1f7fd6d3185e2f7618c8b64ebed5ed0"/>
+		<Metadata name="HTTPService.алсав_ВнешниеОстатки" id="67245a31-4b30-4f0d-af18-77dd7add3b75" configVersion="ee21ce136ab34cac9d072e7ca0c36d2100000000">
+			<Metadata name="HTTPService.алсав_ВнешниеОстатки.URLTemplate.Balances" id="0619ea9b-bdd9-4e84-ac0c-fc398f14d783"/>
+			<Metadata name="HTTPService.алсав_ВнешниеОстатки.URLTemplate.Balances.Method.GET" id="2af51743-acf2-4382-a5e8-028f843b04a2"/>
+		</Metadata>
+		<Metadata name="HTTPService.алсав_ВнешниеОстатки.Module" id="67245a31-4b30-4f0d-af18-77dd7add3b75.0" configVersion="69b84b020d4148e491c7af47da35a57800000000"/>
 		<Metadata name="InformationRegister.Ассортимент" id="8d6fcaff-9265-4034-b8ef-1dc8117d7c83" configVersion="466aefdb1e73db08c9103972c570965f446130fc">
 			<Metadata name="InformationRegister.Ассортимент.Resource.РазрешеныПродажи" id="4795c5b9-0714-4e2c-9bb3-576bd9572019"/>
 			<Metadata name="InformationRegister.Ассортимент.Resource.РазрешеныЗакупки" id="52c6c7c7-96e8-411c-91ba-f8fc3a1b07d8"/>
