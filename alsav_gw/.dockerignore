@@ -1,0 +1,10 @@
+**/bin
+**/obj
+**/.vs
+**/*.user
+.git
+.gitignore
+src/Alsav.ApiGateway.Tests
+docker-compose.yml
+README.md
+onec-stub
