@@ -9,6 +9,7 @@ namespace Alsav.ApiGateway.Controllers.External;
 /// </summary>
 [ApiController]
 [Route("clientApi/balances")]
+[ApiExplorerSettings(GroupName = "external")]
 public sealed class BalancesController : ControllerBase
 {
     private const int DefaultLimit = 1000;
