@@ -13,6 +13,7 @@ namespace Alsav.ApiGateway.Controllers.Internal;
 /// </summary>
 [ApiController]
 [Route("api/internal/v1/sync")]
+[ApiExplorerSettings(GroupName = "internal")]
 public sealed class SyncController : ControllerBase
 {
     /// <summary>

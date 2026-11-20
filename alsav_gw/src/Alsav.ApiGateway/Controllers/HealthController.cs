@@ -9,6 +9,7 @@ namespace Alsav.ApiGateway.Controllers;
 /// </summary>
 [ApiController]
 [Route("health")]
+[ApiExplorerSettings(GroupName = "internal")]
 public sealed class HealthController : ControllerBase
 {
     private readonly BalanceCacheService _balanceCache;

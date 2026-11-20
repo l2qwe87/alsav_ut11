@@ -1,8 +1,10 @@
+using System.Reflection;
 using Alsav.ApiGateway.Configuration;
 using Alsav.ApiGateway.Middleware;
 using Alsav.ApiGateway.Models;
 using Alsav.ApiGateway.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.OpenApi.Models;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -56,11 +58,45 @@ builder.Services
     .AddReverseProxy()
     .LoadFromConfig(builder.Configuration.GetSection("ReverseProxy"));
 
-if (builder.Environment.IsDevelopment())
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen(options =>
 {
-    builder.Services.AddEndpointsApiExplorer();
-    builder.Services.AddSwaggerGen();
-}
+    options.SwaggerDoc("external", new OpenApiInfo
+    {
+        Title = "ALSAV Client API",
+        Version = "v1",
+        Description = "External API for clients."
+    });
+
+    options.SwaggerDoc("internal", new OpenApiInfo
+    {
+        Title = "ALSAV Internal API",
+        Version = "v1",
+        Description = "Internal API for internal network."
+    });
+
+    options.DocInclusionPredicate((docName, apiDesc) =>
+    {
+        if (string.Equals(docName, "internal", StringComparison.OrdinalIgnoreCase))
+        {
+            return true;
+        }
+
+        if (string.Equals(docName, "external", StringComparison.OrdinalIgnoreCase))
+        {
+            return string.Equals(apiDesc.GroupName, "external", StringComparison.OrdinalIgnoreCase);
+        }
+
+        return false;
+    });
+
+    var xmlFileName = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+    var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFileName);
+    if (File.Exists(xmlPath))
+    {
+        options.IncludeXmlComments(xmlPath);
+    }
+});
 
 var app = builder.Build();
 
@@ -68,11 +104,12 @@ app.UseMiddleware<ExceptionHandlingMiddleware>();
 app.UseSerilogRequestLogging();
 app.UseMiddleware<ApiKeyValidationMiddleware>();
 
-if (app.Environment.IsDevelopment())
+app.UseSwagger();
+app.UseSwaggerUI(options =>
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+    options.SwaggerEndpoint("/swagger/external/swagger.json", "External");
+    options.SwaggerEndpoint("/swagger/internal/swagger.json", "Internal");
+});
 
 app.MapControllers();
 app.MapReverseProxy();
