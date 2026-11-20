@@ -107,6 +107,12 @@ app.UseMiddleware<ApiKeyValidationMiddleware>();
 app.UseSwagger();
 app.UseSwaggerUI(options =>
 {
+    options.RoutePrefix = "clientApi/swagger";
+    options.SwaggerEndpoint("/swagger/external/swagger.json", "External");
+});
+app.UseSwaggerUI(options =>
+{
+    options.RoutePrefix = "swagger";
     options.SwaggerEndpoint("/swagger/external/swagger.json", "External");
     options.SwaggerEndpoint("/swagger/internal/swagger.json", "Internal");
 });
