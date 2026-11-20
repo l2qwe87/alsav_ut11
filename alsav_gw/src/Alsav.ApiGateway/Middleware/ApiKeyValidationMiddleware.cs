@@ -14,6 +14,7 @@ public sealed class ApiKeyValidationMiddleware
     public const string HeaderName = "X-API-Key";
 
     private const string ProtectedPath = "/clientApi";
+    private const string SwaggerPath = "/clientApi/swagger";
 
     private readonly RequestDelegate _next;
     private readonly ApiKeyCacheService _apiKeyCache;
@@ -42,6 +43,12 @@ public sealed class ApiKeyValidationMiddleware
     public async Task InvokeAsync(HttpContext context)
     {
         if (!context.Request.Path.StartsWithSegments(ProtectedPath, StringComparison.OrdinalIgnoreCase))
+        {
+            await _next(context);
+            return;
+        }
+
+        if (context.Request.Path.StartsWithSegments(SwaggerPath, StringComparison.OrdinalIgnoreCase))
         {
             await _next(context);
             return;
