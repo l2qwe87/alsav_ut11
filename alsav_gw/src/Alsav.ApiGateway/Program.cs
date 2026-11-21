@@ -1,9 +1,11 @@
 using System.Reflection;
 using Alsav.ApiGateway.Configuration;
+using Alsav.ApiGateway.Data;
 using Alsav.ApiGateway.Middleware;
 using Alsav.ApiGateway.Models;
 using Alsav.ApiGateway.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Serilog;
 
@@ -43,6 +45,17 @@ builder.Services
     .Bind(builder.Configuration.GetSection(InternalApiSettings.SectionName))
     .ValidateDataAnnotations()
     .ValidateOnStart();
+
+builder.Services
+    .AddOptions<BalanceCalculationSettings>()
+    .Bind(builder.Configuration.GetSection(BalanceCalculationSettings.SectionName))
+    .ValidateDataAnnotations()
+    .ValidateOnStart();
+
+var connectionString = builder.Configuration.GetConnectionString("GatewayDb")
+    ?? "Data Source=gateway.db";
+builder.Services.AddDbContext<GatewayDbContext>(options => options.UseSqlite(connectionString));
+builder.Services.AddScoped<BalanceCalculationService>();
 
 builder.Services.AddSingleton<BalanceCacheService>();
 
@@ -99,6 +112,22 @@ builder.Services.AddSwaggerGen(options =>
 });
 
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<GatewayDbContext>();
+    var dbPath = db.Database.GetDbConnection().DataSource;
+    if (!string.IsNullOrWhiteSpace(dbPath) && !string.Equals(dbPath, ":memory:", StringComparison.OrdinalIgnoreCase))
+    {
+        var dir = Path.GetDirectoryName(Path.GetFullPath(dbPath));
+        if (!string.IsNullOrWhiteSpace(dir))
+        {
+            Directory.CreateDirectory(dir);
+        }
+    }
+
+    db.Database.EnsureCreated();
+}
 
 app.UseMiddleware<ExceptionHandlingMiddleware>();
 app.UseSerilogRequestLogging();

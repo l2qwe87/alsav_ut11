@@ -12,7 +12,11 @@ services:
       OneCSettings__InternalSecret: ${ONEC_INTERNAL_SECRET:-demo-internal-secret}
       OneCSettings__SyncIntervalMinutes: "10"
       InternalApi__SecretKey: ${INTERNAL_API_SECRET:-demo-internal-secret}
+      ConnectionStrings__GatewayDb: Data Source=/app/data/gateway.db
+      BalanceCalculation__DefaultWarehouse: "Склад адресного хранения"
       ReverseProxy__Clusters__onecCluster__Destinations__onec__Address: http://onec-http:80
+    volumes:
+      - gateway-data:/app/data
     depends_on:
       - onec-http
     networks:
@@ -31,3 +35,6 @@ services:
 networks:
   internal_net:
     driver: bridge
+
+volumes:
+  gateway-data:
