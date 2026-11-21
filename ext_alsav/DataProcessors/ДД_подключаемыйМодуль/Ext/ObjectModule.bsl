@@ -57,6 +57,28 @@
 	
 	УПД_ИзменитьНомераДокументовОснованийОтгрузки(Content, Префикс);
 	
+	
+	///АЛСАВ / Удаляем Buyers  Банковские реквизиты
+	ВсегоBuyers = Content.Buyers.Количество();
+	МаксИндекс = ВсегоBuyers - 1;
+	
+	Для инд = 0 По МаксИндекс Цикл
+		BuyersInfo = Content.Buyers[инд];
+		//УстановитьЗначениеXDTO(BuyersInfo, "BankAccountNumber", "");
+		//УстановитьЗначениеXDTO(BuyersInfo, "BankId", "");
+		//УстановитьЗначениеXDTO(BuyersInfo, "BankName", "");
+		//УстановитьЗначениеXDTO(BuyersInfo, "CorrespondentAccount", "");
+		
+		BuyersInfo.BankAccountNumber = "";
+		BuyersInfo.BankId = "";
+		BuyersInfo.BankName = "";
+		BuyersInfo.CorrespondentAccount = "";
+		
+		//BuyersInfo..Очистить();
+		BuyersInfo.Phone.Очистить();
+		BuyersInfo.Email.Очистить();
+	КонецЦикла;
+	
 КонецПроцедуры
 
 Процедура УПД_ИзменитьНомерДокумента(Content, Префикс)
