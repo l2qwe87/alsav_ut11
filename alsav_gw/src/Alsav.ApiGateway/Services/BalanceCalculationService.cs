@@ -89,24 +89,94 @@ public sealed class BalanceCalculationService(
         Dictionary<string, (decimal Available, decimal Demand)> available,
         Dictionary<string, List<ProductCompositionEntity>> compsByProduct)
     {
+        var memo = new Dictionary<string, decimal>(StringComparer.Ordinal);
+        var visiting = new HashSet<string>(StringComparer.Ordinal);
+        return CanBuild(productKey, available, compsByProduct, memo, visiting);
+    }
+
+    private static decimal CanBuild(
+        string productKey,
+        Dictionary<string, (decimal Available, decimal Demand)> available,
+        Dictionary<string, List<ProductCompositionEntity>> compsByProduct,
+        Dictionary<string, decimal> memo,
+        HashSet<string> visiting)
+    {
+        if (memo.TryGetValue(productKey, out var cached))
+        {
+            return cached;
+        }
+
+        if (!visiting.Add(productKey))
+        {
+            return 0m;
+        }
+
+        available.TryGetValue(productKey, out var self);
+        var selfAvailable = self.Available;
+        var selfDemand = self.Demand;
+
+        decimal result;
         if (compsByProduct.TryGetValue(productKey, out var components) && components.Count > 0)
         {
             decimal? minBuild = null;
             foreach (var c in components)
             {
                 var ck = Key(c.ComponentArticle, c.ComponentCharacteristic, c.ComponentSeries);
-                available.TryGetValue(ck, out var comp);
+                var componentEffective = GetEffectiveAvailable(ck, available, compsByProduct, memo, visiting);
                 var perUnit = c.QuantityPerUnit;
-                var can = perUnit <= 0 ? 0m : Math.Floor((comp.Available - comp.Demand) / perUnit);
+                var can = perUnit <= 0 ? 0m : Math.Floor((componentEffective - GetDemand(ck, available)) / perUnit);
                 if (can < 0) can = 0;
                 minBuild = minBuild.HasValue ? Math.Min(minBuild.Value, can) : can;
             }
-            return minBuild ?? 0m;
+
+            var fromComponents = minBuild ?? 0m;
+            var fromSelf = Math.Floor(selfAvailable - selfDemand);
+            if (fromSelf < 0) fromSelf = 0;
+            result = fromSelf + fromComponents;
+        }
+        else
+        {
+            result = Math.Floor(selfAvailable - selfDemand);
+            if (result < 0) result = 0;
         }
 
-        available.TryGetValue(productKey, out var self);
-        var selfCan = Math.Floor(self.Available - self.Demand);
-        return selfCan < 0 ? 0m : selfCan;
+        visiting.Remove(productKey);
+        memo[productKey] = result;
+        return result;
+    }
+
+    private static decimal GetEffectiveAvailable(
+        string key,
+        Dictionary<string, (decimal Available, decimal Demand)> available,
+        Dictionary<string, List<ProductCompositionEntity>> compsByProduct,
+        Dictionary<string, decimal> memo,
+        HashSet<string> visiting)
+    {
+        available.TryGetValue(key, out var self);
+        if (compsByProduct.TryGetValue(key, out var components) && components.Count > 0)
+        {
+            decimal? minBuild = null;
+            foreach (var c in components)
+            {
+                var ck = Key(c.ComponentArticle, c.ComponentCharacteristic, c.ComponentSeries);
+                var componentEffective = GetEffectiveAvailable(ck, available, compsByProduct, memo, visiting);
+                var perUnit = c.QuantityPerUnit;
+                var can = perUnit <= 0 ? 0m : Math.Floor((componentEffective - GetDemand(ck, available)) / perUnit);
+                if (can < 0) can = 0;
+                minBuild = minBuild.HasValue ? Math.Min(minBuild.Value, can) : can;
+            }
+
+            var fromComponents = minBuild ?? 0m;
+            return self.Available + fromComponents;
+        }
+
+        return self.Available;
+    }
+
+    private static decimal GetDemand(string key, Dictionary<string, (decimal Available, decimal Demand)> available)
+    {
+        available.TryGetValue(key, out var self);
+        return self.Demand;
     }
 
     private static string Key(string a, string c, string s) => $"{a}|{c}|{s}".Trim('|');
