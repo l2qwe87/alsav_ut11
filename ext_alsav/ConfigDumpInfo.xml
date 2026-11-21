@@ -526,6 +526,8 @@
 		<Metadata name="CommonModule.алсав_КонтурДиадокЯдро.Module" id="28430724-f20b-4ffb-8620-e5720a60608f.0" configVersion="ec2ebed2a0d8790f17cfdd6e4fcba7078bb0ad70"/>
 		<Metadata name="CommonModule.алсав_НоменклатураОстатки" id="3722e63a-e49b-435c-b0d1-5b814461d486" configVersion="87141532fa0557e858b0dfb093b3c5d0596b9fdf"/>
 		<Metadata name="CommonModule.алсав_НоменклатураОстатки.Module" id="3722e63a-e49b-435c-b0d1-5b814461d486.0" configVersion="0cf1432ca0959ced9604aec57c8c4653bfaafe95"/>
+		<Metadata name="CommonModule.алсав_СинхронизацияОстатков" id="540f4a62-419e-4922-a1fb-7c10f2d87232" configVersion="a49acb5802c14ceba6ff202693780c2a00000000"/>
+		<Metadata name="CommonModule.алсав_СинхронизацияОстатков.Module" id="540f4a62-419e-4922-a1fb-7c10f2d87232.0" configVersion="50320b7f0d3f405c8a3a808a10e1726700000000"/>
 		<Metadata name="CommonModule.алсав_ПечатьСчет" id="8bec6954-d2c0-4ba6-8b2e-bda13bf64835" configVersion="78f0b26b3f25599a58a87f6c3488f6c7d7eb4685"/>
 		<Metadata name="CommonModule.алсав_ПечатьСчет.Module" id="8bec6954-d2c0-4ba6-8b2e-bda13bf64835.0" configVersion="266d5c1e80377d1f7229d95693aa1aaf3297f8b9"/>
 		<Metadata name="CommonPicture.БыстрыйДоступ" id="5172529f-9da1-4cba-8361-9581db164fb3" configVersion="cda24f10e506ea568d13dbe652ff3a5e6ca280b8"/>
