@@ -199,6 +199,7 @@
 			<CommonModule>алсав_ПечатьСчет</CommonModule>
 			<CommonModule>УправлениеПечатьюПереопределяемый</CommonModule>
 			<CommonModule>алсав_НоменклатураОстатки</CommonModule>
+			<CommonModule>алсав_СинхронизацияОстатков</CommonModule>
 			<CommonModule>ВариантыОтчетовПереопределяемый</CommonModule>
 			<CommonModule>ПрефиксацияОбъектовКлиентСервер</CommonModule>
 			<CommonModule>РеализацияТоваровУслугЛокализация</CommonModule>
