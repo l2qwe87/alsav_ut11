@@ -122,6 +122,15 @@ using (var scope = app.Services.CreateScope())
     }
 
     db.Database.EnsureCreated();
+    db.Database.ExecuteSqlRaw("""
+        CREATE TABLE IF NOT EXISTS api_keys (
+            "Key" TEXT NOT NULL CONSTRAINT "PK_api_keys" PRIMARY KEY,
+            "ClientId" TEXT NOT NULL,
+            "CreatedAt" TEXT NOT NULL
+        );
+        """);
+    db.Database.ExecuteSqlRaw("""CREATE INDEX IF NOT EXISTS "IX_api_keys_ClientId" ON "api_keys" ("ClientId");""");
+    db.Database.ExecuteSqlRaw("""CREATE UNIQUE INDEX IF NOT EXISTS "IX_api_keys_Key" ON "api_keys" ("Key");""");
 }
 
 app.UseMiddleware<ExceptionHandlingMiddleware>();
