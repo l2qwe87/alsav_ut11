@@ -59,11 +59,6 @@ builder.Services.AddScoped<BalanceCalculationService>();
 
 builder.Services.AddSingleton<BalanceCacheService>();
 
-builder.Services.AddHttpClient(ApiKeyCacheService.HttpClientName, client =>
-{
-    client.Timeout = TimeSpan.FromSeconds(30);
-});
-
 builder.Services.AddSingleton<ApiKeyCacheService>();
 builder.Services.AddHostedService(provider => provider.GetRequiredService<ApiKeyCacheService>());
 

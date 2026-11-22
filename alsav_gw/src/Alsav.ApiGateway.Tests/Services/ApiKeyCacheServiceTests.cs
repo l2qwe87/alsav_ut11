@@ -1,160 +1,95 @@
-using System.Net;
-using System.Text;
-using Alsav.ApiGateway.Configuration;
+using Alsav.ApiGateway.Data;
+using Alsav.ApiGateway.Data.Entities;
 using Alsav.ApiGateway.Services;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging.Abstractions;
-using Microsoft.Extensions.Options;
-using Moq;
 
 namespace Alsav.ApiGateway.Tests.Services;
 
-public sealed class ApiKeyCacheServiceTests
+public sealed class ApiKeyCacheServiceTests : IDisposable
 {
-    private static ApiKeyCacheService CreateService(HttpMessageHandler handler)
-    {
-        var client = new HttpClient(handler);
-        var factory = new Mock<IHttpClientFactory>();
-        factory
-            .Setup(f => f.CreateClient(ApiKeyCacheService.HttpClientName))
-            .Returns(client);
+    private readonly string _dbPath;
+    private readonly ServiceProvider _provider;
+    private readonly ApiKeyCacheService _service;
 
-        var options = Options.Create(new OneCSettings
+    public ApiKeyCacheServiceTests()
+    {
+        _dbPath = Path.Combine(Path.GetTempPath(), $"alsav-gw-apikey-{Guid.NewGuid():N}.db");
+        var services = new ServiceCollection();
+        services.AddDbContext<GatewayDbContext>(o => o.UseSqlite($"Data Source={_dbPath}"));
+        _provider = services.BuildServiceProvider();
+        using (var scope = _provider.CreateScope())
         {
-            BaseUrl = "http://onec-http:80",
-            InternalSecret = "test-internal-secret",
-            SyncIntervalMinutes = 10,
-            KeysEndpointPath = "/hs/ClientAPI/keys"
-        });
+            scope.ServiceProvider.GetRequiredService<GatewayDbContext>().Database.EnsureCreated();
+        }
 
-        return new ApiKeyCacheService(
-            factory.Object,
-            options,
-            NullLogger<ApiKeyCacheService>.Instance);
+        _service = new ApiKeyCacheService(_provider.GetRequiredService<IServiceScopeFactory>(), NullLogger<ApiKeyCacheService>.Instance);
     }
 
-    private static HttpResponseMessage JsonResponse(
-        string json,
-        HttpStatusCode statusCode = HttpStatusCode.OK)
+    [Fact]
+    public async Task StartAsync_LoadsKeysFromDb()
     {
-        return new HttpResponseMessage(statusCode)
+        using (var scope = _provider.CreateScope())
         {
-            Content = new StringContent(json, Encoding.UTF8, "application/json")
-        };
+            var db = scope.ServiceProvider.GetRequiredService<GatewayDbContext>();
+            db.ApiKeys.Add(new ApiKeyEntity { Key = "k1", ClientId = "c1", CreatedAt = DateTimeOffset.UtcNow });
+            await db.SaveChangesAsync();
+        }
+
+        await _service.StartAsync(CancellationToken.None);
+
+        Assert.True(_service.IsValidKey("k1"));
+        Assert.Equal(1, _service.KeyCount);
+        Assert.NotNull(_service.GetLastSuccessfulSync());
     }
 
     [Fact]
-    public void IsValidKey_ReturnsFalse_WhenCacheIsEmpty()
+    public async Task UpsertAndDelete_UpdateCacheAndDb()
     {
-        using var handler = new StubHttpMessageHandler(
-            (_, _) => Task.FromResult(JsonResponse("[]")));
-        var service = CreateService(handler);
+        await _service.StartAsync(CancellationToken.None);
+        var now = DateTimeOffset.UtcNow;
 
-        Assert.False(service.IsValidKey("any-key"));
-        Assert.False(service.IsValidKey(null));
-        Assert.False(service.IsValidKey(string.Empty));
-        Assert.False(service.IsValidKey("   "));
+        await _service.UpsertAsync([new ApiKeyEntity { Key = "k1", ClientId = "client-1", CreatedAt = now }]);
+        Assert.True(_service.IsValidKey("k1"));
+        Assert.Equal(1, _service.KeyCount);
+
+        var all = await _service.GetAllAsync();
+        Assert.Single(all);
+        Assert.Equal("client-1", all[0].ClientId);
+
+        var deleted = await _service.DeleteAsync("k1");
+        Assert.True(deleted);
+        Assert.False(_service.IsValidKey("k1"));
+        Assert.Equal(0, _service.KeyCount);
     }
 
     [Fact]
-    public async Task RefreshKeysAsync_LoadsKeysAndValidatesThem()
+    public async Task ReplaceAll_ReplacesExistingKeys()
     {
-        using var handler = new StubHttpMessageHandler(
-            (_, _) => Task.FromResult(JsonResponse("[\"key-1\",\"key-2\"]")));
-        var service = CreateService(handler);
+        await _service.StartAsync(CancellationToken.None);
+        await _service.UpsertAsync([new ApiKeyEntity { Key = "old", ClientId = "c1", CreatedAt = DateTimeOffset.UtcNow }]);
 
-        var result = await service.RefreshKeysAsync();
+        await _service.ReplaceAllAsync([
+            new ApiKeyEntity { Key = "new1", ClientId = "c1", CreatedAt = DateTimeOffset.UtcNow },
+            new ApiKeyEntity { Key = "new2", ClientId = "c2", CreatedAt = DateTimeOffset.UtcNow }
+        ]);
 
-        Assert.True(result);
-        Assert.True(service.IsValidKey("key-1"));
-        Assert.True(service.IsValidKey("key-2"));
-        Assert.False(service.IsValidKey("key-3"));
-        Assert.Equal(2, service.KeyCount);
-        Assert.NotNull(service.GetLastSuccessfulSync());
+        Assert.False(_service.IsValidKey("old"));
+        Assert.True(_service.IsValidKey("new1"));
+        Assert.True(_service.IsValidKey("new2"));
+        Assert.Equal(2, _service.KeyCount);
     }
 
-    [Fact]
-    public async Task RefreshKeysAsync_SendsInternalSecretHeader()
+    public void Dispose()
     {
-        string? capturedSecret = null;
-
-        using var handler = new StubHttpMessageHandler((request, _) =>
+        _provider.Dispose();
+        try
         {
-            capturedSecret = request.Headers.TryGetValues("X-Internal-Secret", out var values)
-                ? values.Single()
-                : null;
-
-            return Task.FromResult(JsonResponse("[\"key-1\"]"));
-        });
-        var service = CreateService(handler);
-
-        await service.RefreshKeysAsync();
-
-        Assert.Equal("test-internal-secret", capturedSecret);
-    }
-
-    [Fact]
-    public async Task RefreshKeysAsync_ReturnsFalse_OnHttpError_AndKeepsPreviousKeys()
-    {
-        var callCount = 0;
-
-        using var handler = new StubHttpMessageHandler((_, _) =>
-        {
-            callCount++;
-            return Task.FromResult(callCount == 1
-                ? JsonResponse("[\"key-1\"]")
-                : new HttpResponseMessage(HttpStatusCode.InternalServerError));
-        });
-        var service = CreateService(handler);
-
-        Assert.True(await service.RefreshKeysAsync());
-        Assert.True(service.IsValidKey("key-1"));
-
-        Assert.False(await service.RefreshKeysAsync());
-        Assert.True(service.IsValidKey("key-1"));
-    }
-
-    [Fact]
-    public async Task RefreshKeysAsync_ReturnsFalse_OnMalformedJson_AndKeepsPreviousKeys()
-    {
-        var callCount = 0;
-
-        using var handler = new StubHttpMessageHandler((_, _) =>
-        {
-            callCount++;
-            return Task.FromResult(callCount == 1
-                ? JsonResponse("[\"key-1\"]")
-                : JsonResponse("not-a-json-array"));
-        });
-        var service = CreateService(handler);
-
-        Assert.True(await service.RefreshKeysAsync());
-        Assert.False(await service.RefreshKeysAsync());
-        Assert.True(service.IsValidKey("key-1"));
-    }
-
-    [Fact]
-    public async Task RefreshKeysAsync_ReturnsFalse_OnNetworkException()
-    {
-        using var handler = new StubHttpMessageHandler(
-            (_, _) => throw new HttpRequestException("network error"));
-        var service = CreateService(handler);
-
-        var result = await service.RefreshKeysAsync();
-
-        Assert.False(result);
-        Assert.Equal(0, service.KeyCount);
-        Assert.Null(service.GetLastSuccessfulSync());
-    }
-
-    [Fact]
-    public async Task RefreshKeysAsync_FiltersEmptyKeys()
-    {
-        using var handler = new StubHttpMessageHandler(
-            (_, _) => Task.FromResult(JsonResponse("[\"key-1\",\"\",\"  \"]")));
-        var service = CreateService(handler);
-
-        Assert.True(await service.RefreshKeysAsync());
-        Assert.Equal(1, service.KeyCount);
-        Assert.True(service.IsValidKey("key-1"));
+            if (File.Exists(_dbPath)) File.Delete(_dbPath);
+            if (File.Exists(_dbPath + "-wal")) File.Delete(_dbPath + "-wal");
+            if (File.Exists(_dbPath + "-shm")) File.Delete(_dbPath + "-shm");
+        }
+        catch { }
     }
 }
