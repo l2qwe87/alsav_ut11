@@ -39,12 +39,6 @@ builder.Services.Configure<ApiBehaviorOptions>(options =>
 });
 
 builder.Services
-    .AddOptions<OneCSettings>()
-    .Bind(builder.Configuration.GetSection(OneCSettings.SectionName))
-    .ValidateDataAnnotations()
-    .ValidateOnStart();
-
-builder.Services
     .AddOptions<InternalApiSettings>()
     .Bind(builder.Configuration.GetSection(InternalApiSettings.SectionName))
     .ValidateDataAnnotations()
@@ -65,10 +59,6 @@ builder.Services.AddSingleton<BalanceCacheService>();
 
 builder.Services.AddSingleton<ApiKeyCacheService>();
 builder.Services.AddHostedService(provider => provider.GetRequiredService<ApiKeyCacheService>());
-
-builder.Services
-    .AddReverseProxy()
-    .LoadFromConfig(builder.Configuration.GetSection("ReverseProxy"));
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>
@@ -175,7 +165,6 @@ app.UseSwaggerUI(options =>
 });
 
 app.MapControllers();
-app.MapReverseProxy();
 
 app.Lifetime.ApplicationStarted.Register(() =>
 {
