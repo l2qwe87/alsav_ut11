@@ -93,20 +93,7 @@ builder.Services.AddSwaggerGen(options =>
         return false;
     });
 
-    options.AddSecurityDefinition("ApiKey", new OpenApiSecurityScheme
-    {
-        Type = SecuritySchemeType.ApiKey,
-        In = ParameterLocation.Header,
-        Name = ApiKeyValidationMiddleware.HeaderName,
-        Description = "Ключ клиента для /clientApi/*"
-    });
-    options.AddSecurityDefinition("InternalSecret", new OpenApiSecurityScheme
-    {
-        Type = SecuritySchemeType.ApiKey,
-        In = ParameterLocation.Header,
-        Name = "X-Internal-Secret",
-        Description = "Секрет для /api/internal/v1/*"
-    });
+    options.DocumentFilter<SwaggerSecurityDocumentFilter>();
     options.OperationFilter<SwaggerSecurityOperationFilter>();
 
     var xmlFileName = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
