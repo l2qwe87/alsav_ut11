@@ -3,6 +3,7 @@ using Alsav.ApiGateway.Configuration;
 using Alsav.ApiGateway.Data;
 using Alsav.ApiGateway.Middleware;
 using Alsav.ApiGateway.Models;
+using Alsav.ApiGateway.OpenApi;
 using Alsav.ApiGateway.Services;
 using Microsoft.AspNetCore.Hosting.Server;
 using Microsoft.AspNetCore.Hosting.Server.Features;
@@ -91,6 +92,22 @@ builder.Services.AddSwaggerGen(options =>
 
         return false;
     });
+
+    options.AddSecurityDefinition("ApiKey", new OpenApiSecurityScheme
+    {
+        Type = SecuritySchemeType.ApiKey,
+        In = ParameterLocation.Header,
+        Name = ApiKeyValidationMiddleware.HeaderName,
+        Description = "Ключ клиента для /clientApi/*"
+    });
+    options.AddSecurityDefinition("InternalSecret", new OpenApiSecurityScheme
+    {
+        Type = SecuritySchemeType.ApiKey,
+        In = ParameterLocation.Header,
+        Name = "X-Internal-Secret",
+        Description = "Секрет для /api/internal/v1/*"
+    });
+    options.OperationFilter<SwaggerSecurityOperationFilter>();
 
     var xmlFileName = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
     var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFileName);
