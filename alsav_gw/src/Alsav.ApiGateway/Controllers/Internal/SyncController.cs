@@ -9,7 +9,7 @@ using Microsoft.Extensions.Options;
 namespace Alsav.ApiGateway.Controllers.Internal;
 
 /// <summary>
-/// Внутренний API для приёма актуальных остатков из 1С.
+/// Внутренний API для приёма актуальных остатков.
 /// </summary>
 [ApiController]
 [Route("api/internal/v1/sync")]

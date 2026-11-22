@@ -1,10 +1,9 @@
 using System.Text;
-using Alsav.ApiGateway.Configuration;
 using Alsav.ApiGateway.Middleware;
 using Alsav.ApiGateway.Services;
 using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging.Abstractions;
-using Microsoft.Extensions.Options;
 using Moq;
 
 namespace Alsav.ApiGateway.Tests.Middleware;
@@ -14,16 +13,12 @@ public sealed class ApiKeyValidationMiddlewareTests
     private static ApiKeyCacheService CreateApiKeyCache(string validKey)
     {
         var mock = new Mock<ApiKeyCacheService>(
-            Mock.Of<IHttpClientFactory>(),
-            Options.Create(new OneCSettings
-            {
-                BaseUrl = "http://localhost",
-                InternalSecret = "test-internal-secret",
-                SyncIntervalMinutes = 10
-            }),
+            Mock.Of<IServiceScopeFactory>(),
             NullLogger<ApiKeyCacheService>.Instance);
 
         mock.Setup(cache => cache.IsValidKey(validKey)).Returns(true);
+        mock.Setup(cache => cache.IsValidKey(It.Is<string?>(key => key != validKey))).Returns(false);
+
         return mock.Object;
     }
 

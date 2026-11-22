@@ -38,6 +38,7 @@ coverage*.info
 .env
 appsettings.Production.json
 appsettings.*.local.json
+appsettings.*.private.json
 
 ## OS files
 .DS_Store

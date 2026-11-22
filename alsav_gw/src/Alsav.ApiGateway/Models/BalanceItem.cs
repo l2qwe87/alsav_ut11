@@ -3,7 +3,7 @@ using System.Text.Json.Serialization;
 namespace Alsav.ApiGateway.Models;
 
 /// <summary>
-/// Позиция актуального остатка номенклатуры, получаемая из 1С.
+/// Позиция актуального остатка номенклатуры.
 /// </summary>
 public sealed class BalanceItem
 {

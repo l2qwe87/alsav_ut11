@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 namespace Alsav.ApiGateway.Configuration;
 
 /// <summary>
-/// Настройки внутреннего API, используемого регламентными заданиями 1С.
+/// Настройки внутреннего API для push-синхронизации данных.
 /// </summary>
 public sealed class InternalApiSettings
 {
@@ -13,7 +13,7 @@ public sealed class InternalApiSettings
     public const string SectionName = "InternalApi";
 
     /// <summary>
-    /// Секрет, который 1С передаёт в заголовке <c>X-Internal-Secret</c>.
+    /// Секрет для заголовка <c>X-Internal-Secret</c>.
     /// </summary>
     [Required(ErrorMessage = "InternalApi:SecretKey is required.")]
     [MinLength(8, ErrorMessage = "InternalApi:SecretKey must contain at least 8 characters.")]

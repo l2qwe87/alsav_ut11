@@ -8,6 +8,7 @@ public sealed class GatewayDbContext(DbContextOptions<GatewayDbContext> options)
     public DbSet<StockSnapshotEntity> StockSnapshots => Set<StockSnapshotEntity>();
     public DbSet<StockMovementEntity> StockMovements => Set<StockMovementEntity>();
     public DbSet<ProductCompositionEntity> ProductCompositions => Set<ProductCompositionEntity>();
+    public DbSet<ApiKeyEntity> ApiKeys => Set<ApiKeyEntity>();
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -52,6 +53,17 @@ public sealed class GatewayDbContext(DbContextOptions<GatewayDbContext> options)
             b.Property(x => x.Warehouse).HasMaxLength(200);
             b.HasIndex(x => new { x.Warehouse, x.ProductArticle, x.ProductCharacteristic, x.ProductSeries });
             b.HasIndex(x => new { x.Warehouse, x.ComponentArticle, x.ComponentCharacteristic, x.ComponentSeries });
+        });
+
+        modelBuilder.Entity<ApiKeyEntity>(b =>
+        {
+            b.ToTable("api_keys");
+            b.HasKey(x => x.Id);
+            b.Property(x => x.Key).IsRequired().HasMaxLength(500);
+            b.Property(x => x.ClientId).IsRequired().HasMaxLength(200);
+            b.Property(x => x.CreatedAt).IsRequired();
+            b.HasIndex(x => x.Key).IsUnique();
+            b.HasIndex(x => x.ClientId);
         });
     }
 }
