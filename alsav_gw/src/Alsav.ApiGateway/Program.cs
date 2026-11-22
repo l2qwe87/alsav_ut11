@@ -4,12 +4,16 @@ using Alsav.ApiGateway.Data;
 using Alsav.ApiGateway.Middleware;
 using Alsav.ApiGateway.Models;
 using Alsav.ApiGateway.Services;
+using Microsoft.AspNetCore.Hosting.Server;
+using Microsoft.AspNetCore.Hosting.Server.Features;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Configuration.AddJsonFile("appsettings.Development.private.json", optional: true, reloadOnChange: true);
 
 builder.Host.UseSerilog((context, services, configuration) => configuration
     .ReadFrom.Configuration(context.Configuration)
@@ -137,12 +141,32 @@ app.UseMiddleware<ExceptionHandlingMiddleware>();
 app.UseSerilogRequestLogging();
 app.UseMiddleware<ApiKeyValidationMiddleware>();
 
-app.UseSwagger();
-app.UseSwaggerUI(options =>
+app.Use(async (context, next) =>
 {
-    options.RoutePrefix = "clientApi/swagger";
-    options.SwaggerEndpoint("/swagger/external/swagger.json", "External");
+    var originalPath = context.Request.Path;
+    const string clientSwagger = "/clientApi/swagger";
+    if (originalPath.StartsWithSegments(clientSwagger, StringComparison.OrdinalIgnoreCase))
+    {
+        var remainder = originalPath.Value?[clientSwagger.Length..] ?? string.Empty;
+        var swaggerPath = remainder.Length == 0 || remainder == "/"
+            ? "/swagger/index.html"
+            : "/swagger" + remainder;
+        context.Request.Path = swaggerPath;
+        try
+        {
+            await next(context);
+        }
+        finally
+        {
+            context.Request.Path = originalPath;
+        }
+        return;
+    }
+
+    await next(context);
 });
+
+app.UseSwagger();
 app.UseSwaggerUI(options =>
 {
     options.RoutePrefix = "swagger";
@@ -152,6 +176,21 @@ app.UseSwaggerUI(options =>
 
 app.MapControllers();
 app.MapReverseProxy();
+
+app.Lifetime.ApplicationStarted.Register(() =>
+{
+    var addresses = app.Services.GetRequiredService<IServer>().Features.Get<IServerAddressesFeature>()?.Addresses;
+    if (addresses is null || addresses.Count == 0)
+    {
+        app.Logger.LogInformation("Gateway started.");
+        return;
+    }
+
+    foreach (var address in addresses)
+    {
+        app.Logger.LogInformation("Gateway listening on {Address}", address);
+    }
+});
 
 app.Run();
 
