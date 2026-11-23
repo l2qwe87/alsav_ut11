@@ -16,6 +16,16 @@ public sealed class BalanceCalculationService(
     private readonly BalanceCalculationSettings _settings = settings.Value;
     private readonly ILogger<BalanceCalculationService> _logger = logger;
 
+    public async Task<bool> HasRawDataAsync(string? warehouse, CancellationToken ct)
+    {
+        var wh = string.IsNullOrWhiteSpace(warehouse) ? _settings.DefaultWarehouse : warehouse.Trim();
+        using var scope = _scopeFactory.CreateScope();
+        var db = scope.ServiceProvider.GetRequiredService<GatewayDbContext>();
+        var hasSnapshots = await db.StockSnapshots.AsNoTracking().AnyAsync(x => x.Warehouse == wh, ct);
+        if (!hasSnapshots) return false;
+        return await db.StockMovements.AsNoTracking().AnyAsync(x => x.Warehouse == wh, ct);
+    }
+
     public async Task<IReadOnlyList<BalanceItem>> CalculateAsync(string? warehouse, CancellationToken ct)
     {
         var wh = string.IsNullOrWhiteSpace(warehouse) ? _settings.DefaultWarehouse : warehouse.Trim();
