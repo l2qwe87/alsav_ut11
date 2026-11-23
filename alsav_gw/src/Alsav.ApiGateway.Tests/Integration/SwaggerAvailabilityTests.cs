@@ -29,11 +29,33 @@ public sealed class SwaggerAvailabilityTests : IClassFixture<WebApplicationFacto
     [InlineData("/clientApi/swagger/index.html")]
     [InlineData("/swagger/external/swagger.json")]
     [InlineData("/swagger/internal/swagger.json")]
+    [InlineData("/clientApi/swagger/external/swagger.json")]
     public async Task SwaggerEndpoints_AreAvailable(string path)
     {
         var response = await _client.GetAsync(path);
         Assert.Equal(HttpStatusCode.OK, response.StatusCode);
         var body = await response.Content.ReadAsStringAsync();
         Assert.NotEmpty(body);
+    }
+
+    [Fact]
+    public async Task ClientApiSwaggerConfig_UsesRelativeEndpoints()
+    {
+        var response = await _client.GetAsync("/clientApi/swagger/index.js");
+        var js = await response.Content.ReadAsStringAsync();
+
+        Assert.Equal(HttpStatusCode.OK, response.StatusCode);
+        Assert.Contains("external/swagger.json", js, StringComparison.Ordinal);
+        Assert.DoesNotContain("\"/swagger/", js, StringComparison.Ordinal);
+    }
+
+    [Fact]
+    public async Task ClientApiSwaggerJson_SetsClientApiServer()
+    {
+        var response = await _client.GetAsync("/clientApi/swagger/external/swagger.json");
+        var json = await response.Content.ReadAsStringAsync();
+
+        Assert.Equal(HttpStatusCode.OK, response.StatusCode);
+        Assert.Contains("\"/clientApi\"", json, StringComparison.OrdinalIgnoreCase);
     }
 }
