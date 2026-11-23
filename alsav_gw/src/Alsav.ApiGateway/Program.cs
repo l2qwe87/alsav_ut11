@@ -5,6 +5,7 @@ using Alsav.ApiGateway.Middleware;
 using Alsav.ApiGateway.Models;
 using Alsav.ApiGateway.OpenApi;
 using Alsav.ApiGateway.Services;
+using Microsoft.Extensions.Options;
 using Microsoft.AspNetCore.Hosting.Server;
 using Microsoft.AspNetCore.Hosting.Server.Features;
 using Microsoft.AspNetCore.Mvc;
@@ -56,10 +57,16 @@ var connectionString = builder.Configuration.GetConnectionString("GatewayDb")
 builder.Services.AddDbContext<GatewayDbContext>(options => options.UseSqlite(connectionString));
 builder.Services.AddScoped<BalanceCalculationService>();
 
+builder.Services
+    .AddOptions<BalanceSeedOptions>()
+    .Bind(builder.Configuration.GetSection(BalanceSeedOptions.SectionName));
+
+builder.Services.AddHttpClient(BalanceSeedService.HttpClientName);
 builder.Services.AddSingleton<BalanceCacheService>();
 
 builder.Services.AddSingleton<ApiKeyCacheService>();
 builder.Services.AddHostedService(provider => provider.GetRequiredService<ApiKeyCacheService>());
+builder.Services.AddHostedService<BalanceSeedService>();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>
@@ -122,11 +129,27 @@ using (var scope = app.Services.CreateScope())
     db.Database.EnsureCreated();
     db.Database.ExecuteSqlRaw("""
         CREATE TABLE IF NOT EXISTS api_keys (
-            "Key" TEXT NOT NULL CONSTRAINT "PK_api_keys" PRIMARY KEY,
+            "Id" INTEGER NOT NULL CONSTRAINT "PK_api_keys" PRIMARY KEY AUTOINCREMENT,
+            "Key" TEXT NOT NULL,
             "ClientId" TEXT NOT NULL,
             "CreatedAt" TEXT NOT NULL
         );
         """);
+    var apiKeyColumns = db.Database.SqlQueryRaw<string>("SELECT name AS \"Value\" FROM pragma_table_info('api_keys')").ToList();
+    if (!apiKeyColumns.Contains("Id", StringComparer.OrdinalIgnoreCase))
+    {
+        db.Database.ExecuteSqlRaw("ALTER TABLE api_keys RENAME TO api_keys_old;");
+        db.Database.ExecuteSqlRaw("""
+            CREATE TABLE api_keys (
+                "Id" INTEGER NOT NULL CONSTRAINT "PK_api_keys" PRIMARY KEY AUTOINCREMENT,
+                "Key" TEXT NOT NULL,
+                "ClientId" TEXT NOT NULL,
+                "CreatedAt" TEXT NOT NULL
+            );
+            """);
+        db.Database.ExecuteSqlRaw("""INSERT INTO api_keys ("Key","ClientId","CreatedAt") SELECT "Key","ClientId","CreatedAt" FROM api_keys_old;""");
+        db.Database.ExecuteSqlRaw("DROP TABLE api_keys_old;");
+    }
     db.Database.ExecuteSqlRaw("""CREATE INDEX IF NOT EXISTS "IX_api_keys_ClientId" ON "api_keys" ("ClientId");""");
     db.Database.ExecuteSqlRaw("""CREATE UNIQUE INDEX IF NOT EXISTS "IX_api_keys_Key" ON "api_keys" ("Key");""");
 }
@@ -161,18 +184,7 @@ app.Use(async (context, next) =>
     await next(context);
 });
 
-app.UseSwagger(c =>
-{
-    c.PreSerializeFilters.Add((swaggerDoc, httpReq) =>
-    {
-        if (httpReq.Path.StartsWithSegments("/clientApi/swagger", StringComparison.OrdinalIgnoreCase)
-            || httpReq.HttpContext.Items.ContainsKey("ClientApiSwagger")
-            || httpReq.Headers.Referer.ToString().Contains("/clientApi/swagger", StringComparison.OrdinalIgnoreCase))
-        {
-            swaggerDoc.Servers = [new OpenApiServer { Url = "/clientApi" }];
-        }
-    });
-});
+app.UseSwagger();
 
 app.UseSwaggerUI(options =>
 {

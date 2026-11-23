@@ -18,7 +18,8 @@ public sealed class SwaggerAvailabilityTests : IClassFixture<WebApplicationFacto
                 config.AddInMemoryCollection(new Dictionary<string, string?>
                 {
                     ["ConnectionStrings:GatewayDb"] = $"Data Source={Path.Combine(Path.GetTempPath(), $"gw-swagger-{Guid.NewGuid():N}.db")}",
-                    ["InternalApi:SecretKey"] = "test-internal-secret"
+                    ["InternalApi:SecretKey"] = "test-internal-secret",
+                    ["BalanceSeed:Enabled"] = "false"
                 });
             });
         }).CreateClient(new WebApplicationFactoryClientOptions { AllowAutoRedirect = false });
@@ -58,12 +59,13 @@ public sealed class SwaggerAvailabilityTests : IClassFixture<WebApplicationFacto
     }
 
     [Fact]
-    public async Task ClientApiSwaggerJson_SetsClientApiServer()
+    public async Task ClientApiSwaggerJson_UsesClientApiPaths()
     {
         var response = await _client.GetAsync("/clientApi/swagger/external/swagger.json");
         var json = await response.Content.ReadAsStringAsync();
 
         Assert.Equal(HttpStatusCode.OK, response.StatusCode);
-        Assert.Contains("\"/clientApi\"", json, StringComparison.OrdinalIgnoreCase);
+        Assert.Contains("\"/clientApi/balances\"", json, StringComparison.Ordinal);
+        Assert.DoesNotContain("\"/clientApi/clientApi/", json, StringComparison.Ordinal);
     }
 }
