@@ -146,6 +146,7 @@ app.Use(async (context, next) =>
             ? "/swagger/index.html"
             : "/swagger" + remainder;
         context.Request.Path = swaggerPath;
+        context.Request.PathBase = context.Request.PathBase.Add(clientSwagger);
         try
         {
             await next(context);
@@ -153,6 +154,9 @@ app.Use(async (context, next) =>
         finally
         {
             context.Request.Path = originalPath;
+            context.Request.PathBase = context.Request.PathBase.Value is null
+                ? PathString.Empty
+                : new PathString(context.Request.PathBase.Value[..^clientSwagger.Length]);
         }
         return;
     }
@@ -160,12 +164,22 @@ app.Use(async (context, next) =>
     await next(context);
 });
 
-app.UseSwagger();
+app.UseSwagger(c =>
+{
+    c.PreSerializeFilters.Add((swaggerDoc, httpReq) =>
+    {
+        if (httpReq.PathBase.StartsWithSegments("/clientApi/swagger", StringComparison.OrdinalIgnoreCase))
+        {
+            swaggerDoc.Servers = [new OpenApiServer { Url = "/clientApi" }];
+        }
+    });
+});
+
 app.UseSwaggerUI(options =>
 {
     options.RoutePrefix = "swagger";
-    options.SwaggerEndpoint("/swagger/external/swagger.json", "External");
-    options.SwaggerEndpoint("/swagger/internal/swagger.json", "Internal");
+    options.SwaggerEndpoint("external/swagger.json", "External");
+    options.SwaggerEndpoint("internal/swagger.json", "Internal");
 });
 
 app.MapControllers();
