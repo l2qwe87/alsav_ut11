@@ -19,7 +19,6 @@ public sealed class CalculatedBalancesController(
     [HttpGet]
     [ProducesResponseType(typeof(BalancesResponse), StatusCodes.Status200OK)]
     public async Task<ActionResult<BalancesResponse>> Get(
-        [FromQuery] string? warehouse,
         [FromQuery] string? article,
         [FromQuery] string? barcode,
         [FromQuery] string? name,
@@ -30,7 +29,7 @@ public sealed class CalculatedBalancesController(
         limit = Math.Clamp(limit <= 0 ? DefaultLimit : limit, 1, MaxLimit);
         offset = Math.Max(offset, 0);
 
-        var allItems = await _calculationService.CalculateAsync(warehouse, ct);
+        var allItems = await _calculationService.CalculateAsync(null, ct);
         var hasFilters = !string.IsNullOrWhiteSpace(article)
             || !string.IsNullOrWhiteSpace(barcode)
             || !string.IsNullOrWhiteSpace(name);
