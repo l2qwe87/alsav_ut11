@@ -5,6 +5,7 @@ using Alsav.ApiGateway.Middleware;
 using Alsav.ApiGateway.Models;
 using Alsav.ApiGateway.OpenApi;
 using Alsav.ApiGateway.Services;
+using Microsoft.Extensions.Options;
 using Microsoft.AspNetCore.Hosting.Server;
 using Microsoft.AspNetCore.Hosting.Server.Features;
 using Microsoft.AspNetCore.Mvc;
@@ -56,10 +57,16 @@ var connectionString = builder.Configuration.GetConnectionString("GatewayDb")
 builder.Services.AddDbContext<GatewayDbContext>(options => options.UseSqlite(connectionString));
 builder.Services.AddScoped<BalanceCalculationService>();
 
+builder.Services
+    .AddOptions<BalanceSeedOptions>()
+    .Bind(builder.Configuration.GetSection(BalanceSeedOptions.SectionName));
+
+builder.Services.AddHttpClient(BalanceSeedService.HttpClientName);
 builder.Services.AddSingleton<BalanceCacheService>();
 
 builder.Services.AddSingleton<ApiKeyCacheService>();
 builder.Services.AddHostedService(provider => provider.GetRequiredService<ApiKeyCacheService>());
+builder.Services.AddHostedService<BalanceSeedService>();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>

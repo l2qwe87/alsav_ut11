@@ -18,7 +18,8 @@ public sealed class SwaggerAvailabilityTests : IClassFixture<WebApplicationFacto
                 config.AddInMemoryCollection(new Dictionary<string, string?>
                 {
                     ["ConnectionStrings:GatewayDb"] = $"Data Source={Path.Combine(Path.GetTempPath(), $"gw-swagger-{Guid.NewGuid():N}.db")}",
-                    ["InternalApi:SecretKey"] = "test-internal-secret"
+                    ["InternalApi:SecretKey"] = "test-internal-secret",
+                    ["BalanceSeed:Enabled"] = "false"
                 });
             });
         }).CreateClient(new WebApplicationFactoryClientOptions { AllowAutoRedirect = false });
