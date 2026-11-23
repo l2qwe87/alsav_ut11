@@ -46,7 +46,15 @@ public sealed class SwaggerAvailabilityTests : IClassFixture<WebApplicationFacto
 
         Assert.Equal(HttpStatusCode.OK, response.StatusCode);
         Assert.Contains("external/swagger.json", js, StringComparison.Ordinal);
+        Assert.DoesNotContain("internal/swagger.json", js, StringComparison.OrdinalIgnoreCase);
         Assert.DoesNotContain("\"/swagger/", js, StringComparison.Ordinal);
+    }
+
+    [Fact]
+    public async Task ClientApiSwaggerInternalDoc_IsNotFound()
+    {
+        var response = await _client.GetAsync("/clientApi/swagger/internal/swagger.json");
+        Assert.Equal(HttpStatusCode.NotFound, response.StatusCode);
     }
 
     [Fact]

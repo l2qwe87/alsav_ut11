@@ -137,28 +137,25 @@ app.UseMiddleware<ApiKeyValidationMiddleware>();
 
 app.Use(async (context, next) =>
 {
-    var originalPath = context.Request.Path;
     const string clientSwagger = "/clientApi/swagger";
-    if (originalPath.StartsWithSegments(clientSwagger, StringComparison.OrdinalIgnoreCase))
+    if (context.Request.Path.StartsWithSegments(clientSwagger, StringComparison.OrdinalIgnoreCase))
     {
-        var remainder = originalPath.Value?[clientSwagger.Length..] ?? string.Empty;
-        var swaggerPath = remainder.Length == 0 || remainder == "/"
-            ? "/swagger/index.html"
-            : "/swagger" + remainder;
-        context.Request.Path = swaggerPath;
-        context.Request.PathBase = context.Request.PathBase.Add(clientSwagger);
-        try
+        var remainder = context.Request.Path.Value?[clientSwagger.Length..] ?? string.Empty;
+        if (remainder.Equals("/internal/swagger.json", StringComparison.OrdinalIgnoreCase))
         {
-            await next(context);
+            context.Response.StatusCode = StatusCodes.Status404NotFound;
+            return;
         }
-        finally
+
+        if (remainder.Equals("/external/swagger.json", StringComparison.OrdinalIgnoreCase))
         {
-            context.Request.Path = originalPath;
-            context.Request.PathBase = context.Request.PathBase.Value is null
-                ? PathString.Empty
-                : new PathString(context.Request.PathBase.Value[..^clientSwagger.Length]);
+            var originalPath = context.Request.Path;
+            context.Request.Path = "/swagger/external/swagger.json";
+            context.Items["ClientApiSwagger"] = true;
+            try { await next(context); }
+            finally { context.Request.Path = originalPath; }
+            return;
         }
-        return;
     }
 
     await next(context);
@@ -168,11 +165,19 @@ app.UseSwagger(c =>
 {
     c.PreSerializeFilters.Add((swaggerDoc, httpReq) =>
     {
-        if (httpReq.PathBase.StartsWithSegments("/clientApi/swagger", StringComparison.OrdinalIgnoreCase))
+        if (httpReq.Path.StartsWithSegments("/clientApi/swagger", StringComparison.OrdinalIgnoreCase)
+            || httpReq.HttpContext.Items.ContainsKey("ClientApiSwagger")
+            || httpReq.Headers.Referer.ToString().Contains("/clientApi/swagger", StringComparison.OrdinalIgnoreCase))
         {
             swaggerDoc.Servers = [new OpenApiServer { Url = "/clientApi" }];
         }
     });
+});
+
+app.UseSwaggerUI(options =>
+{
+    options.RoutePrefix = "clientApi/swagger";
+    options.SwaggerEndpoint("external/swagger.json", "External");
 });
 
 app.UseSwaggerUI(options =>
