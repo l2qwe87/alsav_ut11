@@ -184,18 +184,7 @@ app.Use(async (context, next) =>
     await next(context);
 });
 
-app.UseSwagger(c =>
-{
-    c.PreSerializeFilters.Add((swaggerDoc, httpReq) =>
-    {
-        if (httpReq.Path.StartsWithSegments("/clientApi/swagger", StringComparison.OrdinalIgnoreCase)
-            || httpReq.HttpContext.Items.ContainsKey("ClientApiSwagger")
-            || httpReq.Headers.Referer.ToString().Contains("/clientApi/swagger", StringComparison.OrdinalIgnoreCase))
-        {
-            swaggerDoc.Servers = [new OpenApiServer { Url = "/clientApi" }];
-        }
-    });
-});
+app.UseSwagger();
 
 app.UseSwaggerUI(options =>
 {
