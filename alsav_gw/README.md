@@ -100,13 +100,10 @@ dotnet run --project src/Alsav.ApiGateway/Alsav.ApiGateway.csproj
 
 ### Внешние endpoint’ы (`X-API-Key`)
 
-#### `GET /clientApi/balances?article=...`
-Возвращает остатки из in-memory кэша, загруженного через `POST /api/internal/v1/sync/balances`.
+#### `GET /clientApi/balances?article=...&barcode=...&name=...&limit=...&offset=0`
+Возвращает остатки. Если есть сырые срезы/обороты в SQLite (`stock_snapshots` + `stock_movements`), выполняется расчёт; иначе возвращаются заранее подготовленные остатки из `BalanceCacheService`.
 
-#### `GET /clientApi/balances/calculated?warehouse=...&limit=...&offset=...`
-Возвращает рассчитанные остатки (возможность собрать) по сырым данным из SQLite.
-
-### Внутренние endpoint’ы (`X-Internal-Secret`)
+### ����७��� endpoint'� (`X-Internal-Secret`)
 
 #### `POST /api/internal/v1/sync/balances`
 Принимает полный снимок готовых остатков и атомарно заменяет in-memory кэш.
@@ -162,3 +159,6 @@ dotnet run --project src/Alsav.ApiGateway/Alsav.ApiGateway.csproj
 cd alsav_gw
 dotnet test Alsav.ApiGateway.sln
 ```
+
+
+
