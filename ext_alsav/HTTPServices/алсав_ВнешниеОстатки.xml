@@ -17,7 +17,7 @@
 		<ChildObjects>
 			<URLTemplate uuid="0619ea9b-bdd9-4e84-ac0c-fc398f14d783">
 				<Properties>
-					<Name>Balances</Name>
+					<Name>Stocks</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -25,7 +25,7 @@
 						</v8:item>
 					</Synonym>
 					<Comment/>
-					<Template>/balances</Template>
+					<Template>/stocks</Template>
 				</Properties>
 				<ChildObjects>
 					<Method uuid="2af51743-acf2-4382-a5e8-028f843b04a2">
@@ -39,7 +39,7 @@
 							</Synonym>
 							<Comment/>
 							<HTTPMethod>GET</HTTPMethod>
-							<Handler>BalancesGET</Handler>
+							<Handler>StocksGET</Handler>
 						</Properties>
 					</Method>
 				</ChildObjects>
