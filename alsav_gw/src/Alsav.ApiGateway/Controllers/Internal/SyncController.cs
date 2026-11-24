@@ -21,26 +21,26 @@ public sealed class SyncController : ControllerBase
     /// </summary>
     public const string SecretHeaderName = "X-Internal-Secret";
 
-    private readonly BalanceCacheService _balanceCache;
+    private readonly StockCacheService _stockCache;
     private readonly InternalApiSettings _settings;
     private readonly ILogger<SyncController> _logger;
 
     /// <summary>
     /// Создаёт экземпляр контроллера.
     /// </summary>
-    /// <param name="balanceCache">Кэш остатков.</param>
+    /// <param name="stockCache">Кэш остатков.</param>
     /// <param name="settings">Настройки внутреннего API.</param>
     /// <param name="logger">Логгер.</param>
     public SyncController(
-        BalanceCacheService balanceCache,
+        StockCacheService stockCache,
         IOptions<InternalApiSettings> settings,
         ILogger<SyncController> logger)
     {
-        ArgumentNullException.ThrowIfNull(balanceCache);
+        ArgumentNullException.ThrowIfNull(stockCache);
         ArgumentNullException.ThrowIfNull(settings);
         ArgumentNullException.ThrowIfNull(logger);
 
-        _balanceCache = balanceCache;
+        _stockCache = stockCache;
         _settings = settings.Value;
         _logger = logger;
     }
@@ -50,16 +50,16 @@ public sealed class SyncController : ControllerBase
     /// </summary>
     /// <param name="items">Массив позиций остатков.</param>
     /// <returns>Результат синхронизации.</returns>
-    [HttpPost("balances")]
-    [ProducesResponseType(typeof(SyncBalancesResponse), StatusCodes.Status200OK)]
+    [HttpPost("stocks")]
+    [ProducesResponseType(typeof(SyncStocksResponse), StatusCodes.Status200OK)]
     [ProducesResponseType(typeof(ErrorResponse), StatusCodes.Status400BadRequest)]
     [ProducesResponseType(typeof(ErrorResponse), StatusCodes.Status401Unauthorized)]
-    public IActionResult SyncBalances([FromBody] BalanceItem[]? items)
+    public IActionResult SyncStocks([FromBody] StockItem[]? items)
     {
         if (!IsSecretValid())
         {
             _logger.LogWarning(
-                "Rejected balance sync request with invalid internal secret. RemoteIp: {RemoteIp}.",
+                "Rejected stock sync request with invalid internal secret. RemoteIp: {RemoteIp}.",
                 HttpContext.Connection.RemoteIpAddress);
 
             return Unauthorized(new ErrorResponse("Invalid or missing X-Internal-Secret header"));
@@ -67,7 +67,7 @@ public sealed class SyncController : ControllerBase
 
         if (items is null || items.Length == 0)
         {
-            return BadRequest(new ErrorResponse("Payload must contain at least one balance item"));
+            return BadRequest(new ErrorResponse("Payload must contain at least one stock item"));
         }
 
         var validationErrors = ValidateItems(items);
@@ -77,16 +77,16 @@ public sealed class SyncController : ControllerBase
         }
 
         var startedAt = DateTimeOffset.UtcNow;
-        _balanceCache.UpdateBalances(items);
+        _stockCache.UpdateStocks(items);
         var elapsed = DateTimeOffset.UtcNow - startedAt;
 
         _logger.LogInformation(
-            "Balance cache updated. Items received: {Count}, Unique items: {UniqueCount}, DurationMs: {DurationMs}.",
+            "Stock cache updated. Items received: {Count}, Unique items: {UniqueCount}, DurationMs: {DurationMs}.",
             items.Length,
-            _balanceCache.Count,
+            _stockCache.Count,
             elapsed.TotalMilliseconds);
 
-        return Ok(new SyncBalancesResponse(true, items.Length, _balanceCache.GetLastUpdateTime()));
+        return Ok(new SyncStocksResponse(true, items.Length, _stockCache.GetLastUpdateTime()));
     }
 
     private bool IsSecretValid()
@@ -108,7 +108,7 @@ public sealed class SyncController : ControllerBase
         return CryptographicOperations.FixedTimeEquals(providedBytes, expectedBytes);
     }
 
-    private static List<string> ValidateItems(IReadOnlyList<BalanceItem> items)
+    private static List<string> ValidateItems(IReadOnlyList<StockItem> items)
     {
         var errors = new List<string>();
 

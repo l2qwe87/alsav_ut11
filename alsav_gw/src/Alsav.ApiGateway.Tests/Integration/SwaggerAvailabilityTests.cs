@@ -1,4 +1,4 @@
-﻿using System.Net;
+using System.Net;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.Extensions.Configuration;
 using Xunit;
@@ -19,7 +19,7 @@ public sealed class SwaggerAvailabilityTests : IClassFixture<WebApplicationFacto
                 {
                     ["ConnectionStrings:GatewayDb"] = $"Data Source={Path.Combine(Path.GetTempPath(), $"gw-swagger-{Guid.NewGuid():N}.db")}",
                     ["InternalApi:SecretKey"] = "test-internal-secret",
-                    ["BalanceSeed:Enabled"] = "false"
+                    ["StockSeed:Enabled"] = "false"
                 });
             });
         }).CreateClient(new WebApplicationFactoryClientOptions { AllowAutoRedirect = false });
@@ -65,7 +65,7 @@ public sealed class SwaggerAvailabilityTests : IClassFixture<WebApplicationFacto
         var json = await response.Content.ReadAsStringAsync();
 
         Assert.Equal(HttpStatusCode.OK, response.StatusCode);
-        Assert.Contains("\"/clientApi/balances\"", json, StringComparison.Ordinal);
+        Assert.Contains("\"/clientApi/stocks\"", json, StringComparison.Ordinal);
         Assert.DoesNotContain("\"/clientApi/clientApi/", json, StringComparison.Ordinal);
     }
 }

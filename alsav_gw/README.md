@@ -1,4 +1,4 @@
-﻿# ALSAV API Gateway
+# ALSAV API Gateway
 
 API Gateway на .NET 8 для приёма данных через внутренние endpoint’ы, кэширования остатков и отдачи клиентского API.
 
@@ -14,14 +14,13 @@ API Gateway на .NET 8 для приёма данных через внутре
 ┌──────────────────────────────────────────────────────────────┐
 │                        ALSAV API Gateway                     │
 │                                                              │
-│  /clientApi/balances              [X-API-Key]               │
-│  /clientApi/balances/calculated   [X-API-Key]               │
+│  /clientApi/stocks              [X-API-Key]               │
 │            │                                                 │
 │            ▼                                                 │
-│      Balance cache / calculation                             │
+│      Stock cache / calculation                             │
 │                                                              │
 │  /api/internal/v1/api-keys        [X-Internal-Secret]       │
-│  /api/internal/v1/sync/balances   [X-Internal-Secret]       │
+│  /api/internal/v1/sync/stocks   [X-Internal-Secret]       │
 │  /api/internal/v1/sync/*          [X-Internal-Secret]       │
 │            │                                                 │
 │            ▼                                                 │
@@ -36,12 +35,11 @@ alsav_gw/
 ├── src/
 │   ├── Alsav.ApiGateway/
 │   │   ├── Configuration/
-│   │   │   ├── BalanceCalculationSettings.cs
+│   │   │   ├── StockCalculationSettings.cs
 │   │   │   └── InternalApiSettings.cs
 │   │   ├── Controllers/
 │   │   │   ├── External/
-│   │   │   │   ├── BalancesController.cs
-│   │   │   │   └── CalculatedBalancesController.cs
+│   │   │   │   └── StocksController.cs
 │   │   │   ├── Internal/
 │   │   │   │   ├── ApiKeysSyncController.cs
 │   │   │   │   ├── RawDataSyncController.cs
@@ -92,7 +90,7 @@ dotnet run --project src/Alsav.ApiGateway/Alsav.ApiGateway.csproj
 |---|---|---|
 | `InternalApi:SecretKey` | `InternalApi__SecretKey` | Секрет для внутренних endpoint’ов (`X-Internal-Secret`) |
 | `ConnectionStrings:GatewayDb` | `ConnectionStrings__GatewayDb` | SQLite БД (`api_keys`, сырые данные) |
-| `BalanceCalculation:DefaultWarehouse` | `BalanceCalculation__DefaultWarehouse` | Склад по умолчанию для расчёта |
+| `StockCalculation:DefaultWarehouse` | `StockCalculation__DefaultWarehouse` | Склад по умолчанию для расчёта |
 
 Для локальной отладки можно создать `appsettings.Development.private.json` (игнорируется git).
 
@@ -100,12 +98,12 @@ dotnet run --project src/Alsav.ApiGateway/Alsav.ApiGateway.csproj
 
 ### Внешние endpoint’ы (`X-API-Key`)
 
-#### `GET /clientApi/balances?article=...&barcode=...&name=...&limit=...&offset=0`
-Возвращает остатки. Если есть сырые срезы/обороты в SQLite (`stock_snapshots` + `stock_movements`), выполняется расчёт; иначе возвращаются заранее подготовленные остатки из `BalanceCacheService`.
+#### `GET /clientApi/stocks?article=...&barcode=...&name=...&limit=...&offset=0`
+Возвращает остатки. Если есть сырые срезы/обороты в SQLite (`stock_snapshots` + `stock_movements`), выполняется расчёт; иначе возвращаются заранее подготовленные остатки из `StockCacheService`.
 
-### ����७��� endpoint'� (`X-Internal-Secret`)
+### Внутренние endpoint’ы (`X-Internal-Secret`)
 
-#### `POST /api/internal/v1/sync/balances`
+#### `POST /api/internal/v1/sync/stocks`
 Принимает полный снимок готовых остатков и атомарно заменяет in-memory кэш.
 
 ```json
@@ -119,7 +117,7 @@ dotnet run --project src/Alsav.ApiGateway/Alsav.ApiGateway.csproj
     "characteristic": "",
     "price": 1250.50,
     "type": "Готовая продукция",
-    "balance": 15
+    "stock": 15
   }
 ]
 ```

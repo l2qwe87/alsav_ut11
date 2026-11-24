@@ -8,27 +8,27 @@ namespace Alsav.ApiGateway.Controllers.External;
 /// Внешний API для получения актуальных остатков.
 /// </summary>
 [ApiController]
-[Route("clientApi/balances")]
+[Route("clientApi/stocks")]
 [ApiExplorerSettings(GroupName = "external")]
-public sealed class BalancesController : ControllerBase
+public sealed class StocksController : ControllerBase
 {
     private const int DefaultLimit = 1000;
     private const int MaxLimit = 5000;
 
-    private readonly BalanceCacheService _balanceCache;
-    private readonly BalanceCalculationService _calculationService;
-    private readonly ILogger<BalancesController> _logger;
+    private readonly StockCacheService _stockCache;
+    private readonly StockCalculationService _calculationService;
+    private readonly ILogger<StocksController> _logger;
 
-    public BalancesController(
-        BalanceCacheService balanceCache,
-        BalanceCalculationService calculationService,
-        ILogger<BalancesController> logger)
+    public StocksController(
+        StockCacheService stockCache,
+        StockCalculationService calculationService,
+        ILogger<StocksController> logger)
     {
-        ArgumentNullException.ThrowIfNull(balanceCache);
+        ArgumentNullException.ThrowIfNull(stockCache);
         ArgumentNullException.ThrowIfNull(calculationService);
         ArgumentNullException.ThrowIfNull(logger);
 
-        _balanceCache = balanceCache;
+        _stockCache = stockCache;
         _calculationService = calculationService;
         _logger = logger;
     }
@@ -44,8 +44,8 @@ public sealed class BalancesController : ControllerBase
     /// <param name="ct">Токен отмены запроса.</param>
     /// <returns>Страница остатков и общее количество позиций после фильтрации.</returns>
     [HttpGet]
-    [ProducesResponseType(typeof(BalancesResponse), StatusCodes.Status200OK)]
-    public async Task<ActionResult<BalancesResponse>> GetBalances(
+    [ProducesResponseType(typeof(StocksResponse), StatusCodes.Status200OK)]
+    public async Task<ActionResult<StocksResponse>> GetStocks(
         [FromQuery] string? article,
         [FromQuery] string? barcode,
         [FromQuery] string? name,
@@ -57,16 +57,16 @@ public sealed class BalancesController : ControllerBase
         offset = Math.Max(offset, 0);
 
         var useCalculated = await _calculationService.HasRawDataAsync(null, ct);
-        IReadOnlyCollection<BalanceItem> allItems = useCalculated
+        IReadOnlyCollection<StockItem> allItems = useCalculated
             ? await _calculationService.CalculateAsync(null, ct)
-            : _balanceCache.GetAll();
-        var lastUpdate = useCalculated ? DateTimeOffset.UtcNow : _balanceCache.GetLastUpdateTime();
+            : _stockCache.GetAll();
+        var lastUpdate = useCalculated ? DateTimeOffset.UtcNow : _stockCache.GetLastUpdateTime();
 
         var hasFilters = !string.IsNullOrWhiteSpace(article)
             || !string.IsNullOrWhiteSpace(barcode)
             || !string.IsNullOrWhiteSpace(name);
 
-        IEnumerable<BalanceItem> source = allItems;
+        IEnumerable<StockItem> source = allItems;
         var total = allItems.Count;
 
         if (hasFilters)
@@ -79,23 +79,23 @@ public sealed class BalancesController : ControllerBase
         var page = source.Skip(offset).Take(limit).ToArray();
 
         _logger.LogDebug(
-            "Balances requested. Calculated: {Calculated}, Total: {Total}, Returned: {Returned}, Offset: {Offset}, Limit: {Limit}.",
+            "Stocks requested. Calculated: {Calculated}, Total: {Total}, Returned: {Returned}, Offset: {Offset}, Limit: {Limit}.",
             useCalculated,
             total,
             page.Length,
             offset,
             limit);
 
-        return Ok(new BalancesResponse(page, total, lastUpdate));
+        return Ok(new StocksResponse(page, total, lastUpdate));
     }
 
-    private static List<BalanceItem> Filter(
-        IReadOnlyCollection<BalanceItem> items,
+    private static List<StockItem> Filter(
+        IReadOnlyCollection<StockItem> items,
         string? article,
         string? barcode,
         string? name)
     {
-        var result = new List<BalanceItem>(items.Count);
+        var result = new List<StockItem>(items.Count);
 
         foreach (var item in items)
         {

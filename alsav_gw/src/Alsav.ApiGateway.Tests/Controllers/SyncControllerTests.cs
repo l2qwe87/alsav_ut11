@@ -14,7 +14,7 @@ public sealed class SyncControllerTests
     private const string Secret = "test-internal-secret";
 
     private static SyncController CreateController(
-        BalanceCacheService cache,
+        StockCacheService cache,
         string? providedSecret = Secret)
     {
         var controller = new SyncController(
@@ -32,43 +32,43 @@ public sealed class SyncControllerTests
         return controller;
     }
 
-    private static BalanceItem[] ValidItems()
+    private static StockItem[] ValidItems()
     {
         return new[]
         {
-            new BalanceItem
+            new StockItem
             {
                 Article = "ART-1",
                 Name = "Product",
                 Unit = "pcs",
                 Type = "Product",
                 Price = 100,
-                Balance = 5
+                Stock = 5
             }
         };
     }
 
     [Fact]
-    public void SyncBalances_WithValidSecretAndPayload_ReturnsOkAndUpdatesCache()
+    public void SyncStocks_WithValidSecretAndPayload_ReturnsOkAndUpdatesCache()
     {
-        var cache = new BalanceCacheService();
+        var cache = new StockCacheService();
         var controller = CreateController(cache);
 
-        var result = controller.SyncBalances(ValidItems());
+        var result = controller.SyncStocks(ValidItems());
 
         var ok = Assert.IsType<OkObjectResult>(result);
-        var response = Assert.IsType<SyncBalancesResponse>(ok.Value);
+        var response = Assert.IsType<SyncStocksResponse>(ok.Value);
         Assert.True(response.Success);
         Assert.Equal(1, response.Count);
         Assert.Single(cache.GetAll());
     }
 
     [Fact]
-    public void SyncBalances_WithMissingSecret_ReturnsUnauthorized()
+    public void SyncStocks_WithMissingSecret_ReturnsUnauthorized()
     {
-        var controller = CreateController(new BalanceCacheService(), providedSecret: null);
+        var controller = CreateController(new StockCacheService(), providedSecret: null);
 
-        var result = controller.SyncBalances(ValidItems());
+        var result = controller.SyncStocks(ValidItems());
 
         var unauthorized = Assert.IsType<UnauthorizedObjectResult>(result);
         var error = Assert.IsType<ErrorResponse>(unauthorized.Value);
@@ -76,43 +76,43 @@ public sealed class SyncControllerTests
     }
 
     [Fact]
-    public void SyncBalances_WithInvalidSecret_ReturnsUnauthorized()
+    public void SyncStocks_WithInvalidSecret_ReturnsUnauthorized()
     {
-        var controller = CreateController(new BalanceCacheService(), providedSecret: "wrong-secret");
+        var controller = CreateController(new StockCacheService(), providedSecret: "wrong-secret");
 
-        var result = controller.SyncBalances(ValidItems());
+        var result = controller.SyncStocks(ValidItems());
 
         Assert.IsType<UnauthorizedObjectResult>(result);
     }
 
     [Fact]
-    public void SyncBalances_WithEmptyPayload_ReturnsBadRequest()
+    public void SyncStocks_WithEmptyPayload_ReturnsBadRequest()
     {
-        var controller = CreateController(new BalanceCacheService());
+        var controller = CreateController(new StockCacheService());
 
-        var result = controller.SyncBalances(Array.Empty<BalanceItem>());
+        var result = controller.SyncStocks(Array.Empty<StockItem>());
 
         var badRequest = Assert.IsType<BadRequestObjectResult>(result);
         Assert.IsType<ErrorResponse>(badRequest.Value);
     }
 
     [Fact]
-    public void SyncBalances_WithNullPayload_ReturnsBadRequest()
+    public void SyncStocks_WithNullPayload_ReturnsBadRequest()
     {
-        var controller = CreateController(new BalanceCacheService());
+        var controller = CreateController(new StockCacheService());
 
-        var result = controller.SyncBalances(null);
+        var result = controller.SyncStocks(null);
 
         Assert.IsType<BadRequestObjectResult>(result);
     }
 
     [Fact]
-    public void SyncBalances_WithMissingRequiredFields_ReturnsBadRequest()
+    public void SyncStocks_WithMissingRequiredFields_ReturnsBadRequest()
     {
-        var controller = CreateController(new BalanceCacheService());
-        var items = new[] { new BalanceItem { Article = "ART-1" } };
+        var controller = CreateController(new StockCacheService());
+        var items = new[] { new StockItem { Article = "ART-1" } };
 
-        var result = controller.SyncBalances(items);
+        var result = controller.SyncStocks(items);
 
         var badRequest = Assert.IsType<BadRequestObjectResult>(result);
         var error = Assert.IsType<ErrorResponse>(badRequest.Value);

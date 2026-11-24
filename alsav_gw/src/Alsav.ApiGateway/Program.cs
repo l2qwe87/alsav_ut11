@@ -47,26 +47,26 @@ builder.Services
     .ValidateOnStart();
 
 builder.Services
-    .AddOptions<BalanceCalculationSettings>()
-    .Bind(builder.Configuration.GetSection(BalanceCalculationSettings.SectionName))
+    .AddOptions<StockCalculationSettings>()
+    .Bind(builder.Configuration.GetSection(StockCalculationSettings.SectionName))
     .ValidateDataAnnotations()
     .ValidateOnStart();
 
 var connectionString = builder.Configuration.GetConnectionString("GatewayDb")
     ?? "Data Source=gateway.db";
 builder.Services.AddDbContext<GatewayDbContext>(options => options.UseSqlite(connectionString));
-builder.Services.AddScoped<BalanceCalculationService>();
+builder.Services.AddScoped<StockCalculationService>();
 
 builder.Services
-    .AddOptions<BalanceSeedOptions>()
-    .Bind(builder.Configuration.GetSection(BalanceSeedOptions.SectionName));
+    .AddOptions<StockSeedOptions>()
+    .Bind(builder.Configuration.GetSection(StockSeedOptions.SectionName));
 
-builder.Services.AddHttpClient(BalanceSeedService.HttpClientName);
-builder.Services.AddSingleton<BalanceCacheService>();
+builder.Services.AddHttpClient(StockSeedService.HttpClientName);
+builder.Services.AddSingleton<StockCacheService>();
 
 builder.Services.AddSingleton<ApiKeyCacheService>();
 builder.Services.AddHostedService(provider => provider.GetRequiredService<ApiKeyCacheService>());
-builder.Services.AddHostedService<BalanceSeedService>();
+builder.Services.AddHostedService<StockSeedService>();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options =>

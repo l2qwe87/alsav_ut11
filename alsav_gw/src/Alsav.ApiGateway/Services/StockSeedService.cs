@@ -1,29 +1,29 @@
-﻿using System.Text.Json;
+using System.Text.Json;
 using System.Text.Json.Serialization;
 using Alsav.ApiGateway.Models;
 using Microsoft.Extensions.Options;
 
 namespace Alsav.ApiGateway.Services;
 
-public sealed class BalanceSeedOptions
+public sealed class StockSeedOptions
 {
-    public const string SectionName = "BalanceSeed";
+    public const string SectionName = "StockSeed";
     public bool Enabled { get; set; } = true;
     public string Url { get; set; } = "https://alsav.ru/csv_alsav/ostatki_alsav_price.json";
     public int TimeoutSeconds { get; set; } = 60;
 }
 
-public sealed class BalanceSeedService(
+public sealed class StockSeedService(
     IHttpClientFactory httpClientFactory,
-    BalanceCacheService balanceCache,
-    IOptions<BalanceSeedOptions> options,
-    ILogger<BalanceSeedService> logger) : IHostedService
+    StockCacheService stockCache,
+    IOptions<StockSeedOptions> options,
+    ILogger<StockSeedService> logger) : IHostedService
 {
-    public const string HttpClientName = "balance-seed";
+    public const string HttpClientName = "stock-seed";
     private readonly IHttpClientFactory _httpClientFactory = httpClientFactory;
-    private readonly BalanceCacheService _balanceCache = balanceCache;
-    private readonly BalanceSeedOptions _options = options.Value;
-    private readonly ILogger<BalanceSeedService> _logger = logger;
+    private readonly StockCacheService _stockCache = stockCache;
+    private readonly StockSeedOptions _options = options.Value;
+    private readonly ILogger<StockSeedService> _logger = logger;
 
     private static readonly JsonSerializerOptions JsonOptions = new() { PropertyNameCaseInsensitive = true };
 
@@ -31,7 +31,7 @@ public sealed class BalanceSeedService(
     {
         if (!_options.Enabled || string.IsNullOrWhiteSpace(_options.Url))
         {
-            _logger.LogInformation("Balance seed disabled.");
+            _logger.LogInformation("Stock seed disabled.");
             return;
         }
 
@@ -43,7 +43,7 @@ public sealed class BalanceSeedService(
             var items = await JsonSerializer.DeserializeAsync<List<SeedItem>>(stream, JsonOptions, cancellationToken) ?? [];
             var mapped = items
                 .Where(x => !string.IsNullOrWhiteSpace(x.Article) && !string.IsNullOrWhiteSpace(x.Name))
-                .Select(x => new BalanceItem
+                .Select(x => new StockItem
                 {
                     Series = x.Series ?? string.Empty,
                     Barcode = x.Barcode ?? string.Empty,
@@ -53,16 +53,16 @@ public sealed class BalanceSeedService(
                     Characteristic = x.Characteristic ?? string.Empty,
                     Price = x.Price,
                     Type = x.Type ?? string.Empty,
-                    Balance = x.Balance
+                    Stock = x.Stock
                 })
                 .ToList();
 
-            _balanceCache.UpdateBalances(mapped);
-            _logger.LogInformation("Balance cache seeded from {Url}. Items: {Count}.", _options.Url, mapped.Count);
+            _stockCache.UpdateStocks(mapped);
+            _logger.LogInformation("Stock cache seeded from {Url}. Items: {Count}.", _options.Url, mapped.Count);
         }
         catch (Exception ex)
         {
-            _logger.LogWarning(ex, "Failed to seed balance cache from {Url}.", _options.Url);
+            _logger.LogWarning(ex, "Failed to seed stock cache from {Url}.", _options.Url);
         }
     }
 
@@ -77,7 +77,7 @@ public sealed class BalanceSeedService(
         [JsonPropertyName("Характеристика")] public string? Characteristic { get; set; }
         [JsonPropertyName("Штрихкод")] public string? Barcode { get; set; }
         [JsonPropertyName("ЕдиницаИзмерения")] public string? Unit { get; set; }
-        [JsonPropertyName("Остатки")] public decimal Balance { get; set; }
+        [JsonPropertyName("Остатки")] public decimal Stock { get; set; }
         [JsonPropertyName("ОтпускнаяЦена")] public decimal Price { get; set; }
     }
 }

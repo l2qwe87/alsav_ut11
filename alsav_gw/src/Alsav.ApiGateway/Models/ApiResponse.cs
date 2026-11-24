@@ -17,7 +17,7 @@ public sealed record ErrorResponse(
 /// <param name="Success">Признак успешной обработки.</param>
 /// <param name="Count">Количество принятых позиций.</param>
 /// <param name="Timestamp">Время обновления кэша в UTC.</param>
-public sealed record SyncBalancesResponse(bool Success, int Count, DateTimeOffset Timestamp);
+public sealed record SyncStocksResponse(bool Success, int Count, DateTimeOffset Timestamp);
 
 /// <summary>
 /// Ответ внешнего endpoint остатков.
@@ -25,8 +25,8 @@ public sealed record SyncBalancesResponse(bool Success, int Count, DateTimeOffse
 /// <param name="Data">Страница остатков.</param>
 /// <param name="Total">Общее количество позиций после фильтрации.</param>
 /// <param name="LastUpdate">Время последнего обновления кэша в UTC.</param>
-public sealed record BalancesResponse(
-    IReadOnlyList<BalanceItem> Data,
+public sealed record StocksResponse(
+    IReadOnlyList<StockItem> Data,
     int Total,
     DateTimeOffset LastUpdate);
 
@@ -34,13 +34,13 @@ public sealed record BalancesResponse(
 /// Ответ health-check.
 /// </summary>
 /// <param name="Status">Текущий статус сервиса.</param>
-/// <param name="BalancesLastUpdate">Время последнего обновления кэша остатков.</param>
-/// <param name="BalancesCount">Количество позиций в кэше остатков.</param>
+/// <param name="StocksLastUpdate">Время последнего обновления кэша остатков.</param>
+/// <param name="StocksCount">Количество позиций в кэше остатков.</param>
 /// <param name="ApiKeysLastSync">Время последней успешной синхронизации API-ключей.</param>
 /// <param name="ApiKeysCount">Количество API-ключей в кэше.</param>
 public sealed record HealthResponse(
     string Status,
-    DateTimeOffset? BalancesLastUpdate,
-    int BalancesCount,
+    DateTimeOffset? StocksLastUpdate,
+    int StocksCount,
     DateTimeOffset? ApiKeysLastSync,
     int ApiKeysCount);
