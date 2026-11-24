@@ -2413,6 +2413,12 @@
 			<Metadata name="InformationRegister.ШтрихкодыНоменклатуры.Dimension.Штрихкод" id="4ef51284-2aa5-48fb-8722-243aa265be16"/>
 		</Metadata>
 		<Metadata name="InformationRegister.ШтрихкодыНоменклатуры.ManagerModule" id="b5bce80d-f19e-4c38-b9a1-9108afdd22d5.2" configVersion="b968869011ece908929c0804155533b2a7396241"/>
+		<Metadata name="InformationRegister.алсав_APIКлючиКлиентов" id="02a7ffef-3409-4777-9276-d220ef688108" configVersion="04955714e9324af494fdd44a7968f41e00000000">
+			<Metadata name="InformationRegister.алсав_APIКлючиКлиентов.Dimension.Клиент" id="09d03285-dd18-40c6-94c6-c6375f01370a"/>
+			<Metadata name="InformationRegister.алсав_APIКлючиКлиентов.Resource.Ключ" id="be3577cf-bd3e-4c03-a236-6a795ab82771"/>
+			<Metadata name="InformationRegister.алсав_APIКлючиКлиентов.Resource.ClientId" id="db42cc7e-2a07-4cf9-8e30-d5fb0f562dfd"/>
+			<Metadata name="InformationRegister.алсав_APIКлючиКлиентов.Resource.CreatedAt" id="59cd3181-a010-4f4d-8e07-b4112e291337"/>
+		</Metadata>
 		<Metadata name="InformationRegister.алсав_ИсторияПроведенияДокументов" id="6214237b-c1d4-4bae-89d4-efdc0dc95123" configVersion="d46353b9e410886fd97452af17dbe051468f9697">
 			<Metadata name="InformationRegister.алсав_ИсторияПроведенияДокументов.Resource.Пользователь" id="2a9d384f-1874-4564-9eee-40209adef328"/>
 			<Metadata name="InformationRegister.алсав_ИсторияПроведенияДокументов.Dimension.ЗаказКлиента" id="b0bec915-a7f2-401f-9829-1a23bb221164"/>
@@ -2600,6 +2606,8 @@
 		<Metadata name="Role.АЛСАВ_ПравоРедактироватьЭтапыОплаты.Rights" id="9e7d8917-9132-4052-a350-8167b3b4aec2.0" configVersion="8c955a47382244dfc512d57fe956a69de89d1355"/>
 		<Metadata name="Role.АЛСАВ_ПравоРедактироватьЭтапыОплаты_БанковскийСчет" id="d81a00b4-e906-4e34-9cda-24b4be427873" configVersion="baddc5c30cae6866849371c2c25fe9f81e198796"/>
 		<Metadata name="Role.АЛСАВ_ПравоРедактироватьЭтапыОплаты_БанковскийСчет.Rights" id="d81a00b4-e906-4e34-9cda-24b4be427873.0" configVersion="8c955a47382244dfc512d57fe956a69de89d1355"/>
+		<Metadata name="Role.АЛСАВ_УправлениеAPIключамиКлиентов" id="0a0b9dab-ff4c-4606-8516-cd63b1d4799a" configVersion="dcda5bedd2c344869dd4c922a4f485fe00000000"/>
+		<Metadata name="Role.АЛСАВ_УправлениеAPIключамиКлиентов.Rights" id="0a0b9dab-ff4c-4606-8516-cd63b1d4799a.0" configVersion="967ce90f43134b0aa62732ff3aa329ea00000000"/>
 		<Metadata name="Role.АЛСАВ_ФактическиОтгружен" id="3cc9d926-1eba-4e72-8cff-ece084d472cd" configVersion="653c62f5d0bc73042040b590cf5db4d4a4d85995"/>
 		<Metadata name="Role.АЛСАВ_ФактическиОтгружен.Rights" id="3cc9d926-1eba-4e72-8cff-ece084d472cd.0" configVersion="7a750bfac7e2981c3c0c62f2458a6ab00340cd4b"/>
 		<Metadata name="Role.БазовыеПраваУТ" id="f970a76d-c7c3-4d33-8169-5b6cc0247fa2" configVersion="268b1185b09569629b42db486e9ee3be35ebaff4"/>
