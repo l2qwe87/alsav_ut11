@@ -1,4 +1,4 @@
-﻿using Alsav.ApiGateway.Configuration;
+using Alsav.ApiGateway.Configuration;
 using Alsav.ApiGateway.Data;
 using Alsav.ApiGateway.Data.Entities;
 using Alsav.ApiGateway.Services;
@@ -9,12 +9,12 @@ using Microsoft.Extensions.Options;
 
 namespace Alsav.ApiGateway.Tests.Services;
 
-public sealed class BalanceCalculationIntegrationTests : IDisposable
+public sealed class StockCalculationIntegrationTests : IDisposable
 {
     private readonly string _dbPath;
     private readonly ServiceProvider _provider;
 
-    public BalanceCalculationIntegrationTests()
+    public StockCalculationIntegrationTests()
     {
         _dbPath = Path.Combine(Path.GetTempPath(), $"alsav-gw-test-{Guid.NewGuid():N}.db");
         var services = new ServiceCollection();
@@ -61,13 +61,13 @@ public sealed class BalanceCalculationIntegrationTests : IDisposable
             await db.SaveChangesAsync();
         }
 
-        var service = new BalanceCalculationService(
+        var service = new StockCalculationService(
             _provider.GetRequiredService<IServiceScopeFactory>(),
-            Options.Create(new BalanceCalculationSettings { DefaultWarehouse = wh }),
-            NullLogger<BalanceCalculationService>.Instance);
+            Options.Create(new StockCalculationSettings { DefaultWarehouse = wh }),
+            NullLogger<StockCalculationService>.Instance);
 
         var result = await service.CalculateAsync(wh, CancellationToken.None);
-        var byArticle = result.ToDictionary(x => x.Article, x => x.Balance);
+        var byArticle = result.ToDictionary(x => x.Article, x => x.Stock);
 
         Assert.Equal(0m, byArticle["prod1"]);
         Assert.Equal(1m, byArticle["prod2"]);

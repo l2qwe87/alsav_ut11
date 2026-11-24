@@ -1,4 +1,4 @@
-﻿using Alsav.ApiGateway.Configuration;
+using Alsav.ApiGateway.Configuration;
 using Alsav.ApiGateway.Data;
 using Alsav.ApiGateway.Data.Entities;
 using Alsav.ApiGateway.Models;
@@ -7,14 +7,14 @@ using Microsoft.Extensions.Options;
 
 namespace Alsav.ApiGateway.Services;
 
-public sealed class BalanceCalculationService(
+public sealed class StockCalculationService(
     IServiceScopeFactory scopeFactory,
-    IOptions<BalanceCalculationSettings> settings,
-    ILogger<BalanceCalculationService> logger)
+    IOptions<StockCalculationSettings> settings,
+    ILogger<StockCalculationService> logger)
 {
     private readonly IServiceScopeFactory _scopeFactory = scopeFactory;
-    private readonly BalanceCalculationSettings _settings = settings.Value;
-    private readonly ILogger<BalanceCalculationService> _logger = logger;
+    private readonly StockCalculationSettings _settings = settings.Value;
+    private readonly ILogger<StockCalculationService> _logger = logger;
 
     public async Task<bool> HasRawDataAsync(string? warehouse, CancellationToken ct)
     {
@@ -26,7 +26,7 @@ public sealed class BalanceCalculationService(
         return await db.StockMovements.AsNoTracking().AnyAsync(x => x.Warehouse == wh, ct);
     }
 
-    public async Task<IReadOnlyList<BalanceItem>> CalculateAsync(string? warehouse, CancellationToken ct)
+    public async Task<IReadOnlyList<StockItem>> CalculateAsync(string? warehouse, CancellationToken ct)
     {
         var wh = string.IsNullOrWhiteSpace(warehouse) ? _settings.DefaultWarehouse : warehouse.Trim();
         using var scope = _scopeFactory.CreateScope();
@@ -69,14 +69,14 @@ public sealed class BalanceCalculationService(
             .GroupBy(c => Key(c.ProductArticle, c.ProductCharacteristic, c.ProductSeries))
             .ToDictionary(g => g.Key, g => g.ToList());
 
-        var result = new List<BalanceItem>(snapshots.Count);
+        var result = new List<StockItem>(snapshots.Count);
         foreach (var s in snapshots)
         {
             var pk = Key(s.Article, s.Characteristic, s.Series);
             var canBuild = CanBuild(pk, available, compsByProduct);
             if (canBuild < 0) canBuild = 0;
 
-            result.Add(new BalanceItem
+            result.Add(new StockItem
             {
                 Series = s.Series,
                 Barcode = s.Barcode,
@@ -86,11 +86,11 @@ public sealed class BalanceCalculationService(
                 Characteristic = s.Characteristic,
                 Price = s.Price,
                 Type = s.Type,
-                Balance = canBuild
+                Stock = canBuild
             });
         }
 
-        _logger.LogDebug("Calculated balances for warehouse {Warehouse}: {Count} items.", wh, result.Count);
+        _logger.LogDebug("Calculated stocks for warehouse {Warehouse}: {Count} items.", wh, result.Count);
         return result;
     }
 

@@ -3,20 +3,20 @@ using Alsav.ApiGateway.Services;
 
 namespace Alsav.ApiGateway.Tests.Services;
 
-public sealed class BalanceCacheServiceTests
+public sealed class StockCacheServiceTests
 {
-    private static BalanceItem Item(
+    private static StockItem Item(
         string article,
         string characteristic = "",
         string series = "",
-        decimal balance = 1)
+        decimal stock = 1)
     {
-        return new BalanceItem
+        return new StockItem
         {
             Article = article,
             Characteristic = characteristic,
             Series = series,
-            Balance = balance,
+            Stock = stock,
             Name = "Test product",
             Unit = "pcs",
             Type = "Product",
@@ -26,12 +26,12 @@ public sealed class BalanceCacheServiceTests
     }
 
     [Fact]
-    public void UpdateBalances_ReplacesWholeCache()
+    public void UpdateStocks_ReplacesWholeCache()
     {
-        var service = new BalanceCacheService();
-        service.UpdateBalances(new[] { Item("A"), Item("B") });
+        var service = new StockCacheService();
+        service.UpdateStocks(new[] { Item("A"), Item("B") });
 
-        service.UpdateBalances(new[] { Item("C") });
+        service.UpdateStocks(new[] { Item("C") });
 
         Assert.Single(service.GetAll());
         Assert.NotNull(service.GetByKey("C"));
@@ -39,30 +39,30 @@ public sealed class BalanceCacheServiceTests
     }
 
     [Fact]
-    public void UpdateBalances_WithEmptyCollection_ClearsCache()
+    public void UpdateStocks_WithEmptyCollection_ClearsCache()
     {
-        var service = new BalanceCacheService();
-        service.UpdateBalances(new[] { Item("A") });
+        var service = new StockCacheService();
+        service.UpdateStocks(new[] { Item("A") });
 
-        service.UpdateBalances(Array.Empty<BalanceItem>());
+        service.UpdateStocks(Array.Empty<StockItem>());
 
         Assert.Empty(service.GetAll());
         Assert.NotEqual(DateTimeOffset.MinValue, service.GetLastUpdateTime());
     }
 
     [Fact]
-    public void UpdateBalances_ThrowsOnNull()
+    public void UpdateStocks_ThrowsOnNull()
     {
-        var service = new BalanceCacheService();
+        var service = new StockCacheService();
 
-        Assert.Throws<ArgumentNullException>(() => service.UpdateBalances(null!));
+        Assert.Throws<ArgumentNullException>(() => service.UpdateStocks(null!));
     }
 
     [Fact]
     public void GetByKey_ReturnsItem_ByCompositeKey()
     {
-        var service = new BalanceCacheService();
-        service.UpdateBalances(new[] { Item("ART-1", "CHAR-1", "SER-1") });
+        var service = new StockCacheService();
+        service.UpdateStocks(new[] { Item("ART-1", "CHAR-1", "SER-1") });
 
         var result = service.GetByKey("ART-1|CHAR-1|SER-1");
 
@@ -73,7 +73,7 @@ public sealed class BalanceCacheServiceTests
     [Fact]
     public void GetByKey_ReturnsNull_WhenKeyMissing()
     {
-        var service = new BalanceCacheService();
+        var service = new StockCacheService();
 
         Assert.Null(service.GetByKey("missing"));
         Assert.Null(service.GetByKey(string.Empty));
@@ -82,17 +82,17 @@ public sealed class BalanceCacheServiceTests
     [Fact]
     public void GetLastUpdateTime_IsMinValue_BeforeFirstUpdate()
     {
-        var service = new BalanceCacheService();
+        var service = new StockCacheService();
 
         Assert.Equal(DateTimeOffset.MinValue, service.GetLastUpdateTime());
         Assert.Equal(0, service.Count);
     }
 
     [Fact]
-    public async Task UpdateBalances_IsThreadSafe_UnderConcurrentReadsAndWrites()
+    public async Task UpdateStocks_IsThreadSafe_UnderConcurrentReadsAndWrites()
     {
-        var service = new BalanceCacheService();
-        service.UpdateBalances(new[] { Item("A") });
+        var service = new StockCacheService();
+        service.UpdateStocks(new[] { Item("A") });
 
         using var cancellation = new CancellationTokenSource(TimeSpan.FromMilliseconds(500));
 
@@ -101,7 +101,7 @@ public sealed class BalanceCacheServiceTests
             var index = 0;
             while (!cancellation.IsCancellationRequested)
             {
-                service.UpdateBalances(new[] { Item($"A{index}"), Item($"B{index}") });
+                service.UpdateStocks(new[] { Item($"A{index}"), Item($"B{index}") });
                 index++;
                 await Task.Yield();
             }

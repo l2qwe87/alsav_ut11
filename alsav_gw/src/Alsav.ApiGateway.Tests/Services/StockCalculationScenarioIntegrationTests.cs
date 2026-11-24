@@ -1,4 +1,4 @@
-﻿using Alsav.ApiGateway.Configuration;
+using Alsav.ApiGateway.Configuration;
 using Alsav.ApiGateway.Controllers.Internal;
 using Alsav.ApiGateway.Data;
 using Alsav.ApiGateway.Models;
@@ -12,14 +12,14 @@ using Microsoft.Extensions.Options;
 
 namespace Alsav.ApiGateway.Tests.Services;
 
-public sealed class BalanceCalculationScenarioIntegrationTests : IDisposable
+public sealed class StockCalculationScenarioIntegrationTests : IDisposable
 {
     private const string Secret = "test-internal-secret";
     private const string Wh = "Склад адресного хранения";
     private readonly string _dbPath;
     private readonly ServiceProvider _provider;
 
-    public BalanceCalculationScenarioIntegrationTests()
+    public StockCalculationScenarioIntegrationTests()
     {
         _dbPath = Path.Combine(Path.GetTempPath(), $"alsav-gw-scenario-{Guid.NewGuid():N}.db");
         var services = new ServiceCollection();
@@ -111,13 +111,13 @@ public sealed class BalanceCalculationScenarioIntegrationTests : IDisposable
 
     private async Task<Dictionary<string, decimal>> CalculateAsync()
     {
-        var service = new BalanceCalculationService(
+        var service = new StockCalculationService(
             _provider.GetRequiredService<IServiceScopeFactory>(),
-            Options.Create(new BalanceCalculationSettings { DefaultWarehouse = Wh }),
-            NullLogger<BalanceCalculationService>.Instance);
+            Options.Create(new StockCalculationSettings { DefaultWarehouse = Wh }),
+            NullLogger<StockCalculationService>.Instance);
 
         var result = await service.CalculateAsync(Wh, CancellationToken.None);
-        return result.ToDictionary(x => x.Article, x => x.Balance);
+        return result.ToDictionary(x => x.Article, x => x.Stock);
     }
 
     private RawDataSyncController CreateRawController()

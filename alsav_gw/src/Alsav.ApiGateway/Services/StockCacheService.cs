@@ -11,14 +11,14 @@ namespace Alsav.ApiGateway.Services;
 /// <see cref="ImmutableDictionary{TKey,TValue}"/> и заменяется одной атомарной
 /// операцией записи ссылки.
 /// </remarks>
-public sealed class BalanceCacheService
+public sealed class StockCacheService
 {
     private sealed record CacheState(
-        ImmutableDictionary<string, BalanceItem> Items,
+        ImmutableDictionary<string, StockItem> Items,
         DateTimeOffset LastUpdate);
 
     private static readonly CacheState EmptyState = new(
-        ImmutableDictionary.Create<string, BalanceItem>(StringComparer.Ordinal),
+        ImmutableDictionary.Create<string, StockItem>(StringComparer.Ordinal),
         DateTimeOffset.MinValue);
 
     private CacheState _state = EmptyState;
@@ -39,11 +39,11 @@ public sealed class BalanceCacheService
     /// </summary>
     /// <param name="items">Позиции остатков. Пустая коллекция очищает кэш.</param>
     /// <exception cref="ArgumentNullException">Если <paramref name="items"/> равен <see langword="null"/>.</exception>
-    public void UpdateBalances(IEnumerable<BalanceItem> items)
+    public void UpdateStocks(IEnumerable<StockItem> items)
     {
         ArgumentNullException.ThrowIfNull(items);
 
-        var builder = ImmutableDictionary.CreateBuilder<string, BalanceItem>(StringComparer.Ordinal);
+        var builder = ImmutableDictionary.CreateBuilder<string, StockItem>(StringComparer.Ordinal);
         foreach (var item in items)
         {
             if (item is null)
@@ -62,7 +62,7 @@ public sealed class BalanceCacheService
     /// Возвращает снимок всех позиций кэша.
     /// </summary>
     /// <returns>Неизменяемый по содержимому массив позиций.</returns>
-    public IReadOnlyCollection<BalanceItem> GetAll()
+    public IReadOnlyCollection<StockItem> GetAll()
     {
         return Volatile.Read(ref _state).Items.Values.ToArray();
     }
@@ -72,7 +72,7 @@ public sealed class BalanceCacheService
     /// </summary>
     /// <param name="compositeKey">Ключ вида «Артикул|Характеристика|Серия».</param>
     /// <returns>Найденная позиция или <see langword="null"/>.</returns>
-    public BalanceItem? GetByKey(string compositeKey)
+    public StockItem? GetByKey(string compositeKey)
     {
         if (string.IsNullOrEmpty(compositeKey))
         {
