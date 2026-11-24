@@ -12,22 +12,22 @@ namespace Alsav.ApiGateway.Controllers;
 [ApiExplorerSettings(GroupName = "internal")]
 public sealed class HealthController : ControllerBase
 {
-    private readonly BalanceCacheService _balanceCache;
+    private readonly StockCacheService _stockCache;
     private readonly ApiKeyCacheService _apiKeyCache;
 
     /// <summary>
     /// Создаёт экземпляр контроллера.
     /// </summary>
-    /// <param name="balanceCache">Кэш остатков.</param>
+    /// <param name="stockCache">Кэш остатков.</param>
     /// <param name="apiKeyCache">Кэш API-ключей.</param>
     public HealthController(
-        BalanceCacheService balanceCache,
+        StockCacheService stockCache,
         ApiKeyCacheService apiKeyCache)
     {
-        ArgumentNullException.ThrowIfNull(balanceCache);
+        ArgumentNullException.ThrowIfNull(stockCache);
         ArgumentNullException.ThrowIfNull(apiKeyCache);
 
-        _balanceCache = balanceCache;
+        _stockCache = stockCache;
         _apiKeyCache = apiKeyCache;
     }
 
@@ -39,12 +39,12 @@ public sealed class HealthController : ControllerBase
     [ProducesResponseType(typeof(HealthResponse), StatusCodes.Status200OK)]
     public ActionResult<HealthResponse> Get()
     {
-        var balancesLastUpdate = _balanceCache.GetLastUpdateTime();
+        var stocksLastUpdate = _stockCache.GetLastUpdateTime();
 
         return Ok(new HealthResponse(
             "Healthy",
-            balancesLastUpdate == DateTimeOffset.MinValue ? null : balancesLastUpdate,
-            _balanceCache.Count,
+            stocksLastUpdate == DateTimeOffset.MinValue ? null : stocksLastUpdate,
+            _stockCache.Count,
             _apiKeyCache.GetLastSuccessfulSync(),
             _apiKeyCache.KeyCount));
     }

@@ -53,7 +53,7 @@ public sealed class ApiKeyValidationMiddlewareTests
     {
         var (middleware, context, nextCalled) = CreateMiddleware(
             CreateApiKeyCache("valid-key"),
-            "/clientApi/balances",
+            "/clientApi/stocks",
             apiKey: null);
 
         await middleware.InvokeAsync(context);
@@ -68,7 +68,7 @@ public sealed class ApiKeyValidationMiddlewareTests
     {
         var (middleware, context, nextCalled) = CreateMiddleware(
             CreateApiKeyCache("valid-key"),
-            "/clientApi/balances",
+            "/clientApi/stocks",
             apiKey: "invalid-key");
 
         await middleware.InvokeAsync(context);
@@ -83,7 +83,7 @@ public sealed class ApiKeyValidationMiddlewareTests
     {
         var (middleware, context, nextCalled) = CreateMiddleware(
             CreateApiKeyCache("valid-key"),
-            "/clientApi/balances",
+            "/clientApi/stocks",
             apiKey: "valid-key");
 
         await middleware.InvokeAsync(context);
@@ -110,7 +110,7 @@ public sealed class ApiKeyValidationMiddlewareTests
     {
         var (middleware, context, nextCalled) = CreateMiddleware(
             CreateApiKeyCache("valid-key"),
-            "/CLIENTAPI/balances",
+            "/CLIENTAPI/stocks",
             apiKey: null);
 
         await middleware.InvokeAsync(context);

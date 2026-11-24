@@ -10,7 +10,7 @@ services:
       ASPNETCORE_ENVIRONMENT: Production
       InternalApi__SecretKey: ${INTERNAL_API_SECRET:-demo-internal-secret}
       ConnectionStrings__GatewayDb: Data Source=/app/data/gateway.db
-      BalanceCalculation__DefaultWarehouse: "Склад адресного хранения"
+      StockCalculation__DefaultWarehouse: "Склад адресного хранения"
     volumes:
       - gateway-data:/app/data
     restart: unless-stopped

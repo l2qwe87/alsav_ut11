@@ -1,4 +1,4 @@
-﻿using System.Net;
+using System.Net;
 using System.Net.Http.Json;
 using Alsav.ApiGateway.Data;
 using Alsav.ApiGateway.Data.Entities;
@@ -11,19 +11,19 @@ using Xunit;
 
 namespace Alsav.ApiGateway.Tests.Integration;
 
-public sealed class BalancesControllerFallbackTests
+public sealed class StocksControllerFallbackTests
 {
     private static WebApplicationFactory<Program> CreateFactory(string dbPath) =>
         new WebApplicationFactory<Program>().WithWebHostBuilder(builder =>
         {
             builder.UseSetting("ConnectionStrings:GatewayDb", $"Data Source={dbPath}");
             builder.UseSetting("InternalApi:SecretKey", "test-secret");
-            builder.UseSetting("BalanceSeed:Enabled", "false");
-            builder.UseSetting("BalanceCalculation:DefaultWarehouse", "WH");
+            builder.UseSetting("StockSeed:Enabled", "false");
+            builder.UseSetting("StockCalculation:DefaultWarehouse", "WH");
         });
 
     [Fact]
-    public async Task GetBalances_UsesPreparedCache_WhenRawDataMissing()
+    public async Task GetStocks_UsesPreparedCache_WhenRawDataMissing()
     {
         var dbPath = Path.Combine(Path.GetTempPath(), $"gw-bal-fallback-{Guid.NewGuid():N}.db");
         await using var factory = CreateFactory(dbPath);
@@ -34,8 +34,8 @@ public sealed class BalancesControllerFallbackTests
             db.StockSnapshots.RemoveRange(db.StockSnapshots);
             db.StockMovements.RemoveRange(db.StockMovements);
             await db.SaveChangesAsync();
-            scope.ServiceProvider.GetRequiredService<BalanceCacheService>().UpdateBalances([
-                new BalanceItem { Series = "S", Type = "T", Article = "A-CACHE", Name = "Cached", Unit = "шт", Balance = 5 }
+            scope.ServiceProvider.GetRequiredService<StockCacheService>().UpdateStocks([
+                new StockItem { Series = "S", Type = "T", Article = "A-CACHE", Name = "Cached", Unit = "шт", Stock = 5 }
             ]);
         }
 
@@ -43,15 +43,15 @@ public sealed class BalancesControllerFallbackTests
         var client = factory.CreateClient();
         client.DefaultRequestHeaders.Add("X-API-Key", "k-cache");
 
-        var resp = await client.GetAsync("/clientApi/balances?article=A-CACHE&limit=10&offset=0");
-        var body = await resp.Content.ReadFromJsonAsync<BalancesResponse>();
+        var resp = await client.GetAsync("/clientApi/stocks?article=A-CACHE&limit=10&offset=0");
+        var body = await resp.Content.ReadFromJsonAsync<StocksResponse>();
 
         Assert.Equal(HttpStatusCode.OK, resp.StatusCode);
-        Assert.Contains(body!.Data, x => x.Article == "A-CACHE" && x.Name == "Cached" && x.Balance == 5);
+        Assert.Contains(body!.Data, x => x.Article == "A-CACHE" && x.Name == "Cached" && x.Stock == 5);
     }
 
     [Fact]
-    public async Task GetBalances_UsesCalculated_WhenRawDataPresent()
+    public async Task GetStocks_UsesCalculated_WhenRawDataPresent()
     {
         var dbPath = Path.Combine(Path.GetTempPath(), $"gw-bal-calc-{Guid.NewGuid():N}.db");
         await using var factory = CreateFactory(dbPath);
@@ -75,8 +75,8 @@ public sealed class BalancesControllerFallbackTests
             });
             await db.SaveChangesAsync();
 
-            scope.ServiceProvider.GetRequiredService<BalanceCacheService>().UpdateBalances([
-                new BalanceItem { Series = "S", Type = "T", Article = "A-CALC", Name = "Cached", Unit = "шт", Balance = 999 }
+            scope.ServiceProvider.GetRequiredService<StockCacheService>().UpdateStocks([
+                new StockItem { Series = "S", Type = "T", Article = "A-CALC", Name = "Cached", Unit = "шт", Stock = 999 }
             ]);
         }
 
@@ -84,11 +84,11 @@ public sealed class BalancesControllerFallbackTests
         var client = factory.CreateClient();
         client.DefaultRequestHeaders.Add("X-API-Key", "k-calc");
 
-        var resp = await client.GetAsync("/clientApi/balances?article=A-CALC&limit=10&offset=0");
-        var body = await resp.Content.ReadFromJsonAsync<BalancesResponse>();
+        var resp = await client.GetAsync("/clientApi/stocks?article=A-CALC&limit=10&offset=0");
+        var body = await resp.Content.ReadFromJsonAsync<StocksResponse>();
 
         Assert.Equal(HttpStatusCode.OK, resp.StatusCode);
-        Assert.Contains(body!.Data, x => x.Article == "A-CALC" && x.Name == "Raw" && x.Balance == 7);
+        Assert.Contains(body!.Data, x => x.Article == "A-CALC" && x.Name == "Raw" && x.Stock == 7);
     }
 
     private static async Task SeedApiKeyAsync(WebApplicationFactory<Program> factory, string key)

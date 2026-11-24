@@ -1,10 +1,10 @@
-﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations;
 
 namespace Alsav.ApiGateway.Configuration;
 
-public sealed class BalanceCalculationSettings
+public sealed class StockCalculationSettings
 {
-    public const string SectionName = "BalanceCalculation";
+    public const string SectionName = "StockCalculation";
 
     [Required]
     public string DefaultWarehouse { get; set; } = "Склад адресного хранения";

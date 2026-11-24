@@ -5,7 +5,7 @@ namespace Alsav.ApiGateway.Models;
 /// <summary>
 /// Позиция актуального остатка номенклатуры.
 /// </summary>
-public sealed class BalanceItem
+public sealed class StockItem
 {
     /// <summary>
     /// Серия товара (из дополнительного реквизита «Серия»).
@@ -50,7 +50,7 @@ public sealed class BalanceItem
     /// <summary>
     /// Остаток, доступный для сборки.
     /// </summary>
-    public decimal Balance { get; set; }
+    public decimal Stock { get; set; }
 
     /// <summary>
     /// Композитный ключ кэша: «Артикул|Характеристика|Серия».
