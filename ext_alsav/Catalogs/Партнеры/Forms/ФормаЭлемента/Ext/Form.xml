@@ -772,6 +772,22 @@
 									<ContextMenu name="APIKeyКонтекстноеМеню" id="403"/>
 									<ExtendedTooltip name="APIKeyExtendedTooltip" id="404"/>
 								</InputField>
+								<Button name="КопироватьAPIКлюч" id="409">
+									<Type>UsualButton</Type>
+									<Representation>Picture</Representation>
+									<CommandName>Form.Command.КопироватьAPIКлюч</CommandName>
+									<Picture>
+										<xr:Ref>CommonPicture.КопированиеСтрок</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Скопировать API-ключ в буфер обмена</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="КопироватьAPIКлючExtendedTooltip" id="410"/>
+								</Button>
 								<Button name="СгенерироватьAPIКлюч" id="405">
 									<CommandName>Form.Command.СгенерироватьAPIКлюч</CommandName>
 									<Title>
@@ -1041,6 +1057,26 @@
 				</v8:item>
 			</ToolTip>
 			<Action callType="After">алсав_УдалитьAPIКлючПосле</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КопироватьAPIКлюч" id="1000013">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Копировать API-ключ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скопировать API-ключ в буфер обмена</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.КопированиеСтрок</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action callType="After">алсав_КопироватьAPIКлючПосле</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 	</Commands>
