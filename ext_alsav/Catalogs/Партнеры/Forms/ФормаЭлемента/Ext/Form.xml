@@ -733,6 +733,96 @@
 						</v8:item>
 					</Title>
 					<ExtendedTooltip name="ГруппаДополнительныеРеквизитыExtendedTooltip" id="235"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаAPIКлюч" id="400">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>API-ключ</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ключ для доступа клиента к API</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>true</ShowTitle>
+							<ExtendedTooltip name="ГруппаAPIКлючExtendedTooltip" id="401"/>
+							<ChildItems>
+								<InputField name="APIKey" id="402">
+									<DataPath>APIKey</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>API-ключ</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Текущий ключ. Значение можно скопировать.</v8:content>
+										</v8:item>
+									</ToolTip>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<ContextMenu name="APIKeyКонтекстноеМеню" id="403"/>
+									<ExtendedTooltip name="APIKeyExtendedTooltip" id="404"/>
+								</InputField>
+								<Button name="КопироватьAPIКлюч" id="409">
+									<Type>UsualButton</Type>
+									<Representation>Picture</Representation>
+									<CommandName>Form.Command.КопироватьAPIКлюч</CommandName>
+									<Picture>
+										<xr:Ref>CommonPicture.КопированиеСтрок</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Скопировать API-ключ в буфер обмена</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="КопироватьAPIКлючExtendedTooltip" id="410"/>
+								</Button>
+								<Button name="СгенерироватьAPIКлюч" id="405">
+									<CommandName>Form.Command.СгенерироватьAPIКлюч</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сгенерировать</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сгенерировать новый ключ и отозвать предыдущий</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="СгенерироватьAPIКлючExtendedTooltip" id="406"/>
+								</Button>
+								<Button name="УдалитьAPIКлюч" id="407">
+									<CommandName>Form.Command.УдалитьAPIКлюч</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Удалить</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отозвать текущий API-ключ</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="УдалитьAPIКлючExtendedTooltip" id="408"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
 				</Page>
 				<Page name="ГруппаКонтактнаяИнформация" id="65">
 					<EnableContentChange>true</EnableContentChange>
@@ -891,6 +981,32 @@
 			</Title>
 			<Type/>
 		</Attribute>
+		<Attribute name="APIKey" id="1000011">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>API-ключ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>200</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЕстьAPIКлюч" id="1000012">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Есть API-ключ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="ОткрытьФормуСегментовЗапретаОтгрузки" id="1000001">
@@ -909,6 +1025,58 @@
 			<FunctionalOptions>
 				<Item>FunctionalOption.ИспользоватьЗапретОтгрузки</Item>
 			</FunctionalOptions>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СгенерироватьAPIКлюч" id="1000002">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сгенерировать API-ключ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сгенерировать новый ключ и отозвать предыдущий</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action callType="After">алсав_СгенерироватьAPIКлючПосле</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="УдалитьAPIКлюч" id="1000003">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить API-ключ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отозвать текущий API-ключ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action callType="After">алсав_УдалитьAPIКлючПосле</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КопироватьAPIКлюч" id="1000013">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Копировать API-ключ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скопировать API-ключ в буфер обмена</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.КопированиеСтрок</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action callType="After">алсав_КопироватьAPIКлючПосле</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 	</Commands>

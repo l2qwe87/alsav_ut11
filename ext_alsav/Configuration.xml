@@ -190,6 +190,7 @@
 			<Role>АЛСАВ_ПравоРедактироватьПроведенных_ПриобретениеТоваровУслуг</Role>
 			<Role>АЛСАВ_ПравоРедактироватьЭтапыОплаты</Role>
 			<Role>АЛСАВ_ПравоРедактироватьЭтапыОплаты_БанковскийСчет</Role>
+			<Role>АЛСАВ_УправлениеAPIключамиКлиентов</Role>
 			<Role>АЛСАВ_ФактическиОтгружен</Role>
 			<Role>БазовыеПраваУТ</Role>
 			<Role>ПолныеПрава</Role>
@@ -662,6 +663,7 @@
 			<DataProcessor>ПроверкаКоличестваТоваровВДокументе</DataProcessor>
 			<DataProcessor>СайтРаботаСОстатками</DataProcessor>
 			<DataProcessor>УБ_ПечатьТранспортнойНакладной</DataProcessor>
+			<InformationRegister>алсав_APIКлючиКлиентов</InformationRegister>
 			<InformationRegister>алсав_ИсторияПроведенияДокументов</InformationRegister>
 			<InformationRegister>алсав_КлючиСекретов</InformationRegister>
 			<InformationRegister>алсав_ПроверкаВнешнихФайлов</InformationRegister>
