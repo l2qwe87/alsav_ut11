@@ -21,6 +21,8 @@ pipeline {
         CONTAINER_NAME = 'nginx-proxy'
         SERVER_IP      = '93.123.178.106'
         SSL_VOLUME     = 'nginx_ssl_data'
+        CERT_ORG       = 'ALSAV'
+        CERT_OU        = 'IT Infrastructure'
     }
 
     stages {
@@ -36,18 +38,27 @@ pipeline {
                             echo "Том ${SSL_VOLUME} уже существует."
                         fi
 
-                        # 2. Генерируем сертификат, если его еще нет ИЛИ если выбрана галочка REISSUE_SSL=true
-                        docker run --rm -e REISSUE="${params.REISSUE_SSL}" -e IP="${SERVER_IP}" -v ${SSL_VOLUME}:/ssl --entrypoint sh alpine/openssl -c '
+                        # 2. Генерируем сертификат (при необходимости) и выводим его отпечаток
+                        docker run --rm \
+                            -e REISSUE="${params.REISSUE_SSL}" \
+                            -e IP="${SERVER_IP}" \
+                            -e ORG="${CERT_ORG}" \
+                            -e OU="${CERT_OU}" \
+                            -v ${SSL_VOLUME}:/ssl --entrypoint sh alpine/openssl -c '
                             if [ "\$REISSUE" = "true" ] || [ ! -f /ssl/nginx.crt ] || [ ! -f /ssl/nginx.key ]; then
                                 echo "Выпускаем новый SSL-сертификат на 10 лет для IP \$IP (REISSUE=\$REISSUE)..."
                                 openssl req -x509 -nodes -days 3650 -newkey rsa:2048 \
                                     -keyout /ssl/nginx.key \
                                     -out /ssl/nginx.crt \
-                                    -subj "/CN=\$IP" \
+                                    -subj "/O=\$ORG/OU=\$OU/CN=\$IP" \
                                     -addext "subjectAltName=IP:\$IP"
                             else
                                 echo "Используем ранее созданный SSL-сертификат из тома."
                             fi
+
+                            echo "================ ИНФОРМАЦИЯ О СЕРТИФИКАТЕ ================"
+                            openssl x509 -in /ssl/nginx.crt -noout -subject -dates -fingerprint -sha256
+                            echo "=========================================================="
                         '
                     """
                 }
