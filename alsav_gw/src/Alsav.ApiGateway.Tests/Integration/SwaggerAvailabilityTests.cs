@@ -1,4 +1,6 @@
 using System.Net;
+using System.Text.Json;
+using Alsav.ApiGateway.Middleware;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.Extensions.Configuration;
 using Xunit;
@@ -67,5 +69,37 @@ public sealed class SwaggerAvailabilityTests : IClassFixture<WebApplicationFacto
         Assert.Equal(HttpStatusCode.OK, response.StatusCode);
         Assert.Contains("\"/clientApi/stocks\"", json, StringComparison.Ordinal);
         Assert.DoesNotContain("\"/clientApi/clientApi/", json, StringComparison.Ordinal);
+    }
+
+    [Fact]
+    public async Task SwaggerJson_DocumentsTraceIdHeaders()
+    {
+        var json = await _client.GetStringAsync("/swagger/external/swagger.json");
+        using var document = JsonDocument.Parse(json);
+
+        var operations = document.RootElement
+            .GetProperty("paths")
+            .EnumerateObject()
+            .SelectMany(path => path.Value.EnumerateObject()
+                .Where(operation => operation.Name is "get" or "post" or "put" or "delete")
+                .Select(operation => operation.Value))
+            .ToList();
+
+        Assert.NotEmpty(operations);
+
+        foreach (var operation in operations)
+        {
+            Assert.Contains(
+                operation.GetProperty("parameters").EnumerateArray(),
+                parameter => parameter.GetProperty("name").GetString() == TraceIdMiddleware.HeaderName
+                    && parameter.GetProperty("in").GetString() == "header");
+
+            foreach (var response in operation.GetProperty("responses").EnumerateObject())
+            {
+                var headers = response.Value.GetProperty("headers");
+                Assert.True(headers.TryGetProperty(TraceIdMiddleware.HeaderName, out _));
+                Assert.True(headers.TryGetProperty(TraceIdMiddleware.AliasHeaderName, out _));
+            }
+        }
     }
 }

@@ -23,7 +23,7 @@ builder.Host.UseSerilog((context, services, configuration) => configuration
     .Enrich.FromLogContext()
     .Enrich.WithProperty("Application", "Alsav.ApiGateway"));
 
-builder.Services.AddControllers();
+builder.Services.AddControllers(options => options.Filters.Add<TraceIdResultFilter>());
 
 builder.Services.Configure<ApiBehaviorOptions>(options =>
 {
@@ -36,7 +36,10 @@ builder.Services.Configure<ApiBehaviorOptions>(options =>
                 .SelectMany(entry => entry.Value!.Errors
                     .Select(error => $"{entry.Key}: {error.ErrorMessage}")));
 
-        return new BadRequestObjectResult(new ErrorResponse("Validation failed", details));
+        return new BadRequestObjectResult(new ErrorResponse("Validation failed", details)
+        {
+            TraceId = TraceIdMiddleware.GetTraceId(context.HttpContext)
+        });
     };
 });
 
@@ -102,6 +105,7 @@ builder.Services.AddSwaggerGen(options =>
 
     options.DocumentFilter<SwaggerSecurityDocumentFilter>();
     options.OperationFilter<SwaggerSecurityOperationFilter>();
+    options.OperationFilter<SwaggerTraceIdOperationFilter>();
 
     var xmlFileName = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
     var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFileName);
@@ -154,8 +158,17 @@ using (var scope = app.Services.CreateScope())
     db.Database.ExecuteSqlRaw("""CREATE UNIQUE INDEX IF NOT EXISTS "IX_api_keys_Key" ON "api_keys" ("Key");""");
 }
 
+app.UseMiddleware<TraceIdMiddleware>();
 app.UseMiddleware<ExceptionHandlingMiddleware>();
-app.UseSerilogRequestLogging();
+app.UseSerilogRequestLogging(options =>
+{
+    options.EnrichDiagnosticContext = (diagnosticContext, httpContext) =>
+    {
+        var traceId = TraceIdMiddleware.GetTraceId(httpContext);
+        diagnosticContext.Set(TraceIdMiddleware.LogProperty, traceId);
+        diagnosticContext.Set("trace_id", traceId);
+    };
+});
 app.UseMiddleware<ApiKeyValidationMiddleware>();
 
 app.Use(async (context, next) =>
