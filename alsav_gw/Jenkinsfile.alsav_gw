@@ -14,8 +14,9 @@ pipeline {
         APP_DIR        = 'alsav_gw'
         IMAGE_NAME     = 'alsav-gw'
         CONTAINER_NAME = 'alsav-api-gateway'
-        HOST_PORT      = '5000'
+        HOST_PORT      = '5080'
         DOCKER_NETWORK = 'alsav_net'
+        ONEC_URL       = 'http://1c-server:8000/ut11'   // ← ut11 = имя публикации вашей базы
     }
 
     stages {
@@ -37,7 +38,8 @@ pipeline {
         stage('Recreate container') {
             steps {
                 withCredentials([
-                    string(credentialsId: 'alsav-internal-api-secret', variable: 'INTERNAL_SECRET')
+                    string(credentialsId: 'alsav-internal-api-secret', variable: 'INTERNAL_SECRET'),
+                    string(credentialsId: 'alsav-onec-internal-secret',  variable: 'ONEC_SECRET')
                 ]) {
                     sh '''
                         docker rm -f ${CONTAINER_NAME} 2>/dev/null || true
@@ -49,6 +51,10 @@ pipeline {
                             -p 0.0.0.0:${HOST_PORT}:80 \
                             -e ASPNETCORE_ENVIRONMENT=Production \
                             -e InternalApi__SecretKey="${INTERNAL_SECRET}" \
+                            -e OneCSettings__InternalSecret="${ONEC_SECRET}" \
+                            -e OneCSettings__BaseUrl="${ONEC_URL}" \
+                            -e OneCSettings__SyncIntervalMinutes=10 \
+                            -e ReverseProxy__Clusters__onecCluster__Destinations__onec__Address="${ONEC_URL}" \
                             ${IMAGE_NAME}:latest
 
                         sleep 3
@@ -57,6 +63,18 @@ pipeline {
                     '''
                 }
             }
+        }
+    }
+    
+    post {
+        always {
+            sh '''
+                # Удаляем безымянные слои (dangling)
+                docker image prune -f
+
+                # Удаляем старые сборки образа, оставляя последние 3 тега для возможного отката
+                docker images ${IMAGE_NAME} --format "{{.Tag}} {{.ID}}" | grep -E '^[0-9]+' | sort -rn | tail -n +4 | awk '{print $2}' | xargs -r docker rmi -f || true
+            '''
         }
     }
 }
