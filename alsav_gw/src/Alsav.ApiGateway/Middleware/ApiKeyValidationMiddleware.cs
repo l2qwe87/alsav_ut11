@@ -57,10 +57,11 @@ public sealed class ApiKeyValidationMiddleware
         if (!context.Request.Headers.TryGetValue(HeaderName, out var headerValues) || headerValues.Count == 0)
         {
             _logger.LogWarning(
-                "Rejected request without API key. Method: {Method}, Path: {Path}, RemoteIp: {RemoteIp}.",
+                "Rejected request without API key. Method: {Method}, Path: {Path}, RemoteIp: {RemoteIp}, TraceId: {TraceId}.",
                 context.Request.Method,
                 context.Request.Path,
-                context.Connection.RemoteIpAddress);
+                context.Connection.RemoteIpAddress,
+                TraceIdMiddleware.GetTraceId(context));
 
             await WriteUnauthorizedAsync(context, "Missing X-API-Key header");
             return;
@@ -70,10 +71,11 @@ public sealed class ApiKeyValidationMiddleware
         if (string.IsNullOrWhiteSpace(apiKey) || !_apiKeyCache.IsValidKey(apiKey))
         {
             _logger.LogWarning(
-                "Rejected request with invalid API key. Method: {Method}, Path: {Path}, RemoteIp: {RemoteIp}.",
+                "Rejected request with invalid API key. Method: {Method}, Path: {Path}, RemoteIp: {RemoteIp}, TraceId: {TraceId}.",
                 context.Request.Method,
                 context.Request.Path,
-                context.Connection.RemoteIpAddress);
+                context.Connection.RemoteIpAddress,
+                TraceIdMiddleware.GetTraceId(context));
 
             await WriteUnauthorizedAsync(context, "Invalid or revoked API Key");
             return;
@@ -88,7 +90,7 @@ public sealed class ApiKeyValidationMiddleware
         context.Response.ContentType = "application/json";
 
         await context.Response.WriteAsJsonAsync(
-            new ErrorResponse(error),
+            new ErrorResponse(error) { TraceId = TraceIdMiddleware.GetTraceId(context) },
             context.RequestAborted);
     }
 }

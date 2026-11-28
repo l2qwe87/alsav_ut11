@@ -42,12 +42,13 @@ public sealed class ExceptionHandlingMiddleware
         }
         catch (Exception ex)
         {
+            var traceId = TraceIdMiddleware.GetTraceId(context);
             _logger.LogError(
                 ex,
                 "Unhandled exception while processing {Method} {Path}. TraceId: {TraceId}.",
                 context.Request.Method,
                 context.Request.Path,
-                context.TraceIdentifier);
+                traceId);
 
             if (context.Response.HasStarted)
             {
@@ -56,11 +57,12 @@ public sealed class ExceptionHandlingMiddleware
             }
 
             context.Response.Clear();
+            TraceIdMiddleware.SetTraceIdHeaders(context, traceId);
             context.Response.StatusCode = StatusCodes.Status500InternalServerError;
             context.Response.ContentType = "application/json";
 
             await context.Response.WriteAsJsonAsync(
-                new ErrorResponse("Internal server error", context.TraceIdentifier),
+                new ErrorResponse("Internal server error") { TraceId = traceId },
                 context.RequestAborted);
         }
     }

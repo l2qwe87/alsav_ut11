@@ -9,7 +9,11 @@ namespace Alsav.ApiGateway.Models;
 /// <param name="Details">Дополнительные сведения (например, список ошибок валидации).</param>
 public sealed record ErrorResponse(
     string Error,
-    [property: JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)] string? Details = null);
+    [property: JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)] string? Details = null)
+{
+    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+    public string? TraceId { get; set; }
+}
 
 /// <summary>
 /// Ответ внутреннего endpoint синхронизации остатков.

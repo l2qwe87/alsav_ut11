@@ -101,6 +101,18 @@ dotnet run --project src/Alsav.ApiGateway/Alsav.ApiGateway.csproj
 #### `GET /clientApi/stocks?article=...&barcode=...&name=...&limit=...&offset=0`
 Возвращает остатки. Если есть сырые срезы/обороты в SQLite (`stock_snapshots` + `stock_movements`), выполняется расчёт; иначе возвращаются заранее подготовленные остатки из `StockCacheService`.
 
+### Trace id и логирование
+
+Каждый ответ gateway содержит заголовки `X-Trace-Id` и `trace_id` с идентификатором запроса. Этот же идентификатор пишется в логи Serilog и дублируется в поле `traceId` ошибочных ответов.
+
+Клиент может передать свой `X-Trace-Id` (строку до 128 символов из букв, цифр, `-`, `_`, `.`, `:`). Если заголовок отсутствует или некорректен, gateway создаёт новый trace id. Заголовки документированы в Swagger для всех операций.
+
+Поиск в логах Docker:
+
+```bash
+docker logs alsav-api-gateway 2>&1 | grep "<trace_id>"
+```
+
 ### Внутренние endpoint’ы (`X-Internal-Secret`)
 
 #### `POST /api/internal/v1/sync/stocks`
